@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct AboutView: View {
     
@@ -22,6 +23,9 @@ struct AboutView: View {
     @State private var selectedCountry: Country = .austria
     @State private var selectedShop: Shop = .amazonDE
     
+    @State private var isTellAFriendPresented: Bool = false
+    
+    let shareText = NSLocalizedString("share_app_text", comment: "")
     
         
     var body: some View {
@@ -39,7 +43,7 @@ struct AboutView: View {
                 }
                 Section(header: Text("dialog_shop_select_title"),
                         footer: Text("dialog_shop_select_message2")) {
-                    Text("dialog_shop_select_message").font(.footnote)
+                    Text("dialog_shop_select_message").font(.footnote).foregroundColor(.gray)
                     Picker("Country", selection: $selectedCountry) {
                         Text("Austria").tag(Country.austria)
                         Text("Germany").tag(Country.germany)
@@ -54,11 +58,25 @@ struct AboutView: View {
                         Text("AliExpress.com").tag(Shop.aliexpress)
                     }
                 }
+                Section() {
+                    Button(action: {
+                        self.isTellAFriendPresented = true
+                    }) {
+                        Label("menu_main_bottombar_recommend", systemImage: "star.bubble")
+                      }.sheet(isPresented: $isTellAFriendPresented, onDismiss: {
+                        print("Dismiss")
+                        self.isTellAFriendPresented = false
+                        }, content: {
+                            ActivityViewController(activityItems: [
+                                shareText
+                                //URL(string: "https://www.orf.at")!
+                            ])
+                        })
+                }
                 Section(header: Text("App")) {
                     NavigationLink(destination: AboutAppInfoView()) {
                         Label("App Info", systemImage: "info.circle")
                     }
-                    Label("Tell-a-friend", systemImage: "message")
                     Label("Libraries", systemImage: "chevron.left.forwardslash.chevron.right")
                     NavigationLink(destination: AboutAttributionsView()) {
                         Label("Attributions", systemImage: "c.circle")
