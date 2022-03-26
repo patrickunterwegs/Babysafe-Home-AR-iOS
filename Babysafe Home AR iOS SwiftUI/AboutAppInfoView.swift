@@ -21,6 +21,7 @@ struct AboutAppInfoView: View {
                             .resizable()
                             .frame(width: 100.0, height: 100.0)
                         Text("app_name")
+                            .font(.title2)
                             .bold()
                         Text("Version 1.0")
                         Text("Codename: \"Babysafe Rulz\"")
@@ -54,6 +55,7 @@ struct AboutAppInfoView: View {
                         Image("congeso")
                             .resizable()
                             .frame(width: 100.0, height: 100.0)
+                        Text("ConGeSo")
                         Text("https://congeso.at")
                         Spacer()
                         }

@@ -9,10 +9,7 @@ import SwiftUI
 
 struct MainChecklistView: View {
     var body: some View {
-        ScrollView {
-                Spacer()
                 VStack(alignment: .center) {
-                    
                     HStack {
                         Image("cat_superman")
                             .resizable()
@@ -20,23 +17,55 @@ struct MainChecklistView: View {
                         Spacer()
                         Text("checklist_header")
                             .multilineTextAlignment(.center)
+                            .padding()
+                            .font(.body)
                         Spacer()
                     }
                     List() {
-                        Section(header: Text("Found Dangers")) {
-                            Text("content...")
-                            Text("content...")
-                            Text("content...")
-                        }
-                    }.scaledToFill()
-                    
+                        ChecklistItem()
+                        ChecklistItem()
+                        ChecklistItem()
+                        ChecklistItem()
+                        ChecklistItem()
+                        ChecklistItem()
+
+
+                    }
                 }
-            }
     }
 }
 
 struct MainChecklistView_Previews: PreviewProvider {
     static var previews: some View {
         MainChecklistView()
+    }
+}
+
+
+struct ChecklistItem: View {
+    var body: some View {
+        Section {
+        VStack {
+            HStack {
+                Image(systemName: "cross")
+                Text("danger_smallitems_title")
+                    .bold()
+                    .font(.title3)
+                Spacer()
+            }.padding(.top, 8).padding(.bottom, 4)
+            Text("danger_smallitems_text")
+                .padding(.bottom, 8)
+                .font(.body)
+             
+        }
+        }
+    }
+
+}
+
+
+struct ChecklistItem_Previews: PreviewProvider {
+    static var previews: some View {
+        ChecklistItem()
     }
 }

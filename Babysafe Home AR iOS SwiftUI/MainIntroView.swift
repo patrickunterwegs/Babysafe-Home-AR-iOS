@@ -26,6 +26,7 @@ struct MainIntroView: View {
                             .fixedSize(horizontal: false, vertical: true)
                         Text("intro_info_text")
                             .multilineTextAlignment(.center)
+                            .font(.title3)
                         
 
                         Spacer()
@@ -65,6 +66,7 @@ struct MainIntroView: View {
                             .font(.title)
                         Spacer()
                         Text("intro_howto_text")
+                            .font(.body)
                             .multilineTextAlignment(.center)
                             .padding(.bottom)
                             .lineLimit(nil)

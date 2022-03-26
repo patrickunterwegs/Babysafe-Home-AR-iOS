@@ -26,6 +26,7 @@ struct AboutThanksView: View {
                     Text("thanks_text")
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
+                        .font(.body)
                     Spacer()
                 }
                 Spacer()

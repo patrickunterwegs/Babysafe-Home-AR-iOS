@@ -25,6 +25,7 @@ struct AboutAttributionsView: View {
                     Spacer()
                     Text("attributions_text")
                         .multilineTextAlignment(.center)
+                        .font(.body)
                     Spacer()
                 }
                 Spacer()

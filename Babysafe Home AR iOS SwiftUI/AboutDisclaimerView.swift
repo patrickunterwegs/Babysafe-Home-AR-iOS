@@ -26,6 +26,7 @@ struct AboutDisclaimerView: View {
                     Text("dialog_disclaimer_message")
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
+                        .font(.body)
                     Spacer()
                 }
                 Spacer()
