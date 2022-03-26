@@ -13,6 +13,7 @@
 		CD27606F27EF355A003A833D /* MainScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606E27EF355A003A833D /* MainScoreView.swift */; };
 		CD27607127EF4129003A833D /* MainTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607027EF4129003A833D /* MainTipsView.swift */; };
 		CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607427EF6F65003A833D /* ActivityViewController.swift */; };
+		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
 		CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */; };
 		CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73D27EE5E54003A0B94 /* ContentView.swift */; };
 		CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		CD27606E27EF355A003A833D /* MainScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScoreView.swift; sourceTree = "<group>"; };
 		CD27607027EF4129003A833D /* MainTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipsView.swift; sourceTree = "<group>"; };
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CDA4C73827EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Babysafe Home AR iOS SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Babysafe_Home_AR_iOS_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CDA4C73D27EE5E54003A0B94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				CD27606C27EF2E32003A833D /* MainChecklistView.swift */,
 				CD27606E27EF355A003A833D /* MainScoreView.swift */,
 				CD27607027EF4129003A833D /* MainTipsView.swift */,
+				CD27607627EF9D14003A833D /* MainTipDetailView.swift */,
 				CDA4C76527EE5EC5003A0B94 /* AboutView.swift */,
 				CDA4C76727EE5FB0003A0B94 /* AboutAppInfoView.swift */,
 				CDA4C76927EE5FC8003A0B94 /* AboutDisclaimerView.swift */,
@@ -302,6 +305,7 @@
 				CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */,
 				CDA4C76A27EE5FC8003A0B94 /* AboutDisclaimerView.swift in Sources */,
 				CD27607127EF4129003A833D /* MainTipsView.swift in Sources */,
+				CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */,
 				CDA4C76C27EE5FDB003A0B94 /* AboutThanksView.swift in Sources */,
 				CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */,
 				CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */,
