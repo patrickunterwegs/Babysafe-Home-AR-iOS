@@ -8,6 +8,21 @@
 import SwiftUI
 
 struct AboutView: View {
+    
+    enum Country: String, CaseIterable, Identifiable {
+        case austria, germany, switzerland, world
+        var id: Self { self }
+    }
+
+    enum Shop: String, CaseIterable, Identifiable {
+        case amazonDE, babywalzAT, babywalzDE, babywalzCH, aliexpress
+        var id: Self { self }
+    }
+    
+    @State private var selectedCountry: Country = .austria
+    @State private var selectedShop: Shop = .amazonDE
+    
+    
         
     var body: some View {
         NavigationView {
@@ -22,8 +37,22 @@ struct AboutView: View {
                         Spacer()
                     }
                 }
-                Section(header: Text("Settings")) {
-                    Label("Change Shop", systemImage: "cart")
+                Section(header: Text("dialog_shop_select_title"),
+                        footer: Text("dialog_shop_select_message2")) {
+                    Text("dialog_shop_select_message").font(.footnote)
+                    Picker("Country", selection: $selectedCountry) {
+                        Text("Austria").tag(Country.austria)
+                        Text("Germany").tag(Country.germany)
+                        Text("Switzerland").tag(Country.switzerland)
+                        Text("World").tag(Country.world)
+                    }
+                    Picker("Shop", selection: $selectedShop) {
+                        Text("Amazon.de").tag(Shop.amazonDE)
+                        Text("Baby-Walz.at").tag(Shop.babywalzAT)
+                        Text("Baby-Walz.de").tag(Shop.babywalzDE)
+                        Text("Baby-Walz.ch").tag(Shop.babywalzCH)
+                        Text("AliExpress.com").tag(Shop.aliexpress)
+                    }
                 }
                 Section(header: Text("App")) {
                     NavigationLink(destination: AboutAppInfoView()) {
