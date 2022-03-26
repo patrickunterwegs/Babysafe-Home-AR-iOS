@@ -32,6 +32,7 @@ struct MainScoreView: View {
                         .frame(width: 150, height: 150, alignment: .center)
                     Text("score_nothing_unlocked_header")
                         .font(.title)
+                        .bold()
                     Text("score_nothing_unlocked_text")
                         .padding()
                         .multilineTextAlignment(.center)

@@ -20,6 +20,7 @@ struct MainIntroView: View {
                     Group {
                         Text("intro_info_header")
                             .font(.title)
+                            .bold()
                             .padding()
                             .multilineTextAlignment(.center)
                             .lineLimit(nil)

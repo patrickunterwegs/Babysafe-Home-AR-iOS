@@ -10,18 +10,9 @@ import SwiftUI
 struct MainTipsView: View {
     var body: some View {
         NavigationView {
-
             VStack(alignment: .center) {
-                HStack {
-                    Spacer()
-                    Text("articles_header_info")
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    Spacer()
-                    Image("cat_superman")
-                        .resizable()
-                        .frame(width: 100.0, height: 100.0)
-                }
+
+
 
                     List {
                         NavigationLink(destination: MainTipDetailView()) {
@@ -36,9 +27,19 @@ struct MainTipsView: View {
                             Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
                         }
                     }
+                
+                Spacer()
+                HStack {
                     Spacer()
-            }
-            
+                    Text("articles_header_info")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    Spacer()
+                    Image("cat_superman")
+                        .resizable()
+                        .frame(width: 100.0, height: 100.0)
+                }
+            }.navigationTitle("main_tab_tips")
         }
     }
 }
