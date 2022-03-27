@@ -171,7 +171,7 @@
 "danger_smallitems_title" = "Store small parts out of reach";
 "danger_smallitems_text %@ %@" = "The little world explorers first check their surroundings with their mouths, so any find goes right there first. In the worst case, the item clogs the airways and %@ can choke on it. If %@ swallows the objects, in the best case they come to light again after some time, but can cause some damage in the body. Therefore, try to keep all small, round objects out of reach of your pet.";
 "danger_weapons_title" = "Lock weapons";
-"danger_weapons_text %@" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like well in front of your no treasure. After all, you don't want %@ to play with them and hurt or even kill themselves or others.";
+"danger_weapons_text %@" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like well in front of your no treasure. After all, you don't want %1$s to play with them and hurt or even kill themselves or others.";
 "danger_battery_title" = "Batteries out of range";
 "danger_battery_text" = "Batteries, especially button batteries, should be kept safe from your child. Because if %1$s swallows them, it's an emergency and you need to go to the hospital immediately. Button cells can cause serious damage to your favorite's esophagus.";
 "danger_cutlery_title" = "Use children's cutlery";

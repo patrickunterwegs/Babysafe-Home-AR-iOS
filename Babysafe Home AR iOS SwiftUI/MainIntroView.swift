@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainIntroView: View {
     
-    @State private var babyname: String = "Your baby"
+    //@State private var babyname: String = "Your baby"
 
     
     var body: some View {
@@ -31,11 +31,12 @@ struct MainIntroView: View {
                         
 
                         Spacer()
-                        Image("penguin_sleeping")
+                        Image("astronaut_camera")
                             .resizable()
                             .frame(width: 200.0, height: 200.0)
                     }
 
+                    /*
                     GroupBox {
                         Form {
                             Section(header: Text("intro_tell_us_baby_name")) {
@@ -54,16 +55,18 @@ struct MainIntroView: View {
                         
                         }.frame(height: 150)
                     }
+                     */
                     
                     Button(action: {}) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
                       }
+                
                     .buttonStyle(.automatic)
                     .buttonBorderShape(.automatic)
                     .padding()
                     
-                    Group {
-                        Text("intro_howto_header")
+                    GroupBox {
+                        Text("dialog_first_time_title")
                             .font(.title)
                         Spacer()
                         Text("intro_howto_text")
@@ -72,7 +75,16 @@ struct MainIntroView: View {
                             .padding(.bottom)
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
-                        }
+                        Text("intro_howto_header")
+                            .font(.title3)
+                            .padding(.bottom, 4)
+                        Text("dialog_first_time_message")
+                            .font(.caption)
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom)
+                            .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }.padding()
                     Spacer()
                 }
                 Spacer()

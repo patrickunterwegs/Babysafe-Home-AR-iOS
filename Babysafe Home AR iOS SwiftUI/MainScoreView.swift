@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct MainScoreView: View {
+    
+    @State private var revealUnlocked: CGFloat = 78
+    @State private var revealBanned: CGFloat = 65
+    @State private var revealTips: CGFloat = 24
+
+    
     var body: some View {
         ScrollView {
             Spacer()
             VStack(alignment: .center) {
                 
                 HStack {
-                    Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked")
-                    Badge(image: "ic_badge_banned", text: "score_badge_banned")
-                    Badge(image: "ic_badge_articles", text: "score_badge_articles")
+                    Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: revealUnlocked)
+                    Badge(image: "ic_badge_banned", text: "score_badge_banned", percentReveal: revealBanned)
+                    Badge(image: "ic_badge_articles", text: "score_badge_articles", percentReveal: revealTips)
                 }.padding()
 
                 GroupBox {
@@ -55,12 +61,22 @@ struct Badge: View {
     
     var image: String
     var text: String
+    var percentReveal: CGFloat
     
     var body: some View {
         VStack {
+            ZStack {
             Image(image)
                 .resizable()
                 .frame(width: 100.0, height: 100.0)
+                .colorMultiply(.black)
+                //.shadow(color: Color.gray, radius: 5, x: 5, y: 5)
+            Image(image)
+                .resizable()
+                .frame(width: 100.0, height: 100.0)
+                .mask(Rectangle().frame(width: 100, height: percentReveal, alignment: .bottom))
+                
+            }
             Text(LocalizedStringKey("score_badge_unlocked")).frame(width: 100, height: nil, alignment: .center)
         }
     }
@@ -70,7 +86,7 @@ struct Badge: View {
 struct Badge_Previews: PreviewProvider {
     static var previews: some View {
         Badge(
-        image: "ic_badge_unlocked", text: "score_badge_unlocked")
+        image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 78)
     }
 }
 
