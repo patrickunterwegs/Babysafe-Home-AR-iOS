@@ -41,6 +41,10 @@ struct MainChecklistView_Previews: PreviewProvider {
 
 
 struct ChecklistItem: View {
+    
+    @State private var babyname: String = "Your baby"
+
+    
     var body: some View {
         Section {
         VStack {
@@ -52,9 +56,10 @@ struct ChecklistItem: View {
                 Spacer()
             }.padding(.top, 8).padding(.bottom, 4)
             
-            Text("danger_smallitems_text")
+            Text("danger_smallitems_text \(babyname) \(babyname)")
                 .padding(.bottom, 8)
                 .font(.body)
+
             
             HStack {
                 Spacer()
