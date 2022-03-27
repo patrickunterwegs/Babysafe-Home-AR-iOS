@@ -35,7 +35,7 @@ struct MainTipsView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                     Spacer()
-                    Image("cat_superman")
+                    Image("biddy_badge")
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
                 }
