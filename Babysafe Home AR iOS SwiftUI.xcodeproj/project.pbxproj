@@ -14,6 +14,7 @@
 		CD27607127EF4129003A833D /* MainTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607027EF4129003A833D /* MainTipsView.swift */; };
 		CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607427EF6F65003A833D /* ActivityViewController.swift */; };
 		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
+		CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D657827F21C64008CA2CF /* BabyDanger.swift */; };
 		CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */; };
 		CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73D27EE5E54003A0B94 /* ContentView.swift */; };
 		CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		CD27607027EF4129003A833D /* MainTipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipsView.swift; sourceTree = "<group>"; };
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
+		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
 		CDA4C73827EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Babysafe Home AR iOS SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Babysafe_Home_AR_iOS_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CDA4C73D27EE5E54003A0B94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD3D657727F21C50008CA2CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D657827F21C64008CA2CF /* BabyDanger.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CDA4C72F27EE5E53003A0B94 = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +131,10 @@
 		CDA4C73A27EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CD3D657727F21C50008CA2CF /* Models */,
 				CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */,
 				CDA4C73D27EE5E54003A0B94 /* ContentView.swift */,
 				CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */,
-				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 				CDA4C76F27EE6EA3003A0B94 /* MainView.swift */,
 				CD27606A27EF09FC003A833D /* MainIntroView.swift */,
 				CD27606C27EF2E32003A833D /* MainChecklistView.swift */,
@@ -138,6 +148,7 @@
 				CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */,
 				CD27606827EF0136003A833D /* Localizable.strings */,
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
+				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 			);
 			path = "Babysafe Home AR iOS SwiftUI";
 			sourceTree = "<group>";
@@ -299,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */,
 				CD27606F27EF355A003A833D /* MainScoreView.swift in Sources */,
 				CDA4C76827EE5FB0003A0B94 /* AboutAppInfoView.swift in Sources */,
 				CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */,

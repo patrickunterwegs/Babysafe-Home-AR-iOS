@@ -23,12 +23,9 @@ struct MainChecklistView: View {
                     Spacer()
                 }
                 
-                ChecklistItem()
-                ChecklistItem()
-                ChecklistItem()
-                ChecklistItem()
-                ChecklistItem()
-                
+                ForEach(BabyDanger.allBabyDangers) { babyDanger in
+                     ChecklistItem(babyDanger: babyDanger)
+                }
             }
         }
     }
@@ -43,38 +40,58 @@ struct MainChecklistView_Previews: PreviewProvider {
 
 struct ChecklistItem: View {
     
+    let babyDanger: BabyDanger
+    
     @State private var babyname: String = "Your baby"
-
+    
+    @State var isChecked = false
+    @State private var isShareSheetPresented: Bool = false
+    
     
     var body: some View {
+                
         GroupBox {
         VStack {
             HStack {
                 Image(systemName: "cross")
-                Text("danger_smallitems_title")
+                Text(LocalizedStringKey(babyDanger.title))
                     .bold()
                     .font(.title3)
                 Spacer()
+                Button(action: {
+                    isChecked.toggle()
+                }) {
+                    switch isChecked {
+                    case true: Label("Banned", systemImage: "checkmark.seal")
+                    default: Label("Ban", systemImage: "bandage")
+                    }
+                }
             }.padding(.top, 8).padding(.bottom, 4)
             
-            Text("danger_smallitems_text \(babyname) \(babyname)")
+            Text(LocalizedStringKey(babyDanger.description))
                 .font(.body)
 
             
             HStack {
                 Spacer()
-                Button(action: {}) {
-                        Label("share", systemImage: "square.and.arrow.up")
-                      }
-                    .buttonStyle(.automatic)
-                    .buttonBorderShape(.automatic)
-                    .padding(4)
-                Button(action: {}) {
+                
+                Button(action: {
+                    self.isShareSheetPresented = true
+                }) {
+                    Label("share", systemImage: "square.and.arrow.up")
+                  }.sheet(isPresented: $isShareSheetPresented, onDismiss: {
+                    print("Dismiss")
+                    self.isShareSheetPresented = false
+
+                    }, content: {
+                        ActivityViewController(activityItems: [getShareText(babyDanger: babyDanger)])
+                    }).padding(8)
+                
+                if(babyDanger.linkAmazonDE != nil) {
+                    Link(destination: babyDanger.linkAmazonDE!) {
                         Label("checklist_item_buy", systemImage: "cart")
-                      }
-                    .buttonStyle(.automatic)
-                    .buttonBorderShape(.automatic)
-                    .padding(4)
+                    }.padding(8)
+                }
             }
         }
         }.padding()
@@ -82,9 +99,17 @@ struct ChecklistItem: View {
 
 }
 
+func getShareText(babyDanger: BabyDanger) -> String {
+    let title = NSLocalizedString(babyDanger.title, comment: "")
+    let desc = NSLocalizedString(babyDanger.description, comment: "")
+    let addition = NSLocalizedString("share_brought_to_you_by", comment: "")
+    return "*\(title)*\n\(desc)\n\n\(addition)"
+}
 
 struct ChecklistItem_Previews: PreviewProvider {
     static var previews: some View {
-        ChecklistItem()
+        ChecklistItem(
+            babyDanger: BabyDanger.allBabyDangers.first!
+        )
     }
 }
