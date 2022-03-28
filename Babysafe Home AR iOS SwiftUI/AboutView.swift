@@ -29,7 +29,6 @@ struct AboutView: View {
     
         
     var body: some View {
-        NavigationView {
             List {
                 Section() {
                     HStack {
@@ -93,8 +92,8 @@ struct AboutView: View {
                     Link("Terms &amp; Conditions", destination: Foundation.URL(string: "https://babysafe.techbee.at/terms-conditions")!)
                     Link("Privacy Policy", destination: Foundation.URL(string: "https://babysafe.techbee.at/privacy-policy")!)
                 }
-            }.navigationTitle("More")
-        }
+            }
+        
     }
 }
 

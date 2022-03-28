@@ -9,25 +9,26 @@ import SwiftUI
 
 struct MainChecklistView: View {
     var body: some View {
-        VStack(alignment: .center) {
-            HStack {
-                Image("cat_superman")
-                    .resizable()
-                    .frame(width: 100.0, height: 100.0)
-                Spacer()
-                Text("checklist_header")
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .font(.body)
-                Spacer()
-            }
-            List() {
+        ScrollView {
+            VStack(alignment: .center) {
+                HStack {
+                    Image("cat_superman")
+                        .resizable()
+                        .frame(width: 100.0, height: 100.0)
+                    Spacer()
+                    Text("checklist_header")
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .font(.body)
+                    Spacer()
+                }
+                
                 ChecklistItem()
                 ChecklistItem()
                 ChecklistItem()
                 ChecklistItem()
                 ChecklistItem()
-                ChecklistItem()
+                
             }
         }
     }
@@ -46,7 +47,7 @@ struct ChecklistItem: View {
 
     
     var body: some View {
-        Section {
+        GroupBox {
         VStack {
             HStack {
                 Image(systemName: "cross")
@@ -57,7 +58,6 @@ struct ChecklistItem: View {
             }.padding(.top, 8).padding(.bottom, 4)
             
             Text("danger_smallitems_text \(babyname) \(babyname)")
-                .padding(.bottom, 8)
                 .font(.body)
 
             
@@ -77,7 +77,7 @@ struct ChecklistItem: View {
                     .padding(4)
             }
         }
-        }
+        }.padding()
     }
 
 }

@@ -9,37 +9,33 @@ import SwiftUI
 
 struct MainTipsView: View {
     var body: some View {
-        NavigationView {
             VStack(alignment: .center) {
 
-
-
-                    List {
-                        NavigationLink(destination: MainTipDetailView()) {
-                            Text("tip_electricity_title")
-                        }
-                        NavigationLink(destination: MainTipDetailView()) {
-                            Text("tip_electricity_title")
-                        }
-                        NavigationLink(destination: MainTipDetailView()) {
-                            Text("tip_electricity_title")
-                            Spacer()
-                            Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
-                        }
+                List {
+                    NavigationLink(destination: MainTipDetailView()) {
+                        Text("tip_electricity_title")
                     }
-                
-                Spacer()
-                HStack {
-                    Spacer()
-                    Text("articles_header_info")
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    Spacer()
-                    Image("biddy_badge")
-                        .resizable()
-                        .frame(width: 100.0, height: 100.0)
+                    NavigationLink(destination: MainTipDetailView()) {
+                        Text("tip_electricity_title")
+                    }
+                    NavigationLink(destination: MainTipDetailView()) {
+                        Text("tip_electricity_title")
+                        Spacer()
+                        Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
+                    }
                 }
-            }.navigationTitle("main_tab_tips")
+            
+            Spacer()
+            HStack {
+                Spacer()
+                Text("articles_header_info")
+                    .multilineTextAlignment(.center)
+                    .padding()
+                Spacer()
+                Image("biddy_badge")
+                    .resizable()
+                    .frame(width: 100.0, height: 100.0)
+            }
         }
     }
 }

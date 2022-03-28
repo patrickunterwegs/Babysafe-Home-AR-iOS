@@ -44,7 +44,7 @@ struct MainScoreView: View {
                         .multilineTextAlignment(.center)
                 }.padding()
             }
-        }
+        }.navigationTitle("main_tab_score")
     }
 }
 
