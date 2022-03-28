@@ -77,7 +77,7 @@ struct Badge: View {
                 .mask(Rectangle().frame(width: 100, height: percentReveal, alignment: .bottom))
                 
             }
-            Text(LocalizedStringKey("score_badge_unlocked")).frame(width: 100, height: nil, alignment: .center)
+            Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
         }
     }
 }
