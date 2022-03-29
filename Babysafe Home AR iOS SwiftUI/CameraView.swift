@@ -8,6 +8,7 @@
 import SwiftUI
 import AVFoundation
 import Vision
+import TFLiteSwift_Vision
 
 struct CameraView: View {
     
@@ -66,7 +67,7 @@ struct CameraView: View {
         @Published var preview: AVCaptureVideoPreviewLayer!
         @Published var output = AVCaptureVideoDataOutput()
         
-        let model = MobileNetV2().model
+        //let model = MobileNetV2().model
         
         func checkPermission() {
             
@@ -120,9 +121,21 @@ struct CameraView: View {
         
         func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
             
-            guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
-            guard let model = try? VNCoreMLModel(for: self.model) else { return }
             
+            guard let pixelBuffer: CVPixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+            //guard let model = try? VNCoreMLModel(for: self.model) else { return }
+            
+            
+            let handler = ModelDataHandler(
+                modelFileInfo: FileInfo(name: "object_labeler", extension: "tflite"),
+                labelsFileInfo: FileInfo(name: "mobile_object_labeler_v1_labelmap", extension: "csv"))
+            
+            
+            let result = handler?.runModel(onFrame: pixelBuffer)
+            print("Confidence \(result?.inferences.first?.confidence)")
+            print("Label \(result?.inferences.first?.className)")
+            
+            /*
             let request = VNCoreMLRequest(model: model) { (finishedReq, err) in
                 
                 guard let results = finishedReq.results as? [VNClassificationObservation] else { return }
@@ -141,7 +154,10 @@ struct CameraView: View {
                 }
             }
             
+            
             try? VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:]).perform([request])
+             
+             */
         }
     }
     
