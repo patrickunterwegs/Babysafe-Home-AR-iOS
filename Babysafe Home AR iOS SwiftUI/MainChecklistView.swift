@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct MainChecklistView: View {
+    
+    @Binding var babyDangers: [BabyDanger]
+    @Binding var selectedShop: Shop
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .center) {
@@ -23,8 +27,8 @@ struct MainChecklistView: View {
                     Spacer()
                 }
                 
-                ForEach(BabyDanger.allBabyDangers) { babyDanger in
-                     ChecklistItem(babyDanger: babyDanger)
+                ForEach($babyDangers) { $babyDanger in
+                    ChecklistItem(babyDanger: $babyDanger, selectedShop: $selectedShop)
                 }
             }
         }
@@ -33,18 +37,18 @@ struct MainChecklistView: View {
 
 struct MainChecklistView_Previews: PreviewProvider {
     static var previews: some View {
-        MainChecklistView()
+        MainChecklistView(babyDangers: .constant(BabyDanger.allBabyDangers), selectedShop: .constant(Shop.amazonDE))
     }
 }
 
 
 struct ChecklistItem: View {
     
-    let babyDanger: BabyDanger
+    @Binding var babyDanger: BabyDanger
+    @Binding var selectedShop: Shop
     
     @State private var babyname: String = "Your baby"
     
-    @State var isChecked = false
     @State private var isShareSheetPresented: Bool = false
     
     
@@ -59,9 +63,9 @@ struct ChecklistItem: View {
                     .font(.title3)
                 Spacer()
                 Button(action: {
-                    isChecked.toggle()
+                    babyDanger.isBanned = !babyDanger.isBanned
                 }) {
-                    switch isChecked {
+                    switch babyDanger.isBanned {
                     case true: Label("Banned", systemImage: "checkmark.seal")
                     default: Label("Ban", systemImage: "bandage")
                     }
@@ -84,11 +88,12 @@ struct ChecklistItem: View {
                     self.isShareSheetPresented = false
 
                     }, content: {
-                        ActivityViewController(activityItems: [getShareText(babyDanger: babyDanger)])
+                        ActivityViewController(activityItems: [babyDanger.getShareText(shop: selectedShop)])
                     }).padding(8)
                 
-                if(babyDanger.linkAmazonDE != nil) {
-                    Link(destination: babyDanger.linkAmazonDE!) {
+                let link = babyDanger.getLinkForShop(shop: selectedShop)
+                if(link != nil) {
+                    Link(destination: link!) {
                         Label("checklist_item_buy", systemImage: "cart")
                     }.padding(8)
                 }
@@ -96,20 +101,14 @@ struct ChecklistItem: View {
         }
         }.padding()
     }
-
 }
 
-func getShareText(babyDanger: BabyDanger) -> String {
-    let title = NSLocalizedString(babyDanger.title, comment: "")
-    let desc = NSLocalizedString(babyDanger.description, comment: "")
-    let addition = NSLocalizedString("share_brought_to_you_by", comment: "")
-    return "*\(title)*\n\(desc)\n\n\(addition)"
-}
 
 struct ChecklistItem_Previews: PreviewProvider {
     static var previews: some View {
         ChecklistItem(
-            babyDanger: BabyDanger.allBabyDangers.first!
+            babyDanger: .constant(BabyDanger.allBabyDangers.first!),
+            selectedShop: .constant(Shop.amazonDE)
         )
     }
 }

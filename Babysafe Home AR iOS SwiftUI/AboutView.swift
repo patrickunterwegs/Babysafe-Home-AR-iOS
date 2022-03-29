@@ -10,9 +10,8 @@ import Foundation
 
 struct AboutView: View {
     
-
-    @State private var selectedCountry: ShopCountry = .at
-    @State private var selectedShop: Shop = .amazonDE
+    @Binding var selectedCountry: ShopCountry
+    @Binding var selectedShop: Shop
     
     @State private var isTellAFriendPresented: Bool = false
     
@@ -83,13 +82,12 @@ struct AboutView: View {
                     Link("Privacy Policy", destination: Foundation.URL(string: "https://babysafe.techbee.at/privacy-policy")!)
                 }
             }
-        
     }
 }
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutView()
+        AboutView(selectedCountry: .constant(.at), selectedShop: .constant(.babywalzAT))
     }
 }
 

@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var selectedCountry: ShopCountry = .at
+    @State private var selectedShop: Shop = .amazonDE
+    @State private var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
+    
     var body: some View {
                  
             TabView {
@@ -22,7 +27,7 @@ struct MainView: View {
                 }
                 
                 NavigationView {
-                    MainChecklistView()
+                    MainChecklistView(babyDangers: $babyDangers, selectedShop: $selectedShop)
                         .navigationTitle("main_tab_checklist")
                         .navigationBarTitleDisplayMode(.inline)
                 }
@@ -53,7 +58,7 @@ struct MainView: View {
                 }
                 
                 NavigationView {
-                    AboutView()
+                    AboutView(selectedCountry: $selectedCountry, selectedShop: $selectedShop)
                         .navigationTitle("More")
                         .navigationBarTitleDisplayMode(.inline)
                 }

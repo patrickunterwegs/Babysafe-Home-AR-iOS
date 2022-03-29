@@ -15,7 +15,9 @@ struct BabyDanger: Identifiable {
     let description: String
     let linkGlobal: URL?
     let linkAmazonDE: URL?
-
+    var isUnlocked: Bool = false
+    var isBanned: Bool = false
+    var isCurDetected: Bool = false
 }
 
 extension BabyDanger {
@@ -43,4 +45,36 @@ extension BabyDanger {
             linkGlobal: URL.init(string: "https://www.orf.at"),
             linkAmazonDE: URL.init(string: "https://www.amazon.at"))
     ]
+    
+    func getLinkForShop(shop: Shop) ->  URL? {
+        switch shop {
+        case .amazonDE:
+            return linkAmazonDE
+        case .babywalzAT:
+            return linkAmazonDE
+        case .babywalzDE:
+            return linkAmazonDE
+        case .babywalzCH:
+            return linkAmazonDE
+        case .aliexpress:
+            return linkGlobal
+        }
+    }
+    
+    func getShareText(shop: Shop) -> String {
+        let title = NSLocalizedString(title, comment: "")
+        let desc = NSLocalizedString(description, comment: "")
+        let link = getLinkForShop(shop: shop)
+        let addition = NSLocalizedString("share_brought_to_you_by", comment: "")
+        
+        var shareText = title + "\n"
+        shareText += desc + "\n"
+        if link != nil {
+            shareText += "\n" + link!.description + "\n"
+        }
+        shareText += "\n\n" + addition
+        return shareText
+    }
 }
+
+
