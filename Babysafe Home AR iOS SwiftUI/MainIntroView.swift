@@ -57,9 +57,13 @@ struct MainIntroView: View {
                     }
                      */
                     
-                    Button(action: {}) {
+                    NavigationLink(destination: CameraView()) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
-                      }
+                    }
+                    
+                    /* Button(action: {}) {
+                        Label("start_ar_view", systemImage: "camera.viewfinder")
+                      } */
                 
                     .buttonStyle(.automatic)
                     .buttonBorderShape(.automatic)

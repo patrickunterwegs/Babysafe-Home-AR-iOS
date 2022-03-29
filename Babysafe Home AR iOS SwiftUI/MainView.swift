@@ -14,8 +14,9 @@ struct MainView: View {
     @State private var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     
     var body: some View {
-                 
+        
             TabView {
+                
                 NavigationView {
                     MainIntroView()
                         .navigationTitle("main_tab_intro")
