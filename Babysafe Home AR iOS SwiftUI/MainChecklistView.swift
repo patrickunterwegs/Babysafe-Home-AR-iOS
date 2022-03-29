@@ -28,7 +28,9 @@ struct MainChecklistView: View {
                 }
                 
                 ForEach($babyDangers) { $babyDanger in
-                    ChecklistItem(babyDanger: $babyDanger, selectedShop: $selectedShop)
+                    //if babyDanger.isUnlocked {
+                        ChecklistItem(babyDanger: $babyDanger, selectedShop: $selectedShop)
+                    //}
                 }
             }
         }

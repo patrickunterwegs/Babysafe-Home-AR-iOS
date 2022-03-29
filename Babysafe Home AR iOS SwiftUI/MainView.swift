@@ -38,7 +38,7 @@ struct MainView: View {
                 }
                     
                 NavigationView {
-                    MainScoreView()
+                    MainScoreView(babyDangers: $babyDangers)
                         .navigationTitle("main_tab_score")
                         .navigationBarTitleDisplayMode(.inline)
                 }.tabItem {

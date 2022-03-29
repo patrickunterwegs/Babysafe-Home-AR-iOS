@@ -46,6 +46,8 @@ extension BabyDanger {
             linkAmazonDE: URL.init(string: "https://www.amazon.at"))
     ]
     
+
+    
     func getLinkForShop(shop: Shop) ->  URL? {
         switch shop {
         case .amazonDE:
@@ -77,4 +79,22 @@ extension BabyDanger {
     }
 }
 
+func getNumUnlocked(babyDangers: [BabyDanger]) -> Int {
+    var numUnlocked = 0
+    babyDangers.forEach { babyDanger in
+        if babyDanger.isUnlocked {
+            numUnlocked += 1
+        }
+    }
+    return numUnlocked
+}
 
+func getNumBanned(babyDangers: [BabyDanger]) -> Int {
+    var numBanned = 0
+    babyDangers.forEach { babyDanger in
+        if babyDanger.isBanned {
+            numBanned += 1
+        }
+    }
+    return numBanned
+}

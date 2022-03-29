@@ -9,10 +9,8 @@ import SwiftUI
 
 struct MainScoreView: View {
     
-    @State private var revealUnlocked: CGFloat = 78
-    @State private var revealBanned: CGFloat = 65
-    @State private var revealTips: CGFloat = 24
-
+    @Binding var babyDangers: [BabyDanger]
+    
     
     var body: some View {
         ScrollView {
@@ -20,9 +18,20 @@ struct MainScoreView: View {
             VStack(alignment: .center) {
                 
                 HStack {
-                    Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: revealUnlocked)
-                    Badge(image: "ic_badge_banned", text: "score_badge_banned", percentReveal: revealBanned)
-                    Badge(image: "ic_badge_articles", text: "score_badge_articles", percentReveal: revealTips)
+                    Badge(
+                        image: "ic_badge_unlocked",
+                        text: "score_badge_unlocked",
+                        percentReveal: CGFloat(Float(getNumUnlocked(babyDangers: babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                    )
+                    Badge(
+                        image: "ic_badge_banned",
+                        text: "score_badge_banned",
+                        percentReveal: CGFloat(Float(getNumBanned(babyDangers: babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                    )
+                    Badge(
+                        image: "ic_badge_articles",
+                        text: "score_badge_articles",
+                        percentReveal: 24)
                 }.padding()
 
                 GroupBox {
@@ -50,10 +59,9 @@ struct MainScoreView: View {
 
 struct MainScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        MainScoreView()
+        MainScoreView(babyDangers: .constant(BabyDanger.allBabyDangers))
     }
 }
-
 
 
 
