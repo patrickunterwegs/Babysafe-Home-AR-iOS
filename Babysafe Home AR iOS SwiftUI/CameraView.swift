@@ -16,7 +16,7 @@ struct CameraView: View {
     
     
     @StateObject var camera = CameraModel()
-    @State private var isChecklistSheetPresented: Bool = true
+    @State private var isChecklistSheetPresented: Bool = false
     
     
     
@@ -25,18 +25,21 @@ struct CameraView: View {
             CameraPreview(camera: camera)
             //Color.black.ignoresSafeArea(.all, edges: .all)
             //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.white)
+                .sheet(isPresented: $isChecklistSheetPresented, onDismiss: {
+                    print("Dismiss")
+                    self.isChecklistSheetPresented = false
+                    
+                }, content: {
+                    VStack {
+                        Text(String(objectIdentifier))
+                        Text(String(objectConfidence))
+                    }
+                }).padding(8)
         }
-        .sheet(isPresented: $isChecklistSheetPresented, onDismiss: {
-            print("Dismiss")
-            self.isChecklistSheetPresented = false
-            
-        }, content: {
-            VStack {
-                
-            }
-        }).padding(8)
+        
         .onAppear(perform: {
             camera.checkPermission()
+            isChecklistSheetPresented = true       // JUST FOR TESTING!!!
         })
         .onDisappear(perform: {
             camera.session.stopRunning()
@@ -66,7 +69,8 @@ struct CameraView: View {
         @Published var preview: AVCaptureVideoPreviewLayer!
         @Published var output = AVCaptureVideoDataOutput()
         
-        let model = MobileNetV2().model
+        //let model = MobileNetV2().model
+        let model = SqueezeNet().model
         
         func checkPermission() {
             
