@@ -15,6 +15,8 @@
 		CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607427EF6F65003A833D /* ActivityViewController.swift */; };
 		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
 		CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D657827F21C64008CA2CF /* BabyDanger.swift */; };
+		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
+		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */; };
 		CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73D27EE5E54003A0B94 /* ContentView.swift */; };
 		CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
+		CD8D32F527F2F7A50058D54B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCountry.swift; sourceTree = "<group>"; };
 		CDA4C73827EE5E54003A0B94 /* Babysafe Home AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Babysafe Home AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Babysafe_Home_AR_iOS_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CDA4C73D27EE5E54003A0B94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				CD3D657827F21C64008CA2CF /* BabyDanger.swift */,
+				CD8D32F527F2F7A50058D54B /* Shop.swift */,
+				CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,9 +328,11 @@
 				CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */,
 				CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */,
 				CD27606D27EF2E32003A833D /* MainChecklistView.swift in Sources */,
+				CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */,
 				CDA4C76627EE5EC5003A0B94 /* AboutView.swift in Sources */,
 				CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */,
 				CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */,
+				CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

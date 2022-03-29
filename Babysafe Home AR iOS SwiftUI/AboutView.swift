@@ -10,17 +10,8 @@ import Foundation
 
 struct AboutView: View {
     
-    enum Country: String, CaseIterable, Identifiable {
-        case austria, germany, switzerland, world
-        var id: Self { self }
-    }
 
-    enum Shop: String, CaseIterable, Identifiable {
-        case amazonDE, babywalzAT, babywalzDE, babywalzCH, aliexpress
-        var id: Self { self }
-    }
-    
-    @State private var selectedCountry: Country = .austria
+    @State private var selectedCountry: ShopCountry = .at
     @State private var selectedShop: Shop = .amazonDE
     
     @State private var isTellAFriendPresented: Bool = false
@@ -44,17 +35,16 @@ struct AboutView: View {
                         footer: Text("dialog_shop_select_message2")) {
                     Text("dialog_shop_select_message").font(.footnote).foregroundColor(.gray)
                     Picker("Country", selection: $selectedCountry) {
-                        Text("Austria").tag(Country.austria)
-                        Text("Germany").tag(Country.germany)
-                        Text("Switzerland").tag(Country.switzerland)
-                        Text("World").tag(Country.world)
+                        ForEach(ShopCountry.allCases) { country in
+                            Text(country.name).tag(country.id)
+                        }
+                    }.onChange(of: selectedCountry) { country in
+                        selectedShop = selectedCountry.shops.first!
                     }
                     Picker("Shop", selection: $selectedShop) {
-                        Text("Amazon.de").tag(Shop.amazonDE)
-                        Text("Baby-Walz.at").tag(Shop.babywalzAT)
-                        Text("Baby-Walz.de").tag(Shop.babywalzDE)
-                        Text("Baby-Walz.ch").tag(Shop.babywalzCH)
-                        Text("AliExpress.com").tag(Shop.aliexpress)
+                        ForEach(selectedCountry.shops) { shop in
+                            Text(shop.name).tag(shop.id)
+                        }
                     }
                 }
                 Section() {
