@@ -22,12 +22,12 @@ struct MainScoreView: View {
                     Badge(
                         image: "ic_badge_unlocked",
                         text: "score_badge_unlocked",
-                        percentReveal: CGFloat(Float(getNumUnlocked(babyDangers: model.babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                        percentReveal: CGFloat(Float(model.getNumUnlocked()) / Float((BabyDanger.allBabyDangers.count)*100))
                     )
                     Badge(
                         image: "ic_badge_banned",
                         text: "score_badge_banned",
-                        percentReveal: CGFloat(Float(getNumBanned(babyDangers: model.babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                        percentReveal: CGFloat(Float(model.getNumBanned()) / (Float(BabyDanger.allBabyDangers.count)*100))
                     )
                     Badge(
                         image: "ic_badge_articles",

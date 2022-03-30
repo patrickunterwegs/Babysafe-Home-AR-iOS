@@ -37,4 +37,13 @@ class BabysafeViewModel: ObservableObject {
     func getNumUnbanned() -> Int {
         return getNumUnlocked() - getNumBanned()
     }
+    
+    func unlock(objectId: Int) {
+       
+        for i in 0 ... babyDangers.count-1 {
+            if babyDangers[i].objectIds.contains(objectId) {
+                babyDangers[i].isUnlocked = true
+            }
+        }
+    }
 }

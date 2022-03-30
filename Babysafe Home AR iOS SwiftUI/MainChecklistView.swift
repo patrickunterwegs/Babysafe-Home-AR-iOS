@@ -27,10 +27,10 @@ struct MainChecklistView: View {
                     Spacer()
                 }
                 
-                ForEach($model.babyDangers) { babyDanger in
-                    //if babyDanger.isUnlocked {
-                    ChecklistItem(babyDanger: babyDanger, selectedShop: $model.selectedShop)
-                    //}
+                ForEach($model.babyDangers) { $babyDanger in
+                    if babyDanger.isUnlocked {
+                        ChecklistItem(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
+                    }
                 }
             }
         }

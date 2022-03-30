@@ -68,13 +68,14 @@ struct CameraView: View {
     
     // camera model
     class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
-        
-        @EnvironmentObject var model: BabysafeViewModel
-        
+                
         @Published var session = AVCaptureSession()
         @Published var alert = false
         @Published var preview: AVCaptureVideoPreviewLayer!
         @Published var output = AVCaptureVideoDataOutput()
+        
+        @Published var model: BabysafeViewModel!   // is set when the CameraModel gets instantiated
+
         
         @Published var objectIdentifier: String = ""
         
@@ -207,6 +208,9 @@ struct CameraView: View {
                 print(resultsText)
                 objectIdentifier = resultsText
                 
+                labels.forEach { label in
+                    model.unlock(objectId: label.index)
+                }
             }
         }
     }
@@ -217,11 +221,15 @@ struct CameraView: View {
     struct CameraPreview: UIViewRepresentable {
         
         @ObservedObject var camera: CameraModel
+        @EnvironmentObject var model: BabysafeViewModel
+
         
         func makeUIView(context: Context) -> UIView {
             let view = UIView(frame: UIScreen.main.bounds)
             camera.preview = AVCaptureVideoPreviewLayer(session: camera.session)
             camera.preview.frame = view.frame
+            
+            camera.model = model       // pass on the model to the CameraModel to manipulate it when dangers get unlocked
             
             camera.preview.videoGravity = .resizeAspectFill
             view.layer.addSublayer(camera.preview)
