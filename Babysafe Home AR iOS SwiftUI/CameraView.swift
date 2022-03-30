@@ -81,8 +81,11 @@ struct CameraView: View {
         @Published var objectConfidence: VNConfidence = 0
                 
         
-        //let model = MobileNetV2().model
-        let model = SqueezeNet().model
+        let model = MobileNetV2().model
+        //let model = SqueezeNet().model
+        //let model = YOLOv3Tiny().model
+        //let model = Resnet50Int8LUT().model
+        //let model = Inceptionv3().model
         
         func checkPermission() {
             
@@ -147,7 +150,7 @@ struct CameraView: View {
                 DispatchQueue.main.async {
                     
                     results.forEach{  result in
-                        if result.confidence > 0.7 {
+                        if result.confidence > 0.6 {
                             print("Identifier \(result.identifier)")
                             print("Confidence \(result.confidence * 100)")
                             
