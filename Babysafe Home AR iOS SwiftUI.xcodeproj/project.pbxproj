@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */; };
+		B046F10D52401E4BE03E3430 /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8339E7F3613EF4B8D55B4F4A /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework */; };
 		CD27606627EF0136003A833D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD27606827EF0136003A833D /* Localizable.strings */; };
 		CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606A27EF09FC003A833D /* MainIntroView.swift */; };
 		CD27606D27EF2E32003A833D /* MainChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606C27EF2E32003A833D /* MainChecklistView.swift */; };
@@ -15,7 +17,7 @@
 		CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607427EF6F65003A833D /* ActivityViewController.swift */; };
 		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
 		CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D657827F21C64008CA2CF /* BabyDanger.swift */; };
-		CD54CA1F27F3B7C20077F52D /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CD54CA1E27F3B7C20077F52D /* MobileNetV2.mlmodel */; };
+		CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */; };
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
 		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CD8D330027F333B40058D54B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32FF27F333B40058D54B /* CameraView.swift */; };
@@ -32,6 +34,7 @@
 		CDA4C76C27EE5FDB003A0B94 /* AboutThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76B27EE5FDB003A0B94 /* AboutThanksView.swift */; };
 		CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */; };
 		CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76F27EE6EA3003A0B94 /* MainView.swift */; };
+		EAB450F042316072E5A6EC01 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		017B367D7E886563460BC77D /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2386FAE37BE5458B9753EEB2 /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8339E7F3613EF4B8D55B4F4A /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F4495FBB740CE7371BD41C /* Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		BE3562A027928DFE9796BF96 /* Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CD27606727EF0136003A833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606927EF0151003A833D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606A27EF09FC003A833D /* MainIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntroView.swift; sourceTree = "<group>"; };
@@ -61,7 +71,7 @@
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
-		CD54CA1E27F3B7C20077F52D /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_object_detection_mobile_object_labeler_v1_1.tflite"; sourceTree = "<group>"; };
 		CD8D32F527F2F7A50058D54B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCountry.swift; sourceTree = "<group>"; };
 		CD8D32FF27F333B40058D54B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -81,6 +91,8 @@
 		CDA4C76B27EE5FDB003A0B94 /* AboutThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThanksView.swift; sourceTree = "<group>"; };
 		CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAttributionsView.swift; sourceTree = "<group>"; };
 		CDA4C76F27EE6EA3003A0B94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB450F042316072E5A6EC01 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B046F10D52401E4BE03E3430 /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5530FA4CD6CB419DE6E6F31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */,
+				8339E7F3613EF4B8D55B4F4A /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework */,
+				239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9D124DC220194A913D0AD48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */,
+				98F4495FBB740CE7371BD41C /* Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig */,
+				2386FAE37BE5458B9753EEB2 /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.debug.xcconfig */,
+				017B367D7E886563460BC77D /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.release.xcconfig */,
+				BE3562A027928DFE9796BF96 /* Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig */,
+				F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CD3D657727F21C50008CA2CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +163,8 @@
 				CDA4C74B27EE5E57003A0B94 /* Babysafe Home AR iOS SwiftUITests */,
 				CDA4C75527EE5E57003A0B94 /* Babysafe Home AR iOS SwiftUIUITests */,
 				CDA4C73927EE5E54003A0B94 /* Products */,
+				A9D124DC220194A913D0AD48 /* Pods */,
+				5530FA4CD6CB419DE6E6F31D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +181,7 @@
 		CDA4C73A27EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD3D657727F21C50008CA2CF /* Models */,
 				CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */,
 				CDA4C73D27EE5E54003A0B94 /* ContentView.swift */,
@@ -160,7 +201,6 @@
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 				CD8D32FF27F333B40058D54B /* CameraView.swift */,
-				CD54CA1E27F3B7C20077F52D /* MobileNetV2.mlmodel */,
 			);
 			path = "Babysafe Home AR iOS SwiftUI";
 			sourceTree = "<group>";
@@ -197,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDA4C75C27EE5E57003A0B94 /* Build configuration list for PBXNativeTarget "Babysafe Home AR iOS SwiftUI" */;
 			buildPhases = (
+				D0C1383A410D712594DB8E5E /* [CP] Check Pods Manifest.lock */,
 				CDA4C73427EE5E54003A0B94 /* Sources */,
 				CDA4C73527EE5E54003A0B94 /* Frameworks */,
 				CDA4C73627EE5E54003A0B94 /* Resources */,
+				837A90EFCA47DCDF0CE14C91 /* [CP] Copy Pods Resources */,
+				6CCDFABF0B5FAFC9AC07AC1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDA4C75F27EE5E57003A0B94 /* Build configuration list for PBXNativeTarget "Babysafe Home AR iOS SwiftUITests" */;
 			buildPhases = (
+				4CA37B34C25CD83BE83E803B /* [CP] Check Pods Manifest.lock */,
 				CDA4C74427EE5E57003A0B94 /* Sources */,
 				CDA4C74527EE5E57003A0B94 /* Frameworks */,
 				CDA4C74627EE5E57003A0B94 /* Resources */,
@@ -232,9 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDA4C76227EE5E57003A0B94 /* Build configuration list for PBXNativeTarget "Babysafe Home AR iOS SwiftUIUITests" */;
 			buildPhases = (
+				1020E4C50A23A30E0205C11E /* [CP] Check Pods Manifest.lock */,
 				CDA4C74E27EE5E57003A0B94 /* Sources */,
 				CDA4C74F27EE5E57003A0B94 /* Frameworks */,
 				CDA4C75027EE5E57003A0B94 /* Resources */,
+				8F97013F794505A50A979068 /* [CP] Copy Pods Resources */,
+				41DD2D86D4EAA7911ED3A578 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
 				CD27606627EF0136003A833D /* Localizable.strings in Resources */,
 				CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */,
@@ -316,6 +364,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1020E4C50A23A30E0205C11E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41DD2D86D4EAA7911ED3A578 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA37B34C25CD83BE83E803B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Babysafe Home AR iOS SwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCDFABF0B5FAFC9AC07AC1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837A90EFCA47DCDF0CE14C91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F97013F794505A50A979068 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests/Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C1383A410D712594DB8E5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Babysafe Home AR iOS SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDA4C73427EE5E54003A0B94 /* Sources */ = {
@@ -339,7 +524,6 @@
 				CDA4C76627EE5EC5003A0B94 /* AboutView.swift in Sources */,
 				CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */,
 				CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */,
-				CD54CA1F27F3B7C20077F52D /* MobileNetV2.mlmodel in Sources */,
 				CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +689,7 @@
 		};
 		CDA4C75D27EE5E57003A0B94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -535,6 +720,7 @@
 		};
 		CDA4C75E27EE5E57003A0B94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F4495FBB740CE7371BD41C /* Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -565,6 +751,7 @@
 		};
 		CDA4C76027EE5E57003A0B94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3562A027928DFE9796BF96 /* Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,6 +772,7 @@
 		};
 		CDA4C76127EE5E57003A0B94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -605,6 +793,7 @@
 		};
 		CDA4C76327EE5E57003A0B94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2386FAE37BE5458B9753EEB2 /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +812,7 @@
 		};
 		CDA4C76427EE5E57003A0B94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 017B367D7E886563460BC77D /* Pods-Babysafe Home AR iOS SwiftUI-Babysafe Home AR iOS SwiftUIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
