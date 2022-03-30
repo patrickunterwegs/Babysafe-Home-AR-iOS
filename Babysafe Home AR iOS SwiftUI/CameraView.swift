@@ -11,9 +11,7 @@ import Vision
 
 struct CameraView: View {
     
-    @State var objectIdentifier: String = "test"
-    @State var objectConfidence: VNConfidence = 99
-    
+
     
     @StateObject var camera = CameraModel()
     @State private var isChecklistSheetPresented: Bool = false
@@ -21,29 +19,39 @@ struct CameraView: View {
     
     
     var body: some View {
-        ZStack {
-            CameraPreview(camera: camera)
-            //Color.black.ignoresSafeArea(.all, edges: .all)
-            //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.white)
-                .sheet(isPresented: $isChecklistSheetPresented, onDismiss: {
-                    print("Dismiss")
-                    self.isChecklistSheetPresented = false
-                    
-                }, content: {
-                    VStack {
-                        Text(String(objectIdentifier))
-                        Text(String(objectConfidence))
-                    }
-                }).padding(8)
+        VStack {
+            ZStack {
+                CameraPreview(camera: camera)
+                //Color.black.ignoresSafeArea(.all, edges: .all)
+                //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.white)
+                    .sheet(isPresented: $isChecklistSheetPresented, onDismiss: {
+                        print("Dismiss")
+                        self.isChecklistSheetPresented = false
+                        
+                    }, content: {
+                        VStack {
+                            Text(String(camera.objectIdentifier))
+                            Text(String(camera.objectConfidence))
+                        }
+                    }).padding(8)
+            }
+            
+            .onAppear(perform: {
+                camera.checkPermission()
+                //isChecklistSheetPresented = true       // JUST FOR TESTING!!!
+            })
+            .onDisappear(perform: {
+                camera.session.stopRunning()
+        })
+            
+            Spacer()
+            GroupBox {
+                HStack {
+                    Text(String(camera.objectIdentifier))
+                    Text(String(camera.objectConfidence))
+                }
+            }
         }
-        
-        .onAppear(perform: {
-            camera.checkPermission()
-            isChecklistSheetPresented = true       // JUST FOR TESTING!!!
-        })
-        .onDisappear(perform: {
-            camera.session.stopRunning()
-        })
         
         
         
@@ -68,6 +76,10 @@ struct CameraView: View {
         @Published var alert = false
         @Published var preview: AVCaptureVideoPreviewLayer!
         @Published var output = AVCaptureVideoDataOutput()
+        
+        @Published var objectIdentifier: String = ""
+        @Published var objectConfidence: VNConfidence = 0
+                
         
         //let model = MobileNetV2().model
         let model = SqueezeNet().model
@@ -139,7 +151,8 @@ struct CameraView: View {
                             print("Identifier \(result.identifier)")
                             print("Confidence \(result.confidence * 100)")
                             
-                            //objectIdentifier = result.identifier
+                            self.objectIdentifier = result.identifier
+                            self.objectConfidence = result.confidence
                         }
                     }
                 }
