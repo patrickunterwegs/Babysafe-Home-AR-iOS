@@ -9,10 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var selectedCountry: ShopCountry = .at
-    @State private var selectedShop: Shop = .amazonDE
-    @State private var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
-    
+    // creating the view model and storing it as state object and accessible with @EnvironmentObject
+    @StateObject var model: BabysafeViewModel = BabysafeViewModel()
+
+
     var body: some View {
         
             TabView {
@@ -28,18 +28,18 @@ struct MainView: View {
                 }
                 
                 NavigationView {
-                    MainChecklistView(babyDangers: $babyDangers, selectedShop: $selectedShop)
+                    MainChecklistView()
                         .navigationTitle("main_tab_checklist")
                         .navigationBarTitleDisplayMode(.inline)
                 }
-                .badge(10)
+                .badge(model.getNumUnbanned())
                 .tabItem {
                     Image(systemName: "checklist")
                     Text("main_tab_checklist")
                 }
                     
                 NavigationView {
-                    MainScoreView(babyDangers: $babyDangers)
+                    MainScoreView()
                         .navigationTitle("main_tab_score")
                         .navigationBarTitleDisplayMode(.inline)
                 }.tabItem {
@@ -59,7 +59,7 @@ struct MainView: View {
                 }
                 
                 NavigationView {
-                    AboutView(selectedCountry: $selectedCountry, selectedShop: $selectedShop)
+                    AboutView()
                         .navigationTitle("More")
                         .navigationBarTitleDisplayMode(.inline)
                 }
@@ -70,6 +70,7 @@ struct MainView: View {
                 
             }
             .font(.headline)
+            .environmentObject(model)
     }
 }
 

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MainChecklistView: View {
     
-    @Binding var babyDangers: [BabyDanger]
-    @Binding var selectedShop: Shop
+    @EnvironmentObject var model: BabysafeViewModel
+
     
     var body: some View {
         ScrollView {
@@ -27,9 +27,9 @@ struct MainChecklistView: View {
                     Spacer()
                 }
                 
-                ForEach($babyDangers) { $babyDanger in
+                ForEach($model.babyDangers) { babyDanger in
                     //if babyDanger.isUnlocked {
-                        ChecklistItem(babyDanger: $babyDanger, selectedShop: $selectedShop)
+                    ChecklistItem(babyDanger: babyDanger, selectedShop: $model.selectedShop)
                     //}
                 }
             }
@@ -39,7 +39,7 @@ struct MainChecklistView: View {
 
 struct MainChecklistView_Previews: PreviewProvider {
     static var previews: some View {
-        MainChecklistView(babyDangers: .constant(BabyDanger.allBabyDangers), selectedShop: .constant(Shop.amazonDE))
+        MainChecklistView().environmentObject(BabysafeViewModel())
     }
 }
 

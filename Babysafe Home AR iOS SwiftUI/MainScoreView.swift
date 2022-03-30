@@ -9,8 +9,9 @@ import SwiftUI
 
 struct MainScoreView: View {
     
-    @Binding var babyDangers: [BabyDanger]
-    
+    //@Binding var babyDangers: [BabyDanger]
+    @EnvironmentObject var model: BabysafeViewModel
+
     
     var body: some View {
         ScrollView {
@@ -21,12 +22,12 @@ struct MainScoreView: View {
                     Badge(
                         image: "ic_badge_unlocked",
                         text: "score_badge_unlocked",
-                        percentReveal: CGFloat(Float(getNumUnlocked(babyDangers: babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                        percentReveal: CGFloat(Float(getNumUnlocked(babyDangers: model.babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
                     )
                     Badge(
                         image: "ic_badge_banned",
                         text: "score_badge_banned",
-                        percentReveal: CGFloat(Float(getNumBanned(babyDangers: babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
+                        percentReveal: CGFloat(Float(getNumBanned(babyDangers: model.babyDangers)) / Float(BabyDanger.allBabyDangers.count)*100)
                     )
                     Badge(
                         image: "ic_badge_articles",
@@ -59,7 +60,7 @@ struct MainScoreView: View {
 
 struct MainScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        MainScoreView(babyDangers: .constant(BabyDanger.allBabyDangers))
+        MainScoreView().environmentObject(BabysafeViewModel())
     }
 }
 

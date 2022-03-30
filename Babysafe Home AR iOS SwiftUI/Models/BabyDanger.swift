@@ -337,23 +337,3 @@ extension BabyDanger {
         return shareText
     }
 }
-
-func getNumUnlocked(babyDangers: [BabyDanger]) -> Int {
-    var numUnlocked = 0
-    babyDangers.forEach { babyDanger in
-        if babyDanger.isUnlocked {
-            numUnlocked += 1
-        }
-    }
-    return numUnlocked
-}
-
-func getNumBanned(babyDangers: [BabyDanger]) -> Int {
-    var numBanned = 0
-    babyDangers.forEach { babyDanger in
-        if babyDanger.isBanned {
-            numBanned += 1
-        }
-    }
-    return numBanned
-}

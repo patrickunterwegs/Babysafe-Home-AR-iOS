@@ -10,7 +10,6 @@ import SwiftUI
 struct MainIntroView: View {
     
     //@State private var babyname: String = "Your baby"
-
     
     var body: some View {
         ScrollView {

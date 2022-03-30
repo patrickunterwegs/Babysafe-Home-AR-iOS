@@ -14,9 +14,11 @@ import MLKit
 
 struct CameraView: View {
     
-    
     @StateObject var camera = CameraModel()
     @State private var isChecklistSheetPresented: Bool = false
+    
+    @EnvironmentObject var model: BabysafeViewModel
+
     
     
     var body: some View {
@@ -51,15 +53,12 @@ struct CameraView: View {
                 }
             }
         }
-        
-        
-        
     }
     
     
     struct CameraView_Previews: PreviewProvider {
         static var previews: some View {
-            CameraView()
+            CameraView().environmentObject(BabysafeViewModel())
         }
     }
     
@@ -70,6 +69,7 @@ struct CameraView: View {
     // camera model
     class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         
+        @EnvironmentObject var model: BabysafeViewModel
         
         @Published var session = AVCaptureSession()
         @Published var alert = false

@@ -18,6 +18,7 @@
 		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
 		CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D657827F21C64008CA2CF /* BabyDanger.swift */; };
 		CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */; };
+		CD490E5C27F4E51300BFB504 /* BabysafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */; };
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
 		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CD8D330027F333B40058D54B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32FF27F333B40058D54B /* CameraView.swift */; };
@@ -72,6 +73,7 @@
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
 		CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_object_detection_mobile_object_labeler_v1_1.tflite"; sourceTree = "<group>"; };
+		CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabysafeViewModel.swift; sourceTree = "<group>"; };
 		CD8D32F527F2F7A50058D54B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCountry.swift; sourceTree = "<group>"; };
 		CD8D32FF27F333B40058D54B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -182,12 +184,14 @@
 			isa = PBXGroup;
 			children = (
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
+				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
 				CD3D657727F21C50008CA2CF /* Models */,
 				CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */,
 				CDA4C73D27EE5E54003A0B94 /* ContentView.swift */,
 				CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */,
 				CDA4C76F27EE6EA3003A0B94 /* MainView.swift */,
 				CD27606A27EF09FC003A833D /* MainIntroView.swift */,
+				CD8D32FF27F333B40058D54B /* CameraView.swift */,
 				CD27606C27EF2E32003A833D /* MainChecklistView.swift */,
 				CD27606E27EF355A003A833D /* MainScoreView.swift */,
 				CD27607027EF4129003A833D /* MainTipsView.swift */,
@@ -200,7 +204,6 @@
 				CD27606827EF0136003A833D /* Localizable.strings */,
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
-				CD8D32FF27F333B40058D54B /* CameraView.swift */,
 			);
 			path = "Babysafe Home AR iOS SwiftUI";
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				CD8D330027F333B40058D54B /* CameraView.swift in Sources */,
 				CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */,
 				CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */,
+				CD490E5C27F4E51300BFB504 /* BabysafeViewModel.swift in Sources */,
 				CDA4C76A27EE5FC8003A0B94 /* AboutDisclaimerView.swift in Sources */,
 				CD27607127EF4129003A833D /* MainTipsView.swift in Sources */,
 				CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */,

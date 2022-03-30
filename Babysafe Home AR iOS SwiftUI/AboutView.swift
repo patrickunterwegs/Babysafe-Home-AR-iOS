@@ -10,8 +10,7 @@ import Foundation
 
 struct AboutView: View {
     
-    @Binding var selectedCountry: ShopCountry
-    @Binding var selectedShop: Shop
+    @EnvironmentObject var model: BabysafeViewModel
     
     @State private var isTellAFriendPresented: Bool = false
     
@@ -33,15 +32,15 @@ struct AboutView: View {
                 Section(header: Text("dialog_shop_select_title"),
                         footer: Text("dialog_shop_select_message2")) {
                     Text("dialog_shop_select_message").font(.footnote).foregroundColor(.gray)
-                    Picker("Country", selection: $selectedCountry) {
+                    Picker("Country", selection: $model.selectedCountry) {
                         ForEach(ShopCountry.allCases) { country in
                             Text(country.name).tag(country.id)
                         }
-                    }.onChange(of: selectedCountry) { country in
-                        selectedShop = selectedCountry.shops.first!
+                    }.onChange(of: model.selectedCountry) { country in
+                        model.selectedShop = model.selectedCountry.shops.first!
                     }
-                    Picker("Shop", selection: $selectedShop) {
-                        ForEach(selectedCountry.shops) { shop in
+                    Picker("Shop", selection: $model.selectedShop) {
+                        ForEach(model.selectedCountry.shops) { shop in
                             Text(shop.name).tag(shop.id)
                         }
                     }
@@ -87,7 +86,7 @@ struct AboutView: View {
 
 struct AboutView_Previews: PreviewProvider {
     static var previews: some View {
-        AboutView(selectedCountry: .constant(.at), selectedShop: .constant(.babywalzAT))
+        AboutView().environmentObject(BabysafeViewModel())
     }
 }
 
