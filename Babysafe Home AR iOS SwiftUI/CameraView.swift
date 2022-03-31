@@ -15,15 +15,15 @@ import MLKit
 struct CameraView: View {
     
     @StateObject var camera = CameraModel()
-   
+    
     @EnvironmentObject var model: BabysafeViewModel
-
+    
     
     
     var body: some View {
         VStack {
             ZStack {
-
+                
                 CameraPreview(camera: camera)
                     .onReceive(model.$newDangerDetected, perform: { detected in
                         if detected {
@@ -51,26 +51,26 @@ struct CameraView: View {
                onDismiss: { model.newDangerDetected = false },
                content: {
             NavigationView {
-
-            ScrollView {
-                VStack(alignment: .center) {
-                    
-                    ForEach($model.babyDangers) { $babyDanger in
-                        if(babyDanger.isCurDetected) {
-                            ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
+                
+                ScrollView {
+                    VStack(alignment: .center) {
+                        
+                        ForEach($model.babyDangers) { $babyDanger in
+                            if(babyDanger.isCurDetected) {
+                                ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
+                            }
+                        }
+                    }.background()
+                }
+                .navigationTitle("ar_found_dangers")
+                .navigationBarTitleDisplayMode(.large)
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("close") {
+                            model.newDangerDetected = false
                         }
                     }
-                }.background()
-            }
-            .navigationTitle("ar_found_dangers")
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("close") {
-                        model.newDangerDetected = false
-                    }
                 }
-            }
             }
         })
     }
@@ -86,14 +86,14 @@ struct CameraView: View {
     
     // camera model
     class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
-                
+        
         @Published var session = AVCaptureSession()
         @Published var alert = false
         @Published var preview: AVCaptureVideoPreviewLayer!
         @Published var output = AVCaptureVideoDataOutput()
         
         @Published var model: BabysafeViewModel!   // is set when the CameraModel gets instantiated
-
+        
         
         @Published var objectIdentifier: String = ""
         
@@ -178,7 +178,7 @@ struct CameraView: View {
             width: CGFloat,
             height: CGFloat
         ) {
-
+            
             guard
                 let localModelFilePath = Bundle.main.path(
                     forResource: Constant.localModelFile.name,
@@ -207,7 +207,7 @@ struct CameraView: View {
                 return
             }
             
-
+            
             // only for debugging!
             let resultsText = objects.first?.labels.map { label -> String in
                 return "Label: \(label.text), Confidence: \(label.confidence), Index: \(label.index)"
@@ -232,57 +232,57 @@ struct CameraView: View {
         
         
         public static func imageOrientation(
-          fromDevicePosition devicePosition: AVCaptureDevice.Position = .back
+            fromDevicePosition devicePosition: AVCaptureDevice.Position = .back
         ) -> UIImage.Orientation {
-          var deviceOrientation = UIDevice.current.orientation
-          if deviceOrientation == .faceDown || deviceOrientation == .faceUp
-            || deviceOrientation
-              == .unknown
-          {
-            deviceOrientation = currentUIOrientation()
-          }
-          switch deviceOrientation {
-          case .portrait:
-            return devicePosition == .front ? .leftMirrored : .right
-          case .landscapeLeft:
-            return devicePosition == .front ? .downMirrored : .up
-          case .portraitUpsideDown:
-            return devicePosition == .front ? .rightMirrored : .left
-          case .landscapeRight:
-            return devicePosition == .front ? .upMirrored : .down
-          case .faceDown, .faceUp, .unknown:
-            return .up
-          @unknown default:
-            fatalError()
-          }
+            var deviceOrientation = UIDevice.current.orientation
+            if deviceOrientation == .faceDown || deviceOrientation == .faceUp
+                || deviceOrientation
+                == .unknown
+            {
+                deviceOrientation = currentUIOrientation()
+            }
+            switch deviceOrientation {
+            case .portrait:
+                return devicePosition == .front ? .leftMirrored : .right
+            case .landscapeLeft:
+                return devicePosition == .front ? .downMirrored : .up
+            case .portraitUpsideDown:
+                return devicePosition == .front ? .rightMirrored : .left
+            case .landscapeRight:
+                return devicePosition == .front ? .upMirrored : .down
+            case .faceDown, .faceUp, .unknown:
+                return .up
+            @unknown default:
+                fatalError()
+            }
         }
         
         
         private static func currentUIOrientation() -> UIDeviceOrientation {
-          let deviceOrientation = { () -> UIDeviceOrientation in
-            switch UIApplication.shared.statusBarOrientation {
-            case .landscapeLeft:
-              return .landscapeRight
-            case .landscapeRight:
-              return .landscapeLeft
-            case .portraitUpsideDown:
-              return .portraitUpsideDown
-            case .portrait, .unknown:
-              return .portrait
-            @unknown default:
-              fatalError()
+            let deviceOrientation = { () -> UIDeviceOrientation in
+                switch UIApplication.shared.statusBarOrientation {
+                case .landscapeLeft:
+                    return .landscapeRight
+                case .landscapeRight:
+                    return .landscapeLeft
+                case .portraitUpsideDown:
+                    return .portraitUpsideDown
+                case .portrait, .unknown:
+                    return .portrait
+                @unknown default:
+                    fatalError()
+                }
             }
-          }
-          guard Thread.isMainThread else {
-            var currentOrientation: UIDeviceOrientation = .portrait
-            DispatchQueue.main.sync {
-              currentOrientation = deviceOrientation()
+            guard Thread.isMainThread else {
+                var currentOrientation: UIDeviceOrientation = .portrait
+                DispatchQueue.main.sync {
+                    currentOrientation = deviceOrientation()
+                }
+                return currentOrientation
             }
-            return currentOrientation
-          }
-          return deviceOrientation()
+            return deviceOrientation()
         }
-      
+        
     }
     
     
@@ -317,11 +317,11 @@ struct CameraView: View {
     
     
     private enum Constant {
-      static let videoDataOutputQueueLabel = "com.google.mlkit.visiondetector.VideoDataOutputQueue"
-      static let sessionQueueLabel = "com.google.mlkit.visiondetector.SessionQueue"
-      static let localModelFile = (name: "lite-model_object_detection_mobile_object_labeler_v1_1", type: "tflite")
-      static let labelConfidenceThreshold = 0.9
-      static let labelMaxResultCount = 3
-
+        static let videoDataOutputQueueLabel = "com.google.mlkit.visiondetector.VideoDataOutputQueue"
+        static let sessionQueueLabel = "com.google.mlkit.visiondetector.SessionQueue"
+        static let localModelFile = (name: "lite-model_object_detection_mobile_object_labeler_v1_1", type: "tflite")
+        static let labelConfidenceThreshold = 0.9
+        static let labelMaxResultCount = 3
+        
     }
 }
