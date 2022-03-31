@@ -119,6 +119,7 @@ struct CameraView: View {
                 
                 // same for output
                 if self.session.canAddOutput(self.output) {
+                    output.alwaysDiscardsLateVideoFrames = true
                     output.setSampleBufferDelegate(self, queue: DispatchQueue(label: "CameraView"))
                     self.session.addOutput(self.output)
                 }
@@ -143,14 +144,8 @@ struct CameraView: View {
             
             //lastFrame = sampleBuffer
             let visionImage = VisionImage(buffer: sampleBuffer)
-            //let orientation = UIUtilities.imageOrientation(fromDevicePosition: .back)
-            //visionImage.orientation = orientation
-            
-            guard let inputImage = MLImage(sampleBuffer: sampleBuffer) else {
-                print("Failed to create MLImage from sample buffer.")
-                return
-            }
-            //inputImage.orientation = orientation
+            let orientation = CameraView.CameraModel.imageOrientation(fromDevicePosition: .back)
+            visionImage.orientation = orientation
             
             let imageWidth = CGFloat(CVPixelBufferGetWidth(imageBuffer))
             let imageHeight = CGFloat(CVPixelBufferGetHeight(imageBuffer))
@@ -165,9 +160,7 @@ struct CameraView: View {
             width: CGFloat,
             height: CGFloat
         ) {
-            
-            // load local model
-            var options: CommonImageLabelerOptions!
+
             guard
                 let localModelFilePath = Bundle.main.path(
                     forResource: Constant.localModelFile.name,
@@ -179,8 +172,9 @@ struct CameraView: View {
             }
             
             let localModel = LocalModel(path: localModelFilePath)
-            options = CustomImageLabelerOptions(localModel: localModel)
+            let options = CustomImageLabelerOptions(localModel: localModel)
             options.confidenceThreshold = NSNumber(floatLiteral: Constant.labelConfidenceThreshold)
+            options.maxResultCount = Constant.labelMaxResultCount
             
             let onDeviceLabeler = ImageLabeler.imageLabeler(options: options)
             let labels: [ImageLabel]
@@ -193,6 +187,8 @@ struct CameraView: View {
                 return
             }
             
+
+            // only for debugging!
             let resultsText = labels.map { label -> String in
                 return "Label: \(label.text), Confidence: \(label.confidence), Index: \(label.index)"
             }.joined(separator: "\n")
@@ -213,6 +209,60 @@ struct CameraView: View {
                 }
             }
         }
+        
+        
+        public static func imageOrientation(
+          fromDevicePosition devicePosition: AVCaptureDevice.Position = .back
+        ) -> UIImage.Orientation {
+          var deviceOrientation = UIDevice.current.orientation
+          if deviceOrientation == .faceDown || deviceOrientation == .faceUp
+            || deviceOrientation
+              == .unknown
+          {
+            deviceOrientation = currentUIOrientation()
+          }
+          switch deviceOrientation {
+          case .portrait:
+            return devicePosition == .front ? .leftMirrored : .right
+          case .landscapeLeft:
+            return devicePosition == .front ? .downMirrored : .up
+          case .portraitUpsideDown:
+            return devicePosition == .front ? .rightMirrored : .left
+          case .landscapeRight:
+            return devicePosition == .front ? .upMirrored : .down
+          case .faceDown, .faceUp, .unknown:
+            return .up
+          @unknown default:
+            fatalError()
+          }
+        }
+        
+        
+        private static func currentUIOrientation() -> UIDeviceOrientation {
+          let deviceOrientation = { () -> UIDeviceOrientation in
+            switch UIApplication.shared.statusBarOrientation {
+            case .landscapeLeft:
+              return .landscapeRight
+            case .landscapeRight:
+              return .landscapeLeft
+            case .portraitUpsideDown:
+              return .portraitUpsideDown
+            case .portrait, .unknown:
+              return .portrait
+            @unknown default:
+              fatalError()
+            }
+          }
+          guard Thread.isMainThread else {
+            var currentOrientation: UIDeviceOrientation = .portrait
+            DispatchQueue.main.sync {
+              currentOrientation = deviceOrientation()
+            }
+            return currentOrientation
+          }
+          return deviceOrientation()
+        }
+      
     }
     
     
@@ -250,7 +300,8 @@ struct CameraView: View {
       static let videoDataOutputQueueLabel = "com.google.mlkit.visiondetector.VideoDataOutputQueue"
       static let sessionQueueLabel = "com.google.mlkit.visiondetector.SessionQueue"
       static let localModelFile = (name: "lite-model_object_detection_mobile_object_labeler_v1_1", type: "tflite")
-      static let labelConfidenceThreshold = 0.8
+      static let labelConfidenceThreshold = 0.9
+      static let labelMaxResultCount = 3
 
     }
 }
