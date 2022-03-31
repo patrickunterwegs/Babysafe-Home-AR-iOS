@@ -50,6 +50,8 @@ struct CameraView: View {
         .sheet(isPresented: $model.newDangerDetected,
                onDismiss: { model.newDangerDetected = false },
                content: {
+            NavigationView {
+
             ScrollView {
                 VStack(alignment: .center) {
                     
@@ -59,6 +61,16 @@ struct CameraView: View {
                         }
                     }
                 }.background()
+            }
+            .navigationTitle("ar_found_dangers")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("close") {
+                        model.newDangerDetected = false
+                    }
+                }
+            }
             }
         })
     }

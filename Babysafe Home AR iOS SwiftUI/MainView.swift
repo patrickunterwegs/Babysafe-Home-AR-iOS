@@ -85,11 +85,11 @@ struct MainView: View {
                         .navigationBarTitleDisplayMode(.inline)
                         .toolbar {
                             ToolbarItem(placement: .confirmationAction) {
-                                Button("Close") {
+                                Button("close") {
                                     isPresentingCameraView = false
                                 }
                             }
-                        } 
+                        }
                 }
             }
             .environmentObject(model)
