@@ -11,6 +11,9 @@ struct MainView: View {
     
     // creating the view model and storing it as state object and accessible with @EnvironmentObject
     @StateObject var model: BabysafeViewModel = BabysafeViewModel()
+    
+    @State var isPresentingCameraView = false
+
 
 
     var body: some View {
@@ -18,7 +21,7 @@ struct MainView: View {
             TabView {
                 
                 NavigationView {
-                    MainIntroView()
+                    MainIntroView(isPresentingCameraView: $isPresentingCameraView)
                         .navigationTitle("main_tab_intro")
                         .navigationBarTitleDisplayMode(.inline)
                 }
@@ -75,7 +78,22 @@ struct MainView: View {
                 
             }
             .font(.headline)
+            .sheet(isPresented: $isPresentingCameraView) {
+                NavigationView {
+                    CameraView()
+                        .navigationTitle("AR Camera")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Close") {
+                                    isPresentingCameraView = false
+                                }
+                            }
+                        } 
+                }
+            }
             .environmentObject(model)
+        
     }
 }
 

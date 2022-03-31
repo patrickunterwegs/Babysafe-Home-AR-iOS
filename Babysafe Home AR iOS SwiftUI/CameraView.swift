@@ -35,7 +35,7 @@ struct CameraView: View {
                         VStack {
                             Text(String(camera.objectIdentifier))
                         }
-                    }).padding(8)
+                    })   //.padding(8)
             }
             
             .onAppear(perform: {

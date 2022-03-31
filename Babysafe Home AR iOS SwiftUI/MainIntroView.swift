@@ -11,6 +11,9 @@ struct MainIntroView: View {
     
     //@State private var babyname: String = "Your baby"
     
+    @Binding var isPresentingCameraView: Bool
+
+    
     var body: some View {
         ScrollView {
             HStack {
@@ -56,9 +59,17 @@ struct MainIntroView: View {
                     }
                      */
                     
+                    /*
                     NavigationLink(destination: CameraView()) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
                     }
+                     */
+                    Button(action: {
+                        isPresentingCameraView = true
+                    }) {
+                        Label("start_ar_view", systemImage: "camera.viewfinder")
+                      }
+                    
                     
                     /* Button(action: {}) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
@@ -98,6 +109,6 @@ struct MainIntroView: View {
 
 struct MainIntroView_Previews: PreviewProvider {
     static var previews: some View {
-        MainIntroView()
+        MainIntroView(isPresentingCameraView: .constant(false))
     }
 }
