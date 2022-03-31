@@ -21,11 +21,12 @@ struct AboutAttributionsView: View {
                     Spacer()
                     Text("attributions_header")
                         .font(.title)
+                        .multilineTextAlignment(.center)
                         .padding(.bottom)
                     Spacer()
                     Text("attributions_text")
-                        .multilineTextAlignment(.center)
                         .font(.body)
+                        .multilineTextAlignment(.center)
                     Spacer()
                 }
                 Spacer()
