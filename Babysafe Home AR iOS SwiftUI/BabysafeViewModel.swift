@@ -42,14 +42,17 @@ class BabysafeViewModel: ObservableObject {
     }
     
     func unlock(objectId: Int) {
+        
+        var dangerDetected = false
        
         for i in 0 ... babyDangers.count-1 {
-            if babyDangers[i].objectIds.contains(objectId) {
+            if babyDangers[i].objectIds.contains(objectId) && !babyDangers[i].isCurDetected {
                 babyDangers[i].isUnlocked = true
                 babyDangers[i].isCurDetected = true
-                newDangerDetected = true
+                dangerDetected = true
             }
         }
+        newDangerDetected = dangerDetected      // we notify newDangerDetected only once!
     }
     
     func resetCurDetected() {

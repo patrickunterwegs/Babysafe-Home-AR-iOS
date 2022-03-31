@@ -70,8 +70,6 @@ struct CameraView: View {
         }
     }
     
-    
-    
     // https://www.youtube.com/watch?v=8hvaniprctk
     
     // camera model
