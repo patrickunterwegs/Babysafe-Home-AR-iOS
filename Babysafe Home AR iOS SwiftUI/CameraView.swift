@@ -63,7 +63,7 @@ struct CameraView: View {
                 }.background()
             }
             .navigationTitle("ar_found_dangers")
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("close") {
