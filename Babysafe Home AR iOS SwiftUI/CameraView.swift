@@ -15,8 +15,7 @@ import MLKit
 struct CameraView: View {
     
     @StateObject var camera = CameraModel()
-    @State private var isChecklistSheetPresented: Bool = false
-    
+   
     @EnvironmentObject var model: BabysafeViewModel
 
     
@@ -26,6 +25,13 @@ struct CameraView: View {
             ZStack {
 
                 CameraPreview(camera: camera)
+                    .onReceive(model.$newDangerDetected, perform: { detected in
+                        if detected {
+                            camera.session.stopRunning()
+                        } else {
+                            camera.session.startRunning()
+                        }
+                    })
                 
                 Spacer()
                 GroupBox {
@@ -34,8 +40,16 @@ struct CameraView: View {
                     }
                 }
             }
-            
-            Spacer()
+        }.onAppear(perform: {
+            camera.checkPermission()
+            model.resetCurDetected()
+        })
+        .onDisappear(perform: {
+            camera.session.stopRunning()
+        })
+        .sheet(isPresented: $model.newDangerDetected,
+               onDismiss: { model.newDangerDetected = false },
+               content: {
             ScrollView {
                 VStack(alignment: .center) {
                     
@@ -46,12 +60,6 @@ struct CameraView: View {
                     }
                 }.background()
             }
-        }.onAppear(perform: {
-            camera.checkPermission()
-            model.resetCurDetected()
-        })
-        .onDisappear(perform: {
-            camera.session.stopRunning()
         })
     }
     
@@ -274,7 +282,7 @@ struct CameraView: View {
         
         @ObservedObject var camera: CameraModel
         @EnvironmentObject var model: BabysafeViewModel
-
+        
         
         func makeUIView(context: Context) -> UIView {
             let view = UIView(frame: UIScreen.main.bounds)

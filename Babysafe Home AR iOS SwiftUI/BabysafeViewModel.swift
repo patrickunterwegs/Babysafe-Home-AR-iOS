@@ -13,6 +13,9 @@ class BabysafeViewModel: ObservableObject {
     @Published var selectedShop: Shop = .amazonDE
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     
+    @Published var newDangerDetected = false
+
+    
     
     func getNumUnlocked() -> Int {
         var numUnlocked = 0
@@ -44,6 +47,7 @@ class BabysafeViewModel: ObservableObject {
             if babyDangers[i].objectIds.contains(objectId) {
                 babyDangers[i].isUnlocked = true
                 babyDangers[i].isCurDetected = true
+                newDangerDetected = true
             }
         }
     }
