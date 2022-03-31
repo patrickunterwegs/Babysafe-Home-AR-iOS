@@ -17,6 +17,7 @@
 		CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607427EF6F65003A833D /* ActivityViewController.swift */; };
 		CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27607627EF9D14003A833D /* MainTipDetailView.swift */; };
 		CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D657827F21C64008CA2CF /* BabyDanger.swift */; };
+		CD47B19D27F63B1D000D526F /* ChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */; };
 		CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */; };
 		CD490E5C27F4E51300BFB504 /* BabysafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */; };
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
@@ -72,6 +73,7 @@
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
+		CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemView.swift; sourceTree = "<group>"; };
 		CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_object_detection_mobile_object_labeler_v1_1.tflite"; sourceTree = "<group>"; };
 		CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabysafeViewModel.swift; sourceTree = "<group>"; };
 		CD8D32F527F2F7A50058D54B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				CD27606A27EF09FC003A833D /* MainIntroView.swift */,
 				CD8D32FF27F333B40058D54B /* CameraView.swift */,
 				CD27606C27EF2E32003A833D /* MainChecklistView.swift */,
+				CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */,
 				CD27606E27EF355A003A833D /* MainScoreView.swift */,
 				CD27607027EF4129003A833D /* MainTipsView.swift */,
 				CD27607627EF9D14003A833D /* MainTipDetailView.swift */,
@@ -520,6 +523,7 @@
 				CDA4C76A27EE5FC8003A0B94 /* AboutDisclaimerView.swift in Sources */,
 				CD27607127EF4129003A833D /* MainTipsView.swift in Sources */,
 				CD27607727EF9D14003A833D /* MainTipDetailView.swift in Sources */,
+				CD47B19D27F63B1D000D526F /* ChecklistItemView.swift in Sources */,
 				CDA4C76C27EE5FDB003A0B94 /* AboutThanksView.swift in Sources */,
 				CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */,
 				CD27607527EF6F65003A833D /* ActivityViewController.swift in Sources */,

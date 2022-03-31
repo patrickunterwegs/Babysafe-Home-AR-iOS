@@ -24,35 +24,35 @@ struct CameraView: View {
     var body: some View {
         VStack {
             ZStack {
+
                 CameraPreview(camera: camera)
-                //Color.black.ignoresSafeArea(.all, edges: .all)
-                //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.white)
-                    .sheet(isPresented: $isChecklistSheetPresented, onDismiss: {
-                        print("Dismiss")
-                        self.isChecklistSheetPresented = false
-                        
-                    }, content: {
-                        VStack {
-                            Text(String(camera.objectIdentifier))
-                        }
-                    })   //.padding(8)
-            }
-            
-            .onAppear(perform: {
-                camera.checkPermission()
-                //isChecklistSheetPresented = true       // JUST FOR TESTING!!!
-            })
-            .onDisappear(perform: {
-                camera.session.stopRunning()
-            })
-            
-            Spacer()
-            GroupBox {
-                HStack {
-                    Text(String(camera.objectIdentifier))
+                
+                Spacer()
+                GroupBox {
+                    HStack {
+                        Text(String(camera.objectIdentifier))
+                    }
                 }
             }
-        }
+            
+            Spacer()
+            ScrollView {
+                VStack(alignment: .center) {
+                    
+                    ForEach($model.babyDangers) { $babyDanger in
+                        if(babyDanger.isCurDetected) {
+                            ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
+                        }
+                    }
+                }.background()
+            }
+        }.onAppear(perform: {
+            camera.checkPermission()
+            model.resetCurDetected()
+        })
+        .onDisappear(perform: {
+            camera.session.stopRunning()
+        })
     }
     
     
