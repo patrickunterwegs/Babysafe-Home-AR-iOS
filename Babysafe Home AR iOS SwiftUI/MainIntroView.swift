@@ -69,7 +69,7 @@ struct MainIntroView: View {
                     .padding()
                     
                     GroupBox {
-                        Text("dialog_first_time_title")
+                        Text("intro_howto_header")
                             .font(.title)
                         Spacer()
                         Text("intro_howto_text")
@@ -78,7 +78,7 @@ struct MainIntroView: View {
                             .padding(.bottom)
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
-                        Text("intro_howto_header")
+                        Text("dialog_first_time_title")
                             .font(.title3)
                             .padding(.bottom, 4)
                         Text("dialog_first_time_message")

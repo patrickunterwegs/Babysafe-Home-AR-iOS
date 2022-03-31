@@ -26,6 +26,7 @@ struct MainView: View {
                     Image(systemName: "dot.circle.viewfinder")
                     Text("main_tab_intro")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 NavigationView {
                     MainChecklistView()
@@ -37,6 +38,7 @@ struct MainView: View {
                     Image(systemName: "checklist")
                     Text("main_tab_checklist")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                     
                 NavigationView {
                     MainScoreView()
@@ -46,6 +48,7 @@ struct MainView: View {
                     Image(systemName: "star")
                     Text("main_tab_score")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 NavigationView {
                     MainTipsView()
@@ -57,6 +60,7 @@ struct MainView: View {
                     Image(systemName: "lightbulb")
                     Text("main_tab_tips")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
                 NavigationView {
                     AboutView()
@@ -67,6 +71,7 @@ struct MainView: View {
                     Image(systemName: "ellipsis")
                     Text("More")
                 }
+                .navigationViewStyle(StackNavigationViewStyle())
                 
             }
             .font(.headline)

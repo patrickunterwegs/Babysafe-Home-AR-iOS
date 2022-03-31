@@ -16,6 +16,7 @@ struct MainChecklistView: View {
         ScrollView {
             VStack(alignment: .center) {
                 HStack {
+                    Spacer()
                     Image("cat_superman")
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
