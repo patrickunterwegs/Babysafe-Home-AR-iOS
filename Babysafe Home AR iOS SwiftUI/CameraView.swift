@@ -172,39 +172,41 @@ struct CameraView: View {
             }
             
             let localModel = LocalModel(path: localModelFilePath)
-            let options = CustomImageLabelerOptions(localModel: localModel)
-            options.confidenceThreshold = NSNumber(floatLiteral: Constant.labelConfidenceThreshold)
-            options.maxResultCount = Constant.labelMaxResultCount
+            let options = CustomObjectDetectorOptions(localModel: localModel)
+            options.detectorMode = .singleImage
+            options.shouldEnableClassification = true
+            options.shouldEnableMultipleObjects = false
+            options.classificationConfidenceThreshold = NSNumber(floatLiteral: Constant.labelConfidenceThreshold)
+            options.maxPerObjectLabelCount = Constant.labelMaxResultCount
             
-            let onDeviceLabeler = ImageLabeler.imageLabeler(options: options)
-            let labels: [ImageLabel]
+            
+            let objectDetector = ObjectDetector.objectDetector(options: options)
+            var objects: [Object]
             do {
-                labels = try onDeviceLabeler.results(in: visionImage)
+                objects = try objectDetector.results(in: visionImage)
             } catch let error {
-                let errorString = error.localizedDescription
-                print("On-Device label detection failed with error: \(errorString)")
-                //self.updatePreviewOverlayViewWithLastFrame()
+                // Handle the error.
                 return
             }
             
 
             // only for debugging!
-            let resultsText = labels.map { label -> String in
+            let resultsText = objects.first?.labels.map { label -> String in
                 return "Label: \(label.text), Confidence: \(label.confidence), Index: \(label.index)"
             }.joined(separator: "\n")
             
             //self.updatePreviewOverlayViewWithLastFrame()
             
-            guard resultsText.count != 0 else { return }
+            guard resultsText?.count != 0 else { return }
             
             weak var weakSelf = self
             DispatchQueue.main.sync {
                 
                 // Check labels and update UI here!!!
                 print(resultsText)
-                objectIdentifier = resultsText
+                objectIdentifier = resultsText ?? "nothing found"
                 
-                labels.forEach { label in
+                objects.first?.labels.forEach { label in
                     model.unlock(objectId: label.index)
                 }
             }
