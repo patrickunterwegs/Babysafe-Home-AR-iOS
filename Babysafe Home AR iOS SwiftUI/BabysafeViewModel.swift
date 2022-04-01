@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import BottomSheet
+
 
 class BabysafeViewModel: ObservableObject {
     
@@ -14,6 +16,8 @@ class BabysafeViewModel: ObservableObject {
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     
     @Published var newDangerDetected = false
+    @Published var bottomSheetPosition: BottomSheetPosition = .hidden    // for CameraView
+
 
     
     
@@ -59,5 +63,6 @@ class BabysafeViewModel: ObservableObject {
         for i in 0 ... babyDangers.count-1 {
             babyDangers[i].isCurDetected = false
         }
+        newDangerDetected = false
     }
 }

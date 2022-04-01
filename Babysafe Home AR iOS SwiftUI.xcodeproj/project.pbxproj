@@ -20,6 +20,7 @@
 		CD47B19D27F63B1D000D526F /* ChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */; };
 		CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */; };
 		CD490E5C27F4E51300BFB504 /* BabysafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */; };
+		CD69047027F6D7BC00EC51DC /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = CD69046F27F6D7BC00EC51DC /* BottomSheet */; };
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
 		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CD8D330027F333B40058D54B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32FF27F333B40058D54B /* CameraView.swift */; };
@@ -105,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */,
+				CD69047027F6D7BC00EC51DC /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +257,9 @@
 			dependencies = (
 			);
 			name = "Babysafe Home AR iOS SwiftUI";
+			packageProductDependencies = (
+				CD69046F27F6D7BC00EC51DC /* BottomSheet */,
+			);
 			productName = "Babysafe Home AR iOS SwiftUI";
 			productReference = CDA4C73827EE5E54003A0B94 /* Babysafe Home AR.app */;
 			productType = "com.apple.product-type.application";
@@ -332,6 +337,9 @@
 				Base,
 			);
 			mainGroup = CDA4C72F27EE5E53003A0B94;
+			packageReferences = (
+				CD69046E27F6D7BC00EC51DC /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = CDA4C73927EE5E54003A0B94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -877,6 +885,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD69046E27F6D7BC00EC51DC /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD69046F27F6D7BC00EC51DC /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD69046E27F6D7BC00EC51DC /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDA4C73027EE5E53003A0B94 /* Project object */;
 }

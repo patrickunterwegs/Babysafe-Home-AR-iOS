@@ -11,13 +11,13 @@ import Vision
 import CoreVideo
 import MLImage
 import MLKit
+import BottomSheet
 
 struct CameraView: View {
     
     @StateObject var camera = CameraModel()
     
     @EnvironmentObject var model: BabysafeViewModel
-    
     
     
     var body: some View {
@@ -28,11 +28,12 @@ struct CameraView: View {
                     .onReceive(model.$newDangerDetected, perform: { detected in
                         if detected {
                             camera.session.stopRunning()
+                            model.bottomSheetPosition = .middle
                         } else {
                             camera.session.startRunning()
+                            model.bottomSheetPosition = .bottom
                         }
                     })
-                
                 Spacer()
                 GroupBox {
                     HStack {
@@ -47,11 +48,19 @@ struct CameraView: View {
         .onDisappear(perform: {
             camera.session.stopRunning()
         })
-        .sheet(isPresented: $model.newDangerDetected,
-               onDismiss: { model.newDangerDetected = false },
-               content: {
-            NavigationView {
-                
+        .bottomSheet(
+            bottomSheetPosition: $model.bottomSheetPosition,
+            options: [
+                .cornerRadius(16),
+                .showCloseButton(action: {
+                    model.newDangerDetected = false
+                    
+                }),
+                .swipeToDismiss,
+                .tapToDismiss,
+                .appleScrollBehavior
+            ],
+            title: String(localized: "ar_found_dangers"), content: {
                 ScrollView {
                     VStack(alignment: .center) {
                         
@@ -62,15 +71,12 @@ struct CameraView: View {
                         }
                     }.background()
                 }
-                .navigationTitle("ar_found_dangers")
-                .navigationBarTitleDisplayMode(.large)
-                .toolbar {
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("close") {
-                            model.newDangerDetected = false
-                        }
-                    }
-                }
+            }
+        )
+        .onReceive(model.$bottomSheetPosition, perform: { position in
+            
+            if (position == .bottom || position == .hidden) && model.newDangerDetected {
+                model.newDangerDetected = false
             }
         })
     }
