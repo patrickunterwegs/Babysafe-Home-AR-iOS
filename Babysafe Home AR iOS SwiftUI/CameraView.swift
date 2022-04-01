@@ -58,7 +58,8 @@ struct CameraView: View {
                 }),
                 .swipeToDismiss,
                 .tapToDismiss,
-                .appleScrollBehavior
+                .appleScrollBehavior,
+                //.notResizeable
             ],
             title: String(localized: "ar_found_dangers"), content: {
                 ScrollView {

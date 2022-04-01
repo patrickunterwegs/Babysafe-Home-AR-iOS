@@ -50,7 +50,7 @@ class BabysafeViewModel: ObservableObject {
         var dangerDetected = false
        
         for i in 0 ... babyDangers.count-1 {
-            if babyDangers[i].objectIds.contains(objectId) && !babyDangers[i].isCurDetected {
+            if babyDangers[i].objectIds.contains(objectId) && !babyDangers[i].isCurDetected && !babyDangers[i].isUnlocked {      // notify only when danger was not unlocked yet
                 babyDangers[i].isUnlocked = true
                 babyDangers[i].isCurDetected = true
                 dangerDetected = true
