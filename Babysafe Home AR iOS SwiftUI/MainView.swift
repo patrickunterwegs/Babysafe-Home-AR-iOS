@@ -93,7 +93,10 @@ struct MainView: View {
                 }
             }
             .environmentObject(model)
-        
+            .onAppear (perform: {
+                model.loadFromDataStore()
+                print("onAppear reached")
+            })
     }
 }
 

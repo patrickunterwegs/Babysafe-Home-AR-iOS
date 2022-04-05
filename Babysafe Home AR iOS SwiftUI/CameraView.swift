@@ -54,12 +54,14 @@ struct CameraView: View {
                 .cornerRadius(16),
                 .showCloseButton(action: {
                     model.newDangerDetected = false
+                    model.resetCurDetected()
                     
                 }),
-                .swipeToDismiss,
+                //.swipeToDismiss,
                 .tapToDismiss,
                 .appleScrollBehavior,
                 //.notResizeable
+                //.allowContentDrag
             ],
             title: String(localized: "ar_found_dangers"), content: {
                 ScrollView {
@@ -78,6 +80,7 @@ struct CameraView: View {
             
             if (position == .bottom || position == .hidden) && model.newDangerDetected {
                 model.newDangerDetected = false
+                model.resetCurDetected()
             }
         })
     }

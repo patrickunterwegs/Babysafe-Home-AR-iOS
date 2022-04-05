@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */; };
 		B046F10D52401E4BE03E3430 /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8339E7F3613EF4B8D55B4F4A /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework */; };
+		CD1C94C927FCBB520078C1D4 /* ModelDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C94C827FCBB520078C1D4 /* ModelDataStore.swift */; };
 		CD27606627EF0136003A833D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD27606827EF0136003A833D /* Localizable.strings */; };
 		CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606A27EF09FC003A833D /* MainIntroView.swift */; };
 		CD27606D27EF2E32003A833D /* MainChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606C27EF2E32003A833D /* MainChecklistView.swift */; };
@@ -65,6 +66,7 @@
 		98F4495FBB740CE7371BD41C /* Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		BE3562A027928DFE9796BF96 /* Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		CD1C94C827FCBB520078C1D4 /* ModelDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataStore.swift; sourceTree = "<group>"; };
 		CD27606727EF0136003A833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606927EF0151003A833D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606A27EF09FC003A833D /* MainIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntroView.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
+				CD1C94C827FCBB520078C1D4 /* ModelDataStore.swift */,
 				CD3D657727F21C50008CA2CF /* Models */,
 				CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */,
 				CDA4C73D27EE5E54003A0B94 /* ContentView.swift */,
@@ -522,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3D657927F21C64008CA2CF /* BabyDanger.swift in Sources */,
+				CD1C94C927FCBB520078C1D4 /* ModelDataStore.swift in Sources */,
 				CD27606F27EF355A003A833D /* MainScoreView.swift in Sources */,
 				CDA4C76827EE5FB0003A0B94 /* AboutAppInfoView.swift in Sources */,
 				CD8D330027F333B40058D54B /* CameraView.swift in Sources */,
@@ -710,7 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Babysafe Home AR iOS SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
@@ -725,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -741,7 +745,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Babysafe Home AR iOS SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
@@ -756,7 +760,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				SWIFT_EMIT_LOC_STRINGS = YES;

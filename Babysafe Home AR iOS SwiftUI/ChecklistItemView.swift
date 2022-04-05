@@ -12,10 +12,11 @@ struct ChecklistItemView: View {
     
     @Binding var babyDanger: BabyDanger
     @Binding var selectedShop: Shop
-    
-    @State private var babyname: String = "Your baby"
+    //@State private var babyname: String = "Your baby"
     
     @State private var isShareSheetPresented: Bool = false
+    
+    @EnvironmentObject var model: BabysafeViewModel
     
     
     var body: some View {
@@ -30,10 +31,11 @@ struct ChecklistItemView: View {
                 Spacer()
                 Button(action: {
                     babyDanger.isBanned = !babyDanger.isBanned
+                    model.saveToDataStore()
                 }) {
                     switch babyDanger.isBanned {
-                    case true: Label("Banned", systemImage: "checkmark.seal")
-                    default: Label("Ban", systemImage: "bandage")
+                        case true: Label("Banned", systemImage: "checkmark.seal")
+                        default: Label("Ban", systemImage: "bandage")
                     }
                 }
             }.padding(.top, 8).padding(.bottom, 4)
