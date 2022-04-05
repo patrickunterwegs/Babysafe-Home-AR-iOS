@@ -75,15 +75,22 @@ struct Badge: View {
     var body: some View {
         VStack {
             ZStack {
-            Image(image)
-                .resizable()
-                .frame(width: 100.0, height: 100.0)
-                .colorMultiply(.black)
-                //.shadow(color: Color.gray, radius: 5, x: 5, y: 5)
-            Image(image)
-                .resizable()
-                .frame(width: 100.0, height: 100.0)
-                .mask(Rectangle().frame(width: 100, height: percentReveal, alignment: .bottom))
+                if percentReveal == 100 {
+                    Image(image)
+                        .resizable()
+                        .frame(width: 100.0, height: 100.0)
+                } else {
+                    Image(image)
+                        .resizable()
+                        .frame(width: 100.0, height: 100.0)
+                        .colorMultiply(.black)
+                        .opacity(0.1)
+                    Text(String(format: "%.0f%%", percentReveal))
+                        .font(.caption)
+                        .bold()
+                        .frame(width: 100.0, height: 100.0)
+                }
+
                 
             }
             Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
@@ -94,8 +101,15 @@ struct Badge: View {
 
 struct Badge_Previews: PreviewProvider {
     static var previews: some View {
-        Badge(
-        image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 78)
+        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 78)
+            .previewLayout(.sizeThatFits)
+    }
+}
+
+struct Badge_Revealed_Previews: PreviewProvider {
+    static var previews: some View {
+        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 100)
+            .previewLayout(.sizeThatFits)
     }
 }
 
@@ -128,5 +142,6 @@ struct ProgressBar_Previews: PreviewProvider {
     
     static var previews: some View {
         ProgressBar(progress: 0.23)
+            .previewLayout(.sizeThatFits)
     }
 }
