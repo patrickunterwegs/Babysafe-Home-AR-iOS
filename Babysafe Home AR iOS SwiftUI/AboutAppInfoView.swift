@@ -12,7 +12,7 @@ struct AboutAppInfoView: View {
     
     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
-    
+    let appname = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
 
     var body: some View {
             List {
@@ -24,7 +24,7 @@ struct AboutAppInfoView: View {
                         Image("Babysafe")
                             .resizable()
                             .frame(width: 100.0, height: 100.0)
-                        Text("app_name")
+                        Text(appname)
                             .font(.title2)
                             .bold()
                         Text("Version \(version) (\(build))")
