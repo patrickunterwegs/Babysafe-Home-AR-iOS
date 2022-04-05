@@ -9,6 +9,10 @@ import SwiftUI
 import Foundation
 
 struct AboutAppInfoView: View {
+    
+    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+    let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+    
 
     var body: some View {
             List {
@@ -23,7 +27,7 @@ struct AboutAppInfoView: View {
                         Text("app_name")
                             .font(.title2)
                             .bold()
-                        Text("Version 1.0")
+                        Text("Version \(version) (\(build))")
                         Text("Codename: \"Babysafe Rulz\"")
                         Text("about_app_copyright")
                         Spacer()
