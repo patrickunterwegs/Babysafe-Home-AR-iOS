@@ -8,41 +8,60 @@
 import SwiftUI
 
 struct MainTipDetailView: View {
+    
+    @Binding var safetyTip: SafetyTip
+    @Binding var selectedShop: Shop
+    //@State private var babyname: String = "Your baby"
+    
+    @State private var isShareSheetPresented: Bool = false
+    
+    @EnvironmentObject var model: BabysafeViewModel
+    
+    
     var body: some View {
         ScrollView {
             GroupBox {
                 VStack {
 
-                    Text("tip_electricity_text")
+                    Text(LocalizedStringKey(safetyTip.description))
                         .padding(.bottom, 8)
                         .font(.body)
                     
                     HStack {
                         Spacer()
-                        Button(action: {}) {
-                                Label("share", systemImage: "square.and.arrow.up")
-                              }
-                            .buttonStyle(.automatic)
-                            .buttonBorderShape(.automatic)
-                            .padding(4)
-                        Button(action: {}) {
-                                Label("checklist_item_buy", systemImage: "cart")
-                              }
-                            .buttonStyle(.automatic)
-                            .buttonBorderShape(.automatic)
-                            .padding(4)
+                        
+                        Button(action: {
+                            self.isShareSheetPresented = true
+                        }) {
+                            Label("share", systemImage: "square.and.arrow.up")
+                          }.sheet(isPresented: $isShareSheetPresented, onDismiss: {
+                            print("Dismiss")
+                            self.isShareSheetPresented = false
+
+                            }, content: {
+                                ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
+                            }).padding(8)
+                    
+                        
+                        ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
+                            
+                            Link(destination: safetyTipLink.link) {
+                                Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
+                            }.padding(8)
+                        
+                        }
                     }
                 }
             }
             .padding()
         }
-        .navigationTitle("tip_electricity_title")
-
+        .navigationTitle(LocalizedStringKey(safetyTip.title))
     }
 }
 
 struct MainTipDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTipDetailView()
+        MainTipDetailView(safetyTip: .constant(SafetyTip.allSafetyTips.first!), selectedShop: .constant(.amazonDE))
+            .environmentObject(BabysafeViewModel())
     }
 }

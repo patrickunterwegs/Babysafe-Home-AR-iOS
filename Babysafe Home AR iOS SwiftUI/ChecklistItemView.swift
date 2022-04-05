@@ -77,6 +77,6 @@ struct ChecklistItemView_Previews: PreviewProvider {
         ChecklistItemView(
             babyDanger: .constant(BabyDanger.allBabyDangers.first!),
             selectedShop: .constant(Shop.amazonDE)
-        )
+        ).environmentObject(BabysafeViewModel())
     }
 }

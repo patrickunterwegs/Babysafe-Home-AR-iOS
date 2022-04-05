@@ -8,22 +8,37 @@
 import SwiftUI
 
 struct MainTipsView: View {
+    
+    @EnvironmentObject var model: BabysafeViewModel
+
+
     var body: some View {
             VStack(alignment: .center) {
 
                 List {
-                    NavigationLink(destination: MainTipDetailView()) {
-                        Text("tip_electricity_title")
-                    }
-                    NavigationLink(destination: MainTipDetailView()) {
-                        Text("tip_electricity_title")
-                    }
-                    NavigationLink(destination: MainTipDetailView()) {
-                        Text("tip_electricity_title")
-                        Spacer()
-                        Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
+                    
+                    ForEach($model.safetyTips) { $safetyTip in
+                        NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
+                            Text(LocalizedStringKey(safetyTip.title))
+                                .font(.subheadline)
+                            Spacer()
+                            Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
+                        }
+
+                        
+                        /*
+                        if safetyTip.isUnlocked {
+                            //ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
+                            NavigationLink(destination: MainTipDetailView()) {
+                                Text(safetyTip.title)
+                                Spacer()
+                                Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
+                            }
+                        }
+                         */
                     }
                 }
+            
             
             Spacer()
             HStack {
@@ -42,6 +57,6 @@ struct MainTipsView: View {
 
 struct MainTipsView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTipsView()
+        MainTipsView().environmentObject(BabysafeViewModel())
     }
 }

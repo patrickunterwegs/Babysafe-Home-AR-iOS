@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct BabyDanger: Identifiable {
     let id: String

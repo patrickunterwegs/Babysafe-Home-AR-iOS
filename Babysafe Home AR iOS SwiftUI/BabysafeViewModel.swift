@@ -14,6 +14,8 @@ class BabysafeViewModel: ObservableObject {
     @Published var selectedCountry: ShopCountry = .at
     @Published var selectedShop: Shop = .amazonDE
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
+    @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
+
     
     @Published var newDangerDetected = false
     @Published var bottomSheetPosition: BottomSheetPosition = .hidden    // for CameraView

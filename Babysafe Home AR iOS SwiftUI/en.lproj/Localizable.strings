@@ -6,10 +6,6 @@
   
 */
 
-"action_settings" = "Settings";
-
-/*Strings used for fragments for navigation*/
-"first_fragment_label" = "First Fragment";
 
 /*Strings used for fragments for navigation*/
 "close" = "Close";
@@ -17,12 +13,15 @@
 "cancel" = "Cancel";
 "share" = "Share";
 "info" = "Info";
+"more" = "More";
+"cont1nue" = "Continue";
 "open_link" = "Open link";
 "start_ar_view" = "Start camera";
 "main_tab_intro" = "Intro";
 "main_tab_checklist" = "Checklist";
 "main_tab_score" = "Score";
-"main_tab_articles" = "Articles";
+"main_tab_tips" = "Tips";
+"main_tab_news" = "News";
 "about_tab_app" = "App";
 "about_tab_libraries" = "Libraries";
 "about_tab_attributions" = "Attributions";
@@ -32,6 +31,7 @@
 "ar_ignore_banned" = "Ignore banned dangers";
 "ar_toast_new_dangers_unlocked" = "New dangers unlocked!";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
+"share_subject" = "";
 "share_app_subject" = "Check out Babysafe Home AR!";
 "share_app_text" = "Look what great app I have found: *Babysafe Home AR*!\nIt helps you to make your home a safer place for your Baby.\nCheck it out here:\nhttps://babysafe.techbee.at";
 "about_app_terms" = "Terms & Conditions";
@@ -82,8 +82,10 @@
 "dialog_shop_select_title" = "Your shopping platform";
 "dialog_shop_select_message" = "Babysafe Home AR gives you recommendations for products in shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative:";
 "dialog_shop_select_message2" = "If products are not available in your preferred shopping platform, we might recommend products in other stores.";
+"dialog_shop_select_country" = "Country:";
+"dialog_shop_country_world" = "World";
+"dialog_shop_select_shop" = "Shop:";
 "menu_main_bottombar_about" = "About";
-"menu_main_bottombar_settings" = "Settings";
 "menu_main_bottombar_support" = "Support";
 "menu_main_bottombar_disclaimer" = "Disclaimer";
 "menu_main_bottombar_recommend" = "Tell-a-friend";
@@ -102,6 +104,10 @@
 "attributions_lottie_animations_text" = "This app is using publicly available animations from the amazing Lottie Library.";
 "attributions_graphics" = "Graphics";
 "attributions_graphics_text" = "This app is using licensed images from freepik and the amazing graphics by @catalyststuff\nhttps://www.freepik.com/catalyststuff";
+"attributions_lottie_animations" = "";
+"attributions_lottie_animations_startblast" = "";
+"attributions_lottie_animations_rainbow" = "";
+"attributions_lottie_animations_confetti" = "";
 "danger_power_title" = "Installing socket fuses";
 "danger_power_text" = "Baby and child fingers fit exactly into the holes of the socket. Therefore, there is a particular risk of fatal electric shock. Use socket protectors that can prevent this. Little crawlers are sure to immediately find the unsecured sockets in your home.";
 "danger_toiletwater_title" = "Close WC lid";
@@ -169,9 +175,9 @@
 "danger_toy_title" = "Check toys for harmful substances";
 "danger_toy_text" = "Yes, even children's toys can be dangerous for %1$s. On the one hand, if they are not suitable for the age of your child, on the other hand, if they contain dangerous pollutants and plasticizers that are dangerous for %1$s in the long term. So when buying toys, look carefully at what materials the toy is made of and try to prefer natural materials.";
 "danger_smallitems_title" = "Store small parts out of reach";
-"danger_smallitems_text %@ %@" = "The little world explorers first check their surroundings with their mouths, so any find goes right there first. In the worst case, the item clogs the airways and %@ can choke on it. If %@ swallows the objects, in the best case they come to light again after some time, but can cause some damage in the body. Therefore, try to keep all small, round objects out of reach of your pet.";
+"danger_smallitems_text" = "The little world explorers first check their surroundings with their mouths, so any find goes right there first. In the worst case, the item clogs the airways and %1$s can choke on it. If %1$s swallows the objects, in the best case they come to light again after some time, but can cause some damage in the body. Therefore, try to keep all small, round objects out of reach of your pet.";
 "danger_weapons_title" = "Lock weapons";
-"danger_weapons_text %@" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like well in front of your no treasure. After all, you don't want %1$s to play with them and hurt or even kill themselves or others.";
+"danger_weapons_text" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like well in front of your no treasure. After all, you don't want %1$s to play with them and hurt or even kill themselves or others.";
 "danger_battery_title" = "Batteries out of range";
 "danger_battery_text" = "Batteries, especially button batteries, should be kept safe from your child. Because if %1$s swallows them, it's an emergency and you need to go to the hospital immediately. Button cells can cause serious damage to your favorite's esophagus.";
 "danger_cutlery_title" = "Use children's cutlery";
@@ -182,22 +188,7 @@
 "danger_mirror_text" = "Mirrors or glass plates pose a great danger, especially if they break. So that %1$s do not hurt themselves on the splinters, you can already make sure when buying that you buy shatterproof mirrors. Especially for the children's room, these are more suitable. If you want to be on the safe side, you can also cover existing mirrors or glass surfaces with a special film.";
 "danger_fireplace_title" = "Secure fireplaces";
 "danger_fireplace_text" = "To %1$s protect against burns from a fireplace or other fireplace in your home, a grate is certainly very helpful. Unfortunately, normal grates are not suitable for this purpose, as they are often made of wood or plastic. A heat resistant safety grate will protect little curious kids from dangerous burns from fireplaces.";
-"app_name" = "Babysafe Home AR";
-"main_tab_tips" = "Tips";
-"main_tab_news" = "News";
-"share_subject" = "";
-"attributions_lottie_animations" = "";
-"attributions_lottie_animations_startblast" = "";
-"attributions_lottie_animations_sparkleanimation" = "";
-"attributions_lottie_animations_confetti" = "";
-"about_app_copyright" = "&copy; Techbee e.U.";
-"more" = "More";
-"cont1nue" = "Continue";
-"dialog_shop_select_country" = "Country:";
-"dialog_shop_country_world" = "World";
-"dialog_shop_select_shop" = "Shop:";
 "tip_electricity_title" = "Strom";
 "tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadel oder einen Schraubenzieher zum spielen zu überlassen, warum sind dann Steckdosen so gefährlich?\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen, die meisten Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter dazu da ist uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst wenn ein Mensch in den Stromkreis eingreift und für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Haus mit Steckdosensicherungen, diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online.\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben, für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\nDu kannst natürlich nicht immer und überall die Steckdosen absichern und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen, so solltest du umgehend ins Krankenhaus fahren, auch wenn %1$s ganz vergnügt scheint, kann der Strom der Möglicherweise durch den Köper geleitet wurde doch auch einigen Schaden anrichten.";
-"transition_safety_tip" = "";
-"attributions_lottie_animations_rainbow" = "";
-
+"tip_electricity_stecken" = "Stecken";
+"tip_electricity_schrauben" = "Schrauben";
