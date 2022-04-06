@@ -11,7 +11,6 @@ import Vision
 import CoreVideo
 import MLImage
 import MLKit
-import BottomSheet
 
 struct CameraView: View {
     
