@@ -24,6 +24,8 @@ struct MainTipsView: View {
                             Spacer()
                             Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
                         }
+                        .navigationTitle(safetyTip.title)
+                        .navigationBarTitleDisplayMode(.large)
 
                         
                         /*
