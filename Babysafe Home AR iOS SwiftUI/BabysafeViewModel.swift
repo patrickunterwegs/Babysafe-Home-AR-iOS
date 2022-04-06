@@ -107,10 +107,12 @@ class BabysafeViewModel: ObservableObject {
             if babyDangers[i].objectIds.contains(objectId)
                 && !babyDangers[i].isCurDetected
                 && (!babyDangers[i].isUnlocked || (babyDangers[i].isUnlocked && findUnlocked))
-                && (!babyDangers[i].isBanned || (babyDangers[i].isBanned && findBanned)) {
+                && (!babyDangers[i].isBanned || (babyDangers[i].isBanned && findBanned))
+                && !babyDangers[i].isDetectedInSession {
                 
                 babyDangers[i].isUnlocked = true
                 babyDangers[i].isCurDetected = true
+                babyDangers[i].isDetectedInSession = true
                 dangerDetected = true
             }
         }
@@ -125,6 +127,12 @@ class BabysafeViewModel: ObservableObject {
             babyDangers[i].isCurDetected = false
         }
         newDangerDetected = false
+    }
+    
+    func resetIsDetectedInSession() {
+        for i in 0 ... babyDangers.count-1 {
+            babyDangers[i].isDetectedInSession = false
+        }
     }
     
     

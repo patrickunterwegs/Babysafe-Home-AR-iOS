@@ -17,6 +17,7 @@ struct BabyDanger: Identifiable {
     var isUnlocked: Bool = false
     var isBanned: Bool = false
     var isCurDetected: Bool = false
+    var isDetectedInSession: Bool = false
 }
 
 extension BabyDanger {

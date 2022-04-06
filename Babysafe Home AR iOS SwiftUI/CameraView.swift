@@ -41,6 +41,7 @@ struct CameraView: View {
         }.onAppear(perform: {
             camera.checkPermission()
             model.resetCurDetected()
+            model.resetIsDetectedInSession()
         })
         .onDisappear(perform: {
             camera.session.stopRunning()
