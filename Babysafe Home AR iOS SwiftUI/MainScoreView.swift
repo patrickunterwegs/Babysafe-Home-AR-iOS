@@ -73,6 +73,8 @@ struct Badge: View {
     var text: String
     var percentReveal: Float
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         VStack {
             ZStack {
@@ -83,8 +85,9 @@ struct Badge: View {
                 } else {
                     Image(image)
                         .resizable()
+                        .renderingMode(.template)
+                        .colorMultiply(colorScheme == .dark ? .white : .black)
                         .frame(width: 100.0, height: 100.0)
-                        .colorMultiply(.black)
                         .opacity(0.1)
                     Text(String(format: "%.0f%%", percentReveal))
                         .font(.caption)
