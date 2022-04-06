@@ -24,15 +24,21 @@ struct ChecklistItemView: View {
         GroupBox {
         VStack {
             HStack {
+
                 ZStack {
-                    Image(systemName: "cross")
-                        .foregroundColor(.red)
-                        .opacity(babyDanger.isBanned ? 0 : 1)
-                    Image(systemName: "checkmark.seal")
-                        .imageScale(.large)
-                        .foregroundColor(.green)
-                        .opacity(babyDanger.isBanned ? 1 : 0)
-                }
+                    if babyDanger.isBanned {
+                        Image(systemName: "checkmark.seal")
+                            .imageScale(.large)
+                            .foregroundColor(.green)
+                            .transition(.scale)
+                    } else {
+                        Image(systemName: "cross")
+                            .imageScale(.large)
+                            .foregroundColor(.red)
+                            .transition(.scale)
+                    }
+                }.animation(.interactiveSpring())
+                
                 Text(LocalizedStringKey(babyDanger.title))
                     .bold()
                     .font(.title3)
@@ -50,6 +56,7 @@ struct ChecklistItemView: View {
                 }
                  */
             }.padding(.top, 8).padding(.bottom, 4)
+                
             
             Text(LocalizedStringKey(babyDanger.description))
                 .font(.body)
