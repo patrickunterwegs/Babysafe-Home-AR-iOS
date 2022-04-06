@@ -15,7 +15,6 @@ struct MainView: View {
     @State var isPresentingCameraView = false
 
 
-
     var body: some View {
         
             TabView {
@@ -94,8 +93,8 @@ struct MainView: View {
             }
             .environmentObject(model)
             .onAppear (perform: {
-                model.loadFromDataStore()
-                print("onAppear reached")
+                model.loadFromUserDefaults()
+                //print("onAppear reached")
             })
     }
 }

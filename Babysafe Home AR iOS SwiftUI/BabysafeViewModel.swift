@@ -15,15 +15,19 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("selectedCountry") var selectedCountry: ShopCountry = .at
     @AppStorage("selectedShop") var selectedShop: Shop = .amazonDE
     
+    @AppStorage("findUnlocked") var findUnlocked = true
+    @AppStorage("findBanned") var findBanned = true
+    
+    var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedDangers") ?? [])
+    var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "bannedDangers") ?? [])
+    var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedTips") ?? [])
+
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
 
     
     @Published var newDangerDetected = false
     
-    @AppStorage("findUnlocked") var findUnlocked = true
-    @AppStorage("findBanned") var findBanned = true
-    //@Published var bottomSheetPosition: BottomSheetPosition = .hidden    // for CameraView
 
 
     
@@ -54,7 +58,6 @@ class BabysafeViewModel: ObservableObject {
     }
     
     func getPercentBanned() -> Float {
-        let percent = Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count) * 100
         return Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count) * 100
     }
 
@@ -114,8 +117,11 @@ class BabysafeViewModel: ObservableObject {
                 dangerDetected = true
             }
         }
+        if dangerDetected {
+            saveUnlocked()
+        }
         newDangerDetected = dangerDetected      // we notify newDangerDetected only once!
-        saveToDataStore()
+        
     }
     
     func resetCurDetected() {
@@ -125,69 +131,64 @@ class BabysafeViewModel: ObservableObject {
         newDangerDetected = false
     }
     
-    func loadFromDataStore() {
-        ModelDataStore.load(datastore: .unlockedDangers) { result in
-            switch result {
-                case .failure(let error):
-                    fatalError(error.localizedDescription)
-                case .success(let unlockedDangers): do {
-                    unlockedDangers.forEach { unlockedDanger in
-                        for i in 0 ... self.babyDangers.count-1 {
-                            if unlockedDanger == self.babyDangers[i].id {
-                                self.babyDangers[i].isUnlocked = true
-                            }
-                        }
-                    }
+    
+    func loadFromUserDefaults() {
+        
+        unlockedDangers.forEach { unlockedDanger in
+            for i in 0 ... self.babyDangers.count-1 {
+                if unlockedDanger == self.babyDangers[i].id {
+                    self.babyDangers[i].isUnlocked = true
                 }
             }
         }
         
-        ModelDataStore.load(datastore: .bannedDangers) { result in
-            switch result {
-                case .failure(let error):
-                    fatalError(error.localizedDescription)
-                case .success(let bannedDangers): do {
-                    bannedDangers.forEach { bannedDanger in
-                        for i in 0 ... self.babyDangers.count-1 {
-                            if bannedDanger == self.babyDangers[i].id {
-                                self.babyDangers[i].isBanned = true
-                            }
-                        }
-                    }
+        bannedDangers.forEach { bannedDanger in
+            for i in 0 ... self.babyDangers.count-1 {
+                if bannedDanger == self.babyDangers[i].id {
+                    self.babyDangers[i].isBanned = true
                 }
             }
         }
         
-        
-        
-        //TODO: Handle articles
+        unlockedTips.forEach { unlockedTip in
+            for i in 0 ... self.safetyTips.count-1 {
+                if unlockedTip == self.safetyTips[i].id {
+                    self.safetyTips[i].isUnlocked = true
+                }
+            }
+        }
     }
     
-    func saveToDataStore() {
+    func saveUnlocked() {
         
-        var unlockedDangersArray: [String] = []
-        var bannedDangersArray: [String] = []
-        
+        unlockedDangers.removeAll()
         self.babyDangers.forEach { babyDanger in
             if babyDanger.isUnlocked {
-                unlockedDangersArray.append(babyDanger.id)
-            }
-            if babyDanger.isBanned {
-                bannedDangersArray.append(babyDanger.id)
+                unlockedDangers.append(babyDanger.id)
             }
         }
-
-        ModelDataStore.save(datastore: .unlockedDangers, data: unlockedDangersArray)  { result in
-            if case .failure(let error) = result {
-                fatalError(error.localizedDescription)
-            }
-        }
-        ModelDataStore.save(datastore: .bannedDangers, data: bannedDangersArray)  { result in
-            if case .failure(let error) = result {
-                fatalError(error.localizedDescription)
-            }
-        }
+        UserDefaults.standard.set(unlockedDangers, forKey: "unlockedDangers")
+    }
+    
+    func saveBanned() {
         
-        //TODO: Handle articles
+        bannedDangers.removeAll()
+        self.babyDangers.forEach { babyDanger in
+            if babyDanger.isBanned {
+                bannedDangers.append(babyDanger.id)
+            }
+        }
+        UserDefaults.standard.set(bannedDangers, forKey: "bannedDangers")
+    }
+    
+    func saveUnlockedTips() {
+        
+        unlockedTips.removeAll()
+        self.safetyTips.forEach { safetyTip in
+            if safetyTip.isUnlocked {
+                unlockedTips.append(safetyTip.id)
+            }
+        }
+        UserDefaults.standard.set(unlockedTips, forKey: "unlockedTips")
     }
 }

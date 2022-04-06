@@ -82,11 +82,7 @@ struct ChecklistItemView: View {
         .padding()
         .onTapGesture {
             babyDanger.isBanned.toggle()
-            model.saveToDataStore()
-            hoverEffect(.automatic)
-            animation(.easeIn)
-            self.animation(.spring())
-                
+            model.saveBanned()
         }
     }
 }
