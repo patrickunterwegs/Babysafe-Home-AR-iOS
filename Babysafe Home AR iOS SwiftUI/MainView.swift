@@ -94,7 +94,6 @@ struct MainView: View {
             .environmentObject(model)
             .onAppear (perform: {
                 model.loadFromUserDefaults()
-                //print("onAppear reached")
             })
     }
 }

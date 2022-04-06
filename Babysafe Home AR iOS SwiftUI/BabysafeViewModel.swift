@@ -28,8 +28,6 @@ class BabysafeViewModel: ObservableObject {
     
     @Published var newDangerDetected = false
     
-
-
     
     
     func getNumUnlocked() -> Int {
@@ -119,9 +117,8 @@ class BabysafeViewModel: ObservableObject {
         }
         if dangerDetected {
             saveUnlocked()
+            newDangerDetected = true      // we notify newDangerDetected only once!
         }
-        newDangerDetected = dangerDetected      // we notify newDangerDetected only once!
-        
     }
     
     func resetCurDetected() {
