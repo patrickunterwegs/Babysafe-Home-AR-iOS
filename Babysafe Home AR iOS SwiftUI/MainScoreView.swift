@@ -37,22 +37,27 @@ struct MainScoreView: View {
                 }.padding()
 
                 GroupBox {
-                    Text("score_score_header")
-                        .font(.title)
-                    ProgressBar(progress: model.getProgressPercent())
-                        .frame(width: 200, height: 200, alignment: .center)
-                        .padding()
-                    
-
-                    Image("astronaut_phone")
-                        .resizable()
-                        .frame(width: 150, height: 150, alignment: .center)
-                    Text("score_nothing_unlocked_header")
-                        .font(.title)
-                        .bold()
-                    Text("score_nothing_unlocked_text")
-                        .padding()
-                        .multilineTextAlignment(.center)
+                    VStack {
+                        Text("score_score_header")
+                            .font(.title)
+                        ProgressBar(progress: model.getProgressPercent())
+                            .frame(width: 200, height: 200, alignment: .center)
+                            .padding()
+                        
+                        if model.getPercentUnlocked() == 100.0 && model.getPercentBanned() == 100.0 {
+                            ScoreDependingBottomView(image: "astronaut_king", header: "score_all_banned_header", text: "score_all_banned_text")
+                        } else if model.getPercentBanned() >= 50.0 {
+                            ScoreDependingBottomView(image: "astronaut_hero", header: "score_half_banned_header", text: "score_half_banned_text")
+                        } else if model.getPercentUnlocked() == 100 {
+                            ScoreDependingBottomView(image: "astronaut_posing", header: "score_all_unlocked_header", text: "score_half_unlocked_text")
+                        } else if model.getPercentUnlocked() >= 50.0 {
+                            ScoreDependingBottomView(image: "astronaut_flying", header: "score_half_unlocked_header", text: "score_half_unlocked_text")
+                        } else if model.getPercentUnlocked() >= 1 {
+                            ScoreDependingBottomView(image: "astronaut_jumping", header: "score_first_unlocked_header", text: "score_first_unlocked_text")
+                        } else {
+                            ScoreDependingBottomView(image: "astronaut_phone", header: "score_nothing_unlocked_header", text: "score_nothing_unlocked_text")
+                        }
+                    }
                 }.padding()
             }
         }.navigationTitle("main_tab_score")
@@ -125,7 +130,6 @@ struct ProgressBar: View {
                 .stroke(lineWidth: 20.0)
                 .opacity(0.3)
                 .foregroundColor(Color.red)
-            
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(progress/100, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
@@ -145,6 +149,38 @@ struct ProgressBar_Previews: PreviewProvider {
     
     static var previews: some View {
         ProgressBar(progress: 0.23)
+            .previewLayout(.sizeThatFits)
+    }
+}
+
+
+
+struct ScoreDependingBottomView: View {
+    
+    var image: String
+    var header: String
+    var text: String
+    
+    var body: some View {
+        
+        VStack {
+            Image(image)
+                .resizable()
+                .frame(width: 150, height: 150, alignment: .center)
+            Text(LocalizedStringKey(header))
+                .font(.title)
+                .bold()
+            Text(LocalizedStringKey(text))
+                .padding()
+                .multilineTextAlignment(.center)
+        }
+    }
+}
+
+struct ScoreDependingBottomView_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        ScoreDependingBottomView(image: "astronaut_phone", header: "score_nothing_unlocked_header", text: "score_nothing_unlocked_text")
             .previewLayout(.sizeThatFits)
     }
 }
