@@ -22,23 +22,24 @@ struct MainScoreView: View {
                     Badge(
                         image: "ic_badge_unlocked",
                         text: "score_badge_unlocked",
-                        percentReveal: CGFloat(Float(model.getNumUnlocked()) / Float((BabyDanger.allBabyDangers.count)*100))
+                        percentReveal: model.getPercentUnlocked()
                     )
                     Badge(
                         image: "ic_badge_banned",
                         text: "score_badge_banned",
-                        percentReveal: CGFloat(Float(model.getNumBanned()) / (Float(BabyDanger.allBabyDangers.count)*100))
+                        percentReveal: model.getPercentBanned()
                     )
                     Badge(
                         image: "ic_badge_articles",
                         text: "score_badge_articles",
-                        percentReveal: 24)
+                        percentReveal: model.getPercentSafetyTipsUnlocked()
+                        )
                 }.padding()
 
                 GroupBox {
                     Text("score_score_header")
                         .font(.title)
-                    ProgressBar(progress: 0.23)
+                    ProgressBar(progress: model.getProgressPercent())
                         .frame(width: 200, height: 200, alignment: .center)
                         .padding()
                     
@@ -70,7 +71,7 @@ struct Badge: View {
     
     var image: String
     var text: String
-    var percentReveal: CGFloat
+    var percentReveal: Float
     
     var body: some View {
         VStack {
@@ -115,7 +116,7 @@ struct Badge_Revealed_Previews: PreviewProvider {
 
 
 struct ProgressBar: View {
-    @State var progress: Float
+    var progress: Float
     
     var body: some View {
         ZStack {
@@ -125,12 +126,12 @@ struct ProgressBar: View {
                 .foregroundColor(Color.red)
             
             Circle()
-                .trim(from: 0.0, to: CGFloat(min(self.progress, 1.0)))
+                .trim(from: 0.0, to: CGFloat(min(progress/100, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
                 .foregroundColor(Color.red)
                 .rotationEffect(Angle(degrees: 270.0))
                 .animation(.linear)
-            Text(String(format: "%.0f", min(self.progress, 1.0)*100.0))
+            Text(String(format: "%.0f", progress))
                 //.font(.largeTitle)
                 .font(.custom("progress", size: 72))
                 .bold()

@@ -32,6 +32,11 @@ class BabysafeViewModel: ObservableObject {
         }
         return numUnlocked
     }
+    
+    func getPercentUnlocked() -> Float {
+        return Float(getNumUnlocked()) / Float(BabyDanger.allBabyDangers.count) * 100
+    }
+    
 
     func getNumBanned() -> Int {
         var numBanned = 0
@@ -42,10 +47,52 @@ class BabysafeViewModel: ObservableObject {
         }
         return numBanned
     }
+    
+    func getPercentBanned() -> Float {
+        let percent = Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count) * 100
+        return Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count) * 100
+    }
 
     func getNumUnbanned() -> Int {
         return getNumUnlocked() - getNumBanned()
     }
+    
+    func getNumSafetyTipsUnlocked() -> Int {
+        var numSafetyTipsUnlocked = 0
+        
+        safetyTips.forEach { safetyTip in
+            if safetyTip.isUnlocked {
+                numSafetyTipsUnlocked += 1
+            }
+        }
+        return numSafetyTipsUnlocked
+    }
+    
+    func getPercentSafetyTipsUnlocked() -> Float {
+        return Float(getNumSafetyTipsUnlocked()) / Float(SafetyTip.allSafetyTips.count) * 100
+    }
+    
+    func getProgressPercent() -> Float {
+        
+        let maxScore: Float = 100.0
+        
+        let startScore = maxScore * 0.1
+        let maxScoreBanned = maxScore * 0.4
+        let maxScoreUnlocked = maxScore * 0.25
+        let maxScoreSafetyTips = maxScore * 0.25
+        
+        
+        let progressUnlocked: Float = Float(getNumUnlocked()) / Float(BabyDanger.allBabyDangers.count)
+        let progressBanned: Float = Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count)
+        let progressSafetyTipsUnlocked: Float = Float(getNumSafetyTipsUnlocked()) / Float(SafetyTip.allSafetyTips.count)
+        
+        let score = startScore + maxScoreUnlocked * progressUnlocked + maxScoreBanned * progressBanned + maxScoreSafetyTips * progressSafetyTipsUnlocked
+        
+        return score
+    }
+    
+    
+    
     
     func unlock(objectId: Int) {
         
