@@ -211,6 +211,7 @@ struct CameraView: View {
             do {
                 objects = try objectDetector.results(in: visionImage)
             } catch let error {
+                print(error.localizedDescription)
                 // Handle the error.
                 return
             }
@@ -225,11 +226,11 @@ struct CameraView: View {
             
             guard resultsText?.count != 0 else { return }
             
-            weak var weakSelf = self
+            //weak var weakSelf = self
             DispatchQueue.main.sync {
                 
                 // Check labels and update UI here!!!
-                print(resultsText)
+                //print(resultsText)
                 objectIdentifier = resultsText ?? "nothing found"
                 
                 objects.first?.labels.forEach { label in
