@@ -17,7 +17,7 @@ struct MainScoreView: View {
         ScrollView {
             Spacer()
             VStack(alignment: .center) {
-                
+
                 HStack {
                     Badge(
                         image: "ic_badge_unlocked",
@@ -135,6 +135,7 @@ struct ProgressBar: View {
                 //.font(.largeTitle)
                 .font(.custom("progress", size: 72))
                 .bold()
+            LottieView(name: "confetti")
         }
     }
 }
