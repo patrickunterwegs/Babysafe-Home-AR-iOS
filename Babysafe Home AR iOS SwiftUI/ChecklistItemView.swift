@@ -24,13 +24,23 @@ struct ChecklistItemView: View {
         GroupBox {
         VStack {
             HStack {
-                Image(systemName: "cross")
+                ZStack {
+                    Image(systemName: "cross")
+                        .foregroundColor(.red)
+                        .opacity(babyDanger.isBanned ? 0 : 1)
+                    Image(systemName: "checkmark.seal")
+                        .imageScale(.large)
+                        .foregroundColor(.green)
+                        .opacity(babyDanger.isBanned ? 1 : 0)
+                }
                 Text(LocalizedStringKey(babyDanger.title))
                     .bold()
                     .font(.title3)
+                
                 Spacer()
+                /*
                 Button(action: {
-                    babyDanger.isBanned = !babyDanger.isBanned
+                    babyDanger.isBanned.toggle()
                     model.saveToDataStore()
                 }) {
                     switch babyDanger.isBanned {
@@ -38,6 +48,7 @@ struct ChecklistItemView: View {
                         default: Label("Ban", systemImage: "bandage")
                     }
                 }
+                 */
             }.padding(.top, 8).padding(.bottom, 4)
             
             Text(LocalizedStringKey(babyDanger.description))
@@ -67,7 +78,16 @@ struct ChecklistItemView: View {
                 }
             }
         }
-        }.padding()
+        }
+        .padding()
+        .onTapGesture {
+            babyDanger.isBanned.toggle()
+            model.saveToDataStore()
+            hoverEffect(.automatic)
+            animation(.easeIn)
+            self.animation(.spring())
+                
+        }
     }
 }
 
