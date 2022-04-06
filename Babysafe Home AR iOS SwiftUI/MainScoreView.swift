@@ -94,8 +94,6 @@ struct Badge: View {
                         .bold()
                         .frame(width: 100.0, height: 100.0)
                 }
-
-                
             }
             Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
         }

@@ -45,6 +45,16 @@ struct AboutView: View {
                         }
                     }
                 }
+                Section(header: Text("camera_settings")) {
+                    Toggle(isOn: $model.findUnlocked) {
+                        Label("Find unlocked", systemImage: "lock.open")
+                    }
+                    Toggle(isOn: $model.findBanned) {
+                        Label("Find banned", systemImage: "checkmark.seal")
+                    }
+                }
+                
+                
                 Section() {
                     Button(action: {
                         self.isTellAFriendPresented = true

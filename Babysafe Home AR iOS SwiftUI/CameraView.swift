@@ -28,10 +28,8 @@ struct CameraView: View {
                     .onReceive(model.$newDangerDetected, perform: { detected in
                         if detected {
                             camera.session.stopRunning()
-                            model.bottomSheetPosition = .middle
                         } else {
                             camera.session.startRunning()
-                            model.bottomSheetPosition = .bottom
                         }
                     })
                 Spacer()
@@ -48,22 +46,11 @@ struct CameraView: View {
         .onDisappear(perform: {
             camera.session.stopRunning()
         })
-        .bottomSheet(
-            bottomSheetPosition: $model.bottomSheetPosition,
-            options: [
-                .cornerRadius(16),
-                .showCloseButton(action: {
-                    model.newDangerDetected = false
-                    model.resetCurDetected()
-                    
-                }),
-                //.swipeToDismiss,
-                .tapToDismiss,
-                .appleScrollBehavior,
-                //.notResizeable
-                //.allowContentDrag
-            ],
-            title: String(localized: "ar_found_dangers"), content: {
+        .sheet(isPresented: $model.newDangerDetected, onDismiss: {
+            model.newDangerDetected = false
+            model.resetCurDetected()
+        }) {
+            NavigationView {
                 ScrollView {
                     VStack(alignment: .center) {
                         
@@ -72,17 +59,29 @@ struct CameraView: View {
                                 ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
                             }
                         }
+                        
+                        GroupBox {
+                            Toggle(isOn: $model.findUnlocked) {
+                                Label("Find unlocked", systemImage: "lock.open")
+                            }
+                            Toggle(isOn: $model.findBanned) {
+                                Label("Find banned", systemImage: "checkmark.seal")
+                            }
+                        }.padding()
                     }.background()
                 }
+                .navigationTitle("ar_found_dangers")
+                .navigationBarTitleDisplayMode(.large)
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("close") {
+                            model.newDangerDetected = false
+                            model.resetCurDetected()
+                        }
+                    }
+                }
             }
-        )
-        .onReceive(model.$bottomSheetPosition, perform: { position in
-            
-            if (position == .bottom || position == .hidden) && model.newDangerDetected {
-                model.newDangerDetected = false
-                model.resetCurDetected()
-            }
-        })
+        }
     }
     
     

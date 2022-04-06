@@ -7,18 +7,23 @@
 
 import Foundation
 import BottomSheet
+import SwiftUI
 
 
 class BabysafeViewModel: ObservableObject {
     
     @Published var selectedCountry: ShopCountry = .at
     @Published var selectedShop: Shop = .amazonDE
+    
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
 
     
     @Published var newDangerDetected = false
-    @Published var bottomSheetPosition: BottomSheetPosition = .hidden    // for CameraView
+    
+    @AppStorage("findUnlocked") var findUnlocked = true
+    @AppStorage("findBanned") var findBanned = true
+    //@Published var bottomSheetPosition: BottomSheetPosition = .hidden    // for CameraView
 
 
     
@@ -99,7 +104,11 @@ class BabysafeViewModel: ObservableObject {
         var dangerDetected = false
        
         for i in 0 ... babyDangers.count-1 {
-            if babyDangers[i].objectIds.contains(objectId) && !babyDangers[i].isCurDetected && !babyDangers[i].isUnlocked {      // notify only when danger was not unlocked yet
+            if babyDangers[i].objectIds.contains(objectId)
+                && !babyDangers[i].isCurDetected
+                && (!babyDangers[i].isUnlocked || (babyDangers[i].isUnlocked && findUnlocked))
+                && (!babyDangers[i].isBanned || (babyDangers[i].isBanned && findBanned)) {
+                
                 babyDangers[i].isUnlocked = true
                 babyDangers[i].isCurDetected = true
                 dangerDetected = true
