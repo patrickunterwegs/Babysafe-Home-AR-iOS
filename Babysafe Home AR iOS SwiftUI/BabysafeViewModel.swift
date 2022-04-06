@@ -12,8 +12,8 @@ import SwiftUI
 
 class BabysafeViewModel: ObservableObject {
     
-    @Published var selectedCountry: ShopCountry = .at
-    @Published var selectedShop: Shop = .amazonDE
+    @AppStorage("selectedCountry") var selectedCountry: ShopCountry = .at
+    @AppStorage("selectedShop") var selectedShop: Shop = .amazonDE
     
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
