@@ -122,6 +122,15 @@ class BabysafeViewModel: ObservableObject {
         }
     }
     
+    func unlockAllDangers() {
+        
+        for i in 0 ... babyDangers.count-1 {
+            babyDangers[i].isUnlocked = true
+        }
+        saveUnlocked()
+    }
+    
+    
     func resetCurDetected() {
         for i in 0 ... babyDangers.count-1 {
             babyDangers[i].isCurDetected = false
