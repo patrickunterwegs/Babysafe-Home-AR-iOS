@@ -28,7 +28,7 @@ struct AboutAppInfoView: View {
                             .font(.title2)
                             .bold()
                         Text("Version \(version) (\(build))")
-                        Text("Codename: \"Babysafe Rulz\"")
+                        //Text("Codename: \"Babysafe Rulz\"")
                         Text("about_app_copyright")
                         Spacer()
                         }
