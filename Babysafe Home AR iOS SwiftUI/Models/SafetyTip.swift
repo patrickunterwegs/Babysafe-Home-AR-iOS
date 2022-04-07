@@ -44,7 +44,7 @@ extension SafetyTip {
             id: "BABY_PRISON",
             title: String("tip_baby_prison_title"),
             description: String("tip_baby_prison_text"),
-            image: "img_fence",
+            image: "img_grid",
             linkAliExpress: [],
             linkAmazonDE: [])
     ]
