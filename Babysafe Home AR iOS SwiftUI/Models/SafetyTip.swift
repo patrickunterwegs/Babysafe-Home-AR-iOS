@@ -13,6 +13,7 @@ struct SafetyTip: Identifiable {
     let id: String
     let title: String
     let description: String
+    let image: String
     let linkGlobal: [SafetyTipLink]
     let linkAmazonDE: [SafetyTipLink]
     var isUnlocked: Bool = false
@@ -25,6 +26,7 @@ extension SafetyTip {
             id: "ELECTRICITY",
             title: String("tip_electricity_title"),
             description: String("tip_electricity_text"),
+            image: "img_powerplug",
             linkGlobal: [SafetyTipLink(text: "Whatever...", link: URL.init(string: "https://www.amazon.at")!)],
             linkAmazonDE:
                 [SafetyTipLink(text: "tip_electricity_stecken", link: URL.init(string: "https://www.amazon.de/dp/B00PHHMW02/?tag=glv-21&ascsubtag=a349919b-5a0c-48d6-8361-e2c4486bd521&th=1&psc=1&linkCode=osi")!),
@@ -35,6 +37,7 @@ extension SafetyTip {
             id: "WHATEVER2",
             title: String("danger_toiletwater_title"),
             description: String("danger_toiletwater_text"),
+            image: "img_grid",
             linkGlobal: [],
             linkAmazonDE: [])
     ]

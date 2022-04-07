@@ -20,40 +20,49 @@ struct MainTipDetailView: View {
     
     var body: some View {
         ScrollView {
-            GroupBox {
-                VStack {
-
-                    Text(LocalizedStringKey(safetyTip.description))
-                        .padding(.bottom, 8)
-                        .font(.body)
-                    
-                    HStack {
-                        Spacer()
+            VStack {
+                Image(safetyTip.image)
+                    .resizable()
+                    //.frame(width: .infinity, height: 150, alignment: .center)
+                    //.clipped()
+                    .aspectRatio(contentMode: .fill)
+                                 
+                GroupBox {
+                    VStack {
                         
-                        Button(action: {
-                            self.isShareSheetPresented = true
-                        }) {
-                            Label("share", systemImage: "square.and.arrow.up")
-                          }.sheet(isPresented: $isShareSheetPresented, onDismiss: {
-                            print("Dismiss")
-                            self.isShareSheetPresented = false
 
-                            }, content: {
-                                ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
-                            }).padding(8)
-                    
+                        Text(LocalizedStringKey(safetyTip.description))
+                            .padding(.bottom, 8)
+                            .font(.body)
                         
-                        ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
+                        HStack {
+                            Spacer()
                             
-                            Link(destination: safetyTipLink.link) {
-                                Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
-                            }.padding(8)
+                            Button(action: {
+                                self.isShareSheetPresented = true
+                            }) {
+                                Label("share", systemImage: "square.and.arrow.up")
+                              }.sheet(isPresented: $isShareSheetPresented, onDismiss: {
+                                print("Dismiss")
+                                self.isShareSheetPresented = false
+
+                                }, content: {
+                                    ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
+                                }).padding(8)
                         
+                            
+                            ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
+                                
+                                Link(destination: safetyTipLink.link) {
+                                    Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
+                                }.padding(8)
+                            
+                            }
                         }
                     }
                 }
+                .padding()
             }
-            .padding()
         }
         .navigationTitle(LocalizedStringKey(safetyTip.title))
     }
