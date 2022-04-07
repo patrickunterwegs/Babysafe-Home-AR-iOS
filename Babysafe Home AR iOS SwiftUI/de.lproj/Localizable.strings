@@ -6,6 +6,13 @@
   
 */
 
+/* iOS only!! */
+"austria" = "Österreich";
+"germany" = "Deutschland";
+"switzerland" = "Schweiz";
+"world" = "Welt";
+
+
 
 "action_settings" = "Einstellungen";
 

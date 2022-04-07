@@ -6,6 +6,11 @@
   
 */
 
+/* iOS only!! */
+"austria" = "Austria";
+"germany" = "Germany";
+"switzerland" = "Switzerland";
+"world" = "World";
 
 /*Strings used for fragments for navigation*/
 "close" = "Close";

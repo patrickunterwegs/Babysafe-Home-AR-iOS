@@ -17,10 +17,10 @@ enum ShopCountry: String, CaseIterable, Identifiable {
     
     var name: String {
         switch self {
-        case .at: return "Austria"
-        case .de: return "Germany"
-        case .ch: return "Switzerland"
-        case .world: return "World"
+        case .at: return NSLocalizedString("austria", comment: "")
+        case .de: return NSLocalizedString("germany", comment: "")
+        case .ch: return NSLocalizedString("switzerland", comment: "")
+        case .world: return NSLocalizedString("world", comment: "")
         }
     }
     
