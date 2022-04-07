@@ -31,12 +31,16 @@ struct CameraView: View {
                             camera.session.startRunning()
                         }
                     })
+                
+                // USE FOR DEBUGGING
+                /*
                 Spacer()
                 GroupBox {
                     HStack {
                         Text(String(camera.objectIdentifier))
                     }
                 }
+                 */
             }
         }.onAppear(perform: {
             camera.checkPermission()
@@ -104,7 +108,8 @@ struct CameraView: View {
         @Published var model: BabysafeViewModel!   // is set when the CameraModel gets instantiated
         
         
-        @Published var objectIdentifier: String = ""
+        // USE FOR DEBUGGING
+        // @Published var objectIdentifier: String = ""
         
         
         func checkPermission() {
@@ -218,21 +223,21 @@ struct CameraView: View {
             }
             
             
-            // only for debugging!
+            // USE FOR DEBUGGING
+            /*
             let resultsText = objects.first?.labels.map { label -> String in
                 return "Label: \(label.text), Confidence: \(label.confidence), Index: \(label.index)"
             }.joined(separator: "\n")
-            
-            //self.updatePreviewOverlayViewWithLastFrame()
-            
+
             guard resultsText?.count != 0 else { return }
+             */
             
             //weak var weakSelf = self
             DispatchQueue.main.sync {
                 
-                // Check labels and update UI here!!!
+                //  USE FOR DEBUGGING
                 //print(resultsText)
-                objectIdentifier = resultsText ?? "nothing found"
+                //objectIdentifier = resultsText ?? "nothing found"
                 
                 objects.first?.labels.forEach { label in
                     model.unlock(objectId: label.index)
