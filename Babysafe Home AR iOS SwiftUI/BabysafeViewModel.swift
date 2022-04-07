@@ -11,8 +11,8 @@ import SwiftUI
 
 class BabysafeViewModel: ObservableObject {
     
-    @AppStorage("selectedCountry") var selectedCountry: ShopCountry = .at
-    @AppStorage("selectedShop") var selectedShop: Shop = .amazonDE
+    @AppStorage("selectedCountry") var selectedCountry: ShopCountry = getDefaultCountry()
+    @AppStorage("selectedShop") var selectedShop: Shop = getDefaultShopForCountry(country: getDefaultCountry())
     
     @AppStorage("findUnlocked") var findUnlocked = true
     @AppStorage("findBanned") var findBanned = true
@@ -27,7 +27,7 @@ class BabysafeViewModel: ObservableObject {
     
     @Published var newDangerDetected = false
     
-    
+
     
     func getNumUnlocked() -> Int {
         var numUnlocked = 0

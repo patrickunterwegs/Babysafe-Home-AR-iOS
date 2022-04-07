@@ -33,3 +33,15 @@ enum ShopCountry: String, CaseIterable, Identifiable {
         }
     }
 }
+
+
+func getDefaultCountry() -> ShopCountry {
+    switch Locale.current.regionCode {
+    case "US": return .world
+    case "AT": return .at
+    case "CH": return .ch
+    case "DE": return .de
+    case .none: return .world
+    case .some(_): return .world
+    }
+}

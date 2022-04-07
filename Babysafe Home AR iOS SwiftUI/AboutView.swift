@@ -37,7 +37,7 @@ struct AboutView: View {
                             Text(country.name).tag(country.id)
                         }
                     }.onChange(of: model.selectedCountry) { country in
-                        model.selectedShop = model.selectedCountry.shops.first!
+                        model.selectedShop = getDefaultShopForCountry(country: model.selectedCountry)
                     }
                     Picker("Shop", selection: $model.selectedShop) {
                         ForEach(model.selectedCountry.shops) { shop in

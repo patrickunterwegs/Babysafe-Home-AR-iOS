@@ -26,3 +26,14 @@ enum Shop: String, CaseIterable, Identifiable {
         }
     }
 }
+
+func getDefaultShopForCountry(country: ShopCountry) -> Shop {
+    
+    switch country {
+    case .at: return .amazonDE
+    case .de: return .amazonDE
+    case .ch: return .babywalzCH
+    case .world: return .aliexpress
+    }
+}
+
