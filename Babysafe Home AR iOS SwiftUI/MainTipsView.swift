@@ -21,8 +21,12 @@ struct MainTipsView: View {
                         NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
                             Text(LocalizedStringKey(safetyTip.title))
                                 .font(.subheadline)
+                                .scaledToFill()
                             Spacer()
-                            Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
+                            Image(systemName: "circlebadge.fill")
+                                .foregroundColor(.yellow)
+                                .multilineTextAlignment(.trailing)
+
                         }
                         .navigationTitle("main_tab_tips")
                         .navigationBarTitleDisplayMode(.large)
