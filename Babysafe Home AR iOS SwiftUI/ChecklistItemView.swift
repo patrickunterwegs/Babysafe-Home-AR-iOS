@@ -28,16 +28,20 @@ struct ChecklistItemView: View {
                 ZStack {
                     if babyDanger.isBanned {
                         Image(systemName: "checkmark.seal")
-                            .imageScale(.large)
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
                             .foregroundColor(.green)
                             .transition(.scale)
+                            .padding(4)
                     } else {
                         Image(systemName: "cross")
-                            .imageScale(.large)
+                            .resizable()
+                            .frame(width: 25, height: 25, alignment: .center)
                             .foregroundColor(.red)
                             .transition(.scale)
+                            .padding(4)
                     }
-                }.animation(.interactiveSpring())
+                }.animation(.spring(), value: babyDanger.isBanned)
                 
                 Text(LocalizedStringKey(babyDanger.title))
                     .bold()
