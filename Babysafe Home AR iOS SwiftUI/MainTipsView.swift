@@ -39,7 +39,6 @@ struct MainTipsView: View {
                 }
             }
             
-            
             Spacer()
             HStack {
                 Spacer()
@@ -51,7 +50,9 @@ struct MainTipsView: View {
                     .resizable()
                     .frame(width: 100.0, height: 100.0)
             }
-        }
+        }.onAppear (perform: {
+            model.prepareNotification()
+        })
     }
 }
 

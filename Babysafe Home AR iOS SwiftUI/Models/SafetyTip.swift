@@ -32,7 +32,9 @@ extension SafetyTip {
             linkAmazonDE:
                 [SafetyTipLink(text: "tip_electricity_stecken", link: URL.init(string: "https://www.amazon.de/dp/B00PHHMW02/?tag=glv-21&ascsubtag=a349919b-5a0c-48d6-8361-e2c4486bd521&th=1&psc=1&linkCode=osi")!),
                  SafetyTipLink(text: "tip_electricity_schrauben", link: URL.init(string: "https://www.baby-walz.at/p/reer-20er-pack-steckdosenschutz-schraubbar-p1535876/?variantId=P1535876_177735928&amp;ff_campaign=&amp;ff_origPageSize=60&amp;ff_pos=2&amp;ff_page=1&amp;ff_query=Wohnen%2fSicherheit%2fKindersicherung&amp;ff_mid=536244")!)
-                 ]),
+                 ],
+            isUnlocked: true,
+            isUnread: true),
         SafetyTip(
             id: "TILL_HERE",
             title: String("tip_till_here_not_further_title"),
@@ -44,6 +46,13 @@ extension SafetyTip {
             id: "BABY_PRISON",
             title: String("tip_baby_prison_title"),
             description: String("tip_baby_prison_text"),
+            image: "img_grid",
+            linkAliExpress: [],
+            linkAmazonDE: []),
+        SafetyTip(
+            id: "BETA_END",
+            title: String("This is the end ..."),
+            description: String("... of the entries in this beta-version, more to come :-)"),
             image: "img_grid",
             linkAliExpress: [],
             linkAmazonDE: [])

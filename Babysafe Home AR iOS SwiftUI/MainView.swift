@@ -96,7 +96,19 @@ struct MainView: View {
                 model.loadFromUserDefaults()
                 model.unlockSafetyTipIfAvailable()
             })
+            .task {
+                await checkForNewSafetyTip()
+            }
     }
+    
+    /**
+     Check every minute if a new safety tip is available. Otherwise the UI might not get updated after a notification if the app is still running in the background.
+     */
+    private func checkForNewSafetyTip() async {
+            // Delay of 60 seconds (1 second = 1_000_000_000 nanoseconds)
+            try? await Task.sleep(nanoseconds: 60_000_000_000)
+            model.unlockSafetyTipIfAvailable()
+        }
 }
 
 struct MainView_Previews: PreviewProvider {

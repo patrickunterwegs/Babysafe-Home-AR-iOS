@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+import UserNotifications
 
 class BabysafeViewModel: ObservableObject {
     
@@ -18,12 +18,12 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("findBanned") var findBanned = true
     
     @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
-    @AppStorage("nextTipUnlockTime") var nextTipUnlockTime: Double = 0    // will take Date().timeIntervalSince1970
+    @AppStorage("nextTipUnlockTime") var lastTipUnlockTime: Double = 0
     
     var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedDangersKey) ?? [])
     var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.bannedDangersKey) ?? [])
-    var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedTipsKey) ?? [])
-    var unreadTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unreadTipsKey) ?? [])
+    var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedTipsKey) ?? ["ELECTRICITY"])
+    var unreadTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unreadTipsKey) ?? ["ELECTRICITY"])
 
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
@@ -240,7 +240,12 @@ class BabysafeViewModel: ObservableObject {
     }
     
     func unlockSafetyTipIfAvailable() {
-        if Date() >= Date(timeIntervalSince1970: nextTipUnlockTime) {
+        
+        if lastTipUnlockTime == 0 {
+            lastTipUnlockTime = Date().timeIntervalSince1970   // only for first initialization
+        }
+        
+        if Date() >= Date(timeIntervalSince1970: lastTipUnlockTime).addingTimeInterval(Constant.nextTipUnlockInterval) {
             for i in 0...safetyTips.count-1 {
                 if safetyTips[i].isUnlocked {
                     continue
@@ -249,12 +254,65 @@ class BabysafeViewModel: ObservableObject {
                     safetyTips[i].isUnread = true
                     saveUnlockedTips()
                     saveUnreadTips()
-                    nextTipUnlockTime = (Date().addingTimeInterval(TimeInterval(Constant.nextTipUnlockInterval))).timeIntervalSince1970
+                    //self.objectWillChange.send()
+                    lastTipUnlockTime = Date().timeIntervalSince1970
+                    prepareNotification()
                     break   // we stop the loop here (we unlock only one tip)
                 }
             }
         }
     }
+    
+    func prepareNotification() {
+        
+        let current = UNUserNotificationCenter.current()
+
+        current.getNotificationSettings(completionHandler: { (settings) in
+            if settings.authorizationStatus == .notDetermined {
+                // Notification permission has not been asked yet, go for it!
+                current.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        print("Notification permission granted")
+                        scheduleNotification()
+                    } else if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+            } else if settings.authorizationStatus == .denied {
+                // Notification permission was previously denied, go to settings & privacy to re-enable - do nothing
+            } else if settings.authorizationStatus == .authorized {
+                scheduleNotification()
+            }
+        })
+        
+        
+        
+        // inner function
+        func scheduleNotification() {
+            
+            // find next safety tip to unlock
+            for i in 0...safetyTips.count-1 {
+                if safetyTips[i].isUnlocked {
+                    continue
+                } else {
+
+                    // a safety tip was found, that was not unlocked, we schedule a  notification.
+                    let content = UNMutableNotificationContent()
+                    content.title = NSLocalizedString("articles_notification_title", comment: "")
+                    content.subtitle = "\"" + NSLocalizedString(self.safetyTips[i].title, comment: "") + "\""
+                    content.sound = UNNotificationSound.default
+                    
+                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Constant.nextTipUnlockInterval, repeats: false)
+                    let request = UNNotificationRequest(identifier: self.safetyTips[i].id, content: content, trigger: trigger)
+                    
+                    UNUserNotificationCenter.current().add(request)
+                    break   // we stop the loop here (we schedule only one notification)
+                }
+            }
+        }
+    }
+    
+
     
     private enum Constant {
         static let unlockedDangersKey = "unlockedDangers"
@@ -262,6 +320,6 @@ class BabysafeViewModel: ObservableObject {
         static let unlockedTipsKey = "unlockedTips"
         static let unreadTipsKey = "unreadTips"
         
-        static let nextTipUnlockInterval = 1*60
+        static let nextTipUnlockInterval: TimeInterval = 1*60     // time interval are always seconds!
     }
 }
