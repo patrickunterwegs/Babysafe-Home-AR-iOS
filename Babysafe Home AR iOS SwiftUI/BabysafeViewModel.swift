@@ -320,6 +320,6 @@ class BabysafeViewModel: ObservableObject {
         static let unlockedTipsKey = "unlockedTips"
         static let unreadTipsKey = "unreadTips"
         
-        static let nextTipUnlockInterval: TimeInterval = 1*60     // time interval are always seconds!
+        static let nextTipUnlockInterval: TimeInterval = 1*60*60*24     // time interval are always seconds!
     }
 }
