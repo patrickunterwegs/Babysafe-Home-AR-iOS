@@ -90,7 +90,7 @@ struct Badge: View {
                     Image(image)
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
-                    LottieView(name: "confetti", loopMode: .playOnce)
+                    LottieView(name: "confetti", loopMode: .loop)
                 } else {
                     Image(image)
                         .resizable()
