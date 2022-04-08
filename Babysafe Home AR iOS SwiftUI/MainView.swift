@@ -57,7 +57,7 @@ struct MainView: View {
                         .navigationTitle("main_tab_tips")
                         .navigationBarTitleDisplayMode(.inline)
                 }
-                .badge(1)
+                .badge(model.getNumUnread())
                 .tabItem {
                     Image(systemName: "lightbulb")
                     Text("main_tab_tips")
@@ -94,6 +94,7 @@ struct MainView: View {
             .environmentObject(model)
             .onAppear (perform: {
                 model.loadFromUserDefaults()
+                model.unlockSafetyTipIfAvailable()
             })
     }
 }

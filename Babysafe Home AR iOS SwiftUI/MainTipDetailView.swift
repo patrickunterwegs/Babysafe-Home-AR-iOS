@@ -70,6 +70,15 @@ struct MainTipDetailView: View {
           }, content: {
               ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
           }).padding(8)
+            .onAppear {
+                if(model.unreadTips.contains(safetyTip.id)) {
+                    let index = model.safetyTips.firstIndex(where: { st in
+                        safetyTip.id == st.id
+                    })
+                    model.safetyTips[index!].isUnread = false
+                    model.saveUnreadTips()
+                }
+            }
     }
 }
 

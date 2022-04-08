@@ -10,41 +10,34 @@ import SwiftUI
 struct MainTipsView: View {
     
     @EnvironmentObject var model: BabysafeViewModel
-
-
+    
+    
     var body: some View {
-            VStack(alignment: .center) {
-
-                List {
+        VStack(alignment: .center) {
+            
+            List {
+                
+                ForEach($model.safetyTips) { $safetyTip in
                     
-                    ForEach($model.safetyTips) { $safetyTip in
+                    if safetyTip.isUnlocked {
                         NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
                             Text(LocalizedStringKey(safetyTip.title))
                                 .font(.subheadline)
                                 .bold()
                                 .scaledToFill()
-                            Spacer()
-                            Image(systemName: "circlebadge.fill")
-                                .foregroundColor(.yellow)
-                                .multilineTextAlignment(.trailing)
-
+                            
+                            if safetyTip.isUnread {
+                                Spacer()
+                                Image(systemName: "circlebadge.fill")
+                                    .foregroundColor(.yellow)
+                                    .multilineTextAlignment(.trailing)
+                            }
                         }
                         .navigationTitle("main_tab_tips")
                         .navigationBarTitleDisplayMode(.inline)
-
-                        
-                        /*
-                        if safetyTip.isUnlocked {
-                            //ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
-                            NavigationLink(destination: MainTipDetailView()) {
-                                Text(safetyTip.title)
-                                Spacer()
-                                Image(systemName: "circlebadge.fill").foregroundColor(.yellow)
-                            }
-                        }
-                         */
                     }
                 }
+            }
             
             
             Spacer()

@@ -18,10 +18,12 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("findBanned") var findBanned = true
     
     @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
+    @AppStorage("nextTipUnlockTime") var nextTipUnlockTime: Double = 0    // will take Date().timeIntervalSince1970
     
-    var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedDangers") ?? [])
-    var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "bannedDangers") ?? [])
-    var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedTips") ?? [])
+    var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedDangersKey) ?? [])
+    var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.bannedDangersKey) ?? [])
+    var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedTipsKey) ?? [])
+    var unreadTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unreadTipsKey) ?? [])
 
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
@@ -98,6 +100,17 @@ class BabysafeViewModel: ObservableObject {
         return score
     }
     
+    func getNumUnread() -> Int {
+        
+        var numUnread = 0
+        safetyTips.forEach { safetyTip in
+            if safetyTip.isUnread {
+                numUnread += 1
+            }
+        }
+        return numUnread
+    }
+    
     
     
     
@@ -172,6 +185,14 @@ class BabysafeViewModel: ObservableObject {
                 }
             }
         }
+        
+        unreadTips.forEach { unreadTip in
+            for i in 0 ... self.safetyTips.count-1 {
+                if unreadTip == self.safetyTips[i].id {
+                    self.safetyTips[i].isUnread = true
+                }
+            }
+        }
     }
     
     func saveUnlocked() {
@@ -182,7 +203,7 @@ class BabysafeViewModel: ObservableObject {
                 unlockedDangers.append(babyDanger.id)
             }
         }
-        UserDefaults.standard.set(unlockedDangers, forKey: "unlockedDangers")
+        UserDefaults.standard.set(unlockedDangers, forKey: Constant.unlockedDangersKey)
     }
     
     func saveBanned() {
@@ -193,7 +214,7 @@ class BabysafeViewModel: ObservableObject {
                 bannedDangers.append(babyDanger.id)
             }
         }
-        UserDefaults.standard.set(bannedDangers, forKey: "bannedDangers")
+        UserDefaults.standard.set(bannedDangers, forKey: Constant.bannedDangersKey)
     }
     
     func saveUnlockedTips() {
@@ -204,6 +225,43 @@ class BabysafeViewModel: ObservableObject {
                 unlockedTips.append(safetyTip.id)
             }
         }
-        UserDefaults.standard.set(unlockedTips, forKey: "unlockedTips")
+        UserDefaults.standard.set(unlockedTips, forKey: Constant.unlockedTipsKey)
+    }
+    
+    func saveUnreadTips() {
+        
+        unreadTips.removeAll()
+        self.safetyTips.forEach { safetyTip in
+            if safetyTip.isUnread {
+                unreadTips.append(safetyTip.id)
+            }
+        }
+        UserDefaults.standard.set(unreadTips, forKey: Constant.unreadTipsKey)
+    }
+    
+    func unlockSafetyTipIfAvailable() {
+        if Date() >= Date(timeIntervalSince1970: nextTipUnlockTime) {
+            for i in 0...safetyTips.count-1 {
+                if safetyTips[i].isUnlocked {
+                    continue
+                } else {
+                    safetyTips[i].isUnlocked = true
+                    safetyTips[i].isUnread = true
+                    saveUnlockedTips()
+                    saveUnreadTips()
+                    nextTipUnlockTime = (Date().addingTimeInterval(TimeInterval(Constant.nextTipUnlockInterval))).timeIntervalSince1970
+                    break   // we stop the loop here (we unlock only one tip)
+                }
+            }
+        }
+    }
+    
+    private enum Constant {
+        static let unlockedDangersKey = "unlockedDangers"
+        static let bannedDangersKey = "bannedDangers"
+        static let unlockedTipsKey = "unlockedTips"
+        static let unreadTipsKey = "unreadTips"
+        
+        static let nextTipUnlockInterval = 1*60
     }
 }
