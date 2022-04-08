@@ -40,6 +40,7 @@
 		CDA4C76C27EE5FDB003A0B94 /* AboutThanksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76B27EE5FDB003A0B94 /* AboutThanksView.swift */; };
 		CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */; };
 		CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76F27EE6EA3003A0B94 /* MainView.swift */; };
+		CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91828003D840052F161 /* LaunchScreen.storyboard */; };
 		EAB450F042316072E5A6EC01 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,8 @@
 		CDA4C76B27EE5FDB003A0B94 /* AboutThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThanksView.swift; sourceTree = "<group>"; };
 		CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAttributionsView.swift; sourceTree = "<group>"; };
 		CDA4C76F27EE6EA3003A0B94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CDC1E91828003D840052F161 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -202,6 +205,7 @@
 		CDA4C73A27EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */,
 				CD1C94D127FD98F50078C1D4 /* Lottiefiles */,
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
@@ -226,6 +230,7 @@
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
 				CD1C94CF27FD98D70078C1D4 /* LottieView.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
+				CDC1E91828003D840052F161 /* LaunchScreen.storyboard */,
 			);
 			path = "Babysafe Home AR iOS SwiftUI";
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				CD1C94D327FD993D0078C1D4 /* confetti.json in Resources */,
 				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
+				CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */,
 				CD27606627EF0136003A833D /* Localizable.strings in Resources */,
 				CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */,
 			);
@@ -737,6 +743,8 @@
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Babysafe Home AR";
 				INFOPLIST_KEY_NSCameraUsageDescription = dialog_camera_permission_denied_message;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -769,6 +777,8 @@
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Babysafe Home AR";
 				INFOPLIST_KEY_NSCameraUsageDescription = dialog_camera_permission_denied_message;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
