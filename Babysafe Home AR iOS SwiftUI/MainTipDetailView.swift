@@ -26,6 +26,7 @@ struct MainTipDetailView: View {
                     //.frame(width: .infinity, height: 150, alignment: .center)
                     //.clipped()
                     .aspectRatio(contentMode: .fill)
+                    .cornerRadius(8)
                 
                 Text(LocalizedStringKey(safetyTip.title))
                     .font(.title)
