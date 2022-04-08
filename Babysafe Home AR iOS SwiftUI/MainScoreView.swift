@@ -45,22 +45,56 @@ struct MainScoreView: View {
                             .padding()
                         
                         if model.getPercentUnlocked() == 100.0 && model.getPercentBanned() == 100.0 {
-                            ScoreDependingBottomView(image: "astronaut_king", header: "score_all_banned_header", text: "score_all_banned_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_king",
+                                header: "score_all_banned_header",
+                                text: resolveScorePlaceholders(text: "score_all_banned_text")
+                            )
                         } else if model.getPercentBanned() >= 50.0 {
-                            ScoreDependingBottomView(image: "astronaut_hero", header: "score_half_banned_header", text: "score_half_banned_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_hero",
+                                header: "score_half_banned_header",
+                                text: resolveScorePlaceholders(text: "score_half_banned_text")
+                            )
                         } else if model.getPercentUnlocked() == 100 {
-                            ScoreDependingBottomView(image: "astronaut_posing", header: "score_all_unlocked_header", text: "score_half_unlocked_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_posing",
+                                header: "score_all_unlocked_header",
+                                text: resolveScorePlaceholders(text: "score_half_unlocked_text")
+                            )
                         } else if model.getPercentUnlocked() >= 50.0 {
-                            ScoreDependingBottomView(image: "astronaut_flying", header: "score_half_unlocked_header", text: "score_half_unlocked_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_flying",
+                                header: "score_half_unlocked_header",
+                                text: resolveScorePlaceholders(text: "score_half_unlocked_text")
+                            )
                         } else if model.getPercentUnlocked() >= 1 {
-                            ScoreDependingBottomView(image: "astronaut_jumping", header: "score_first_unlocked_header", text: "score_first_unlocked_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_jumping",
+                                header: "score_first_unlocked_header",
+                                text: resolveScorePlaceholders(text: "score_first_unlocked_text")
+                            )
                         } else {
-                            ScoreDependingBottomView(image: "astronaut_phone", header: "score_nothing_unlocked_header", text: "score_nothing_unlocked_text")
+                            ScoreDependingBottomView(
+                                image: "astronaut_phone",
+                                header: "score_nothing_unlocked_header",
+                                text: resolveScorePlaceholders(text: "score_nothing_unlocked_text")
+                            )
                         }
                     }
                 }.padding()
             }
         }.navigationTitle("main_tab_score")
+    }
+    
+    func resolveScorePlaceholders(text: String) -> String {
+        
+        let score = String(format: "%.0f", model.getProgressPercent())
+        
+        var resolvedText = NSLocalizedString(text, comment: "")
+        resolvedText = resolvedText.replacingOccurrences(of: "%1$d", with: String(score))
+        resolvedText = resolvedText.replacingOccurrences(of: "%2$s", with: model.babyName)
+        return resolvedText
     }
 }
 
