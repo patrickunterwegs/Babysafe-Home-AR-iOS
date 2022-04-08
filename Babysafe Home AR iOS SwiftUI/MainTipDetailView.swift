@@ -26,30 +26,20 @@ struct MainTipDetailView: View {
                     //.frame(width: .infinity, height: 150, alignment: .center)
                     //.clipped()
                     .aspectRatio(contentMode: .fill)
+                
+                Text(LocalizedStringKey(safetyTip.title))
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .padding(.top)
                                  
                 GroupBox {
                     VStack {
-                        
 
                         Text(LocalizedStringKey(safetyTip.description))
                             .padding(.bottom, 8)
                             .font(.body)
                         
                         HStack {
-                            Spacer()
-                            
-                            Button(action: {
-                                self.isShareSheetPresented = true
-                            }) {
-                                Label("share", systemImage: "square.and.arrow.up")
-                              }.sheet(isPresented: $isShareSheetPresented, onDismiss: {
-                                print("Dismiss")
-                                self.isShareSheetPresented = false
-
-                                }, content: {
-                                    ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
-                                }).padding(8)
-                        
                             
                             ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
                                 
@@ -61,10 +51,24 @@ struct MainTipDetailView: View {
                         }
                     }
                 }
-                .padding()
             }
         }
         .navigationTitle(LocalizedStringKey(safetyTip.title))
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            Button(action: {
+                self.isShareSheetPresented = true
+            }) {
+                Label("share", systemImage: "square.and.arrow.up")
+              }
+        })
+        .sheet(isPresented: $isShareSheetPresented, onDismiss: {
+          print("Dismiss")
+          self.isShareSheetPresented = false
+
+          }, content: {
+              ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
+          }).padding(8)
     }
 }
 

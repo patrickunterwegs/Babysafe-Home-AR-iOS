@@ -29,7 +29,7 @@ struct MainTipsView: View {
 
                         }
                         .navigationTitle("main_tab_tips")
-                        .navigationBarTitleDisplayMode(.large)
+                        .navigationBarTitleDisplayMode(.inline)
 
                         
                         /*
