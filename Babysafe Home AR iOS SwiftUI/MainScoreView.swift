@@ -80,6 +80,9 @@ struct Badge: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    @State var percentRevealAnimated: Float = 0.0
+
+    
     var body: some View {
         VStack {
             ZStack {
@@ -87,6 +90,7 @@ struct Badge: View {
                     Image(image)
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
+                    LottieView(name: "confetti", loopMode: .playOnce)
                 } else {
                     Image(image)
                         .resizable()
@@ -94,13 +98,17 @@ struct Badge: View {
                         .colorMultiply(colorScheme == .dark ? .white : .black)
                         .frame(width: 100.0, height: 100.0)
                         .opacity(0.1)
-                    Text(String(format: "%.0f%%", percentReveal))
+                    Text(String(format: "%.0f%%", percentRevealAnimated))
                         .font(.caption)
                         .bold()
                         .frame(width: 100.0, height: 100.0)
                 }
             }
             Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
+        }.onAppear {
+            withAnimation(.spring()) {
+                percentRevealAnimated = percentReveal
+            }
         }
     }
 }
@@ -124,6 +132,8 @@ struct Badge_Revealed_Previews: PreviewProvider {
 struct ProgressBar: View {
     var progress: Float
     
+    @State var progressAnimated: Float = 0.0
+    
     var body: some View {
         ZStack {
             Circle()
@@ -131,16 +141,20 @@ struct ProgressBar: View {
                 .opacity(0.3)
                 .foregroundColor(Color.red)
             Circle()
-                .trim(from: 0.0, to: CGFloat(min(progress/100, 1.0)))
+                .trim(from: 0.0, to: CGFloat(min(progressAnimated/100, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
                 .foregroundColor(Color.red)
                 .rotationEffect(Angle(degrees: 270.0))
                 //.animation(.linear)
-            Text(String(format: "%.0f", progress))
+            Text(String(format: "%.0f", progressAnimated))
                 //.font(.largeTitle)
                 .font(.custom("progress", size: 72))
                 .bold()
             LottieView(name: "confetti")
+        }.onAppear {
+            withAnimation(.spring()) {
+                progressAnimated = progress
+            }
         }
     }
 }
@@ -148,7 +162,7 @@ struct ProgressBar: View {
 struct ProgressBar_Previews: PreviewProvider {
     
     static var previews: some View {
-        ProgressBar(progress: 0.23)
+        ProgressBar(progress: 23)
             .previewLayout(.sizeThatFits)
     }
 }

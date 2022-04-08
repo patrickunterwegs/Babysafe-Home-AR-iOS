@@ -41,6 +41,7 @@
 		CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */; };
 		CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76F27EE6EA3003A0B94 /* MainView.swift */; };
 		CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91828003D840052F161 /* LaunchScreen.storyboard */; };
+		CDC1E91B28004A520052F161 /* starblast.json in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91A28004A520052F161 /* starblast.json */; };
 		EAB450F042316072E5A6EC01 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		CDA4C76F27EE6EA3003A0B94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CDC1E91828003D840052F161 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDC1E91A28004A520052F161 /* starblast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starblast.json; sourceTree = "<group>"; };
 		F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 		CD1C94D127FD98F50078C1D4 /* Lottiefiles */ = {
 			isa = PBXGroup;
 			children = (
+				CDC1E91A28004A520052F161 /* starblast.json */,
 				CD1C94D227FD993D0078C1D4 /* confetti.json */,
 			);
 			path = Lottiefiles;
@@ -378,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC1E91B28004A520052F161 /* starblast.json in Resources */,
 				CD1C94D327FD993D0078C1D4 /* confetti.json in Resources */,
 				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
