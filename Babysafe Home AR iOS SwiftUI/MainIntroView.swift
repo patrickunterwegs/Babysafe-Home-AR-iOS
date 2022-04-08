@@ -9,9 +9,12 @@ import SwiftUI
 
 struct MainIntroView: View {
     
-    //@State private var babyname: String = "Your baby"
-    
+    @EnvironmentObject var model: BabysafeViewModel
+
     @Binding var isPresentingCameraView: Bool
+    
+    @FocusState private var babyNameFieldIsFocused: Bool
+
 
     
     var body: some View {
@@ -30,7 +33,6 @@ struct MainIntroView: View {
                         Text("intro_info_text")
                             .multilineTextAlignment(.center)
                             .font(.title3)
-                        
 
                         Spacer()
                         Image("astronaut_camera")
@@ -38,32 +40,9 @@ struct MainIntroView: View {
                             .frame(width: 200.0, height: 200.0)
                     }
 
-                    /*
-                    GroupBox {
-                        Form {
-                            Section(header: Text("intro_tell_us_baby_name")) {
-                                TextField(
-                                    "intro_tell_us_baby_name",
-                                    text: $babyname
-                                )
-                                .onSubmit {
-                                    //validate(name: username)
-                                }
-                                .textInputAutocapitalization(.words)
-                                .disableAutocorrection(true)
-                                .border(.clear)
-                                .multilineTextAlignment(.center)
-                            }
-                        
-                        }.frame(height: 150)
-                    }
-                     */
+
+                
                     
-                    /*
-                    NavigationLink(destination: CameraView()) {
-                        Label("start_ar_view", systemImage: "camera.viewfinder")
-                    }
-                     */
                     Button(action: {
                         isPresentingCameraView = true
                     }) {
@@ -78,6 +57,28 @@ struct MainIntroView: View {
                     .buttonStyle(.automatic)
                     .buttonBorderShape(.automatic)
                     .padding()
+                    
+                    
+                    Form {
+                        Section(header: Text("intro_tell_us_baby_name")) {
+                            TextField(
+                                "intro_tell_us_baby_name",
+                                text: $model.babyName
+                            )
+                            .onSubmit {       }
+                            .focused($babyNameFieldIsFocused)
+                            .textInputAutocapitalization(.words)
+                            .disableAutocorrection(true)
+                            .border(.clear)
+                            .multilineTextAlignment(.center)
+                        }
+                    
+                    }
+                    .cornerRadius(8)
+                    .frame(height: 150)
+                    .padding()
+                        
+                    
                     
                     GroupBox {
                         Text("intro_howto_header")
@@ -110,5 +111,6 @@ struct MainIntroView: View {
 struct MainIntroView_Previews: PreviewProvider {
     static var previews: some View {
         MainIntroView(isPresentingCameraView: .constant(false))
+            .environmentObject(BabysafeViewModel())
     }
 }

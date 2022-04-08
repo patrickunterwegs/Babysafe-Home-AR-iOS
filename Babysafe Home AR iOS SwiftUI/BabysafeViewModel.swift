@@ -17,6 +17,8 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("findUnlocked") var findUnlocked = true
     @AppStorage("findBanned") var findBanned = true
     
+    @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
+    
     var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedDangers") ?? [])
     var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: "bannedDangers") ?? [])
     var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: "unlockedTips") ?? [])

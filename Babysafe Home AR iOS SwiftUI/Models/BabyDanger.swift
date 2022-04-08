@@ -337,4 +337,10 @@ extension BabyDanger {
         shareText += "\n\n" + addition
         return shareText
     }
+    
+    func getDescriptionWithBabyname(babyName: String) -> String {
+        var desc = NSLocalizedString(description, comment: "")
+        desc = desc.replacingOccurrences(of: "%1$s", with: babyName)
+        return desc
+    }
 }

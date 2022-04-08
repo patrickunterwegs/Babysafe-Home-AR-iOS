@@ -43,26 +43,16 @@ struct ChecklistItemView: View {
                     }
                 }.animation(.spring(), value: babyDanger.isBanned)
                 
-                Text(LocalizedStringKey(babyDanger.title))
+                Text(NSLocalizedString(babyDanger.title, comment: ""))
                     .bold()
                     .font(.title3)
                 
                 Spacer()
-                /*
-                Button(action: {
-                    babyDanger.isBanned.toggle()
-                    model.saveToDataStore()
-                }) {
-                    switch babyDanger.isBanned {
-                        case true: Label("Banned", systemImage: "checkmark.seal")
-                        default: Label("Ban", systemImage: "bandage")
-                    }
-                }
-                 */
+
             }.padding(.top, 8).padding(.bottom, 4)
                 
             
-            Text(LocalizedStringKey(babyDanger.description))
+            Text(babyDanger.getDescriptionWithBabyname(babyName: model.babyName))
                 .font(.body)
 
             
@@ -103,6 +93,16 @@ struct ChecklistItemView_Previews: PreviewProvider {
     static var previews: some View {
         ChecklistItemView(
             babyDanger: .constant(BabyDanger.allBabyDangers.first!),
+            selectedShop: .constant(Shop.amazonDE)
+        ).environmentObject(BabysafeViewModel())
+    }
+}
+
+
+struct ChecklistItemView2_Previews: PreviewProvider {
+    static var previews: some View {
+        ChecklistItemView(
+            babyDanger: .constant(BabyDanger.allBabyDangers[2]),
             selectedShop: .constant(Shop.amazonDE)
         ).environmentObject(BabysafeViewModel())
     }

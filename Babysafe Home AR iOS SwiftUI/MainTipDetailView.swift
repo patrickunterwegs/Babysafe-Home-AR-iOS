@@ -36,7 +36,7 @@ struct MainTipDetailView: View {
                 GroupBox {
                     VStack {
 
-                        Text(LocalizedStringKey(safetyTip.description))
+                        Text(safetyTip.getDescriptionWithBabyname(babyName: model.babyName))
                             .padding(.bottom, 8)
                             .font(.body)
                         
