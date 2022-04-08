@@ -21,6 +21,7 @@ struct MainTipsView: View {
                         NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
                             Text(LocalizedStringKey(safetyTip.title))
                                 .font(.subheadline)
+                                .bold()
                                 .scaledToFill()
                             Spacer()
                             Image(systemName: "circlebadge.fill")
