@@ -39,17 +39,14 @@ struct MainTipDetailView: View {
                         Text(safetyTip.getDescriptionWithBabyname(babyName: model.babyName))
                             .padding(.bottom, 8)
                             .font(.body)
-                        
-                        HStack {
-                            
-                            ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
-                                
-                                Link(destination: safetyTipLink.link) {
-                                    Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
-                                }.padding(8)
-                            
-                            }
-                        }
+                    }
+                }
+
+                GroupBox(label: Label(LocalizedStringKey("product_recommendations"), systemImage: "link")) {
+                    ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
+                        Link(destination: safetyTipLink.link) {
+                            Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
+                        }.padding(8)
                     }
                 }
             }

@@ -41,6 +41,7 @@
 "ar_ignore_banned_message" = "By setting these options the info with possible dangers will not pop up anymore if all dangers for the detected object are already unlocked or banned.";
 "ar_camera" = "AR Camera";
 "settings_camera" = "Camera";
+"product_recommendations" = "Product recommendations";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Check out Babysafe Home AR!";

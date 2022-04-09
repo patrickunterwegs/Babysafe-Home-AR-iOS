@@ -41,6 +41,7 @@
 "ar_ignore_banned_message" = "Wenn du diese Optionen aktivierst, wirst du nicht mehr benachrichtigt, wenn ein Objekt gefunden wurde, dessen Gefahr bereits freigeschalten wurde bzw. dessen Gefahren bereits als gebannt markiert wurden.";
 "ar_camera" = "AR Kamera";
 "settings_camera" = "Kamera";
+"product_recommendations" = "Produktempfehlungen";
 "share_brought_to_you_by" = "Bereitgestellt von Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Probiere mal Babysafe Home AR!";
