@@ -32,7 +32,7 @@ struct AboutAttributionsView: View {
                 Spacer()
                 }
             }
-            Section(header: Text("Animations")) {
+            Section(header: Text("attributions_animations")) {
                 Text("attributions_lottie_animations_text")
                 Text("Star Blast (Selva Kumar S S)\nhttps://lottiefiles.com/61280-star-blast")
                 Text("Rainbow (Jorge César)\nhttps://lottiefiles.com/24448-rainbow")

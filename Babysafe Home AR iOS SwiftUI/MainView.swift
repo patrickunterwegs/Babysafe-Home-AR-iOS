@@ -66,12 +66,12 @@ struct MainView: View {
                 
                 NavigationView {
                     AboutView()
-                        .navigationTitle("More")
+                        .navigationTitle("more")
                         .navigationBarTitleDisplayMode(.inline)
                 }
                 .tabItem {
                     Image(systemName: "ellipsis")
-                    Text("More")
+                    Text("more")
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
                 
@@ -80,7 +80,7 @@ struct MainView: View {
             .sheet(isPresented: $isPresentingCameraView) {
                 NavigationView {
                     CameraView()
-                        .navigationTitle("AR Camera")
+                        .navigationTitle("ar_camera")
                         .navigationBarTitleDisplayMode(.inline)
                         .toolbar {
                             ToolbarItem(placement: .confirmationAction) {

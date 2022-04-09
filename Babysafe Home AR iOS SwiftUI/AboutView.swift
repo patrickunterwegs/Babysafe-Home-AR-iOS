@@ -32,25 +32,25 @@ struct AboutView: View {
                 Section(header: Text("dialog_shop_select_title"),
                         footer: Text("dialog_shop_select_message2")) {
                     Text("dialog_shop_select_message").font(.footnote).foregroundColor(.gray)
-                    Picker("Country", selection: $model.selectedCountry) {
+                    Picker("dialog_shop_select_country", selection: $model.selectedCountry) {
                         ForEach(ShopCountry.allCases) { country in
                             Text(country.name).tag(country.id)
                         }
                     }.onChange(of: model.selectedCountry) { country in
                         model.selectedShop = getDefaultShopForCountry(country: model.selectedCountry)
                     }
-                    Picker("Shop", selection: $model.selectedShop) {
+                    Picker("dialog_shop_select_shop", selection: $model.selectedShop) {
                         ForEach(model.selectedCountry.shops) { shop in
                             Text(shop.name).tag(shop.id)
                         }
                     }
                 }
-                Section(header: Text("camera_settings")) {
-                    Toggle(isOn: $model.findUnlocked) {
-                        Label("Find unlocked", systemImage: "lock.open")
+                Section(header: Text("settings_camera"), footer: Text("ar_ignore_banned_message")) {
+                    Toggle(isOn: $model.ignoreUnlocked) {
+                        Label("ar_ignore_unlocked", systemImage: "lock.open")
                     }
-                    Toggle(isOn: $model.findBanned) {
-                        Label("Find banned", systemImage: "checkmark.seal")
+                    Toggle(isOn: $model.ignoreBanned) {
+                        Label("ar_ignore_banned", systemImage: "checkmark.seal")
                     }
                 }
                 
@@ -61,7 +61,7 @@ struct AboutView: View {
                     }) {
                         Label("menu_main_bottombar_recommend", systemImage: "star.bubble")
                       }.sheet(isPresented: $isTellAFriendPresented, onDismiss: {
-                        print("Dismiss")
+                        //print("Dismiss")
                         self.isTellAFriendPresented = false
                         }, content: {
                             ActivityViewController(activityItems: [

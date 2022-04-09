@@ -38,6 +38,9 @@
 "ar_ignore_banned" = "Ignore banned dangers";
 "ar_ignore_unlocked" = "Ignore unlocked dangers";
 "ar_toast_new_dangers_unlocked" = "New dangers unlocked!";
+"ar_ignore_banned_message" = "By setting these options the info with possible dangers will not pop up anymore if all dangers for the detected object are already unlocked or banned.";
+"ar_camera" = "AR Camera";
+"settings_camera" = "Camera";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Check out Babysafe Home AR!";
@@ -80,7 +83,6 @@
 "checklist_banned_icon_content_desc" = "Danger banned";
 "dialog_disclaimer_title" = "Disclaimer";
 "dialog_disclaimer_message" = "Babysafe Home AR can give you advice and raise awareness for the safety of your baby. Even though you might have marked all dangers of this app as banned, we cannot give a guarantee that nothing can happen. Watch out, every home has individual dangers for the little ones and it is your responsibility to make your home a safe place for your baby!";
-"dialog_ignore_banned_message" = "By setting this option the info with possible dangers will not pop up anymore if all dangers for the detected object are banned.";
 "dialog_camera_permission_denied_title" = "Camera permission required";
 "dialog_camera_permission_denied_message" = "This app is using augmented reality to detect objects in your house. In order to use this feature please grant access to your camera.";
 "dialog_camera_permission_denied_permissions_button" = "Permissions";
@@ -90,9 +92,9 @@
 "dialog_shop_select_title" = "Your shopping platform";
 "dialog_shop_select_message" = "Babysafe Home AR gives you recommendations for products in shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative:";
 "dialog_shop_select_message2" = "If products are not available in your preferred shopping platform, we might recommend products in other stores.";
-"dialog_shop_select_country" = "Country:";
+"dialog_shop_select_country" = "Country";
 "dialog_shop_country_world" = "World";
-"dialog_shop_select_shop" = "Shop:";
+"dialog_shop_select_shop" = "Shop";
 "menu_main_bottombar_about" = "About";
 "menu_main_bottombar_support" = "Support";
 "menu_main_bottombar_disclaimer" = "Disclaimer";
@@ -111,7 +113,7 @@
 "attributions_lottie_animations_text" = "This app is using publicly available animations from the amazing Lottie Library.";
 "attributions_graphics" = "Graphics";
 "attributions_graphics_text" = "This app is using licensed images from freepik and the amazing graphics by @catalyststuff\nhttps://www.freepik.com/catalyststuff";
-"attributions_lottie_animations" = "";
+"attributions_animations" = "Animations";
 "attributions_lottie_animations_startblast" = "";
 "attributions_lottie_animations_rainbow" = "";
 "attributions_lottie_animations_confetti" = "";

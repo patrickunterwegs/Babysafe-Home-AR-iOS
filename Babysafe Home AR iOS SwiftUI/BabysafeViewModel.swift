@@ -14,8 +14,8 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("selectedCountry") var selectedCountry: ShopCountry = getDefaultCountry()
     @AppStorage("selectedShop") var selectedShop: Shop = getDefaultShopForCountry(country: getDefaultCountry())
     
-    @AppStorage("findUnlocked") var findUnlocked = true
-    @AppStorage("findBanned") var findBanned = true
+    @AppStorage("ignoreUnlocked") var ignoreUnlocked = false
+    @AppStorage("ignoreBanned") var ignoreBanned = false
     
     @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
     @AppStorage("nextTipUnlockTime") var lastTipUnlockTime: Double = 0
@@ -121,8 +121,8 @@ class BabysafeViewModel: ObservableObject {
         for i in 0 ... babyDangers.count-1 {
             if babyDangers[i].objectIds.contains(objectId)
                 && !babyDangers[i].isCurDetected
-                && (!babyDangers[i].isUnlocked || (babyDangers[i].isUnlocked && findUnlocked))
-                && (!babyDangers[i].isBanned || (babyDangers[i].isBanned && findBanned))
+                && (!babyDangers[i].isUnlocked || (babyDangers[i].isUnlocked && !ignoreUnlocked))
+                && (!babyDangers[i].isBanned || (babyDangers[i].isBanned && !ignoreBanned))
                 && !babyDangers[i].isDetectedInSession {
                 
                 babyDangers[i].isUnlocked = true

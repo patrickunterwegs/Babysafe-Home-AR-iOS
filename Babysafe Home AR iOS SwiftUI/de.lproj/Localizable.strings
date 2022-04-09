@@ -38,6 +38,9 @@
 "ar_ignore_banned" = "Gebannte Gefahren ignorieren";
 "ar_ignore_unlocked" = "Entsperrte Gefahren ignorieren";
 "ar_toast_new_dangers_unlocked" = "Neue Gefahren freigeschaltet!";
+"ar_ignore_banned_message" = "Wenn du diese Optionen aktivierst, wirst du nicht mehr benachrichtigt, wenn ein Objekt gefunden wurde, dessen Gefahr bereits freigeschalten wurde bzw. dessen Gefahren bereits als gebannt markiert wurden.";
+"ar_camera" = "AR Kamera";
+"settings_camera" = "Kamera";
 "share_brought_to_you_by" = "Bereitgestellt von Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Probiere mal Babysafe Home AR!";
@@ -80,7 +83,6 @@
 "checklist_banned_icon_content_desc" = "Gefahr gebannt";
 "dialog_disclaimer_title" = "Haftungsausschluss";
 "dialog_disclaimer_message" = "Babysafe Home AR kann Tipps geben und das Bewusstsein für Sicherheit von Babys stärken. Auch wenn Gefahren in dieser App als gebannt markiert werden, kann keine Garantie gegeben werden, dass nicht trotzdem etwas passieren kann. Halte die Augen offen, jedes Zuhause hat auch individuelle Gefahren für kleine Wonneproppen und es ist deine Aufgabe dein Zuhause zu einem sicheren Ort für dein Baby zu machen!";
-"dialog_ignore_banned_message" = "Wenn du diese Option aktivierst, wirst du nicht mehr benachrichtigt, wenn ein Objekt gefunden wurde, deren Gefahren bereits als gebannt markiert wurden.";
 "dialog_camera_permission_denied_title" = "Kamera-Berechtigung erforderlich";
 "dialog_camera_permission_denied_message" = "Diese App nutzt Augmented Reality um Objekte in deinem Haus zu erkennen. Um dieses Feature zu nutzen, vergib bitte die Zugriffsberechtigung auf deine Kamera.";
 "dialog_camera_permission_denied_permissions_button" = "Berechtigungen";
@@ -90,9 +92,9 @@
 "dialog_shop_select_title" = "Deine Shopping-Platform";
 "dialog_shop_select_message" = "Babysafe Home AR gibt dir Empfehlungen zu Produkten auf Shopping-Platformen wie Amazon. Falls du lieber ein anderes Land oder eine andere Platform nutzen möchtest, wähle bitte hier deine Alternative:";
 "dialog_shop_select_message2" = "Falls Produkte in deinem bevorzugten Shop nicht verfügbar sind, empfehlen wir eventuell Produkte aus anderen Stores.";
-"dialog_shop_select_country" = "Land:";
+"dialog_shop_select_country" = "Land";
 "dialog_shop_country_world" = "Welt";
-"dialog_shop_select_shop" = "Shop:";
+"dialog_shop_select_shop" = "Shop";
 "menu_main_bottombar_about" = "Über";
 "menu_main_bottombar_support" = "Hilfe/Support";
 "menu_main_bottombar_disclaimer" = "Haftungsausschluss";
@@ -111,6 +113,10 @@
 "attributions_lottie_animations_text" = "Diese App verwendet öffentlich verfügbare Animationen aus der Lottie Library.";
 "attributions_graphics" = "Grafiken";
 "attributions_graphics_text" = "Diese App verwendet lizenzierte Grafiken von freepik und den tollen Grafiken von @catalyststuff\nhttps://www.freepik.com/catalyststuff";
+"attributions_animations" = "Animationen";
+"attributions_lottie_animations_startblast" = "";
+"attributions_lottie_animations_rainbow" = "";
+"attributions_lottie_animations_confetti" = "";
 "danger_power_title" = "Steckdosensicherungen anbringen";
 "danger_power_text" = "Baby- und Kinderfinger passen genau in die Löcher der Steckdose. Daher besteht eine besonder Gefahr eines tötlichen Stromschlags. Verwende Steckdosensicherungen, die dies verhindern können. Kleine Krabbler finden bestimmt sofort die ungesicherten Steckdosen bei euch Zuhause.";
 "danger_toiletwater_title" = "WC-Deckel verschließen";
