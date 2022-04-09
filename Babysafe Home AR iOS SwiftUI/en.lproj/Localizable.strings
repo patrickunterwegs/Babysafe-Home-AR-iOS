@@ -12,12 +12,15 @@
 "switzerland" = "Switzerland";
 "world" = "World";
 
+
 /*Strings used for fragments for navigation*/
 "close" = "Close";
 "save" = "Save";
 "cancel" = "Cancel";
+"back" = "Go back";
 "share" = "Share";
 "info" = "Info";
+"settings" = "Settings";
 "more" = "More";
 "cont1nue" = "Continue";
 "open_link" = "Open link";
@@ -26,7 +29,6 @@
 "main_tab_checklist" = "Checklist";
 "main_tab_score" = "Score";
 "main_tab_tips" = "Tips";
-"main_tab_news" = "News";
 "about_tab_app" = "App";
 "about_tab_libraries" = "Libraries";
 "about_tab_attributions" = "Attributions";
@@ -34,6 +36,7 @@
 "ar_drag_handle" = "Drag up/down";
 "ar_found_dangers" = "Found dangers";
 "ar_ignore_banned" = "Ignore banned dangers";
+"ar_ignore_unlocked" = "Ignore unlocked dangers";
 "ar_toast_new_dangers_unlocked" = "New dangers unlocked!";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
@@ -47,8 +50,8 @@
 "intro_info_header" = "Welcome to Babysafe Home AR";
 "intro_info_text" = "Your little helper to make your home a safer place for your baby!";
 "intro_howto_header" = "How it works";
-"intro_howto_text" = "Open the camera view below and move the camera preview to different places in your house. Frames will pop up. Tap on them and you will get useful information about potential security risks. The found risks are added to your list. Find as many items as possible to unlock the super secure award :-)";
-"intro_tell_us_baby_name" = "Please tell us the name of your little toddler";
+"intro_howto_text" = "Open the camera view below and move the camera preview to different places in your house. Frames will pop up. Tap on them and you will get useful information about potential security risks. The found risks are added to your list. Find as many items as possible to unlock all badges!";
+"intro_tell_us_baby_name" = "How do you call your toddler?";
 "intro_default_baby_name" = "Your baby";
 "score_badge_unlocked" = "Detection Detective";
 "score_badge_banned" = "Mitigation Master";
@@ -95,7 +98,6 @@
 "menu_main_bottombar_disclaimer" = "Disclaimer";
 "menu_main_bottombar_recommend" = "Tell-a-friend";
 "menu_main_bottombar_shops" = "Change shop";
-"menu_about_bottombar_back" = "Go back";
 "articles_notification_channel_name" = "Tips Notification Channel";
 "articles_notification_channel_description" = "Tips Notification Channel for regular updates on new tip.";
 "articles_notification_title" = "New tip unlocked!";
@@ -195,8 +197,6 @@
 "danger_fireplace_text" = "To %1$s protect against burns from a fireplace or other fireplace in your home, a grate is certainly very helpful. Unfortunately, normal grates are not suitable for this purpose, as they are often made of wood or plastic. A heat resistant safety grate will protect little curious kids from dangerous burns from fireplaces.";
 "tip_electricity_title" = "Warum sind Steckdosen gefährlich?";
 "tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadeln oder einen Schraubenzieher zum Spielen zu überlassen. Warum sind dann Steckdosen so gefährlich?\n\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen. Viele Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter (FI-Schalter) dazu da ist, uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst, wenn ein Mensch in den Stromkreis eingreift. Für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Wohnbereich mit Steckdosensicherungen. Diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online. (Unten findest du unsere Empfehlungen, für die wir eine kleine Provision bekommen und das Sparschwein unsere Krabbelmaus füttern.)\n\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben. Für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\n\nDu kannst nicht immer und überall die Steckdosen absichern. Und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind daher schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\n\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen oder besteht der Verdacht, so solltest du umgehend ins Krankenhaus fahren. Die Symptome, welche durch elektrischen Strom ausgelöst werden können, reichen von Verbrennungen an den Ein- und Austrittstellen, über Schädigungen von Organen bis hin zu Herzrhythmusstörungen und im schlimmsten Fall zu Atemstillstand.\n\n\n\nUnsere Empfehlung:\n\nDa du neben Steckdosensicherungen auch Schubladenschlösser, Kantenschutz, Kippsicherungen und Türstopper brauchen kannst, empfehlen wir folgendes Starterkit mit 12x Steckdosenschutz, 12x Eckenschutz, 6x Schranksicherung, 4x Schrankschloss, 5x Klemmschutz, 4x Universal Sicherung.\n\nNatürlich kannst du auch nur Steckdosensicherungen bestellen. Bitte achte auch darauf, ob es sich um  EU-Stecker und oder nicht EU-Steckerdosen handelt. ";
-"tip_electricity_stecken" = "Stecken";
-"tip_electricity_schrauben" = "Schrauben";
 "tip_electricity_link_plug_eu" = "Stecken (EU)";
 "tip_electricity_link_screw_eu" = "Schrauben (EU)";
 "tip_electricity_link_plug_noneu" = "Stecken (non-EU)";

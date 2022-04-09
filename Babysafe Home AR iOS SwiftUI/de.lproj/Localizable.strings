@@ -13,24 +13,22 @@
 "world" = "Welt";
 
 
-
-"action_settings" = "Einstellungen";
-
-/*Strings used for fragments for navigation*/
-"first_fragment_label" = "First Fragment";
-
 /*Strings used for fragments for navigation*/
 "close" = "Schließen";
 "save" = "Speichern";
 "cancel" = "Schließen";
+"back" = "Zurück";
 "share" = "Teilen";
 "info" = "Info";
+"settings" = "Einstellungen";
+"more" = "Mehr";
+"cont1nue" = "Weiter";
 "open_link" = "Link öffnen";
 "start_ar_view" = "Kamera starten";
 "main_tab_intro" = "Intro";
 "main_tab_checklist" = "Checkliste";
 "main_tab_score" = "Punkte";
-"main_tab_articles" = "Artikel";
+"main_tab_tips" = "Tipps";
 "about_tab_app" = "App";
 "about_tab_libraries" = "Libraries";
 "about_tab_attributions" = "Nennungen";
@@ -38,8 +36,10 @@
 "ar_drag_handle" = "Nach oben/unten ziehen";
 "ar_found_dangers" = "Gefundene Gefahren";
 "ar_ignore_banned" = "Gebannte Gefahren ignorieren";
+"ar_ignore_unlocked" = "Entsperrte Gefahren ignorieren";
 "ar_toast_new_dangers_unlocked" = "Neue Gefahren freigeschaltet!";
 "share_brought_to_you_by" = "Bereitgestellt von Babysafe Home AR:\nhttps://babysafe.techbee.at";
+"share_subject" = "";
 "share_app_subject" = "Probiere mal Babysafe Home AR!";
 "share_app_text" = "Schau mal, welche App ich gefunden habe: *Babysafe Home AR*!\nSie kann dir dabei helfen dein Zuahause sicherer für dein Baby zu machen!\nHier der Link:\nhttps://babysafe.techbee.at";
 "about_app_terms" = "AGBs";
@@ -90,13 +90,14 @@
 "dialog_shop_select_title" = "Deine Shopping-Platform";
 "dialog_shop_select_message" = "Babysafe Home AR gibt dir Empfehlungen zu Produkten auf Shopping-Platformen wie Amazon. Falls du lieber ein anderes Land oder eine andere Platform nutzen möchtest, wähle bitte hier deine Alternative:";
 "dialog_shop_select_message2" = "Falls Produkte in deinem bevorzugten Shop nicht verfügbar sind, empfehlen wir eventuell Produkte aus anderen Stores.";
+"dialog_shop_select_country" = "Land:";
+"dialog_shop_country_world" = "Welt";
+"dialog_shop_select_shop" = "Shop:";
 "menu_main_bottombar_about" = "Über";
-"menu_main_bottombar_settings" = "Einstellungen";
 "menu_main_bottombar_support" = "Hilfe/Support";
 "menu_main_bottombar_disclaimer" = "Haftungsausschluss";
 "menu_main_bottombar_recommend" = "Weitersagen";
 "menu_main_bottombar_shops" = "Shop ändern";
-"menu_about_bottombar_back" = "Zurück";
 "articles_notification_channel_name" = "Tipps Notification Channel";
 "articles_notification_channel_description" = "Tipps Notification Channel für regelmäßige Updates zu Tipps.";
 "articles_notification_title" = "Neuer Tipp verfügbar!";
@@ -177,7 +178,7 @@
 "danger_toy_title" = "Spielsachen auf Schadstoffe prüfen";
 "danger_toy_text" = "Ja, auch Kinderspielsachen können für %1$s gefährlich sein. Zum einen wenn sie nicht für das Alter deines Kindes geeigent sind, zum anderen wenn sie gefährliche Schadstoffe und weichmacher enthalten, die für %1$s langfristig gefährlich sind. Schau also beim Spielzeugkauf genau hin aus welchen Materialien das Spielzeug besteht und versuche natürliche Materialen zu bevorzugen.";
 "danger_smallitems_title" = "Kleinteile unerreichbar aufbewahren";
-"danger_smallitems_text %@ %@" = "Die kleinen Weltentdecker prüfen ihre Umgebung zuerst mit dem Mund, daher wandert jeder Fund zuerst genau dorthin. Im schlimmsten Fall verstopft das Stück die Atemwege und %@ kann daran ersticken. Verschluckt %@ die Gegenstände kommen sie im besten Fall nach einiger Zeit wieder zu Tage, können aber im Körper einigen Schaden anrichten. Versuche daher alle kleinen, rundlichen Gegenstände außer Reichweite deines Lieblings aufzubewahren.";
+"danger_smallitems_text" = "Die kleinen Weltentdecker prüfen ihre Umgebung zuerst mit dem Mund, daher wandert jeder Fund zuerst genau dorthin. Im schlimmsten Fall verstopft das Stück die Atemwege und %1$s kann daran ersticken. Verschluckt %1$s die Gegenstände kommen sie im besten Fall nach einiger Zeit wieder zu Tage, können aber im Körper einigen Schaden anrichten. Versuche daher alle kleinen, rundlichen Gegenstände außer Reichweite deines Lieblings aufzubewahren.";
 "danger_weapons_title" = "Waffen versperren";
 "danger_weapons_text" = "Dass Waffen nichts für Kinder sind, ist wohl unbestritten. Versperr Schuss- und Stichwafen, aber auch Schlagstöcke und Ähnliches gut vor deinem keinen Schatz. Schließlich willst du nicht, dass %1$s damit spielt und sich oder andere verletzt oder gar tötet.";
 "danger_battery_title" = "Batterien außer Reichweite";
@@ -190,30 +191,14 @@
 "danger_mirror_text" = "Spiegeln oder Glasplatten stellen vor allem dann eine große Gefahr dar, wenn diese brechen. Damit sich %1$s nicht an den Splitern verletzt, kannst du beim Kauf schon darauf achten, dass du bruchsichere Spiegel kaufst. Vor allem für das Kinderzimmer sind diese besser geeignet. Wenn du auf Nummer sicher gehen willst, kannst du auch bestehende Spiegeln oder Glasflächen mit einer speziellen Folie überziehen.";
 "danger_fireplace_title" = "Feuerstellen absichern";
 "danger_fireplace_text" = "Um %1$s vor Verbrennungen durch einen Kamin oder eine andere Feuerstelle in deinem Zuhause zu schützen, ist ein Gitter sicher sehr hilfreich. Normale Gitter sind dafür leider nicht geeignet, da diese häufig aus Holz oder Plastik sind. Ein hitzeresistendes Schutzgitter schützt die kleinen neugierigen Kinder vor gefährlichen Verbrennungen an Kaminen.";
-"app_name" = "";
-"main_tab_tips" = "Tipps";
-"main_tab_news" = "News";
-"share_subject" = "";
-"attributions_lottie_animations" = "";
-"attributions_lottie_animations_startblast" = "";
-"attributions_lottie_animations_sparkleanimation" = "";
-"attributions_lottie_animations_confetti" = "";
-"about_app_copyright" = "";
-"more" = "Mehr";
-"cont1nue" = "Weiter";
-"dialog_shop_select_country" = "Land:";
-"dialog_shop_country_world" = "Welt";
-"dialog_shop_select_shop" = "Shop:";
 "tip_electricity_title" = "Warum sind Steckdosen gefährlich?";
 "tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadeln oder einen Schraubenzieher zum Spielen zu überlassen. Warum sind dann Steckdosen so gefährlich?\n\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen. Viele Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter (FI-Schalter) dazu da ist, uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst, wenn ein Mensch in den Stromkreis eingreift. Für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Wohnbereich mit Steckdosensicherungen. Diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online. (Unten findest du unsere Empfehlungen, für die wir eine kleine Provision bekommen und das Sparschwein unsere Krabbelmaus füttern.)\n\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben. Für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\n\nDu kannst nicht immer und überall die Steckdosen absichern. Und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind daher schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\n\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen oder besteht der Verdacht, so solltest du umgehend ins Krankenhaus fahren. Die Symptome, welche durch elektrischen Strom ausgelöst werden können, reichen von Verbrennungen an den Ein- und Austrittstellen, über Schädigungen von Organen bis hin zu Herzrhythmusstörungen und im schlimmsten Fall zu Atemstillstand.\n\n\n\nUnsere Empfehlung:\n\nDa du neben Steckdosensicherungen auch Schubladenschlösser, Kantenschutz, Kippsicherungen und Türstopper brauchen kannst, empfehlen wir folgendes Starterkit mit 12x Steckdosenschutz, 12x Eckenschutz, 6x Schranksicherung, 4x Schrankschloss, 5x Klemmschutz, 4x Universal Sicherung.\n\nNatürlich kannst du auch nur Steckdosensicherungen bestellen. Bitte achte auch darauf, ob es sich um  EU-Stecker und oder nicht EU-Steckerdosen handelt. ";
-"tip_electricity_stecken" = "Stecken";
-"tip_electricity_schrauben" = "Schrauben";
 "tip_electricity_link_plug_eu" = "Stecken (EU)";
 "tip_electricity_link_screw_eu" = "Schrauben (EU)";
 "tip_electricity_link_plug_noneu" = "Stecken (non-EU)";
 "tip_electricity_link_screw_noneu" = "Schrauben (non-EU)";
 "tip_till_here_not_further_title" = "Bis hierhin und nicht weiter!";
-"tip_till_here_not_further_text" = "Wir haben versucht unseren Wohnraum kindersicher zu gestalten und alle Gefahren zu bannen, aber vor den kleinen Weltentdeckern ist einfach nichts sicher und um auch mal ALLEINE das WC aufzusuchen haben wir uns dann doch für ein Laufgitter entschieden. Die anderen gefährlichen Punkte unserer Wohnung haben wir durch verschieden Gitter abgesichert.  \n\nTürgitter: Wir haben uns für ein Türgitter entschieden, um bei Bedarf den Bereich der Küche abzutrennen. Beim Kochen darf die Kleine auf einem Lernturm dabei sein, oder muss draußen bleiben. Am Boden herum zu krabbeln während dem Kochen ist uns zu gefährlich. Das Gitter eignet sich auch perfekt um Treppenauf- und abgängen zu sichern. Das tolle an dem Gitter ist, dass es automatisch schließt und recht einfach zu öffnen ist. Man muss nur aufpassen auch die richtige Größe zu montieren. Es ist zwar angegeben, dass es auch ohne Schrauben hält. Unsere Wände sind aber leicht schief, daher mussten wir es anschrauben und jetzt hält es bombenfest.\n\nDen Kamin haben wir mit einen speziellen Kamingitter gesichert, laut Hersteller ist es „flexibel einsetzbar“, was wir insofern bestätigen können, dass man es nach den eigenen Bedürfnissen aufstellen und aufbauen kann. Einmal zusammengebaut, ist es aber sehr stabil und lässt sich nicht verschieben oder einfach zusammenklappen. Will man die Position einzelner Teile verändern, so ist eine Verbindungstange zu entfernen, die beiden Gitterteile neu auszurichten und die Verbindungsstangen wieder einzusetzen. Bei Kamingittern muss man speziell darauf achten, dass diese hitzebeständig sind, Holz oder Kunststoff ist daher nicht geeignet.  \n\nUm bei Bedarf den Weg in den Vorraum oder Türbereich abzusperren haben wir uns für ein verstellbares, selbststehendes Gitter entschieden. Es lässt sich auch leicht zusammenklappen und wegräumen, wenn es gar nicht gebraucht wird.\n\nMit dem Kunststofflaufgitter haben wir dann die Spielwiese der Krabbelmaus eingezäunt, um sie in Sicherheit zu wissen, wenn wir sie dann doch mal aus den Augen lassen. Der große Vorteil ist, dass die 14 Paneele schon vormontiert sind, sich aber ganz einfach nach eigenen Wünschen zusammenstellen lassen. Die Paneele besitzen Noppen, mit denen sie am Boden haften, daher nicht so einfach verrutschen können, aber dennoch variabel genug, so dass wir diese auch immer wieder verschieben können um den Spielbereich zu vergrößern. Das Laufgitter eignet sich auch toll um ein Bällebad zu errichten.  \n\nBei allen Gittern ist natürlich wichtig, dass sie schadstofffrei sind und die Stäbe nicht weiter als 6,5cm voneinander entfernt sind. Natürlich sollten sie auch stabil genug sein, denn die Kleinen versuchen sich an allem hochzuziehen.";
+"tip_till_here_not_further_text" = "Wir haben versucht unseren Wohnraum kindersicher zu gestalten und alle Gefahren zu bannen, aber vor den kleinen Weltentdeckern ist einfach nichts sicher und um auch mal ALLEINE das WC aufzusuchen haben wir uns dann doch für ein Laufgitter entschieden. Die anderen gefährlichen Punkte unserer Wohnung haben wir durch verschieden Gitter abgesichert.\n\nTürgitter: Wir haben uns für ein Türgitter entschieden, um bei Bedarf den Bereich der Küche abzutrennen. Beim Kochen darf die Kleine auf einem Lernturm dabei sein, oder muss draußen bleiben. Am Boden herum zu krabbeln während dem Kochen ist uns zu gefährlich. Das Gitter eignet sich auch perfekt um Treppenauf- und abgängen zu sichern. Das tolle an dem Gitter ist, dass es automatisch schließt und recht einfach zu öffnen ist. Man muss nur aufpassen auch die richtige Größe zu montieren. Es ist zwar angegeben, dass es auch ohne Schrauben hält. Unsere Wände sind aber leicht schief, daher mussten wir es anschrauben und jetzt hält es bombenfest.\n\nDen Kamin haben wir mit einem speziellen Kamingitter gesichert, laut Hersteller ist es „flexibel einsetzbar“, was wir insofern bestätigen können, dass man es nach den eigenen Bedürfnissen aufstellen und aufbauen kann. Einmal zusammengebaut, ist es aber sehr stabil und lässt sich nicht verschieben oder einfach zusammenklappen. Will man die Position einzelner Teile verändern, so ist eine Verbindungstange zu entfernen, die beiden Gitterteile neu auszurichten und die Verbindungsstangen wieder einzusetzen. Bei Kamingittern muss man speziell darauf achten, dass diese hitzebeständig sind, Holz oder Kunststoff ist daher nicht geeignet.\n\nUm bei Bedarf den Weg in den Vorraum oder Türbereich abzusperren haben wir uns für ein verstellbares, selbststehendes Gitter entschieden. Es lässt sich auch leicht zusammenklappen und wegräumen, wenn es gar nicht gebraucht wird.\n\nMit dem Kunststofflaufgitter haben wir dann die Spielwiese der Krabbelmaus eingezäunt, um sie in Sicherheit zu wissen, wenn wir sie dann doch mal aus den Augen lassen. Der große Vorteil ist, dass die 14 Paneele schon vormontiert sind, sich aber ganz einfach nach eigenen Wünschen zusammenstellen lassen. Die Paneele besitzen Noppen, mit denen sie am Boden haften, daher nicht so einfach verrutschen können, aber dennoch variabel genug, so dass wir diese auch immer wieder verschieben können um den Spielbereich zu vergrößern. Das Laufgitter eignet sich auch toll um ein Bällebad zu errichten.\n\nBei allen Gittern ist natürlich wichtig, dass sie schadstofffrei sind und die Stäbe nicht weiter als 6,5cm voneinander entfernt sind. Natürlich sollten sie auch stabil genug sein, denn die Kleinen versuchen sich an allem hochzuziehen.";
 "tip_till_here_not_further_link_door_grid" = "Türgitter";
 "tip_till_here_not_further_link_learning_tower" = "Lernturm";
 "tip_till_here_not_further_link_standing_grid" = "Selbststehendes Gitter";
