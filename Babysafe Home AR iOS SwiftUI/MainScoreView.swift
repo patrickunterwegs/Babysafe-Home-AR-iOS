@@ -140,7 +140,7 @@ struct Badge: View {
             }
             Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
         }.onAppear {
-            withAnimation(.spring()) {
+            withAnimation(.easeInOut) {
                 percentRevealAnimated = percentReveal
             }
         }
@@ -186,7 +186,7 @@ struct ProgressBar: View {
                 .bold()
             LottieView(name: "confetti")
         }.onAppear {
-            withAnimation(.spring()) {
+            withAnimation(.easeInOut) {
                 progressAnimated = progress
             }
         }

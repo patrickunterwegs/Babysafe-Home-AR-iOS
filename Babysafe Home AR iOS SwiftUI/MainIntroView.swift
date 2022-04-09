@@ -72,11 +72,11 @@ struct MainIntroView: View {
                             .border(.clear)
                             .multilineTextAlignment(.center)
                         }
-                    
                     }
                     .cornerRadius(8)
-                    .frame(height: 150)
+                    .frame(height: 160)
                     .padding()
+                    
                         
                     
                     
