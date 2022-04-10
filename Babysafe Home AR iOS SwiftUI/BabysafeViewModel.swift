@@ -32,7 +32,7 @@ class BabysafeViewModel: ObservableObject {
     @Published var newDangerDetected = false
     @Published var showUnlockRemainingAlert = false
     
-    @Published var isCameraPermissionGranted = false
+    @Published var isCameraPermissionGranted = true
 
     
 

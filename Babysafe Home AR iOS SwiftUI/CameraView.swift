@@ -153,13 +153,17 @@ struct CameraView: View {
                 //requesting permission
                 AVCaptureDevice.requestAccess(for: .video) { (status) in
                     
+                    DispatchQueue.main.async {
+                        self.model.isCameraPermissionGranted = status
+                    }
+                    
                     if status {
-                        self.model.isCameraPermissionGranted = true
                         self.setUp()
                     }
                 }
             case .denied:
                 self.alert.toggle()
+                self.model.isCameraPermissionGranted = false
                 return
             case .authorized:
                 self.model.isCameraPermissionGranted = true

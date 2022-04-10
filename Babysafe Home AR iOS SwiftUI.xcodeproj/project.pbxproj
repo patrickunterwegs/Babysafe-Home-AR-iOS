@@ -23,6 +23,7 @@
 		CD47B19D27F63B1D000D526F /* ChecklistItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */; };
 		CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */; };
 		CD490E5C27F4E51300BFB504 /* BabysafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */; };
+		CD6C8A78280302870069720E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6C8A7A280302870069720E /* InfoPlist.strings */; };
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
 		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CD8D330027F333B40058D54B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32FF27F333B40058D54B /* CameraView.swift */; };
@@ -82,6 +83,8 @@
 		CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemView.swift; sourceTree = "<group>"; };
 		CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "lite-model_object_detection_mobile_object_labeler_v1_1.tflite"; sourceTree = "<group>"; };
 		CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabysafeViewModel.swift; sourceTree = "<group>"; };
+		CD6C8A79280302870069720E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD6C8A7B280302890069720E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD8D32F527F2F7A50058D54B /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCountry.swift; sourceTree = "<group>"; };
 		CD8D32FF27F333B40058D54B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -217,6 +220,7 @@
 				CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */,
 				CD1162312802D8980053E923 /* AboutLibrariesView.swift */,
 				CD27606827EF0136003A833D /* Localizable.strings */,
+				CD6C8A7A280302870069720E /* InfoPlist.strings */,
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 				CDC1E91828003D840052F161 /* LaunchScreen.storyboard */,
@@ -368,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
+				CD6C8A78280302870069720E /* InfoPlist.strings in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
 				CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */,
 				CD27606627EF0136003A833D /* Localizable.strings in Resources */,
@@ -598,6 +603,15 @@
 				CD27606927EF0151003A833D /* de */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CD6C8A7A280302870069720E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD6C8A79280302870069720E /* en */,
+				CD6C8A7B280302890069720E /* de */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
