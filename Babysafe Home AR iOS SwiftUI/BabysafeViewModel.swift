@@ -33,7 +33,7 @@ class BabysafeViewModel: ObservableObject {
     
 
     
-    func getNumUnlocked() -> Int {
+    var numUnlocked: Int {
         var numUnlocked = 0
         babyDangers.forEach { babyDanger in
             if babyDanger.isUnlocked {
@@ -43,12 +43,12 @@ class BabysafeViewModel: ObservableObject {
         return numUnlocked
     }
     
-    func getPercentUnlocked() -> Float {
-        return Float(getNumUnlocked()) / Float(BabyDanger.allBabyDangers.count) * 100
+    var percentUnlocked: Float {
+        return Float(numUnlocked) / Float(BabyDanger.allBabyDangers.count) * 100
     }
     
 
-    func getNumBanned() -> Int {
+    var numBanned: Int {
         var numBanned = 0
         babyDangers.forEach { babyDanger in
             if babyDanger.isBanned {
@@ -58,15 +58,15 @@ class BabysafeViewModel: ObservableObject {
         return numBanned
     }
     
-    func getPercentBanned() -> Float {
-        return Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count) * 100
+    var percentBanned: Float {
+        return Float(numBanned) / Float(BabyDanger.allBabyDangers.count) * 100
     }
 
-    func getNumUnbanned() -> Int {
-        return getNumUnlocked() - getNumBanned()
+    var numUnbanned: Int {
+        return numUnlocked - numBanned
     }
     
-    func getNumSafetyTipsUnlocked() -> Int {
+    var numSafetyTipsUnlocked: Int {
         var numSafetyTipsUnlocked = 0
         
         safetyTips.forEach { safetyTip in
@@ -77,11 +77,11 @@ class BabysafeViewModel: ObservableObject {
         return numSafetyTipsUnlocked
     }
     
-    func getPercentSafetyTipsUnlocked() -> Float {
-        return Float(getNumSafetyTipsUnlocked()) / Float(SafetyTip.allSafetyTips.count) * 100
+    var percentSafetyTipsUnlocked: Float {
+        return Float(numSafetyTipsUnlocked) / Float(SafetyTip.allSafetyTips.count) * 100
     }
     
-    func getProgressPercent() -> Float {
+    var progressPercent: Float {
         
         let maxScore: Float = 100.0
         
@@ -91,16 +91,16 @@ class BabysafeViewModel: ObservableObject {
         let maxScoreSafetyTips = maxScore * 0.25
         
         
-        let progressUnlocked: Float = Float(getNumUnlocked()) / Float(BabyDanger.allBabyDangers.count)
-        let progressBanned: Float = Float(getNumBanned()) / Float(BabyDanger.allBabyDangers.count)
-        let progressSafetyTipsUnlocked: Float = Float(getNumSafetyTipsUnlocked()) / Float(SafetyTip.allSafetyTips.count)
+        let progressUnlocked: Float = Float(numUnlocked) / Float(BabyDanger.allBabyDangers.count)
+        let progressBanned: Float = Float(numBanned) / Float(BabyDanger.allBabyDangers.count)
+        let progressSafetyTipsUnlocked: Float = Float(numSafetyTipsUnlocked) / Float(SafetyTip.allSafetyTips.count)
         
         let score = startScore + maxScoreUnlocked * progressUnlocked + maxScoreBanned * progressBanned + maxScoreSafetyTips * progressSafetyTipsUnlocked
         
         return score
     }
     
-    func getNumUnread() -> Int {
+    var numUnread: Int {
         
         var numUnread = 0
         safetyTips.forEach { safetyTip in

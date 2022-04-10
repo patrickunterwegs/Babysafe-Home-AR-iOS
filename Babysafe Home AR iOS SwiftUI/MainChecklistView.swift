@@ -51,15 +51,15 @@ struct ChecklistHeader: View {
             Spacer()
             VStack {
 
-                if model.getPercentUnlocked() >= 70 && model.getPercentUnlocked() < 100 {
+                if model.percentUnlocked >= 70 && model.percentUnlocked < 100 {
                     Text("checklist_unlock_info")
                         .multilineTextAlignment(.center)
                         .font(.body)
-                } else if model.getPercentUnlocked() == 100 && model.getPercentBanned() < 100  {
+                } else if model.percentUnlocked == 100 && model.percentBanned < 100  {
                     Text("checklist_all_unlocked")
                         .multilineTextAlignment(.center)
                         .font(.body)
-                } else if model.getPercentUnlocked() == 100 && model.getPercentBanned() == 100  {
+                } else if model.percentUnlocked == 100 && model.percentBanned == 100  {
                     Text("checklist_all_banned")
                         .multilineTextAlignment(.center)
                         .font(.body)
@@ -70,7 +70,7 @@ struct ChecklistHeader: View {
                 }
 
                 
-                if model.getPercentUnlocked() >= 70 && model.getPercentUnlocked() < 99 {
+                if model.percentUnlocked >= 70 && model.percentUnlocked < 99 {
                     Spacer()
                     Button(action: {
                         model.unlockAllDangers()

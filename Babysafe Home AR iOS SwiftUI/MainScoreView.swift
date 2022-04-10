@@ -6,90 +6,111 @@
 //
 
 import SwiftUI
+import ConfettiSwiftUI
+
 
 struct MainScoreView: View {
     
     //@Binding var babyDangers: [BabyDanger]
     @EnvironmentObject var model: BabysafeViewModel
+    @State var confetti: Int = 0
 
     
     var body: some View {
-        ScrollView {
-            Spacer()
-            VStack(alignment: .center) {
-
-                HStack {
-                    Badge(
-                        image: "ic_badge_unlocked",
-                        text: "score_badge_unlocked",
-                        percentReveal: model.getPercentUnlocked()
-                    )
-                    Badge(
-                        image: "ic_badge_banned",
-                        text: "score_badge_banned",
-                        percentReveal: model.getPercentBanned()
-                    )
-                    Badge(
-                        image: "ic_badge_articles",
-                        text: "score_badge_articles",
-                        percentReveal: model.getPercentSafetyTipsUnlocked()
+        
+        ZStack {
+            ScrollView {
+                Spacer()
+                VStack(alignment: .center) {
+                    
+                    HStack {
+                        Badge(
+                            image: "ic_badge_unlocked",
+                            text: "score_badge_unlocked",
+                            percentReveal: model.percentUnlocked
                         )
-                }.padding()
-
-                GroupBox {
-                    VStack {
-                        Text("score_score_header")
-                            .font(.title)
-                        ProgressBar(progress: model.getProgressPercent())
-                            .frame(width: 200, height: 200, alignment: .center)
-                            .padding()
-                        
-                        if model.getPercentUnlocked() == 100.0 && model.getPercentBanned() == 100.0 {
-                            ScoreDependingBottomView(
-                                image: "astronaut_king",
-                                header: "score_all_banned_header",
-                                text: resolveScorePlaceholders(text: "score_all_banned_text")
-                            )
-                        } else if model.getPercentBanned() >= 50.0 {
-                            ScoreDependingBottomView(
-                                image: "astronaut_hero",
-                                header: "score_half_banned_header",
-                                text: resolveScorePlaceholders(text: "score_half_banned_text")
-                            )
-                        } else if model.getPercentUnlocked() == 100 {
-                            ScoreDependingBottomView(
-                                image: "astronaut_posing",
-                                header: "score_all_unlocked_header",
-                                text: resolveScorePlaceholders(text: "score_half_unlocked_text")
-                            )
-                        } else if model.getPercentUnlocked() >= 50.0 {
-                            ScoreDependingBottomView(
-                                image: "astronaut_flying",
-                                header: "score_half_unlocked_header",
-                                text: resolveScorePlaceholders(text: "score_half_unlocked_text")
-                            )
-                        } else if model.getPercentUnlocked() >= 1 {
-                            ScoreDependingBottomView(
-                                image: "astronaut_jumping",
-                                header: "score_first_unlocked_header",
-                                text: resolveScorePlaceholders(text: "score_first_unlocked_text")
-                            )
-                        } else {
-                            ScoreDependingBottomView(
-                                image: "astronaut_phone",
-                                header: "score_nothing_unlocked_header",
-                                text: resolveScorePlaceholders(text: "score_nothing_unlocked_text")
-                            )
+                        Badge(
+                            image: "ic_badge_banned",
+                            text: "score_badge_banned",
+                            percentReveal: model.percentBanned
+                        )
+                        Badge(
+                            image: "ic_badge_articles",
+                            text: "score_badge_articles",
+                            percentReveal: model.percentSafetyTipsUnlocked
+                        )
+                    }.padding()
+                    
+                    GroupBox {
+                        VStack {
+                            Text("score_score_header")
+                                .font(.title)
+                            ProgressBar(progress: model.progressPercent)
+                                .frame(width: 200, height: 200, alignment: .center)
+                                .padding()
+                            
+                            if model.percentUnlocked == 100.0 && model.percentBanned == 100.0 {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_king",
+                                    header: "score_all_banned_header",
+                                    text: resolveScorePlaceholders(text: "score_all_banned_text")
+                                )
+                            } else if model.percentBanned >= 50.0 {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_hero",
+                                    header: "score_half_banned_header",
+                                    text: resolveScorePlaceholders(text: "score_half_banned_text")
+                                )
+                            } else if model.percentUnlocked == 100 {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_posing",
+                                    header: "score_all_unlocked_header",
+                                    text: resolveScorePlaceholders(text: "score_half_unlocked_text")
+                                )
+                            } else if model.percentUnlocked >= 50.0 {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_flying",
+                                    header: "score_half_unlocked_header",
+                                    text: resolveScorePlaceholders(text: "score_half_unlocked_text")
+                                )
+                            } else if model.percentUnlocked >= 1 {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_jumping",
+                                    header: "score_first_unlocked_header",
+                                    text: resolveScorePlaceholders(text: "score_first_unlocked_text")
+                                )
+                            } else {
+                                ScoreDependingBottomView(
+                                    image: "astronaut_phone",
+                                    header: "score_nothing_unlocked_header",
+                                    text: resolveScorePlaceholders(text: "score_nothing_unlocked_text")
+                                )
+                            }
                         }
-                    }
-                }.padding()
+                    }.padding()
+                }
             }
+            
+            ConfettiCannon(counter: $confetti,
+                           num: Int(model.progressPercent),
+                           confettis: [.shape(.circle)],
+                           rainHeight: UIScreen.main.bounds.size.height,
+                           fadesOut: true,
+                           radius: UIScreen.main.bounds.size.width,
+                           repetitions: model.progressPercent == 100 ? 9 : 0,
+                           repetitionInterval: 1.0
+                           )
+            .aspectRatio(contentMode: .fill)
+            .onAppear {
+                    confetti += 1
+            }
+            
         }.navigationTitle("main_tab_score")
     }
     
     func resolveScorePlaceholders(text: String) -> String {
         
-        let score = String(format: "%.0f", model.getProgressPercent())
+        let score = String(format: "%.0f", model.progressPercent)
         
         var resolvedText = NSLocalizedString(text, comment: "")
         resolvedText = resolvedText.replacingOccurrences(of: "%1$d", with: String(score))
@@ -115,7 +136,7 @@ struct Badge: View {
     @Environment(\.colorScheme) var colorScheme
     
     @State var percentRevealAnimated: Float = 0.0
-
+    
     
     var body: some View {
         VStack {
@@ -124,7 +145,6 @@ struct Badge: View {
                     Image(image)
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
-                    LottieView(name: "confetti", loopMode: .loop)
                 } else {
                     Image(image)
                         .resizable()
@@ -179,12 +199,11 @@ struct ProgressBar: View {
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
                 .foregroundColor(Color.red)
                 .rotationEffect(Angle(degrees: 270.0))
-                //.animation(.linear)
+            //.animation(.linear)
             Text(String(format: "%.0f", progressAnimated))
-                //.font(.largeTitle)
+            //.font(.largeTitle)
                 .font(.custom("progress", size: 72))
                 .bold()
-            LottieView(name: "confetti")
         }.onAppear {
             withAnimation(.easeInOut) {
                 progressAnimated = progress

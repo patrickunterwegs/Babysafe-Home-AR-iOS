@@ -35,7 +35,7 @@ struct MainView: View {
                         .navigationTitle("main_tab_checklist")
                         .navigationBarTitleDisplayMode(.inline)
                 }
-                .badge(model.getNumUnbanned())
+                .badge(model.numUnbanned)
                 .tabItem {
                     Image(systemName: "checklist")
                     Text("main_tab_checklist")
@@ -57,7 +57,7 @@ struct MainView: View {
                         .navigationTitle("main_tab_tips")
                         .navigationBarTitleDisplayMode(.inline)
                 }
-                .badge(model.getNumUnread())
+                .badge(model.numUnread)
                 .tabItem {
                     Image(systemName: "lightbulb")
                     Text("main_tab_tips")

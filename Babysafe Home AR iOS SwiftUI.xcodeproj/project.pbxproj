@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */; };
 		B046F10D52401E4BE03E3430 /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8339E7F3613EF4B8D55B4F4A /* Pods_Babysafe_Home_AR_iOS_SwiftUI_Babysafe_Home_AR_iOS_SwiftUIUITests.framework */; };
+		CD1162302802C0050053E923 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD11622F2802C0050053E923 /* ConfettiSwiftUI */; };
 		CD1C94CB27FCDA8F0078C1D4 /* SafetyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C94CA27FCDA8F0078C1D4 /* SafetyTip.swift */; };
-		CD1C94CE27FD988F0078C1D4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CD1C94CD27FD988F0078C1D4 /* Lottie */; };
-		CD1C94D027FD98D80078C1D4 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C94CF27FD98D70078C1D4 /* LottieView.swift */; };
-		CD1C94D327FD993D0078C1D4 /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1C94D227FD993D0078C1D4 /* confetti.json */; };
 		CD27606627EF0136003A833D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD27606827EF0136003A833D /* Localizable.strings */; };
 		CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606A27EF09FC003A833D /* MainIntroView.swift */; };
 		CD27606D27EF2E32003A833D /* MainChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD27606C27EF2E32003A833D /* MainChecklistView.swift */; };
@@ -41,7 +39,6 @@
 		CDA4C76E27EE5FF1003A0B94 /* AboutAttributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */; };
 		CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76F27EE6EA3003A0B94 /* MainView.swift */; };
 		CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91828003D840052F161 /* LaunchScreen.storyboard */; };
-		CDC1E91B28004A520052F161 /* starblast.json in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91A28004A520052F161 /* starblast.json */; };
 		EAB450F042316072E5A6EC01 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 239B2E28D6B2C1C30D38AC75 /* Pods_Babysafe_Home_AR_iOS_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +68,6 @@
 		BE3562A027928DFE9796BF96 /* Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1C94CA27FCDA8F0078C1D4 /* SafetyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTip.swift; sourceTree = "<group>"; };
-		CD1C94CF27FD98D70078C1D4 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		CD1C94D227FD993D0078C1D4 /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = confetti.json; sourceTree = "<group>"; };
 		CD27606727EF0136003A833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606927EF0151003A833D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606A27EF09FC003A833D /* MainIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntroView.swift; sourceTree = "<group>"; };
@@ -106,7 +101,6 @@
 		CDA4C76F27EE6EA3003A0B94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CDC1E91828003D840052F161 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CDC1E91A28004A520052F161 /* starblast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = starblast.json; sourceTree = "<group>"; };
 		F4ABA1B9B1C6FD15C1B5481D /* Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUITests/Pods-Babysafe Home AR iOS SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FE6B2BAB418669918E51C38C /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Babysafe_Home_AR_iOS_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,8 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1162302802C0050053E923 /* ConfettiSwiftUI in Frameworks */,
 				0C72344A8F9285E6341E0617 /* Pods_Babysafe_Home_AR_iOS_SwiftUI.framework in Frameworks */,
-				CD1C94CE27FD988F0078C1D4 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,15 +157,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		CD1C94D127FD98F50078C1D4 /* Lottiefiles */ = {
-			isa = PBXGroup;
-			children = (
-				CDC1E91A28004A520052F161 /* starblast.json */,
-				CD1C94D227FD993D0078C1D4 /* confetti.json */,
-			);
-			path = Lottiefiles;
-			sourceTree = "<group>";
-		};
 		CD3D657727F21C50008CA2CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */,
-				CD1C94D127FD98F50078C1D4 /* Lottiefiles */,
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
 				CD3D657727F21C50008CA2CF /* Models */,
@@ -231,7 +215,6 @@
 				CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */,
 				CD27606827EF0136003A833D /* Localizable.strings */,
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
-				CD1C94CF27FD98D70078C1D4 /* LottieView.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 				CDC1E91828003D840052F161 /* LaunchScreen.storyboard */,
 			);
@@ -283,7 +266,7 @@
 			);
 			name = "Babysafe Home AR iOS SwiftUI";
 			packageProductDependencies = (
-				CD1C94CD27FD988F0078C1D4 /* Lottie */,
+				CD11622F2802C0050053E923 /* ConfettiSwiftUI */,
 			);
 			productName = "Babysafe Home AR iOS SwiftUI";
 			productReference = CDA4C73827EE5E54003A0B94 /* Babysafe Home AR.app */;
@@ -363,7 +346,7 @@
 			);
 			mainGroup = CDA4C72F27EE5E53003A0B94;
 			packageReferences = (
-				CD1C94CC27FD988F0078C1D4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				CD11622E2802C0050053E923 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = CDA4C73927EE5E54003A0B94 /* Products */;
 			projectDirPath = "";
@@ -381,8 +364,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC1E91B28004A520052F161 /* starblast.json in Resources */,
-				CD1C94D327FD993D0078C1D4 /* confetti.json in Resources */,
 				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
 				CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */,
@@ -568,7 +549,6 @@
 				CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */,
 				CDA4C76627EE5EC5003A0B94 /* AboutView.swift in Sources */,
 				CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */,
-				CD1C94D027FD98D80078C1D4 /* LottieView.swift in Sources */,
 				CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */,
 				CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */,
 			);
@@ -925,21 +905,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CD1C94CC27FD988F0078C1D4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		CD11622E2802C0050053E923 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
 			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 3.3.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CD1C94CD27FD988F0078C1D4 /* Lottie */ = {
+		CD11622F2802C0050053E923 /* ConfettiSwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CD1C94CC27FD988F0078C1D4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
+			package = CD11622E2802C0050053E923 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
