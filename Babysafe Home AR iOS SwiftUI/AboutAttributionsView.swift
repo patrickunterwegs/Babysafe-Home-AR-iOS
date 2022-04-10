@@ -32,15 +32,18 @@ struct AboutAttributionsView: View {
                 Spacer()
                 }
             }
+            /*
             Section(header: Text("attributions_animations")) {
                 Text("attributions_lottie_animations_text")
                 Text("Star Blast (Selva Kumar S S)\nhttps://lottiefiles.com/61280-star-blast")
                 Text("Rainbow (Jorge César)\nhttps://lottiefiles.com/24448-rainbow")
                 Text("Confetti (Emas Didik Prasetyo)\nhttps://lottiefiles.com/74694-confetti")
             }
+             */
             Section(header: Text("attributions_graphics")) {
                 Text("attributions_graphics_text")
             }
+            
         }
     }
 }
