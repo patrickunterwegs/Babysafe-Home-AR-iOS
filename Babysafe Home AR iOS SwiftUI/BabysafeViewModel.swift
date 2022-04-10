@@ -30,6 +30,8 @@ class BabysafeViewModel: ObservableObject {
 
     
     @Published var newDangerDetected = false
+    @Published var showUnlockRemainingAlert = false
+
     
 
     
@@ -312,14 +314,17 @@ class BabysafeViewModel: ObservableObject {
         }
     }
     
-
     
-    private enum Constant {
+    enum Constant {
         static let unlockedDangersKey = "unlockedDangers"
         static let bannedDangersKey = "bannedDangers"
         static let unlockedTipsKey = "unlockedTips"
         static let unreadTipsKey = "unreadTips"
         
         static let nextTipUnlockInterval: TimeInterval = 1*60*60*24     // time interval are always seconds!
+        
+        static let unlockAllThreshold: Float = 70.0
     }
+
 }
+

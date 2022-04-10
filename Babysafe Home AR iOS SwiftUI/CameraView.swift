@@ -53,6 +53,11 @@ struct CameraView: View {
         .sheet(isPresented: $model.newDangerDetected, onDismiss: {
             model.newDangerDetected = false
             model.resetCurDetected()
+            
+            // show unlock all option on dismiss if condition is fulfilled!
+            if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold {
+                model.showUnlockRemainingAlert = true
+            }
         }) {
             NavigationView {
                 ScrollView {
@@ -85,6 +90,12 @@ struct CameraView: View {
                         }
                     }
                 }
+            }
+        }
+        .alert(LocalizedStringKey("checklist_unlock_info"), isPresented: $model.showUnlockRemainingAlert) {
+            Button("close") { }
+            Button("checklist_unlock_button") {
+                model.unlockAllDangers()
             }
         }
     }
@@ -298,7 +309,6 @@ struct CameraView: View {
             }
             return deviceOrientation()
         }
-        
     }
     
     

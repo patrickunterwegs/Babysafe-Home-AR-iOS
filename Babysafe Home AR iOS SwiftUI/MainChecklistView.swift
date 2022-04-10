@@ -51,7 +51,7 @@ struct ChecklistHeader: View {
             Spacer()
             VStack {
 
-                if model.percentUnlocked >= 70 && model.percentUnlocked < 100 {
+                if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold && model.percentUnlocked < 100 {
                     Text("checklist_unlock_info")
                         .multilineTextAlignment(.center)
                         .font(.body)
