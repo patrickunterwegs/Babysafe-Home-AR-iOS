@@ -733,7 +733,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Babysafe Home AR";
-				INFOPLIST_KEY_NSCameraUsageDescription = dialog_camera_permission_denied_message;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -767,7 +767,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Babysafe Home AR";
-				INFOPLIST_KEY_NSCameraUsageDescription = dialog_camera_permission_denied_message;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
