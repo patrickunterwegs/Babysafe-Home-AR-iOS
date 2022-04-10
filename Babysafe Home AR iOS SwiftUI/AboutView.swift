@@ -47,7 +47,7 @@ struct AboutView: View {
                 }
                 Section(header: Text("settings_camera"), footer: Text("ar_ignore_banned_message")) {
                     Toggle(isOn: $model.ignoreUnlocked) {
-                        Label("ar_ignore_unlocked", systemImage: "lock.open")
+                        Label("ar_ignore_unlocked", systemImage: "cross")
                     }
                     Toggle(isOn: $model.ignoreBanned) {
                         Label("ar_ignore_banned", systemImage: "checkmark.seal")

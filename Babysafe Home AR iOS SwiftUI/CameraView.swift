@@ -66,7 +66,7 @@ struct CameraView: View {
                         
                         GroupBox {
                             Toggle(isOn: $model.ignoreUnlocked) {
-                                Label("ar_ignore_unlocked", systemImage: "lock.open")
+                                Label("ar_ignore_unlocked", systemImage: "cross")
                             }
                             Toggle(isOn: $model.ignoreBanned) {
                                 Label("ar_ignore_banned", systemImage: "checkmark.seal")
