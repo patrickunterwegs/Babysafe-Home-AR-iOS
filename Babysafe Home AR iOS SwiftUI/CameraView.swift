@@ -32,6 +32,26 @@ struct CameraView: View {
                         }
                     })
                 
+                // show info if camera permission was not granted (yet)
+                if !model.isCameraPermissionGranted {
+                    VStack {
+                        Text(LocalizedStringKey("dialog_camera_permission_denied_title")).font(.title).padding()
+                        Text(LocalizedStringKey("dialog_camera_permission_denied_message")).padding().multilineTextAlignment(.center)
+                        
+                        Button(action: {
+                            // redirect user to settings
+                            UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                        }) {
+                            Label("settings", systemImage: "camera.viewfinder")
+                          }
+                        .buttonStyle(.automatic)
+                        .buttonBorderShape(.automatic)
+                        .padding()
+                        Spacer()
+                        Image("astronaut_camera").padding()
+                    }
+                }
+                
                 // USE FOR DEBUGGING
                 /*
                 Spacer()
@@ -134,6 +154,7 @@ struct CameraView: View {
                 AVCaptureDevice.requestAccess(for: .video) { (status) in
                     
                     if status {
+                        self.model.isCameraPermissionGranted = true
                         self.setUp()
                     }
                 }
@@ -141,6 +162,7 @@ struct CameraView: View {
                 self.alert.toggle()
                 return
             case .authorized:
+                self.model.isCameraPermissionGranted = true
                 setUp()
                 return
             default:
