@@ -74,7 +74,9 @@ struct AboutView: View {
                     NavigationLink(destination: AboutAppInfoView()) {
                         Label("App Info", systemImage: "info.circle")
                     }
-                    Label("Libraries", systemImage: "chevron.left.forwardslash.chevron.right")
+                    NavigationLink(destination: AboutLibrariesView()) {
+                        Label("Libraries", systemImage: "chevron.left.forwardslash.chevron.right")
+                    }
                     NavigationLink(destination: AboutAttributionsView()) {
                         Label("Attributions", systemImage: "c.circle")
                     }

@@ -115,9 +115,8 @@
 "attributions_graphics" = "Grafiken";
 "attributions_graphics_text" = "Diese App verwendet lizenzierte Grafiken von freepik und den tollen Grafiken von @catalyststuff\nhttps://www.freepik.com/catalyststuff";
 "attributions_animations" = "Animationen";
-"attributions_lottie_animations_startblast" = "";
-"attributions_lottie_animations_rainbow" = "";
-"attributions_lottie_animations_confetti" = "";
+"libraries_header" = "Bibliotheken";
+"libraries_text" = "Diese App verwendet freie und quelloffene Code-Bibliotheken. Auf dieser Seite wollen wir die Entwickler und Projekte hervorheben, die Materialien bereitgestellt haben, die in dieser App verwendet werden.";
 "danger_power_title" = "Steckdosensicherungen anbringen";
 "danger_power_text" = "Baby- und Kinderfinger passen genau in die Löcher der Steckdose. Daher besteht eine besonder Gefahr eines tötlichen Stromschlags. Verwende Steckdosensicherungen, die dies verhindern können. Kleine Krabbler finden bestimmt sofort die ungesicherten Steckdosen bei euch Zuhause.";
 "danger_toiletwater_title" = "WC-Deckel verschließen";

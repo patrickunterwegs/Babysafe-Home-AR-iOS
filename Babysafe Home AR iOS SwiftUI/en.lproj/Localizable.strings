@@ -118,6 +118,8 @@
 "attributions_lottie_animations_startblast" = "";
 "attributions_lottie_animations_rainbow" = "";
 "attributions_lottie_animations_confetti" = "";
+"libraries_header" = "Libraries";
+"libraries_text" = "This app is using free and open source code libraries. On this page we would like to give credit to the projects and developers that provided materials for this app.";
 "danger_power_title" = "Installing socket fuses";
 "danger_power_text" = "Baby and child fingers fit exactly into the holes of the socket. Therefore, there is a particular risk of fatal electric shock. Use socket protectors that can prevent this. Little crawlers are sure to immediately find the unsecured sockets in your home.";
 "danger_toiletwater_title" = "Close WC lid";
