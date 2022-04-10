@@ -58,6 +58,7 @@ struct CameraView: View {
             if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold {
                 model.showUnlockRemainingAlert = true
             }
+            model.sortBabyDangers()
         }) {
             NavigationView {
                 ScrollView {

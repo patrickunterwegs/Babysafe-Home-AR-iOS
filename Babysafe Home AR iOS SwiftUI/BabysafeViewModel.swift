@@ -179,6 +179,7 @@ class BabysafeViewModel: ObservableObject {
                 }
             }
         }
+        sortBabyDangers()
         
         unlockedTips.forEach { unlockedTip in
             for i in 0 ... self.safetyTips.count-1 {
@@ -312,6 +313,10 @@ class BabysafeViewModel: ObservableObject {
                 }
             }
         }
+    }
+    
+    func sortBabyDangers() {
+        babyDangers.sort { $0.isBanned == false && $1.isBanned == true }
     }
     
     

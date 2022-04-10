@@ -80,6 +80,8 @@ struct ChecklistHeader: View {
                 }
             }
             Spacer()
+        }.onAppear {
+            model.sortBabyDangers()
         }
     }
 }
