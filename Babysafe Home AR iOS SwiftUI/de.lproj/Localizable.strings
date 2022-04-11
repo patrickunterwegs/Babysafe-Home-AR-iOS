@@ -41,7 +41,6 @@
 "ar_ignore_banned_message" = "Wenn du diese Optionen aktivierst, wirst du nicht mehr benachrichtigt, wenn ein Objekt gefunden wurde, dessen Gefahr bereits freigeschalten wurde bzw. dessen Gefahren bereits als gebannt markiert wurden.";
 "ar_camera" = "AR Kamera";
 "settings_camera" = "Kamera";
-"product_recommendations" = "Produktempfehlungen";
 "share_brought_to_you_by" = "Bereitgestellt von Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Probiere mal Babysafe Home AR!";
@@ -115,8 +114,9 @@
 "attributions_graphics" = "Grafiken";
 "attributions_graphics_text" = "Diese App verwendet lizenzierte Grafiken von freepik und den tollen Grafiken von @catalyststuff\nhttps://www.freepik.com/catalyststuff";
 "attributions_animations" = "Animationen";
-"libraries_header" = "Bibliotheken";
-"libraries_text" = "Diese App verwendet freie und quelloffene Code-Bibliotheken. Auf dieser Seite wollen wir die Entwickler und Projekte hervorheben, die Materialien bereitgestellt haben, die in dieser App verwendet werden.";
+"attributions_lottie_animations_startblast" = "";
+"attributions_lottie_animations_rainbow" = "";
+"attributions_lottie_animations_confetti" = "";
 "danger_power_title" = "Steckdosensicherungen anbringen";
 "danger_power_text" = "Baby- und Kinderfinger passen genau in die Löcher der Steckdose. Daher besteht eine besonder Gefahr eines tötlichen Stromschlags. Verwende Steckdosensicherungen, die dies verhindern können. Kleine Krabbler finden bestimmt sofort die ungesicherten Steckdosen bei euch Zuhause.";
 "danger_toiletwater_title" = "WC-Deckel verschließen";
@@ -217,3 +217,14 @@
 "tip_baby_prison_link_small_variant" = "Kleine Variante";
 "tip_beta_title" = "Beta";
 "tip_beta_text" = "This is all for now in this current beta, more to come!";
+"product_recommendations" = "Produktempfehlungen";
+"checklist_tap_to_ban" = "Tippe auf die Karten um die Gefahren als gebannt zu markieren!";
+"libraries_header" = "Bibliotheken";
+"libraries_text" = "Diese App verwendet freie und quelloffene Code-Bibliotheken. Auf dieser Seite wollen wir die Entwickler und Projekte hervorheben, die Materialien bereitgestellt haben, die in dieser App verwendet werden.";
+"tip_electricity_link_glue_eu" = "Kleben (EU)";
+"tip_electricity_link_non_eu" = "Non-EU";
+"about_app" = "App";
+"about_app_info" = "App Info";
+"about_legal_support" = "Rechtliches & Support";
+"about_technical_support" = "Technischer Support";
+"about_privacy_policy" = "Datenschutzerklärung";

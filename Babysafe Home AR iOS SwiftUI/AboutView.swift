@@ -70,27 +70,27 @@ struct AboutView: View {
                             ])
                         })
                 }
-                Section(header: Text("App")) {
+                Section(header: Text("about_app")) {
                     NavigationLink(destination: AboutAppInfoView()) {
-                        Label("App Info", systemImage: "info.circle")
+                        Label("about_app_info", systemImage: "info.circle")
                     }
                     NavigationLink(destination: AboutLibrariesView()) {
-                        Label("Libraries", systemImage: "chevron.left.forwardslash.chevron.right")
+                        Label("about_tab_libraries", systemImage: "chevron.left.forwardslash.chevron.right")
                     }
                     NavigationLink(destination: AboutAttributionsView()) {
-                        Label("Attributions", systemImage: "c.circle")
+                        Label("about_tab_attributions", systemImage: "c.circle")
                     }
                     NavigationLink(destination: AboutThanksView()) {
-                        Label("Special Thanks", systemImage: "hands.sparkles")
+                        Label("about_tab_thanks", systemImage: "hands.sparkles")
                     }
                     NavigationLink(destination: AboutDisclaimerView()) {
-                        Label("Disclaimer", systemImage: "exclamationmark.bubble")
+                        Label("menu_main_bottombar_disclaimer", systemImage: "exclamationmark.bubble")
                     }
                 }
-                Section(header: Text("Legal &amp; Support")) {
-                    Link("Technical Support", destination: Foundation.URL(string: "https://babysafe.techbee.at/support")!)
-                    Link("Terms &amp; Conditions", destination: Foundation.URL(string: "https://babysafe.techbee.at/terms-conditions")!)
-                    Link("Privacy Policy", destination: Foundation.URL(string: "https://babysafe.techbee.at/privacy-policy")!)
+                Section(header: Text("about_legal_support")) {
+                    Link("about_technical_support", destination: Foundation.URL(string: "https://babysafe.techbee.at/support")!)
+                    Link("about_app_terms", destination: Foundation.URL(string: "https://babysafe.techbee.at/terms-conditions")!)
+                    Link("about_privacy_policy", destination: Foundation.URL(string: "https://babysafe.techbee.at/privacy-policy")!)
                 }
             }
     }
@@ -101,5 +101,3 @@ struct AboutView_Previews: PreviewProvider {
         AboutView().environmentObject(BabysafeViewModel())
     }
 }
-
-

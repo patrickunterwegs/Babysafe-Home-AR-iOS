@@ -41,7 +41,6 @@
 "ar_ignore_banned_message" = "By setting these options the info with possible dangers will not pop up anymore if all dangers for the detected object are already unlocked or banned.";
 "ar_camera" = "AR Camera";
 "settings_camera" = "Camera";
-"product_recommendations" = "Product recommendations";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
 "share_subject" = "";
 "share_app_subject" = "Check out Babysafe Home AR!";
@@ -118,8 +117,6 @@
 "attributions_lottie_animations_startblast" = "";
 "attributions_lottie_animations_rainbow" = "";
 "attributions_lottie_animations_confetti" = "";
-"libraries_header" = "Libraries";
-"libraries_text" = "This app is using free and open source code libraries. On this page we would like to give credit to the projects and developers that provided materials for this app.";
 "danger_power_title" = "Installing socket fuses";
 "danger_power_text" = "Baby and child fingers fit exactly into the holes of the socket. Therefore, there is a particular risk of fatal electric shock. Use socket protectors that can prevent this. Little crawlers are sure to immediately find the unsecured sockets in your home.";
 "danger_toiletwater_title" = "Close WC lid";
@@ -220,3 +217,14 @@
 "tip_baby_prison_link_small_variant" = "Kleine Variante";
 "tip_beta_title" = "Beta";
 "tip_beta_text" = "This is all for now in this current beta, more to come!";
+"product_recommendations" = "Product recommendations";
+"checklist_tap_to_ban" = "Tap on the cards to mark the dangers as banned!";
+"libraries_header" = "Libraries";
+"libraries_text" = "This app is using free and open source code libraries. On this page we would like to give credit to the projects developers that provided materials for this app.";
+"tip_electricity_link_glue_eu" = "Kleben (EU)";
+"tip_electricity_link_non_eu" = "Non-EU";
+"about_app" = "App";
+"about_app_info" = "App Info";
+"about_legal_support" = "Legal & Support";
+"about_technical_support" = "Technical Support";
+"about_privacy_policy" = "Privacy Policy";

@@ -23,6 +23,8 @@ struct MainChecklistView: View {
                         ChecklistItemView(babyDanger: $babyDanger, selectedShop: $model.selectedShop)
                     }
                 }
+                
+                Text("checklist_tap_to_ban").font(.caption).multilineTextAlignment(.center)
             }
         }
     }
