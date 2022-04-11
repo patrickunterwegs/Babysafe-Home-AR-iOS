@@ -75,7 +75,7 @@ struct CameraView: View {
             model.resetCurDetected()
             
             // show unlock all option on dismiss if condition is fulfilled!
-            if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold {
+            if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold && model.percentUnlocked < 100.0 {
                 model.showUnlockRemainingAlert = true
             }
             model.sortBabyDangers()
