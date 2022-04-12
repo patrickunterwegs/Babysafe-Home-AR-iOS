@@ -88,6 +88,9 @@ struct MainScoreView: View {
                             }
                         }
                     }.padding()
+                        .onTapGesture {
+                            confetti += 1
+                        }
                 }
             }
             
