@@ -24,7 +24,11 @@ struct MainChecklistView: View {
                     }
                 }
                 
-                Text("checklist_tap_to_ban").font(.caption).multilineTextAlignment(.center)
+                Text("checklist_tap_to_ban")
+                    .font(.caption)
+                    .padding(.trailing)
+                    .padding(.leading)
+                    .multilineTextAlignment(.center)
             }
         }
     }
