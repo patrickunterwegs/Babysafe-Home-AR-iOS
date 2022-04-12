@@ -53,6 +53,7 @@ struct ChecklistHeader: View {
             Spacer()
             VStack {
 
+
                 if model.percentUnlocked >= BabysafeViewModel.Constant.unlockAllThreshold && model.percentUnlocked < 100 {
                     Text("checklist_unlock_info")
                         .multilineTextAlignment(.center)
@@ -81,6 +82,8 @@ struct ChecklistHeader: View {
                       }
                 }
             }
+            .animation(.spring(), value: model.percentUnlocked)
+            .animation(.spring(), value: model.percentBanned)
             Spacer()
         }.onAppear {
             model.sortBabyDangers()
