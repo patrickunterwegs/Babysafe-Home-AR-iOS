@@ -74,6 +74,7 @@ struct MainTipDetailView: View {
                     })
                     model.safetyTips[index!].isUnread = false
                     model.saveUnreadTips()
+                    UIApplication.shared.applicationIconBadgeNumber = model.numUnread   // update app icon badge
                 }
             }
     }
