@@ -279,6 +279,9 @@ class BabysafeViewModel: ObservableObject {
                     if success {
                         print("Notification permission granted")
                         scheduleNotification()
+                        DispatchQueue.main.async {
+                            UIApplication.shared.applicationIconBadgeNumber = self.numUnread   // update app icon badge
+                        }
                     } else if let error = error {
                         print(error.localizedDescription)
                     }
