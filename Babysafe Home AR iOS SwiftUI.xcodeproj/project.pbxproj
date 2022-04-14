@@ -27,7 +27,7 @@
 		CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F527F2F7A50058D54B /* Shop.swift */; };
 		CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */; };
 		CD8D330027F333B40058D54B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D32FF27F333B40058D54B /* CameraView.swift */; };
-		CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */; };
+		CDA4C73C27EE5E54003A0B94 /* BabysafeHomeARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73B27EE5E54003A0B94 /* BabysafeHomeARApp.swift */; };
 		CDA4C73E27EE5E54003A0B94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C73D27EE5E54003A0B94 /* ContentView.swift */; };
 		CDA4C74027EE5E56003A0B94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */; };
 		CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDA4C74227EE5E56003A0B94 /* Preview Assets.xcassets */; };
@@ -89,7 +89,7 @@
 		CD8D32F727F2FB2C0058D54B /* ShopCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCountry.swift; sourceTree = "<group>"; };
 		CD8D32FF27F333B40058D54B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		CDA4C73827EE5E54003A0B94 /* Babysafe Home AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Babysafe Home AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Babysafe_Home_AR_iOS_SwiftUIApp.swift; sourceTree = "<group>"; };
+		CDA4C73B27EE5E54003A0B94 /* BabysafeHomeARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabysafeHomeARApp.swift; sourceTree = "<group>"; };
 		CDA4C73D27EE5E54003A0B94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDA4C74227EE5E56003A0B94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
 				CD3D657727F21C50008CA2CF /* Models */,
-				CDA4C73B27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift */,
+				CDA4C73B27EE5E54003A0B94 /* BabysafeHomeARApp.swift */,
 				CDA4C73D27EE5E54003A0B94 /* ContentView.swift */,
 				CDA4C73F27EE5E56003A0B94 /* Assets.xcassets */,
 				CDA4C76F27EE6EA3003A0B94 /* MainView.swift */,
@@ -558,7 +558,7 @@
 				CD8D32F827F2FB2D0058D54B /* ShopCountry.swift in Sources */,
 				CDA4C76627EE5EC5003A0B94 /* AboutView.swift in Sources */,
 				CD27606B27EF09FC003A833D /* MainIntroView.swift in Sources */,
-				CDA4C73C27EE5E54003A0B94 /* Babysafe_Home_AR_iOS_SwiftUIApp.swift in Sources */,
+				CDA4C73C27EE5E54003A0B94 /* BabysafeHomeARApp.swift in Sources */,
 				CD8D32F627F2F7A50058D54B /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

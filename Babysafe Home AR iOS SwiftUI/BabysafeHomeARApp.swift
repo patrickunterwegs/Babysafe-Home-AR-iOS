@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Babysafe_Home_AR_iOS_SwiftUIApp: App {
+struct BabysafeHomeARApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
