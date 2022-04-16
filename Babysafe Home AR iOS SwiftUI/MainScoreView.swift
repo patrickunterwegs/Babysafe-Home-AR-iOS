@@ -97,6 +97,7 @@ struct MainScoreView: View {
             ConfettiCannon(counter: $confetti,
                            num: Int(model.progressPercent),
                            confettis: [.shape(.circle)],
+                           colors: [.accentColor, .accentColor.opacity(0.3), .red, .red.opacity(0.3)],
                            rainHeight: UIScreen.main.bounds.size.height,
                            fadesOut: true,
                            radius: UIScreen.main.bounds.size.width,
@@ -196,11 +197,11 @@ struct ProgressBar: View {
             Circle()
                 .stroke(lineWidth: 20.0)
                 .opacity(0.3)
-                .foregroundColor(Color.accentColor)
+                .foregroundColor(Color.red)
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(progressAnimated/100, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
-                .foregroundColor(Color.accentColor)
+                .foregroundColor(Color.red)
                 .rotationEffect(Angle(degrees: 270.0))
             //.animation(.linear)
             Text(String(format: "%.0f", progressAnimated))
