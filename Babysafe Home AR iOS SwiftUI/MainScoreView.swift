@@ -235,8 +235,8 @@ struct ScoreDependingBottomView: View {
         
         VStack {
             Image(image)
-                .resizable()
-                .frame(width: 150, height: 150, alignment: .center)
+                //.resizable()
+                //.frame(width: 150, height: 150, alignment: .center)
             Text(LocalizedStringKey(header))
                 .font(.title)
                 .bold()

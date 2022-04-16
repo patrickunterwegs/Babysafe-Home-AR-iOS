@@ -36,8 +36,8 @@ struct MainIntroView: View {
 
                         Spacer()
                         Image("astronaut_camera")
-                            .resizable()
-                            .frame(width: 200.0, height: 200.0)
+                            //.resizable()
+                            //.frame(width: 250.0, height: 250.0)
                     }
 
 
@@ -47,7 +47,8 @@ struct MainIntroView: View {
                         isPresentingCameraView = true
                     }) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
-                      }
+                            .font(.title2)
+                    }.padding(.bottom)
                     
                     
                     /* Button(action: {}) {
@@ -74,11 +75,11 @@ struct MainIntroView: View {
                         }
                     }
                     .cornerRadius(8)
-                    .frame(height: 160)
-                    .padding()
-                    
-                        
-                    
+                    .frame(height: 140)
+                    .padding(.trailing)
+                    .padding(.leading)
+                    .moveDisabled(true)
+
                     
                     GroupBox {
                         Text("intro_howto_header")
