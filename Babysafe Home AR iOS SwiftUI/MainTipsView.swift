@@ -13,63 +13,82 @@ struct MainTipsView: View {
     
     
     var body: some View {
-        VStack(alignment: .center) {
+        
+        ScrollView {
             
-            List {
+            VStack(alignment: .center) {
                 
                 ForEach($model.safetyTips) { $safetyTip in
                     
                     if safetyTip.isUnlocked {
                         
-                        VStack {
-                            NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
-                                Text(LocalizedStringKey(safetyTip.title))
-                                    .font(.subheadline)
-                                    .bold()
-                                    .scaledToFill()
-                                
-                                if safetyTip.isUnread {
-                                    Spacer()
-                                    Image(systemName: "circlebadge.fill")
-                                        .foregroundColor(.yellow)
-                                        .multilineTextAlignment(.trailing)
+                        
+                        NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
+                            GroupBox {
+                                VStack {
+                                    
+                                    Image(safetyTip.image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(height:75, alignment: .center)
+                                        .clipped()
+                                        .cornerRadius(8)
+                                    
+                                    
+                                    
+                                    HStack {
+                                        Text(LocalizedStringKey(safetyTip.title))
+                                        //.font(.headline)
+                                            .bold()
+                                            .scaledToFill()
+                                            .foregroundColor(.primary)
+                                        
+                                        Spacer()
+                                        
+                                        if safetyTip.isUnread {
+                                            //Spacer()
+                                            Image(systemName: "circlebadge.fill")
+                                                .foregroundColor(.yellow)
+                                                .multilineTextAlignment(.trailing)
+                                        }
+                                        Image(systemName: "chevron.right")
+                                    }.padding(.bottom, 2)
+                                    
+                                    Text(LocalizedStringKey(safetyTip.description))
+                                        .lineLimit(4)
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                        .multilineTextAlignment(.leading)
+                                    
                                 }
-                            }
-                            .navigationTitle("main_tab_tips")
-                        .navigationBarTitleDisplayMode(.inline)
+                            }.padding(.bottom)
+                                .padding(.trailing)
+                                .padding(.leading)
                             
-                            Text(LocalizedStringKey(safetyTip.description))
-                                .lineLimit(4)
-                                .font(.caption)
-                                .foregroundColor(.gray)
-                            
-                            Image(safetyTip.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(height:50, alignment: .center)
-
-                                //.frame(width: .infinity, height: 150, alignment: .center)
-                                .clipped()
-                                .cornerRadius(8)
                         }
+                        
                     }
+                    
+                    
                 }
-            }
-            
-            Spacer()
-            HStack {
+                
                 Spacer()
                 Text("articles_header_info")
+                    .font(.caption)
+                    .padding(.trailing)
+                    .padding(.leading)
                     .multilineTextAlignment(.center)
-                    .padding()
-                Spacer()
+                
                 Image("biddy_badge")
                     .resizable()
                     .frame(width: 100.0, height: 100.0)
+
             }
         }.onAppear (perform: {
             model.prepareNotification()
         })
+        .navigationTitle("main_tab_tips")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
