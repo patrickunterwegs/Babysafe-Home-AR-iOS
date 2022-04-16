@@ -53,7 +53,8 @@
 "about_app_codename" = "Codename: %1$s";
 
 /*Fuzzy*/
-"intro_info_header" = "Welcome to\\nBabysafe Home AR";
+"intro_info_header" = "Welcome to
+Babysafe Home AR";
 "intro_info_text" = "Your little helper to make your home a safer place for your baby!";
 "intro_howto_header" = "How it works";
 
