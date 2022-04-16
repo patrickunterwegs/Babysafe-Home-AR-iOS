@@ -29,8 +29,7 @@ extension BabyDanger {
             title: String("danger_power_title"),
             description: String("danger_power_text"),
             linkGlobal: URL.init(string: "https://www.orf.at"),
-            linkAmazonDE: URL.init(string: "https://amzn.to/3urWwM5"),
-            isUnlocked: true),
+            linkAmazonDE: URL.init(string: "https://amzn.to/3urWwM5")),
         BabyDanger(
             id: "TOILETWATER",
             objectIds: [125, 457, 459],

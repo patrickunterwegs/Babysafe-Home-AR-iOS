@@ -20,7 +20,7 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
     @AppStorage("nextTipUnlockTime") var lastTipUnlockTime: Double = 0
     
-    var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedDangersKey) ?? [])
+    var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedDangersKey) ?? ["POWER"])
     var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.bannedDangersKey) ?? [])
     var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedTipsKey) ?? ["ELECTRICITY"])
     var unreadTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unreadTipsKey) ?? ["ELECTRICITY"])
