@@ -20,10 +20,15 @@ class BabysafeViewModel: ObservableObject {
     @AppStorage("babyName") var babyName = NSLocalizedString("intro_default_baby_name", comment: "")
     @AppStorage("nextTipUnlockTime") var lastTipUnlockTime: Double = 0
     
+    @AppStorage("userColor") var userColor: Color = .blue
+
+    
+    
     var unlockedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedDangersKey) ?? ["POWER"])
     var bannedDangers: [String] = (UserDefaults.standard.stringArray(forKey: Constant.bannedDangersKey) ?? [])
     var unlockedTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unlockedTipsKey) ?? ["ELECTRICITY"])
     var unreadTips: [String] = (UserDefaults.standard.stringArray(forKey: Constant.unreadTipsKey) ?? ["ELECTRICITY"])
+    
 
     @Published var babyDangers: [BabyDanger] = BabyDanger.allBabyDangers
     @Published var safetyTips: [SafetyTip] = SafetyTip.allSafetyTips
@@ -268,6 +273,7 @@ class BabysafeViewModel: ObservableObject {
         }
     }
     
+    
     func prepareNotification() {
         
         let current = UNUserNotificationCenter.current()
@@ -330,6 +336,7 @@ class BabysafeViewModel: ObservableObject {
         static let bannedDangersKey = "bannedDangers"
         static let unlockedTipsKey = "unlockedTips"
         static let unreadTipsKey = "unreadTips"
+        static let userColor = "userColor"
         
         static let nextTipUnlockInterval: TimeInterval = 1*60*60*24     // time interval are always seconds!
         
@@ -338,3 +345,30 @@ class BabysafeViewModel: ObservableObject {
 
 }
 
+
+
+// extension for color to allow saving in AppStorage
+
+extension Color: RawRepresentable {
+
+    public init?(rawValue: String) {
+        
+        guard let data = Data(base64Encoded: rawValue) else{
+            self = .blue
+            return
+        }
+        
+        do {
+            let color = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? UIColor ?? .black
+            self = Color(color)
+        } catch { self = .blue }
+    }
+
+    public var rawValue: String {
+        do{
+            let data = try NSKeyedArchiver.archivedData(withRootObject: UIColor(self), requiringSecureCoding: false) as Data
+            return data.base64EncodedString()
+            
+        } catch { return "" }
+    }
+}

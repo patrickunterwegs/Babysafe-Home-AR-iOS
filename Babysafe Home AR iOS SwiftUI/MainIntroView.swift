@@ -48,20 +48,16 @@ struct MainIntroView: View {
                     }) {
                         Label("start_ar_view", systemImage: "camera.viewfinder")
                             .font(.title2)
-                    }.padding(.bottom)
-                    
-                    
-                    /* Button(action: {}) {
-                        Label("start_ar_view", systemImage: "camera.viewfinder")
-                      } */
-                
+                    }.padding(.bottom, 16)
                     .buttonStyle(.automatic)
                     .buttonBorderShape(.automatic)
-                    .padding()
+                    //.padding()
                     
                     
                     Form {
                         Section(header: Text("intro_tell_us_baby_name")) {
+                            
+                            HStack {
                             TextField(
                                 "intro_tell_us_baby_name",
                                 text: $model.babyName
@@ -72,6 +68,11 @@ struct MainIntroView: View {
                             .disableAutocorrection(true)
                             .border(.clear)
                             .multilineTextAlignment(.center)
+                            
+
+                            ColorPicker("Color", selection: $model.userColor, supportsOpacity: false)
+                                
+                            }.labelsHidden()
                         }
                     }
                     .cornerRadius(8)

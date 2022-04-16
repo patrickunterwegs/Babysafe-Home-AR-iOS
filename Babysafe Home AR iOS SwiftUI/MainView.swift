@@ -89,7 +89,7 @@ struct MainView: View {
                                 }
                             }
                         }
-                }
+                }.accentColor(model.userColor)
             }
             .environmentObject(model)
             .onAppear (perform: {
@@ -99,6 +99,7 @@ struct MainView: View {
             .task {
                 await checkForNewSafetyTip()
             }
+            .accentColor(model.userColor)
     }
     
     /**

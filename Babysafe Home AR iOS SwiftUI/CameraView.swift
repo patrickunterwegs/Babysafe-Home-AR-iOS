@@ -111,7 +111,7 @@ struct CameraView: View {
                         }
                     }
                 }
-            }
+            }.accentColor(model.userColor)
         }
         .alert(LocalizedStringKey("checklist_unlock_info"), isPresented: $model.showUnlockRemainingAlert) {
             Button("close") { }
