@@ -48,7 +48,7 @@ struct MainTipsView: View {
                                         if safetyTip.isUnread {
                                             //Spacer()
                                             Image(systemName: "circlebadge.fill")
-                                                .foregroundColor(.yellow)
+                                                .foregroundColor(.accentColor)
                                                 .multilineTextAlignment(.trailing)
                                         }
                                         Image(systemName: "chevron.right")
