@@ -13,6 +13,7 @@
 "world" = "World";
 
 
+
 /*Strings used for fragments for navigation*/
 "close" = "Close";
 "save" = "Save";
@@ -50,10 +51,14 @@
 "about_app_in_collab_with" = "in collaboration with";
 "about_app_version" = "Version: %1$s (%2$d)";
 "about_app_codename" = "Codename: %1$s";
-"intro_info_header" = "Welcome to Babysafe Home AR";
+
+/*Fuzzy*/
+"intro_info_header" = "Welcome to\\nBabysafe Home AR";
 "intro_info_text" = "Your little helper to make your home a safer place for your baby!";
 "intro_howto_header" = "How it works";
-"intro_howto_text" = "Open the camera view below and move the camera preview to different places in your house. Frames will pop up. Tap on them and you will get useful information about potential security risks. The found risks are added to your list. Find as many items as possible to unlock all badges!";
+
+/*Fuzzy*/
+"intro_howto_text" = "Open the camera view through the button and move the camera preview to different places in your house. Frames will pop up. Tap on them and you will get useful information about potential security risks. The found risks are added to your list. Find as many items as possible to unlock all badges!";
 "intro_tell_us_baby_name" = "How do you call your toddler?";
 "intro_default_baby_name" = "Your baby";
 "score_badge_unlocked" = "Detection Detective";

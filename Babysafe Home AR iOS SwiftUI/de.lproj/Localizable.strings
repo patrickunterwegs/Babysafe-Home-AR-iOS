@@ -50,10 +50,10 @@
 "about_app_in_collab_with" = "in Zusammenarbeit mit";
 "about_app_version" = "Version: %1$s (%2$d)";
 "about_app_codename" = "Codename: %1$s";
-"intro_info_header" = "Willkommen bei Babysafe Home AR";
+"intro_info_header" = "Willkommen bei\\nBabysafe Home AR";
 "intro_info_text" = "Euer kleiner Helfer um euer Zuhause für kleine Wonneproppen sicherer zu machen!";
 "intro_howto_header" = "Was muss ich tun?";
-"intro_howto_text" = "Öffne die Kamera über den Button unten und richte sie auf verschiedene Objekte in deinem Zuhause. Sobald ein potentiell gefährliches Objekt gefunden wird, erscheint eine Info inklusive Anleitung, wie die Gefahr gebannt werden kann! Die gefundenen Gefahren werden zu deiner Checkliste hinzugefügt. Finde so viele Gefahren wie möglich um alle Badges zu erhalten!";
+"intro_howto_text" = "Öffne die Kamera über den Button und richte sie auf verschiedene Objekte in deinem Zuhause. Sobald ein potentiell gefährliches Objekt gefunden wird, erscheint eine Info inklusive Anleitung, wie die Gefahr gebannt werden kann! Die gefundenen Gefahren werden zu deiner Checkliste hinzugefügt. Finde so viele Gefahren wie möglich um alle Badges zu erhalten!";
 "intro_tell_us_baby_name" = "Wie nennt ihr euren Wonneproppen?";
 "intro_default_baby_name" = "Dein Baby";
 "score_badge_unlocked" = "Detection Detective";
