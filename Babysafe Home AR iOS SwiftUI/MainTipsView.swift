@@ -20,21 +20,38 @@ struct MainTipsView: View {
                 ForEach($model.safetyTips) { $safetyTip in
                     
                     if safetyTip.isUnlocked {
-                        NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
-                            Text(LocalizedStringKey(safetyTip.title))
-                                .font(.subheadline)
-                                .bold()
-                                .scaledToFill()
-                            
-                            if safetyTip.isUnread {
-                                Spacer()
-                                Image(systemName: "circlebadge.fill")
-                                    .foregroundColor(.yellow)
-                                    .multilineTextAlignment(.trailing)
+                        
+                        VStack {
+                            NavigationLink(destination: MainTipDetailView(safetyTip: $safetyTip, selectedShop: $model.selectedShop)) {
+                                Text(LocalizedStringKey(safetyTip.title))
+                                    .font(.subheadline)
+                                    .bold()
+                                    .scaledToFill()
+                                
+                                if safetyTip.isUnread {
+                                    Spacer()
+                                    Image(systemName: "circlebadge.fill")
+                                        .foregroundColor(.yellow)
+                                        .multilineTextAlignment(.trailing)
+                                }
                             }
-                        }
-                        .navigationTitle("main_tab_tips")
+                            .navigationTitle("main_tab_tips")
                         .navigationBarTitleDisplayMode(.inline)
+                            
+                            Text(LocalizedStringKey(safetyTip.description))
+                                .lineLimit(4)
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                            
+                            Image(safetyTip.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(height:50, alignment: .center)
+
+                                //.frame(width: .infinity, height: 150, alignment: .center)
+                                .clipped()
+                                .cornerRadius(8)
+                        }
                     }
                 }
             }
