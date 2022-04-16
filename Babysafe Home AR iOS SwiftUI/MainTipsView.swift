@@ -30,7 +30,7 @@ struct MainTipsView: View {
                                     Image(safetyTip.image)
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
-                                        .frame(height:75, alignment: .center)
+                                        .frame(height:100, alignment: .center)
                                         .clipped()
                                         .cornerRadius(8)
                                     
