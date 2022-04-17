@@ -50,7 +50,7 @@ struct MainTipDetailView: View {
                         }.padding(8)
                     }
                 }
-            }
+            }.padding()
         }
         .navigationTitle(LocalizedStringKey(safetyTip.title))
         .navigationBarTitleDisplayMode(.inline)
@@ -67,8 +67,7 @@ struct MainTipDetailView: View {
 
           }, content: {
               ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
-          }).padding()
-            .onAppear {
+          }).onAppear {
                 if(model.unreadTips.contains(safetyTip.id)) {
                     let index = model.safetyTips.firstIndex(where: { st in
                         safetyTip.id == st.id
