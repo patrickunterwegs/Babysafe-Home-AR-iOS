@@ -29,9 +29,10 @@ struct MainTipDetailView: View {
                     .cornerRadius(8)
                 
                 Text(LocalizedStringKey(safetyTip.title))
-                    .font(.title)
+                    .font(Font.title2)
+                    .bold()
                     .multilineTextAlignment(.center)
-                    .padding(.top)
+                    .padding()
                                  
                 GroupBox {
                     VStack {
