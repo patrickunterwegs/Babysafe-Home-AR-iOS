@@ -67,7 +67,7 @@ struct MainTipDetailView: View {
 
           }, content: {
               ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
-          }).padding(8)
+          }).padding()
             .onAppear {
                 if(model.unreadTips.contains(safetyTip.id)) {
                     let index = model.safetyTips.firstIndex(where: { st in
