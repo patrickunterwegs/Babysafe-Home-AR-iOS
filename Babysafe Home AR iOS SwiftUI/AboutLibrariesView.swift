@@ -36,7 +36,7 @@ struct AboutLibrariesView: View {
 
             Section(header: Text("about_tab_libraries")) {
                 Link(destination: URL(string: "https://developers.google.com/ml-kit")!) {
-                    Label(String("Goole ML Kit"), systemImage: "link")
+                    Label(String("Google ML Kit"), systemImage: "link")
                 }
                 Link(destination: URL(string: "https://github.com/simibac/ConfettiSwiftUI")!) {
                     Label(String("ConfettiSwiftUI"), systemImage: "link")
