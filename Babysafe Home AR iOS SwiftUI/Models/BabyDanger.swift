@@ -322,9 +322,9 @@ extension BabyDanger {
         }
     }
     
-    func getShareText(shop: Shop) -> String {
+    func getShareText(shop: Shop, babyName: String) -> String {
         let title = NSLocalizedString(title, comment: "")
-        let desc = NSLocalizedString(description, comment: "")
+        let desc = getDescriptionWithBabyname(babyName: babyName)
         let link = getLinkForShop(shop: shop)
         let addition = NSLocalizedString("share_brought_to_you_by", comment: "")
         

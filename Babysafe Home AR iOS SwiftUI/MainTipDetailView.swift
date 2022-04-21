@@ -69,7 +69,7 @@ struct MainTipDetailView: View {
           self.isShareSheetPresented = false
 
           }, content: {
-              ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop)])
+              ActivityViewController(activityItems: [safetyTip.getShareText(shop: selectedShop, babyName: model.babyName)])
           }).onAppear {
                 if(model.unreadTips.contains(safetyTip.id)) {
                     let index = model.safetyTips.firstIndex(where: { st in

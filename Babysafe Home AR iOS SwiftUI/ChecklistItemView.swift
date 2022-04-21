@@ -68,7 +68,7 @@ struct ChecklistItemView: View {
                     self.isShareSheetPresented = false
 
                     }, content: {
-                        ActivityViewController(activityItems: [babyDanger.getShareText(shop: selectedShop)])
+                        ActivityViewController(activityItems: [babyDanger.getShareText(shop: selectedShop, babyName: model.babyName)])
                     }).padding(8)
                 
                 let link = babyDanger.getLinkForShop(shop: selectedShop)

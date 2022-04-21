@@ -54,7 +54,7 @@ struct MainTipsView: View {
                                         Image(systemName: "chevron.right")
                                     }.padding(.bottom, 2)
                                     
-                                    Text(LocalizedStringKey(safetyTip.description))
+                                    Text(safetyTip.getDescriptionWithBabyname(babyName: model.babyName))
                                         .lineLimit(4)
                                         .font(.caption)
                                         .foregroundColor(.gray)
