@@ -11,16 +11,25 @@ enum ShopCountry: String, CaseIterable, Identifiable {
     case at
     case de
     case ch
+    case fr
+    case be
+    case lu
+    case it
+    case es
+    case pt
+    case uk
+    case ie
+    case nl
     case world
 
     var id: Self { self }
     
     var name: String {
-        switch self {
-        case .at: return NSLocalizedString("austria", comment: "")
-        case .de: return NSLocalizedString("germany", comment: "")
-        case .ch: return NSLocalizedString("switzerland", comment: "")
-        case .world: return NSLocalizedString("world", comment: "")
+        if self == .world {
+            return NSLocalizedString("dialog_shop_country_world", comment: "")
+        }
+        else {
+            return Locale.current.localizedString(forRegionCode: self.rawValue) ?? self.rawValue
         }
     }
     
@@ -29,7 +38,18 @@ enum ShopCountry: String, CaseIterable, Identifiable {
         case .at: return [Shop.amazonDE, Shop.babywalzAT]
         case .de: return [Shop.amazonDE, Shop.babywalzDE]
         case .ch: return [Shop.amazonDE, Shop.babywalzCH]
+        case .fr: return [Shop.amazonFR]
+        case .be: return [Shop.amazonFR, Shop.amazonNL]
+        case .lu: return [Shop.amazonFR, Shop.amazonDE]
+        case .it: return [Shop.amazonIT]
+        case .es: return [Shop.amazonES]
+        case .pt: return [Shop.amazonES]
+        case .uk: return [Shop.amazonUK]
+        case .ie: return [Shop.amazonUK]
+        case .nl: return [Shop.amazonNL]
         case .world: return [Shop.aliexpress]
+
+            
         }
     }
 }

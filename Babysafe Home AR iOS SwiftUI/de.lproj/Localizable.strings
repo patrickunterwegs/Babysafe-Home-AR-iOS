@@ -6,12 +6,6 @@
   
 */
 
-/* iOS only!! */
-"austria" = "Österreich";
-"germany" = "Deutschland";
-"switzerland" = "Schweiz";
-"world" = "Welt";
-
 
 /*Strings used for fragments for navigation*/
 "links" = "Links";
