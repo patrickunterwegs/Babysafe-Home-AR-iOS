@@ -33,7 +33,7 @@ struct AboutView: View {
                         footer: Text("dialog_shop_select_message2")) {
                     Text("dialog_shop_select_message").font(.footnote).foregroundColor(.gray)
                     Picker("dialog_shop_select_country", selection: $model.selectedCountry) {
-                        ForEach(ShopCountry.allCases) { country in
+                        ForEach(ShopCountry.allCases.sorted{ $0.name < $1.name }) { country in
                             Text(country.name).tag(country.id)
                         }
                     }.onChange(of: model.selectedCountry) { country in
