@@ -35,9 +35,9 @@ enum ShopCountry: String, CaseIterable, Identifiable {
     
     var shops: [Shop] {
         switch self {
-        case .at: return [Shop.amazonDE, Shop.babywalzAT]
-        case .de: return [Shop.amazonDE, Shop.babywalzDE]
-        case .ch: return [Shop.amazonDE, Shop.babywalzCH]
+        case .at: return [Shop.amazonDE]
+        case .de: return [Shop.amazonDE]
+        case .ch: return [Shop.amazonDE, Shop.amazonFR, Shop.amazonIT]
         case .fr: return [Shop.amazonFR]
         case .be: return [Shop.amazonFR, Shop.amazonNL]
         case .lu: return [Shop.amazonFR, Shop.amazonDE]

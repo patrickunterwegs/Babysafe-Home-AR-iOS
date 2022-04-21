@@ -42,7 +42,7 @@ func getDefaultShopForCountry(country: ShopCountry) -> Shop {
     switch country {
     case .at: return .amazonDE
     case .de: return .amazonDE
-    case .ch: return .babywalzCH
+    case .ch: return .amazonDE
     case .fr: return .amazonFR
     case .be: return .amazonFR
     case .lu: return .amazonFR
