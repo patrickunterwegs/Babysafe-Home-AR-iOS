@@ -52,6 +52,7 @@ struct MainView: View {
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
                 
+                /*
                 NavigationView {
                     MainTipsView()
                         .navigationTitle("main_tab_tips")
@@ -63,6 +64,7 @@ struct MainView: View {
                     Text("main_tab_tips")
                 }
                 .navigationViewStyle(StackNavigationViewStyle())
+                 */
                 
                 NavigationView {
                     AboutView()

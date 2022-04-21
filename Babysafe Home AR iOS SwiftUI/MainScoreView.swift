@@ -23,6 +23,9 @@ struct MainScoreView: View {
                 Spacer()
                 VStack(alignment: .center) {
                     
+                    
+                    /*
+                     
                     HStack {
                         Badge(
                             image: "ic_badge_unlocked",
@@ -43,6 +46,8 @@ struct MainScoreView: View {
                             numTotal: SafetyTip.allSafetyTips.count
                         )
                     }.padding()
+                     
+                     */
                     
                     GroupBox {
                         VStack {
