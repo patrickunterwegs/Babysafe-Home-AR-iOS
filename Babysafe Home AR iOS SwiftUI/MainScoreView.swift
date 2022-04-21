@@ -27,17 +27,20 @@ struct MainScoreView: View {
                         Badge(
                             image: "ic_badge_unlocked",
                             text: "score_badge_unlocked",
-                            percentReveal: model.percentUnlocked
+                            num: model.numUnlocked,
+                            numTotal: BabyDanger.allBabyDangers.count
                         )
                         Badge(
                             image: "ic_badge_banned",
                             text: "score_badge_banned",
-                            percentReveal: model.percentBanned
+                            num: model.numBanned,
+                            numTotal: BabyDanger.allBabyDangers.count
                         )
                         Badge(
                             image: "ic_badge_articles",
                             text: "score_badge_articles",
-                            percentReveal: model.percentSafetyTipsUnlocked
+                            num: model.numSafetyTipsUnlocked,
+                            numTotal: SafetyTip.allSafetyTips.count
                         )
                     }.padding()
                     
@@ -135,17 +138,18 @@ struct Badge: View {
     
     var image: String
     var text: String
-    var percentReveal: Float
+    var num: Int
+    var numTotal: Int
     
     @Environment(\.colorScheme) var colorScheme
     
-    @State var percentRevealAnimated: Float = 0.0
+    @State var numUnlockedAnimated: Int = 0
     
     
     var body: some View {
         VStack {
             ZStack {
-                if percentReveal == 100 {
+                if num == numTotal {
                     Image(image)
                         .resizable()
                         .frame(width: 100.0, height: 100.0)
@@ -156,16 +160,20 @@ struct Badge: View {
                         .foregroundColor(.accentColor)
                         .frame(width: 100.0, height: 100.0)
                         .opacity(0.3)
-                    Text(String(format: "%.0f%%", percentRevealAnimated))
-                        .font(.caption)
-                        .bold()
-                        .frame(width: 100.0, height: 100.0)
+                    HStack {
+                        Spacer()
+                        Text("\(numUnlockedAnimated)/\(numTotal)")
+                            .font(.caption)
+            
+                        Spacer()
+                            
+                    }.frame(width: 100.0, height: 100.0)
                 }
             }
             Text(LocalizedStringKey(text)).frame(width: 100, height: nil, alignment: .center).multilineTextAlignment(.center)
         }.onAppear {
             withAnimation(.easeInOut) {
-                percentRevealAnimated = percentReveal
+                numUnlockedAnimated = num
             }
         }
     }
@@ -174,14 +182,14 @@ struct Badge: View {
 
 struct Badge_Previews: PreviewProvider {
     static var previews: some View {
-        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 78)
+        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", num: 12, numTotal: 40)
             .previewLayout(.sizeThatFits)
     }
 }
 
 struct Badge_Revealed_Previews: PreviewProvider {
     static var previews: some View {
-        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", percentReveal: 100)
+        Badge(image: "ic_badge_unlocked", text: "score_badge_unlocked", num: 40, numTotal: 40)
             .previewLayout(.sizeThatFits)
     }
 }
