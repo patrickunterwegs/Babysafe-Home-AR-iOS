@@ -42,12 +42,15 @@ struct MainTipDetailView: View {
                             .font(.body)
                     }
                 }
-
-                GroupBox(label: Label(LocalizedStringKey("product_recommendations"), systemImage: "link")) {
-                    ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
-                        Link(destination: safetyTipLink.link) {
-                            Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
-                        }.padding(8)
+                
+                // show link box only if links are available
+                if safetyTip.getSafetyTipLinksForShop(shop: selectedShop).count > 0 {
+                    GroupBox(label: Label(LocalizedStringKey("links"), systemImage: "link")) {
+                        ForEach(safetyTip.getSafetyTipLinksForShop(shop: selectedShop))  { safetyTipLink in
+                            Link(destination: safetyTipLink.link) {
+                                Label(LocalizedStringKey(safetyTipLink.text), systemImage: "cart")
+                            }.padding(8)
+                        }
                     }
                 }
             }.padding()

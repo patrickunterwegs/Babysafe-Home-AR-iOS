@@ -14,6 +14,7 @@
 
 
 /*Strings used for fragments for navigation*/
+"links" = "Links";
 "close" = "Schließen";
 "save" = "Speichern";
 "cancel" = "Schließen";

@@ -51,6 +51,7 @@
 "about_app_in_collab_with" = "in collaboration with";
 "about_app_version" = "Version: %1$s (%2$d)";
 "about_app_codename" = "Codename: %1$s";
+"links" = "Links";
 
 /*Fuzzy*/
 "intro_info_header" = "Welcome to
