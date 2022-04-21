@@ -56,10 +56,10 @@ struct MainTipsView: View {
                                     }.padding(.bottom, 2)
                                     
                                     Text(safetyTip.getDescriptionWithBabyname(babyName: model.babyName))
-                                        .lineLimit(4)
-                                        .font(.caption)
-                                        .foregroundColor(.gray)
                                         .multilineTextAlignment(.leading)
+                                        .font(.footnote)
+                                        .lineLimit(4)
+                                        .foregroundColor(.gray)
                                     
                                 }
                             }.padding(.bottom)
