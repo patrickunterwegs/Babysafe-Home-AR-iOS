@@ -39,8 +39,9 @@ struct MainTipsView: View {
                                     HStack {
                                         Text(LocalizedStringKey(safetyTip.title))
                                         //.font(.headline)
+                                            .font(.title3)
                                             .bold()
-                                            .scaledToFill()
+                                            .multilineTextAlignment(.leading)
                                             .foregroundColor(.primary)
                                         
                                         Spacer()
