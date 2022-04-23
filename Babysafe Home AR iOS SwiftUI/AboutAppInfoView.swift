@@ -41,8 +41,6 @@ struct AboutAppInfoView: View {
                     VStack(alignment: .center) {
                         Spacer()
                         Image("logo_techbee")
-                            .resizable()
-                            .frame(width: 100.0, height: 100.0)
                         Text("Techbee e.U.")
                         Text("https://techbee.at")
                         Spacer()
