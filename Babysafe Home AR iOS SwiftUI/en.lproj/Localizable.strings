@@ -7,7 +7,6 @@
 */
 
 
-
 /*Strings used for fragments for navigation*/
 "close" = "Close";
 "save" = "Save";
@@ -37,7 +36,6 @@
 "ar_camera" = "AR Camera";
 "settings_camera" = "Camera";
 "share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
-"share_subject" = "";
 "share_app_subject" = "Check out Babysafe Home AR!";
 "share_app_text" = "Look what great app I have found: *Babysafe Home AR*!\nIt helps you to make your home a safer place for your Baby.\nCheck it out here:\nhttps://babysafe.techbee.at";
 "about_app_terms" = "Terms & Conditions";
@@ -45,18 +43,12 @@
 "about_app_in_collab_with" = "in collaboration with";
 "about_app_version" = "Version: %1$s (%2$d)";
 "about_app_codename" = "Codename: %1$s";
-"links" = "Links";
-
-/*Fuzzy*/
-"intro_info_header" = "Welcome to
-Babysafe Home AR";
+"intro_info_header" = "Welcome to\nBabysafe Home AR";
 "intro_info_text" = "Your little helper to make your home a safer place for your baby!";
 "intro_howto_header" = "How it works";
-
-/*Fuzzy*/
-"intro_howto_text" = "Open the camera view through the button and move the camera preview to different places in your house. Frames will pop up. Tap on them and you will get useful information about potential security risks. The found risks are added to your list. Find as many items as possible to unlock all badges!";
+"intro_howto_text" = "Open the camera view through the button and move the camera preview to different places in your house. Once a possible danger was found, you will get an info and instructions on how to ban that danger. The found dangers are added to your list.";
 "intro_tell_us_baby_name" = "How do you call your toddler?";
-"intro_default_baby_name" = "Your baby";
+"intro_default_baby_name" = "Your toddler";
 "score_badge_unlocked" = "Detection Detective";
 "score_badge_banned" = "Mitigation Master";
 "score_badge_articles" = "Responsible Reader";
@@ -66,17 +58,17 @@ Babysafe Home AR";
 "score_first_unlocked_header" = "Good start!";
 "score_first_unlocked_text" = "You have unlocked some possible dangers for %2$s and reached a score of %1$d! Keep going, unlock and ban all the possible dangers!";
 "score_half_unlocked_header" = "Well done!";
-"score_half_unlocked_text" = "You have unlocked more than half of the possible dangers for %2$s and reached a score of %1$d! Continue searching for more potential dangers to unlock the Detection Detective badge!";
+"score_half_unlocked_text" = "You have unlocked more than half of the possible dangers for %2$s and reached a score of %1$d! Keep going and find all possible dangers in your home!";
 "score_all_unlocked_header" = "Super!";
 "score_all_unlocked_text" = "You have unlocked all of the possible dangers for %2$s that you can find with this app and reached a score of %1$d! Now go through the dangers and check how you can mitigate them!";
 "score_half_banned_header" = "Super!";
-"score_half_banned_text" = "You have banned more than half of the possible dangers for %2$s and reached a score of %1$d! Keep up that good work and ban all possible dangers to unlock the Mitigation Master badge!";
+"score_half_banned_text" = "You have banned more than half of the possible dangers for %2$s and reached a score of %1$d! Keep going and ban all possible dangers to unlock the Mitigation Master badge!";
 "score_all_banned_header" = "Congratulations!";
-"score_all_banned_text" = "You have banned all of the possible dangers for %2$s that you can detect with this app and reached a score of %1$d! You have earned the Mitigation Master badge! However, an app can only guide you to find possible dangers for babies. It will be up to you to find the remaining dangers and stay attentive to keep your surroundings safe for %2$s!";
-"checklist_header" = "Unlock baby security checks by finding potential security risk for your baby in your place!";
+"score_all_banned_text" = "You have banned all of the possible dangers for %2$s that you can detect with this app and reached a score of %1$d! However, an app can only guide you to find possible dangers for babies. It will be up to you to find the remaining dangers and stay attentive to keep your surroundings safe for %2$s!";
+"checklist_header" = "Unlock baby security checks by finding potential dangers for your baby in your place!";
 "checklist_unlock_info" = "You have unlocked a great deal of all dangers that you can find with this app. You have now the option to unlock the remaining ones at once!";
 "checklist_all_unlocked" = "Great! You have unlocked all dangers that can be recognized by this app! Check all of them and make sure to ban all dangers from your house!";
-"checklist_all_banned" = "Awesome! You have marked all dangers as banned! You are a real Babysafe Home AR hero! Check out the tips section for more advice and recommendations!";
+"checklist_all_banned" = "Awesome! You have marked all dangers as banned! You are a real Babysafe Home AR hero!";
 "checklist_item_buy" = "Buy";
 "checklist_unlock_button" = "Unlock";
 "checklist_dialog_first_banned_title" = "First danger banned!";
@@ -91,7 +83,7 @@ Babysafe Home AR";
 "dialog_first_time_title" = "Get started";
 "dialog_first_time_message" = "Point your camera to objects in your home. Make sure that the camera covers whole objects without cutting off parts of it and avoid pointing to multiple objects at once!";
 "dialog_shop_select_title" = "Your shopping platform";
-"dialog_shop_select_message" = "Babysafe Home AR gives you recommendations for products in shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative:";
+"dialog_shop_select_message" = "Babysafe Home AR gives you recommendations for products in shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative. \nNote: As an Affiliate-Associates we earn from qualifying purchases.";
 "dialog_shop_select_message2" = "If products are not available in your preferred shopping platform, we might recommend products in other stores.";
 "dialog_shop_select_country" = "Country";
 "dialog_shop_country_world" = "World";
@@ -108,20 +100,34 @@ Babysafe Home AR";
 "articles_notification_secondreminder_title" = "Don't miss your unlocked tip!";
 "articles_header_info" = "Come back daily to unlock further tips!";
 "thanks_header" = "Special thanks";
-"thanks_text" = "Thanks to Sophie-Katharina for your cheerful smiles, random requests to speak and your inspiration for this app! :-)";
+"thanks_text" = "Thanks to Sophie-Katharina for your cheerful smiles, random requests to speak and your inspiration for this app!";
 "attributions_header" = "Attributions";
 "attributions_text" = "This app is using free and licensed images/animations. On this page we would like to give credit to the artists that provided materials for this app.";
 "attributions_lottie_animations_text" = "This app is using publicly available animations from the amazing Lottie Library.";
 "attributions_graphics" = "Graphics";
 "attributions_graphics_text" = "This app is using licensed images from freepik and the amazing graphics by @catalyststuff\nhttps://www.freepik.com/catalyststuff";
 "attributions_animations" = "Animations";
-"attributions_lottie_animations_startblast" = "";
-"attributions_lottie_animations_rainbow" = "";
-"attributions_lottie_animations_confetti" = "";
+"product_recommendations" = "Product recommendations";
+"checklist_tap_to_ban" = "Tap on the cards to mark the dangers as banned!";
+"libraries_header" = "Libraries";
+"libraries_text" = "This app is using free and open source code libraries. On this page we would like to give credit to the projects developers that provided materials for this app.";
+"about_app" = "App";
+"about_app_info" = "App Info";
+"about_legal_support" = "Legal & Support";
+"about_technical_support" = "Technical Support";
+"about_privacy_policy" = "Privacy Policy";
+"links" = "Links";
+
+
+
+
+/* DANGERS */
+
+
 "danger_power_title" = "Installing socket fuses";
 "danger_power_text" = "Baby and child fingers fit exactly into the holes of the socket. Therefore, there is a particular risk of fatal electric shock. Use socket protectors that can prevent this. Little crawlers are sure to immediately find the unsecured sockets in your home.";
 "danger_toiletwater_title" = "Close WC lid";
-"danger_toiletwater_text" = "Children can drown even in very low water and especially colorful toilet stones animate mice to try them. You can prevent both with a toilet lid safety device. So %1$s can neither fall in nor eat the poisonous toilet stone.";
+"danger_toiletwater_text" = "Children can drown even in very low water and especially colorful toilet stones animate toddlers to try them. You can prevent both with a toilet lid safety device. So %1$s can neither fall in nor eat the poisonous toilet stone.";
 "danger_furniture_tipover_title" = "Attach anti-tilt device for furniture";
 "danger_furniture_tipover_text" = "When little ones become mobile, they try to hold on to everything and climb up. Furniture can tip over and fall on %1$s as a result. An anti-tip device for furniture can prevent the worst from happening. Large appliances, such as a TV, could also tip over and fall onto %1$s. Try to secure them with the help of the anti-tip device as well.";
 "danger_furniture_fallingof_title" = "Remove tablecloths";
@@ -132,7 +138,7 @@ Babysafe Home AR";
 "danger_furniture_drawer_text" = "Drawers can bring several dangers at once: on the one hand, of course, they are a climbing aid for %1$s, but also interesting and dangerous. Small children's fingers can quickly become trapped in the drawer. That hurts! Smart remedies are magnetic locks.";
 "danger_plant_poison_title" = "Remove poisonous plants";
 "danger_plant_poison_text" = "Some plants are poisonous. Fruits, leaves and flowers can cause poisoning if eaten. Other plants secrete liquid, which can be dangerous to %1$s. If you are unsure, consult a plant guide, ask at your local nursery, or use your own plant identification apps. The safest thing to do is to remove the plants.";
-"danger_plant_sting_title" = "prickly plants out of reach";
+"danger_plant_sting_title" = "Prickly plants out of reach";
 "danger_plant_sting_text" = "Some plants have thorns or spines. To prevent the little gnomes from pricking their fingers, it is best to place them out of reach of %1$s.";
 "danger_plant_soil_title" = "Make plant soil inaccessible";
 "danger_plant_soil_text" = "Potting soil or granules usually contain fertilizers and are therefore harmful to %1$s. Stretch a plant protection net over the pot and the soil and protect small plant explorers from poisoning.";
@@ -147,8 +153,8 @@ Babysafe Home AR";
 "danger_door_pinchback_title" = "Preventing pinching on door hinges";
 "danger_door_pinchback_text" = "There is also a risk of pinching little children's fingers on the hinge side of a door. A pinch guard can reduce this risk.";
 "danger_door_lockout_title" = "Securely lock front door";
-"danger_door_lockout_text" = "Especially in the case of front doors, there is also the danger that the little mice lock themselves out unnoticed. A door lock can prevent %1$s from opening the door.";
-"danger_window_title" = "Fenstersturz verhindern";
+"danger_door_lockout_text" = "Especially in the case of front doors, there is also the danger that the toddlers lock themselves out unnoticed. A door lock can prevent %1$s from opening the door.";
+"danger_window_title" = "Prevent window fall";
 "danger_window_text" = "Falls from the window are life-threatening. You can prevent this with window and balcony door safety devices. Also make sure that the little ones cannot crawl onto the windowsill.";
 "danger_stairs_title" = "Prevent fall on stairs";
 "danger_stairs_text" = "When the little world explorers become mobile, they are magically attracted to stairs. To prevent %1$s falling down the stairs, a stair gate can help banish this danger. But it can also help to keep the little ones away from other dangers.";
@@ -159,7 +165,7 @@ Babysafe Home AR";
 "danger_cleaning_supplies_title" = "Safely lock chemicals";
 "danger_cleaning_supplies_text" = "Detergents, cleaning products, and cosmetics contain chemicals that are unproper or dangerous for %1$s, especially if they get into the eyes or mouth. Sometimes the containers have a safety cap, but it is better to store them out of reach of the little ones. If this is not possible, you can also lock the cabinets with a magnetic lock.";
 "danger_sofa_title" = "Prevent sofa / bed fall";
-"danger_sofa_text" = "To prevent %1$s from injuring themselves by falling off the bed or sofa, you should not leave %1$s unattended. To prevent %1$s from falling off the bed, you can use a height-adjustable grate. However, keep in mind that older children often crawl over the grille as well, increasing the height at which they fall and the risk of injury. So use bed rails only as long as it makes sense.";
+"danger_sofa_text" = "To prevent %1$s from injuring themselves by falling off the bed or sofa, you should not leave %1$s unattended. To prevent %1$s from falling off the bed, you can use a height-adjustable bed rail. However, keep in mind that older children often crawl over the rail as well, increasing the height at which they fall and the risk of injury. So use bed rails only as long as it makes sense.";
 "danger_oven_title" = "Secure stove";
 "danger_oven_text" = "On the hot stove top, %1$s can burn themselves very quickly and even catch %1$s the handle of a cooking pot. There is a risk of severe scalding with hot contents. To prevent this, a safety grid for the stove can be helpful. If you don't want to use a grid, try to always turn the handle of your pots and pans backwards out of reach.";
 "danger_ovenswitch_title" = "Secure stove knobs";
@@ -185,19 +191,25 @@ Babysafe Home AR";
 "danger_toy_title" = "Check toys for harmful substances";
 "danger_toy_text" = "Yes, even children's toys can be dangerous for %1$s. On the one hand, if they are not suitable for the age of your child, on the other hand, if they contain dangerous pollutants and plasticizers that are dangerous for %1$s in the long term. So when buying toys, look carefully at what materials the toy is made of and try to prefer natural materials.";
 "danger_smallitems_title" = "Store small parts out of reach";
-"danger_smallitems_text" = "The little world explorers first check their surroundings with their mouths, so any find goes right there first. In the worst case, the item clogs the airways and %1$s can choke on it. If %1$s swallows the objects, in the best case they come to light again after some time, but can cause some damage in the body. Therefore, try to keep all small, round objects out of reach of your pet.";
+"danger_smallitems_text" = "The little world explorers first check their surroundings with their mouths, so any find goes right there first. In the worst case, the item clogs the airways and %1$s can choke on it. If %1$s swallows the objects, in the best case they come to light again after some time, but can cause some damage in the body. Therefore, try to keep all small, round objects out of reach of your toddler.";
 "danger_weapons_title" = "Lock weapons";
-"danger_weapons_text" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like well in front of your no treasure. After all, you don't want %1$s to play with them and hurt or even kill themselves or others.";
+"danger_weapons_text" = "It is undisputed that weapons are not for children. Lock up firearms and stabbing weapons, but also batons and the like from your toddler. After all, you don't want %1$s to play with them and hurt or even kill themselves or others.";
 "danger_battery_title" = "Batteries out of range";
-"danger_battery_text" = "Batteries, especially button batteries, should be kept safe from your child. Because if %1$s swallows them, it's an emergency and you need to go to the hospital immediately. Button cells can cause serious damage to your favorite's esophagus.";
+"danger_battery_text" = "Batteries, especially button batteries, should be kept safe from your child. If %1$s swallows them, it's an emergency and you need to go to the hospital immediately. Button cells can cause serious damage to your favorite's esophagus.";
 "danger_cutlery_title" = "Use children's cutlery";
-"danger_cutlery_text" = "Knife, fork, scissors, light are not for small children! - says already an old proverb. The danger with cutlery is mainly the tips of the fork and even with sharp knives can %1$s hurt. However, the youngest children like to use cutlery like the grown-ups. Therefore, special children's cutlery with rounded tips and blunt knives is suitable.";
+"danger_cutlery_text" = "Knife, fork, scissors, flames, have no place in children's games! - says already an old proverb. The danger with cutlery is mainly the tips of the fork but also with sharp knives %1$s can get hurt. However, the youngest children like to use cutlery like the grown-ups. Therefore, special children's cutlery with rounded tips and blunt knives is suitable.";
 "danger_cover_title" = "Create pad and blanket free sleeping environment";
 "danger_cover_text" = "For babies, blankets and bolsters also pose some danger, as they cannot free themselves if the bolster and blanket lands on their face. So if %1$s is still very small, avoid cushions and blankets when sleeping and when %1$s is unattended.";
 "danger_mirror_title" = "Protect mirrors and glass from breakage";
-"danger_mirror_text" = "Mirrors or glass plates pose a great danger, especially if they break. So that %1$s do not hurt themselves on the splinters, you can already make sure when buying that you buy shatterproof mirrors. Especially for the children's room, these are more suitable. If you want to be on the safe side, you can also cover existing mirrors or glass surfaces with a special film.";
+"danger_mirror_text" = "Mirrors or glass plates pose a great danger, especially if they break. So that %1$s doesn't get hurt by splinters, you can already make sure when buying that you buy shatterproof mirrors. Especially for the children's room, these are more suitable. If you want to be on the safe side, you can also cover existing mirrors or glass surfaces with a special film.";
 "danger_fireplace_title" = "Secure fireplaces";
 "danger_fireplace_text" = "To %1$s protect against burns from a fireplace or other fireplace in your home, a grate is certainly very helpful. Unfortunately, normal grates are not suitable for this purpose, as they are often made of wood or plastic. A heat resistant safety grate will protect little curious kids from dangerous burns from fireplaces.";
+
+
+
+/* TIPS */
+
+
 "tip_electricity_title" = "Warum sind Steckdosen gefährlich?";
 "tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadeln oder einen Schraubenzieher zum Spielen zu überlassen. Warum sind dann Steckdosen so gefährlich?\n\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen. Viele Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter (FI-Schalter) dazu da ist, uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst, wenn ein Mensch in den Stromkreis eingreift. Für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Wohnbereich mit Steckdosensicherungen. Diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online. (Unten findest du unsere Empfehlungen, für die wir eine kleine Provision bekommen und das Sparschwein unsere Krabbelmaus füttern.)\n\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben. Für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\n\nDu kannst nicht immer und überall die Steckdosen absichern. Und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind daher schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\n\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen oder besteht der Verdacht, so solltest du umgehend ins Krankenhaus fahren. Die Symptome, welche durch elektrischen Strom ausgelöst werden können, reichen von Verbrennungen an den Ein- und Austrittstellen, über Schädigungen von Organen bis hin zu Herzrhythmusstörungen und im schlimmsten Fall zu Atemstillstand.\n\n\n\nUnsere Empfehlung:\n\nDa du neben Steckdosensicherungen auch Schubladenschlösser, Kantenschutz, Kippsicherungen und Türstopper brauchen kannst, empfehlen wir folgendes Starterkit mit 12x Steckdosenschutz, 12x Eckenschutz, 6x Schranksicherung, 4x Schrankschloss, 5x Klemmschutz, 4x Universal Sicherung.\n\nNatürlich kannst du auch nur Steckdosensicherungen bestellen. Bitte achte auch darauf, ob es sich um  EU-Stecker und oder nicht EU-Steckerdosen handelt. ";
 "tip_electricity_link_plug_eu" = "Stecken (EU)";
@@ -218,14 +230,6 @@ Babysafe Home AR";
 "tip_baby_prison_link_small_variant" = "Kleine Variante";
 "tip_beta_title" = "Beta";
 "tip_beta_text" = "This is all for now in this current beta, more to come!";
-"product_recommendations" = "Product recommendations";
-"checklist_tap_to_ban" = "Tap on the cards to mark the dangers as banned!";
-"libraries_header" = "Libraries";
-"libraries_text" = "This app is using free and open source code libraries. On this page we would like to give credit to the projects developers that provided materials for this app.";
 "tip_electricity_link_glue_eu" = "Kleben (EU)";
 "tip_electricity_link_non_eu" = "Non-EU";
-"about_app" = "App";
-"about_app_info" = "App Info";
-"about_legal_support" = "Legal & Support";
-"about_technical_support" = "Technical Support";
-"about_privacy_policy" = "Privacy Policy";
+
