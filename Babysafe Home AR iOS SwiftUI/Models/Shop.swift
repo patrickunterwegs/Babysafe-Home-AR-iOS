@@ -14,6 +14,9 @@ enum Shop: String, CaseIterable, Identifiable {
     case amazonES
     case amazonUK
     case amazonNL
+    case amazonCOM
+    case amazonCA
+    case amazonSE
     case babywalzAT
     case babywalzDE
     case babywalzCH
@@ -29,6 +32,9 @@ enum Shop: String, CaseIterable, Identifiable {
         case .amazonES: return "Amazon.es"
         case .amazonUK: return "Amazon.co.uk"
         case .amazonNL: return "Amazon.nl"
+        case .amazonCOM: return "Amazon.com"
+        case .amazonCA: return "Amazon.ca"
+        case .amazonSE: return "Amazon.se"
         case .babywalzAT: return "Baby-Walz.at"
         case .babywalzDE: return "Baby-Walz.de"
         case .babywalzCH: return "Baby-Walz.ch"
@@ -52,6 +58,24 @@ func getDefaultShopForCountry(country: ShopCountry) -> Shop {
     case .uk: return .amazonUK
     case .ie: return .amazonUK
     case .nl: return .amazonNL
+    case .dk: return .amazonDE
+    case .is: return .amazonUK
+    case .no: return .amazonUK
+    case .se: return .amazonSE
+    case .fi: return .amazonDE
+    case .ee: return .amazonDE
+    case .lt: return .amazonDE
+    case .lv: return .amazonDE
+    case .cz: return .amazonDE
+    case .sk: return .aliexpress
+    case .hu: return .aliexpress
+    case .bg: return .aliexpress
+    case .ro: return .aliexpress
+    case .gr: return .amazonUK
+    case .mt: return .amazonUK
+    case .cy: return .amazonUK
+
+        
     case .world: return .aliexpress
     }
 }

@@ -21,6 +21,9 @@ struct SafetyTip: Identifiable {
     let linkAmazonES: [SafetyTipLink]
     let linkAmazonUK: [SafetyTipLink]
     let linkAmazonNL: [SafetyTipLink]
+    let linkAmazonCOM: [SafetyTipLink]
+    let linkAmazonCA: [SafetyTipLink]
+    let linkAmazonSE: [SafetyTipLink]
     var isUnlocked: Bool = false
     var isUnread: Bool = false
 }
@@ -42,7 +45,10 @@ extension SafetyTip {
             linkAmazonIT: [],
             linkAmazonES: [],
             linkAmazonUK: [],
-            linkAmazonNL: []
+            linkAmazonNL: [],
+            linkAmazonCOM: [],
+            linkAmazonCA: [],
+            linkAmazonSE: []
         ),
         SafetyTip(
             id: "TILL_HERE",
@@ -55,7 +61,10 @@ extension SafetyTip {
             linkAmazonIT: [],
             linkAmazonES: [],
             linkAmazonUK: [],
-            linkAmazonNL: []
+            linkAmazonNL: [],
+            linkAmazonCOM: [],
+            linkAmazonCA: [],
+            linkAmazonSE: []
         ),
         SafetyTip(
             id: "BABY_PRISON",
@@ -68,7 +77,11 @@ extension SafetyTip {
             linkAmazonIT: [],
             linkAmazonES: [],
             linkAmazonUK: [],
-            linkAmazonNL: []),
+            linkAmazonNL: [],
+            linkAmazonCOM: [],
+            linkAmazonCA: [],
+            linkAmazonSE: []
+        ),
         SafetyTip(
             id: "BETA_END",
             title: String("This is the end ..."),
@@ -80,7 +93,11 @@ extension SafetyTip {
             linkAmazonIT: [],
             linkAmazonES: [],
             linkAmazonUK: [],
-            linkAmazonNL: [])
+            linkAmazonNL: [],
+            linkAmazonCOM: [],
+            linkAmazonCA: [],
+            linkAmazonSE: []
+        )
     ]
     
     
@@ -106,6 +123,12 @@ extension SafetyTip {
             return linkAmazonUK
         case .amazonNL:
             return linkAmazonNL
+        case .amazonCOM:
+            return linkAmazonCOM
+        case .amazonCA:
+            return linkAmazonCA
+        case .amazonSE:
+            return linkAmazonSE
         }
     }
     
