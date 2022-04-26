@@ -54,7 +54,7 @@
 "score_badge_articles" = "Responsible Reader";
 "score_score_header" = "Punkte";
 "score_nothing_unlocked_header" = "Auf geht's!";
-"score_nothing_unlocked_text" = "Der erste Schritt ist getan, du hast Babysafe Home AR installiert und damit die ersten 10 Punkte verdient! Starte die Kameraansicht, schalte alle möglichen Gefahren für %2$s frei um weiter Punkte zu erzielen!";
+"score_nothing_unlocked_text" = "Der erste Schritt ist getan, du hast Babysafe Home AR installiert und damit die ersten %1$d Punkte verdient! Starte die Kameraansicht, schalte alle möglichen Gefahren für %2$s frei um weiter Punkte zu erzielen!";
 "score_first_unlocked_header" = "Toller Start!";
 "score_first_unlocked_text" = "Du hast einige mögliche Gefahren für %2$s freigeschaltet und %1$d Punkte erreicht! Mach weiter so und schalte alle möglichen Gefahren frei!";
 "score_half_unlocked_header" = "Gut gemacht!";
