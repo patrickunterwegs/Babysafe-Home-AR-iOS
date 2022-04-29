@@ -62,14 +62,13 @@ struct MainIntroView: View {
                                 "intro_tell_us_baby_name",
                                 text: $model.babyName
                             )
-                            .onSubmit {       }
+                            .onSubmit { }
                             .focused($babyNameFieldIsFocused)
                             .textInputAutocapitalization(.words)
                             .disableAutocorrection(true)
                             .border(.clear)
                             .multilineTextAlignment(.center)
                             
-
                             ColorPicker("Color", selection: $model.userColor, supportsOpacity: false)
                                 
                             }.labelsHidden()
