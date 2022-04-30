@@ -1,0 +1,234 @@
+/* 
+  Localizable.strings
+  Babysafe Home AR iOS SwiftUI
+
+  Created by Patrick Lang on 26.03.22.
+  
+*/
+
+
+/*Strings used for fragments for navigation*/
+"close" = "Κλείστε το";
+"save" = "Αποθήκευση";
+"cancel" = "Ακύρωση";
+"back" = "Πίσω";
+"share" = "Μοιραστείτε το";
+"info" = "Πληροφορίες";
+"settings" = "Ρυθμίσεις";
+"more" = "Περισσότερα";
+"cont1nue" = "Συνεχίστε";
+"open_link" = "Άνοιγμα συνδέσμου";
+"start_ar_view" = "Έναρξη κάμερας";
+"main_tab_intro" = "Εισαγωγή";
+"main_tab_checklist" = "Κατάλογος ελέγχου";
+"main_tab_score" = "Βαθμολογία";
+"main_tab_tips" = "Συμβουλές";
+"about_tab_app" = "Εφαρμογή";
+"about_tab_libraries" = "Βιβλιοθήκες";
+"about_tab_attributions" = "Αποδόσεις";
+"about_tab_thanks" = "Ευχαριστώ";
+"ar_drag_handle" = "Σύρετε προς τα πάνω/κάτω";
+"ar_found_dangers" = "Βρέθηκαν κίνδυνοι";
+"ar_ignore_banned" = "Αγνοήστε τους απαγορευμένους κινδύνους";
+"ar_ignore_unlocked" = "Αγνοήστε τους ξεκλείδωτους κινδύνους";
+"ar_toast_new_dangers_unlocked" = "Νέοι κίνδυνοι ξεκλειδώθηκαν!";
+"ar_ignore_banned_message" = "Με την ενεργοποίηση αυτών των ρυθμίσεων, εάν όλοι οι κίνδυνοι για το αντικείμενο που εντοπίστηκε έχουν ήδη ξεκλειδωθεί ή απαγορευτεί, οι πληροφορίες με τους πιθανούς κινδύνους δεν θα εμφανίζονται πλέον.";
+"ar_camera" = "Κάμερα AR";
+"settings_camera" = "Κάμερα";
+"share_brought_to_you_by" = "Σας το προσφέρει η Babysafe Home AR:\nhttps://babysafe.techbee.at";
+"share_app_subject" = "Ελέγξτε το Babysafe Home AR!";
+"share_app_text" = "Κοιτάξτε αυτή την υπέροχη εφαρμογή που βρήκα: *Babysafe Home AR*!\nΣας βοηθά να κάνετε το σπίτι σας ένα ασφαλέστερο μέρος για το μωρό σας.\nΔείτε το εδώ:\nhttps://babysafe.techbee.at";
+"about_app_terms" = "Όροι & Προϋποθέσεις";
+"about_app_all_rights_reserved" = "Όλα τα δικαιώματα διατηρούνται";
+"about_app_in_collab_with" = "σε συνεργασία με";
+"about_app_version" = "Έκδοση: %1$s (%2$d)";
+"about_app_codename" = "Κωδική ονομασία: %1$s";
+"intro_info_header" = "Καλώς ήρθατε στην\nBabysafe Home AR";
+"intro_info_text" = "Ο μικρός σας βοηθός για να κάνετε το σπίτι σας ένα ασφαλέστερο μέρος για το μωρό σας!";
+"intro_howto_header" = "Πώς λειτουργεί";
+"intro_howto_text" = "Ανοίξτε την προβολή της κάμερας χρησιμοποιώντας το κουμπί και κατευθύνετε την προεπισκόπηση της κάμερας σε διάφορα σημεία του σπιτιού σας. Μόλις εντοπιστεί ένας πιθανός κίνδυνος, θα λάβετε πληροφορίες και οδηγίες για το πώς να απαγορεύσετε τον κίνδυνο. Οι κίνδυνοι που βρέθηκαν προστίθενται στη λίστα σας.";
+"intro_tell_us_baby_name" = "Πώς αποκαλείτε το παιδάκι σας;";
+"intro_default_baby_name" = "Το μικρό σας παιδί";
+"score_badge_unlocked" = "Ντετέκτιβ ανίχνευσης";
+"score_badge_banned" = "Μετριασμός Master";
+"score_badge_articles" = "Υπεύθυνος αναγνώστης";
+"score_score_header" = "Βαθμολογία";
+"score_nothing_unlocked_header" = "Έτοιμοι, πάμε!";
+"score_nothing_unlocked_text" = "Το πρώτο βήμα έγινε, εγκαταστήσατε το Babysafe Home AR και κερδίσατε τους πρώτους %1$d πόντους σας! Πηγαίνετε και ξεκινήστε την προβολή της κάμερας για να ξεκλειδώσετε πιθανούς κινδύνους για %2$s και να κερδίσετε περισσότερους πόντους!";
+"score_first_unlocked_header" = "Καλή αρχή!";
+"score_first_unlocked_text" = "Ξεκλειδώσατε μερικούς πιθανούς κινδύνους για το %2$s και φτάσατε σε σκορ %1$d! Συνεχίστε, ξεκλειδώστε και απαγορεύστε όλους τους πιθανούς κινδύνους!";
+"score_half_unlocked_header" = "Μπράβο!";
+"score_half_unlocked_text" = "Έχετε ξεκλειδώσει περισσότερους από τους μισούς δυνατούς κινδύνους για το %2$s και έχετε φτάσει σε βαθμολογία %1$d! Συνεχίστε και βρείτε όλους τους πιθανούς κινδύνους στο σπίτι σας!";
+"score_all_unlocked_header" = "Σούπερ!";
+"score_all_unlocked_text" = "Ξεκλείδωσες όλους τους πιθανούς κινδύνους για το %2$s που μπορείς να βρεις με αυτή την εφαρμογή και πέτυχες σκορ %1$d! Τώρα δείτε τους κινδύνους και ελέγξτε πώς μπορείτε να τους μετριάσετε!";
+"score_half_banned_header" = "Σούπερ!";
+"score_half_banned_text" = "Έχετε αποκλείσει περισσότερους από τους μισούς πιθανούς κινδύνους για το %2$s και έχετε φτάσει σε βαθμολογία %1$d! Συνεχίστε και απαγορεύστε όλους τους πιθανούς κινδύνους!";
+"score_all_banned_header" = "Συγχαρητήρια!";
+"score_all_banned_text" = "Έχετε αποκλείσει όλους τους πιθανούς κινδύνους για το %2$s που μπορείτε να εντοπίσετε με αυτή την εφαρμογή και έχετε φτάσει σε βαθμολογία %1$d! Ωστόσο, μια εφαρμογή μπορεί μόνο να σας καθοδηγήσει στην εύρεση όλων των πιθανών κινδύνων για τα μωρά. Στο χέρι σας θα είναι να βρείτε τους υπόλοιπους κινδύνους και να παραμείνετε προσεκτικοί για να διατηρήσετε το περιβάλλον σας ασφαλές για το %2$s!";
+"checklist_header" = "Ξεκλειδώστε τους ελέγχους ασφαλείας του μωρού, εντοπίζοντας πιθανούς κινδύνους για το μωρό σας στο σπίτι σας!";
+"checklist_unlock_info" = "Έχετε ξεκλειδώσει τους περισσότερους από τους κινδύνους που μπορείτε να βρείτε με αυτή την εφαρμογή. Τώρα έχετε τη δυνατότητα να ξεκλειδώσετε όλους τους υπόλοιπους ταυτόχρονα!";
+"checklist_all_unlocked" = "Υπέροχα! Έχετε ξεκλειδώσει όλους τους κινδύνους που μπορούν να αναγνωριστούν από αυτή την εφαρμογή! Ελέγξτε τους όλους και φροντίστε να περιορίσετε όλους τους κινδύνους από το σπίτι σας!";
+"checklist_all_banned" = "Φοβερό! Έχετε επισημάνει όλους τους κινδύνους ως απαγορευμένους! Είστε ένας πραγματικός ήρωας του Babysafe Home AR!";
+"checklist_item_buy" = "Αγορά";
+"checklist_unlock_button" = "Ξεκλειδώστε το";
+"checklist_dialog_first_banned_title" = "Πρώτος κίνδυνος απαγορευμένος!";
+"checklist_dialog_first_banned_message" = "Σούπερ! Απαγορεύσατε τον πρώτο κίνδυνο για το μωρό %1$s από το σπίτι σας! Συνεχίστε, ξεκλειδώστε και μειώστε ή εξαλείψτε όλους τους κινδύνους που μπορείτε να βρείτε στο σπίτι σας!\nΠαρεμπιπτόντως, ορισμένοι κίνδυνοι μπορούν να περιοριστούν με συγκεκριμένα εργαλεία! Ορισμένοι από τους κινδύνους έχουν ένα σύνδεσμο για κάποιο κατάστημα που σας οδηγεί απευθείας σε ένα εργαλείο για να περιορίσετε τον κίνδυνο!";
+"checklist_banned_icon_content_desc" = "Κίνδυνος που απαγορεύεται";
+"dialog_disclaimer_title" = "Αποποίηση ευθύνης";
+"dialog_disclaimer_message" = "Το Babysafe Home AR μπορεί να σας δώσει συμβουλές και να σας ευαισθητοποιήσει για την ασφάλεια του μωρού σας. Παρόλο που μπορεί να έχετε επισημάνει όλους τους κινδύνους που ανακαλύπτει η εφαρμογή ως απαγορευμένους, δεν μπορούμε να εγγυηθούμε ότι δεν θα συμβεί τίποτα. Προσέξτε, κάθε σπίτι έχει ξεχωριστούς κινδύνους για τα μικρά και είναι δική σας ευθύνη να κάνετε το σπίτι σας ένα ασφαλές μέρος για το μωρό σας!";
+"dialog_camera_permission_denied_title" = "Απαιτείται άδεια κάμερας";
+"dialog_camera_permission_denied_message" = "Αυτή η εφαρμογή χρησιμοποιεί επαυξημένη πραγματικότητα για να εντοπίζει αντικείμενα στο σπίτι σας. Για να χρησιμοποιήσετε αυτή τη λειτουργία, παρακαλούμε δώστε πρόσβαση στην κάμερά σας.";
+"dialog_camera_permission_denied_permissions_button" = "Δικαιώματα";
+"dialog_camera_permission_denied_return_button" = "Επιστροφή";
+"dialog_first_time_title" = "Ξεκινήστε";
+"dialog_first_time_message" = "Στρέψτε την κάμερά σας σε αντικείμενα στο σπίτι σας. Βεβαιωθείτε ότι η κάμερα καλύπτει ολόκληρα τα αντικείμενα χωρίς να αποκόπτει μέρη τους και αποφύγετε να σημαδεύετε πολλά αντικείμενα ταυτόχρονα!";
+"dialog_shop_select_title" = "Η πλατφόρμα αγορών σας";
+"dialog_shop_select_message" = "Το Babysafe Home AR σας δίνει συστάσεις για προϊόντα σε πλατφόρμες αγορών όπως το Amazon. Εάν προτιμάτε άλλη χώρα ή πλατφόρμα αγορών, παρακαλούμε επιλέξτε την εναλλακτική σας επιλογή.\nΣημείωση: Ως συνεργάτες κερδίζουμε από τις αγορές που πληρούν τις προϋποθέσεις.";
+"dialog_shop_select_message2" = "Εάν τα προϊόντα δεν είναι διαθέσιμα στην προτιμώμενη πλατφόρμα αγορών σας, ενδέχεται να σας προτείνουμε προϊόντα σε άλλα καταστήματα.";
+"dialog_shop_select_country" = "Χώρα";
+"dialog_shop_country_world" = "Κόσμος";
+"dialog_shop_select_shop" = "Κατάστημα";
+"menu_main_bottombar_about" = "Σχετικά με το";
+"menu_main_bottombar_support" = "Υποστήριξη";
+"menu_main_bottombar_disclaimer" = "Αποποίηση ευθύνης";
+"menu_main_bottombar_recommend" = "Πείτε το σε ένα φίλο";
+"menu_main_bottombar_shops" = "Αλλαγή καταστήματος";
+"articles_notification_channel_name" = "Συμβουλές Κανάλι ειδοποίησης";
+"articles_notification_channel_description" = "Κανάλι ειδοποίησης συμβουλών για τακτικές ενημερώσεις σχετικά με νέες συμβουλές.";
+"articles_notification_title" = "Νέα συμβουλή ξεκλειδώθηκε!";
+"articles_notification_firstreminder_title" = "Μια ξεκλείδωτη συμβουλή σας περιμένει!";
+"articles_notification_secondreminder_title" = "Μην χάσετε την ξεκλείδωτη συμβουλή σας!";
+"articles_header_info" = "Επιστρέψτε καθημερινά για να ξεκλειδώσετε περισσότερες συμβουλές!";
+"thanks_header" = "Ιδιαίτερες ευχαριστίες";
+"thanks_text" = "Ευχαριστούμε τη Sophie-Katharina για τα χαρούμενα χαμόγελά σας, τα τυχαία αιτήματα να μιλήσετε και την έμπνευσή σας για αυτή την εφαρμογή!";
+"attributions_header" = "Αποδόσεις";
+"attributions_text" = "Αυτή η εφαρμογή χρησιμοποιεί δωρεάν και με άδεια χρήσης εικόνες/animations. Σε αυτή τη σελίδα θα θέλαμε να δώσουμε τα εύσημα στους καλλιτέχνες που παρείχαν υλικό για αυτή την εφαρμογή.";
+"attributions_lottie_animations_text" = "Αυτή η εφαρμογή χρησιμοποιεί δημόσια διαθέσιμα κινούμενα σχέδια από την καταπληκτική βιβλιοθήκη Lottie Library.";
+"attributions_graphics" = "Γραφικά";
+"attributions_graphics_text" = "Αυτή η εφαρμογή χρησιμοποιεί εικόνες με άδεια χρήσης από το freepik και τα καταπληκτικά γραφικά του @catalyststuff\nhttps://www.freepik.com/catalyststuff";
+"attributions_animations" = "Κινούμενα σχέδια";
+"product_recommendations" = "Συστάσεις προϊόντων";
+"checklist_tap_to_ban" = "Πατήστε στις κάρτες για να επισημάνετε τους κινδύνους ως απαγορευμένους!";
+"libraries_header" = "Βιβλιοθήκες";
+"libraries_text" = "Αυτή η εφαρμογή χρησιμοποιεί δωρεάν βιβλιοθήκες ανοικτού κώδικα. Σε αυτή τη σελίδα θα θέλαμε να δώσουμε τα εύσημα στους προγραμματιστές των έργων που παρείχαν υλικό για αυτή την εφαρμογή.";
+"about_app" = "Εφαρμογή";
+"about_app_info" = "Πληροφορίες εφαρμογής";
+"about_legal_support" = "Νομικά & Υποστήριξη";
+"about_technical_support" = "Τεχνική υποστήριξη";
+"about_privacy_policy" = "Πολιτική απορρήτου";
+"links" = "Σύνδεσμοι";
+"store_listing" = "Το Babysafe Home AR είναι μια εφαρμογή που σας βοηθά να κάνετε το σπίτι σας ένα ασφαλέστερο μέρος για το μωρό σας με διασκεδαστικό και καινοτόμο τρόπο, χρησιμοποιώντας στοιχεία της \"Επαυξημένης Πραγματικότητας (AR)\". Χρησιμοποιήστε την κάμερά σας για να εντοπίσετε αντικείμενα στο σπίτι σας και αν τα αντικείμενα αυτά θα μπορούσαν να αποτελέσουν πιθανό κίνδυνο για το μικρό σας παιδί, το Babysafe Home AR θα σας ειδοποιήσει και θα σας δείξει πώς μπορείτε να αποφύγετε τα ατυχήματα! Παρακολουθήστε τι πρέπει να προσέξετε σε μια λίστα ελέγχου και λάβετε πρόσθετες, τακτικές συμβουλές και συμβουλές ασφαλείας!\n\n*Χαρακτηριστικά*\n- Χρησιμοποιήστε την κάμερά σας για να εντοπίσετε τους κινδύνους: Με την προβολή της κάμερας μπορείτε να στρέψετε το κινητό σας τηλέφωνο σε διάφορα αντικείμενα στο σπίτι σας. Το Babysafe Home AR θα σας ενημερώσει για πιθανούς κινδύνους για το μικρό σας και για το πώς μπορείτε να αποφύγετε τα ατυχήματα.\n- Χρησιμοποιήστε τη λίστα ελέγχου για να επισημάνετε τους κινδύνους ως απαγορευμένους: Μόλις εντοπίσετε πιθανούς κινδύνους για το μωρό σας με την κάμερα, ο κίνδυνος προστίθεται αυτόματα στη λίστα ελέγχου σας. Μόλις απαγορεύσετε τον πιθανό κίνδυνο από το σπίτι σας, μπορείτε να σημειώσετε τις καταχωρήσεις ως ελεγχόμενες!\n- Λάβετε καθημερινά συμβουλές, πληροφορίες και συστάσεις: Λάβετε συμβουλές και περαιτέρω συστάσεις για το πώς να κάνετε το σπίτι σας ένα ασφαλέστερο μέρος για το μωρό σας!\n\n*Πώς λειτουργεί*\nΑνοίξτε την κάμερα στο Babysafe Home AR για να χρησιμοποιήσετε τις λειτουργίες ανίχνευσης αντικειμένων. Στρέψτε την κάμερα σε διάφορα αντικείμενα στο σπίτι σας. Βεβαιωθείτε ότι καλύπτετε μεμονωμένα, πλήρη αντικείμενα στην οθόνη. Εάν το αντικείμενο θα μπορούσε να προκαλέσει ατυχήματα ή να αποτελέσει πιθανό κίνδυνο για το μικρό σας, η Babysafe θα σας ειδοποιήσει και θα σας δώσει συμβουλές για το πώς να αποφύγετε πιθανά ατυχήματα.\n\n\n*Αποποίηση ευθύνης*\nΤο Babysafe Home AR μπορεί να σας δώσει συμβουλές και να σας ευαισθητοποιήσει για την ασφάλεια του μωρού σας. Ακόμη και αν μπορεί να έχετε επισημάνει όλους τους κινδύνους που ανακαλύπτει η εφαρμογή ως απαγορευμένους, δεν μπορούμε να εγγυηθούμε ότι δεν θα συμβεί τίποτα. Προσέξτε, κάθε σπίτι έχει ξεχωριστούς κινδύνους για τα μικρά και είναι δική σας ευθύνη να κάνετε το σπίτι σας ένα ασφαλές μέρος για το μωρό σας!";
+
+
+
+
+/* DANGERS */
+"danger_power_title" = "Ασφαλίστε τις πρίζες";
+"danger_power_text" = "Τα δάχτυλα των μωρών και των παιδιών ταιριάζουν ακριβώς στις οπές μιας υποδοχής. Ως εκ τούτου, υπάρχει ιδιαίτερος κίνδυνος θανατηφόρας ηλεκτροπληξίας. Η χρήση προστατευτικών πριζών μπορεί να το αποτρέψει αυτό. Τα μικρά παιδιά είναι βέβαιο ότι θα βρουν αμέσως τις ανασφάλιστες πρίζες στο σπίτι σας.";
+"danger_toiletwater_title" = "Κλείστε το καπάκι της τουαλέτας";
+"danger_toiletwater_text" = "Τα παιδιά μπορούν να πνιγούν σε πολύ ρηχά νερά και τα πολύχρωμα μπλοκ (καθαριστικά) τουαλέτας ενθαρρύνουν τα νήπια να τα δοκιμάσουν. Μπορείτε να αποτρέψετε και τα δύο με μια συσκευή ασφαλείας καπακιού τουαλέτας, ώστε τα %1$ να μην μπορούν ούτε να πέσουν μέσα ούτε να φάνε τη δηλητηριώδη καθαριστικά που κρέμονται μέσα στην τουαλέτα.";
+"danger_furniture_tipover_title" = "Προσαρμόστε αντιολισθητική προστασία για έπιπλα";
+"danger_furniture_tipover_text" = "Όταν τα μικρά αρχίζουν και κινούνται, προσπαθούν να κρατηθούν από τα πάντα και να σκαρφαλώσουν. Το αποτέλεσμα είναι να αναποδογυρίζουν τα έπιπλα και να πέφτουν πάνω στα %1$. Μια συσκευή κατά της ανατροπής των επίπλων μπορεί να αποτρέψει τα χειρότερα. Οι μεγάλες συσκευές, όπως η τηλεόραση, μπορεί επίσης να ανατραπούν και να πέσουν πάνω σε %1$s. Προσπαθήστε να τις ασφαλίσετε και αυτές με τη βοήθεια της συσκευής κατά της ανατροπής.";
+"danger_furniture_fallingof_title" = "Αφαιρέστε τα τραπεζομάντιλα";
+"danger_furniture_fallingof_text" = "Κατά τις πρώτες τους προσπάθειες να περπατήσουν, τα %1$s θα κρατηθούν από οτιδήποτε δεν είναι καρφωμένο. Ειδικά τα τραπεζομάντιλα είναι πολύ επικίνδυνα, καθώς τα μικρά δεν μπορούν μόνο να τραυματιστούν στα αντικείμενα που πέφτουν, αλλά και να ζεματιστούν με καυτή σούπα, για παράδειγμα. Επομένως, μην χρησιμοποιείτε τραπεζομάντιλα και ελέγξτε ποια αντικείμενα θα μπορούσαν να βλάψουν το %1$s όταν πέφτει κάτω.";
+"danger_furniture_edges_title" = "Προστασία γωνιών και άκρων";
+"danger_furniture_edges_text" = "Τα μωράκια μπορεί να χτυπήσουν το κεφάλι τους σε γωνίες και ακμές όταν μαθαίνουν να περπατούν ή όταν παίζουν. Για να αποφύγετε τους τραυματισμούς, χρησιμοποιήστε ένα προστατευτικό γωνιών ή/και ακμών.";
+"danger_furniture_drawer_title" = "Συρτάρια με κλειδαριά";
+"danger_furniture_drawer_text" = "Τα συρτάρια μπορεί να κρύβουν πολλούς κινδύνους ταυτόχρονα: από τη μία πλευρά είναι ένα βοήθημα αναρρίχησης για τα %1$s, αλλά επίσης ενδιαφέροντα και επικίνδυνα. Τα δάχτυλα των μικρών παιδιών μπορούν γρήγορα να παγιδευτούν στο συρτάρι. Μια έξυπνη λύση είναι η χρήση μαγνητικών κλειδαριών.";
+"danger_plant_poison_title" = "Απομακρύνετε τα δηλητηριώδη φυτά";
+"danger_plant_poison_text" = "Ορισμένα φυτά είναι δηλητηριώδη. Οι καρποί, τα φύλλα και τα άνθη μπορούν να προκαλέσουν δηλητηρίαση αν καταναλωθούν. Άλλα φυτά εκκρίνουν υγρό, το οποίο μπορεί να είναι επικίνδυνο για το %1$s. Αν δεν είστε σίγουροι, συμβουλευτείτε έναν οδηγό φυτών, ρωτήστε στο φυτώριο της περιοχής σας ή χρησιμοποιήστε τις δικές σας εφαρμογές αναγνώρισης φυτών. Το ασφαλέστερο που μπορείτε να κάνετε είναι να απομακρύνετε τα φυτά.";
+"danger_plant_sting_title" = "Κρατήστε τα αγκαθωτά φυτά μακριά";
+"danger_plant_sting_text" = "Ορισμένα φυτά έχουν αγκάθια. Για να μην τρυπήσουν τα δαχτυλάκια τους, είναι προτιμότερο να τα τοποθετείτε μακριά από τα %1$s.";
+"danger_plant_soil_title" = "Κάντε το χώμα των φυτών απρόσιτο";
+"danger_plant_soil_text" = "Το χώμα γλάστρας ή οι κόκκοι περιέχουν συνήθως λιπάσματα και επομένως είναι επιβλαβή για τα %1$s. Τεντώστε ένα δίχτυ φυτοπροστασίας πάνω από τη γλάστρα και το χώμα και προστατέψτε τους μικρούς εξερευνητές των φυτών από δηλητηρίαση.";
+"danger_washingmachine_title" = "Πλυντήριο ρούχων";
+"danger_washingmachine_text" = "Το πλυντήριο ή το στεγνωτήριο ρούχων χρησιμοποιείται συχνά από τα παιδιά ως κρυψώνα. Είναι ιδιαίτερα επικίνδυνο όταν η πόρτα κλειδώνει %1$s μέσα. Με μια κλειδαριά γενικής χρήσης, η πόρτα παραμένει κλειστή και δεν αποτελεί κρυψώνα.";
+"danger_radiator_title" = "Προστατεύστε τα καυτά θερμαντικά σώματα";
+"danger_radiator_text" = "Προσοχή, καυτό! Τα θερμαντικά σώματα και οι σωλήνες θερμαίνονται πολύ και μπορεί να προκαλέσουν εγκαύματα. Οι σωλήνες θα μπορούσαν να μονωθούν. Θα μπορούσατε επίσης να καταστήσετε το καλοριφέρ απρόσιτο για %1$s.";
+"danger_lightbulb_title" = "Απομάκρυνση των λαμπτήρων";
+"danger_lightbulb_text" = "Οι συμβατικοί λαμπτήρες ή οι λαμπτήρες αλογόνου ζεσταίνονται. Προστατέψτε τα δάχτυλα του παιδιού σας και παράλληλα κάντε κάτι καλό για το περιβάλλον: Οι λαμπτήρες LED δεν ζεσταίνονται και εξοικονομούν επίσης ενέργεια.";
+"danger_door_pinch_title" = "Αποτροπή εμπλοκής στην πόρτα";
+"danger_door_pinch_text" = "Τα παγιδευμένα δάχτυλα στις πόρτες είναι ένας από τους πιο συνηθισμένους τραυματισμούς. Μπορείτε να χρησιμοποιήσετε ένα αφρώδες εμπόδιο πόρτας για να αποτρέψετε τα %1$ από το να παγιδευτούν τα δάχτυλά τους στην πόρτα. Προσέξτε να μην χρησιμοποιείτε βαριά στοπ πόρτας για το πάτωμα, καθώς τα μικρά παιδιά μπορεί να τραυματιστούν με αυτά. Τα αφρώδη στοπ πόρτας είναι ειδικά σχεδιασμένα για παιδιά.";
+"danger_door_pinchback_title" = "Αποφυγή τσιμπίματος απο τους μεντεσέδες της πόρτας";
+"danger_door_pinchback_text" = "Υπάρχει επίσης ο κίνδυνος τα παιδιά να τσιμπήσουν τα δαχτυλάκια τους στον μεντεσέ της πόρτας. Ένα προστατευτικό κάλυμμα μπορεί να μειώσει αυτόν τον κίνδυνο.";
+"danger_door_lockout_title" = "Κλειδώστε την μπροστινή πόρτα";
+"danger_door_lockout_text" = "Ειδικά στην περίπτωση των μπροστινών θυρών, υπάρχει επίσης ο κίνδυνος τα νήπια να κλειδωθούν έξω. Μια κλειδαριά πόρτας μπορεί να αποτρέψει το %1$s από το να την ανοίξει.";
+"danger_window_title" = "Αποτροπή πτώσης από το παράθυρο";
+"danger_window_text" = "Οι πτώσεις από το παράθυρο είναι απειλητικές για τη ζωή. Μπορείτε να το αποτρέψετε με συσκευές ασφαλείας παραθύρων και μπαλκονόπορτας. Βεβαιωθείτε επίσης ότι τα μικρά παιδιά δεν μπορούν να συρθούν στο περβάζι του παραθύρου.";
+"danger_stairs_title" = "Αποτρέψτε την πτώση στις σκάλες";
+"danger_stairs_text" = "Όταν οι μικροί εξερευνητές του κόσμου αρχίζουν να κινούνται, έλκονται μαγικά από τις σκάλες. Για να αποφύγετε την πτώση του %1$ από τις σκάλες, μια πύλη σκαλοπατιών μπορεί να βοηθήσει στην εξάλειψη αυτού του κινδύνου. Μπορεί επίσης να βοηθήσει να κρατήσει τα μικρά μακριά από άλλους κινδύνους.";
+"danger_hotwater_title" = "Αποφύγετε το ζεμάτισμα από καυτό νερό";
+"danger_hotwater_text" = "Το καυτό νερό μπορεί να προκαλέσει %1$s σοβαρό έγκαυμα. Μια λύση είναι μια βρύση με ενσωματωμένο κλείδωμα μικτού νερού και κλειδαριά ασφαλείας. Μπορείτε επίσης να μειώσετε τη θερμοκρασία θέρμανσης του μπόιλερ ζεστού νερού για να αποφύγετε το σοβαρό ζεμάτισμα.";
+"danger_boiler_title" = "Εξασφάλιση καθαρού πόσιμου νερού";
+"danger_boiler_text" = "Εάν μειώσετε τη θερμοκρασία θέρμανσης για να αποφύγετε το ζεμάτισμα, αυτό μπορεί να οδηγήσει στο σχηματισμό βακτηρίων όπως η λεγεωνέλλα, τα οποία μπορούν να βλάψουν εσάς και την οικογένειά σας. Οι παλιοί σωλήνες μπορεί να μολύνουν το πόσιμο νερό. Μπορείτε να ελέγχετε την ποιότητα του πόσιμου νερού σας με τακτικές εξετάσεις νερού.";
+"danger_cleaning_supplies_title" = "Ασφαλίστε τις χημικές ουσίες";
+"danger_cleaning_supplies_text" = "Τα απορρυπαντικά, τα προϊόντα καθαρισμού και τα καλλυντικά περιέχουν χημικές ουσίες που είναι θανατηφόρες ή επικίνδυνες για τα %1$s, ιδίως αν μπουν στα μάτια ή στο στόμα. Μερικές φορές τα δοχεία έχουν καπάκι ασφαλείας, αλλά είναι προτιμότερο να τα αποθηκεύετε μακριά από τα μικρά παιδιά. Αν αυτό δεν είναι εφικτό, μπορείτε επίσης να κλειδώσετε τα ντουλάπια με μαγνητική κλειδαριά.";
+"danger_sofa_title" = "Πρόληψη πτώσης καναπέ/κρεβάτι";
+"danger_sofa_text" = "Για να αποφύγετε τον τραυματισμό του %1$ από μία πτώση από το κρεβάτι ή τον καναπέ, δεν πρέπει να αφήνετε το %1$ χωρίς επίβλεψη. Για να αποφύγετε την πτώση του %1$s από το κρεβάτι, μπορείτε να χρησιμοποιήσετε ένα ράφι κρεβατιού με ρυθμιζόμενο ύψος. Ωστόσο, λάβετε υπόψη σας ότι τα μεγαλύτερα παιδιά συχνά μπουσουλάνε και πάνω από το κάγκελο, αυξάνοντας το ύψος στο οποίο πέφτουν και τον κίνδυνο τραυματισμού. Επομένως, χρησιμοποιήστε τα κάγκελα κρεβατιού με σύνεση και κατά τη δική σας κρίση.";
+"danger_oven_title" = "Ασφαλείστε την σόμπα";
+"danger_oven_text" = "Στην καυτή εστία, τα %1$s μπορούν να καούν πολύ γρήγορα και να πιάσουν ακόμη και τη λαβή ενός σκεύους μαγειρέματος. Υπάρχει κίνδυνος σοβαρού ζεματίσματος με το καυτό περιεχόμενο. Για να αποφευχθεί αυτό, ένα πλέγμα ασφαλείας για τη σόμπα μπορεί να είναι χρήσιμο. Εάν δεν θέλετε να χρησιμοποιήσετε πλέγμα, προσπαθήστε να γυρίζετε πάντα τη λαβή των κατσαρολών και τηγανιών σας προς τα πίσω, εκτός εμβέλειας.";
+"danger_ovenswitch_title" = "Ασφαλίστε τα πόμολα της σόμπας";
+"danger_ovenswitch_text" = "Οι μικροί βοηθοί της κουζίνας αρέσκονται να παίζουν με τα κουμπιά της κουζίνας. Αν όμως η εστία ανάψει απαρατήρητη, ολόκληρη η κουζίνα μπορεί γρήγορα να πάρει φωτιά. Οι κατάλληλες ασφάλειες μπορούν να αποτρέψουν το %1$s από το να την ανοίξει.";
+"danger_ropes_title" = "Αφαιρέστε τα κορδόνια των κουρτινών και τα υπόλοιπα σχοινιά";
+"danger_ropes_text" = "Τα σχοινιά, τα κορδόνια, οι αλυσίδες, τα καλώδια αλλά και οι κουρτίνες μήκους άνω των 22 εκατοστών αποτελούν κίνδυνο για το %1$s. Τα μικρά αρέσκονται να τυλίγουν αυτά τα πράγματα γύρω από το κεφάλι ή το λαιμό τους και μπορεί να στραγγαλιστούν. Επομένως, φροντίστε να ασφαλίζετε καλά αυτά τα πράγματα στο σπίτι σας.";
+"danger_candle_title" = "Αποφύγετε τα κεριά και τα αρωματικά έλαια";
+"danger_candle_text" = "Τα κεριά και η φωτιά είναι, φυσικά, πάντα επικίνδυνα. Δεδομένου ότι τα %1$s μπορεί να καούν από αυτά, θα πρέπει να τα κρατάτε μακριά. Θα πρέπει πάντα να χρησιμοποιείτε κεριά και αρωματικά έλαια γύρω από τα μωρά με προσοχή, επειδή οι μικρές τους μύτες είναι πολύ ευαίσθητες. Μια ασφαλέστερη εναλλακτική θα μπορούσε να είναι τα βιολογικά έλαια ή ένα βιολογικό σπρέι χώρου αντί για αυτών.";
+"danger_hair_title" = "Αποφύγετε το σύνδρομο Tourniquet";
+"danger_hair_text" = "Οι μακριές τρίχες μπορούν να τυλιχθούν γύρω από τα δάχτυλα των χεριών ή των ποδιών του μωρού σας και να κόψουν την παροχή αίματος, με αποτέλεσμα να τραυματιστούν τα δάχτυλα των χεριών ή των ποδιών. Σε τεχνικούς όρους, αυτό ονομάζεται σύνδρομο Tourniquet. Ελέγχετε συνεχώς τα δάχτυλα των χεριών και των ποδιών του μωρού σας.";
+"danger_railing_title" = "Ασφαλίστε τα κάγκελα με μπάρες με πλεξιγκλάς";
+"danger_railing_text" = "Όταν χρησιμοποιείτε σχάρα ή κάγκελα, βεβαιωθείτε ότι οι ράβδοι απέχουν μεταξύ τους όχι περισσότερο από 65 mm. Με αυτόν τον τρόπο μπορείτε να είστε σίγουροι ότι το κεφάλι του παιδιού σας δεν θα κολλήσει και το %1$ δεν θα πάθει ασφυξία. Μπορείτε να χρησιμοποιήσετε πλεξιγκλάς αν η απόσταση είναι μεγαλύτερη.";
+"danger_dishwasher_title" = "Ασφαλές πλυντήριο πιάτων";
+"danger_dishwasher_text" = "Οι μικροί βοηθοί της κουζίνας μπορεί να ζεματιστούν από τον καυτό ατμό όταν ανοίγει η πόρτα του πλυντηρίου πιάτων. Εάν το πλυντήριο πιάτων σας δεν διαθέτει αυτόματη απενεργοποίηση, το καυτό νερό μπορεί επίσης να προκαλέσει εγκαύματα. Εδώ μπορείτε να βοηθήσετε με μάνταλα γενικής χρήσης, ώστε τα %1$s να μην μπορούν να ανοίξουν το πλυντήριο πιάτων τόσο εύκολα.";
+"danger_cable_title" = "Καλώδιο εκτός εμβέλειας";
+"danger_cable_text" = "Στους μικρούς εξερευνητές του κόσμου αρέσει να βάζουν τα πάντα στο στόμα τους και να τα μασάνε - ειδικά όταν βγάζουν δόντια. Ακόμη και τα καλώδια δεν είναι ασφαλή από τα στόματά τους. Αυτά δεν είναι επικίνδυνα μόνο επειδή τα μικρά μπορούν να στραγγαλιστούν με αυτά - όταν μασάνε ένα καλώδιο, τα %1$s μπορεί να υποστούν ακόμη και θανατηφόρο ηλεκτροπληξία. Τα λάστιχα καλωδίων μπορούν να βοηθήσουν στο να κρατούν τα καλώδια τυλιγμένα με ασφάλεια.";
+"danger_pool_title" = "Ασφαλής πισίνα και παιδική πισίνα";
+"danger_pool_text" = "Οι πισίνες και οι κολυμβητικές δεξαμενές είναι ιδιαίτερα επικίνδυνες για τους μικρούς μη κολυμβητές. Τα μικρά παιδιά μπορούν να πνιγούν σε νερό που έχει βάθος μόνο μερικά εκατοστά. Επομένως, βεβαιωθείτε ότι οι πισίνες και οι κολυμβητικές δεξαμενές είναι απρόσιτες για τα %1$s.";
+"danger_knife_title" = "Απομακρύνετε αιχμηρά και μυτερά αντικείμενα";
+"danger_knife_text" = "Τα %1$s μπορούν φυσικά να τραυματιστούν με αιχμηρά και μυτερά αντικείμενα αν τα χειρίζονται χωρίς την επίβλεψή σας. Επομένως, μην αφήνετε μαχαίρια, πιρούνια, ψαλίδια, εργαλεία και άλλα αιχμηρά ή μυτερά αντικείμενα στο σπίτι σας, κρατήστε τα μακριά από τα χέρια σας.";
+"danger_bag_title" = "Πλαστικές σακούλες εκτός εμβέλειας";
+"danger_bag_text" = "Οι πλαστικές σακούλες δεν είναι μόνο επιβλαβείς για το περιβάλλον, αλλά μπορούν επίσης να είναι επικίνδυνες για τα μικρά παιδιά μας. Αν %1$s βάλουν μια πλαστική σακούλα στο κεφάλι τους, θα μπορούσαν εύκολα να πάθουν ασφυξία. Επομένως, κρατήστε τις πλαστικές σακούλες μακριά από τα χέρια τους ή χρησιμοποιήστε αντ' αυτού υφασμάτινες σακούλες.";
+"danger_toy_title" = "Ελέγξτε τα παιχνίδια για επιβλαβείς ουσίες";
+"danger_toy_text" = "Ναι, ακόμη και τα παιδικά παιχνίδια μπορεί να είναι επικίνδυνα για το %1$s. Από τη μία πλευρά, μπορεί να μην είναι κατάλληλα για την ηλικία του παιδιού σας και από την άλλη, μπορεί να περιέχουν επικίνδυνους ρύπους και πλαστικοποιητές που είναι επικίνδυνοι για το %1$s μακροπρόθεσμα. Έτσι, όταν αγοράζετε παιχνίδια, κοιτάξτε προσεκτικά από ποια υλικά είναι φτιαγμένο το παιχνίδι και προσπαθήστε να επιλέξετε παιχνίδια με φυσικά υλικά.";
+"danger_smallitems_title" = "Αποθηκεύστε τα μικρά εξαρτήματα";
+"danger_smallitems_text" = "Οι μικροί εξερευνητές του κόσμου ελέγχουν πρώτα το περιβάλλον τους με το στόμα τους, οπότε ό,τι βρίσκουν πηγαίνει πρώτα εκεί. Αν το %1$s καταπιεί τα αντικείμενα, η χειρότερη περίπτωση είναι ότι το αντικείμενο φράζει τους αεραγωγούς και το %1$s πνίγεται από αυτό. Στην καλύτερη περίπτωση, το αντικείμενο έρχεται ξανά στο φως μετά από κάποιο χρονικό διάστημα, αλλά μπορεί ακόμα να προκαλέσει κάποια ζημιά στο σώμα. Επομένως, προσπαθήστε να κρατάτε όλα τα μικρά, στρογγυλά αντικείμενα μακριά από το νήπιό σας.";
+"danger_weapons_title" = "Κλείδωμα όπλων";
+"danger_weapons_text" = "Είναι αδιαμφισβήτητο ότι τα όπλα δεν είναι για τα παιδιά. Κλειδώστε τα πυροβόλα και τα λοιπά όπλα, αλλά τα γκλομπ και τα παρόμοια από το μικρό σας παιδί. Άλλωστε, δεν θέλετε %1$ να παίζει μ' αυτά και να τραυματίζει ή και να αυτοτραυματιστεί ή να τραυματήσει τους ή άλλους.";
+"danger_battery_title" = "Κρατήστε τις μπαταρίες εκτός εμβέλειας";
+"danger_battery_text" = "Οι μπαταρίες, ιδίως οι μπαταρίες με κουμπιά, πρέπει να φυλάσσονται με ασφάλεια από το παιδί σας. Αν το %1$ τις καταπιεί, είναι επείγον και πρέπει να πάτε αμέσως στο νοσοκομείο. Οι μπαταρίες-κουμπιά μπορεί να προκαλέσουν σοβαρή βλάβη στον οισοφάγο του παιδιού σας.";
+"danger_cutlery_title" = "Χρησιμοποιήστε παιδικά μαχαιροπήρουνα";
+"danger_cutlery_text" = "Μαχαίρια, πιρούνια, ψαλίδια, φλόγες, δεν έχουν θέση στα παιδικά παιχνίδια! - λέει η παλιά παροιμία. Ο κίνδυνος με τα μαχαιροπήρουνα είναι κυρίως οι άκρες του πιρουνιού, αλλά και τα κοφτερά μαχαίρια μπορούν να πληγώσουν %1$s. Φυσικά, ακόμη και τα μικρότερα παιδιά θέλουν να χρησιμοποιούν μαχαιροπήρουνα όπως οι μεγάλοι. Επομένως, είναι κατάλληλα τα ειδικά παιδικά μαχαιροπήρουνα με στρογγυλεμένες άκρες και αμβλύ μαχαίρι.";
+"danger_cover_title" = "Δημιουργήστε περιβάλλον ύπνου χωρίς μαξιλάρια και κουβέρτες";
+"danger_cover_text" = "Για τα μωρά, οι κουβέρτες και τα μαξιλαράκια αποτελούν επίσης κάποιο κίνδυνο, καθώς δεν μπορούν να απελευθερωθούν αν το μαξιλαράκι και η κουβέρτα πέσουν στο πρόσωπό τους. Επομένως, αν το %1$s είναι ακόμα πολύ μικρό, αποφύγετε τα μαξιλάρια και τις κουβέρτες όταν κοιμάται και όταν το %1$s είναι χωρίς επίβλεψη.";
+"danger_mirror_title" = "Προστατεύστε καθρέφτες και τζάμια από πιθανό σπάσιμο";
+"danger_mirror_text" = "Οι καθρέφτες ή οι γυάλινες πλάκες αποτελούν μεγάλο κίνδυνο, ιδίως αν σπάσουν. Για να μην τραυματιστεί το %1$s από θραύσματα, μπορείτε να αγοράσετε καθρέφτες με προστασία από θραύσματα. Αυτοί είναι ιδιαίτερα κατάλληλοι για το παιδικό δωμάτιο. Αν θέλετε να είστε σίγουροι, μπορείτε επίσης να καλύψετε τους υπάρχοντες καθρέφτες ή τις γυάλινες επιφάνειες με μια ειδική μεμβράνη.";
+"danger_fireplace_title" = "Ασφαλή τζάκια";
+"danger_fireplace_text" = "Για την προστασία των %1$s από εγκαύματα από μια καμινάδα ή το τζάκι στο σπίτι σας, μια σχάρα μπορεί να είναι πολύ χρήσιμη. Δυστυχώς, οι κανονικές σχάρες δεν είναι κατάλληλες για το σκοπό αυτό, καθώς συχνά είναι κατασκευασμένες από ξύλο ή πλαστικό. Μια ανθεκτική στη θερμότητα σχάρα ασφαλείας θα προστατεύσει τα μικρά περίεργα παιδιά από επικίνδυνα εγκαύματα από τζάκια.";
+
+
+
+/* TIPS */
+
+
+"tip_electricity_title" = "Warum sind Steckdosen gefährlich?";
+"tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadeln oder einen Schraubenzieher zum Spielen zu überlassen. Warum sind dann Steckdosen so gefährlich?\n\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen. Viele Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter (FI-Schalter) dazu da ist, uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst, wenn ein Mensch in den Stromkreis eingreift. Für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Wohnbereich mit Steckdosensicherungen. Diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online. (Unten findest du unsere Empfehlungen, für die wir eine kleine Provision bekommen und das Sparschwein unsere Krabbelmaus füttern.)\n\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben. Für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\n\nDu kannst nicht immer und überall die Steckdosen absichern. Und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind daher schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\n\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen oder besteht der Verdacht, so solltest du umgehend ins Krankenhaus fahren. Die Symptome, welche durch elektrischen Strom ausgelöst werden können, reichen von Verbrennungen an den Ein- und Austrittstellen, über Schädigungen von Organen bis hin zu Herzrhythmusstörungen und im schlimmsten Fall zu Atemstillstand.\n\n\n\nUnsere Empfehlung:\n\nDa du neben Steckdosensicherungen auch Schubladenschlösser, Kantenschutz, Kippsicherungen und Türstopper brauchen kannst, empfehlen wir folgendes Starterkit mit 12x Steckdosenschutz, 12x Eckenschutz, 6x Schranksicherung, 4x Schrankschloss, 5x Klemmschutz, 4x Universal Sicherung.\n\nNatürlich kannst du auch nur Steckdosensicherungen bestellen. Bitte achte auch darauf, ob es sich um  EU-Stecker und oder nicht EU-Steckerdosen handelt. ";
+"tip_electricity_link_plug_eu" = "Stecken (EU)";
+"tip_electricity_link_screw_eu" = "Schrauben (EU)";
+"tip_electricity_link_plug_noneu" = "Stecken (non-EU)";
+"tip_electricity_link_screw_noneu" = "Schrauben (non-EU)";
+"tip_till_here_not_further_title" = "Bis hierhin und nicht weiter!";
+"tip_till_here_not_further_text" = "Wir haben versucht unseren Wohnraum kindersicher zu gestalten und alle Gefahren zu bannen, aber vor den kleinen Weltentdeckern ist einfach nichts sicher und um auch mal ALLEINE das WC aufzusuchen haben wir uns dann doch für ein Laufgitter entschieden. Die anderen gefährlichen Punkte unserer Wohnung haben wir durch verschieden Gitter abgesichert.  \n\nTürgitter: Wir haben uns für ein Türgitter entschieden, um bei Bedarf den Bereich der Küche abzutrennen. Beim Kochen darf die Kleine auf einem Lernturm dabei sein, oder muss draußen bleiben. Am Boden herum zu krabbeln während dem Kochen ist uns zu gefährlich. Das Gitter eignet sich auch perfekt um Treppenauf- und abgängen zu sichern. Das tolle an dem Gitter ist, dass es automatisch schließt und recht einfach zu öffnen ist. Man muss nur aufpassen auch die richtige Größe zu montieren. Es ist zwar angegeben, dass es auch ohne Schrauben hält. Unsere Wände sind aber leicht schief, daher mussten wir es anschrauben und jetzt hält es bombenfest.\n\nDen Kamin haben wir mit einen speziellen Kamingitter gesichert, laut Hersteller ist es „flexibel einsetzbar“, was wir insofern bestätigen können, dass man es nach den eigenen Bedürfnissen aufstellen und aufbauen kann. Einmal zusammengebaut, ist es aber sehr stabil und lässt sich nicht verschieben oder einfach zusammenklappen. Will man die Position einzelner Teile verändern, so ist eine Verbindungstange zu entfernen, die beiden Gitterteile neu auszurichten und die Verbindungsstangen wieder einzusetzen. Bei Kamingittern muss man speziell darauf achten, dass diese hitzebeständig sind, Holz oder Kunststoff ist daher nicht geeignet.  \n\nUm bei Bedarf den Weg in den Vorraum oder Türbereich abzusperren haben wir uns für ein verstellbares, selbststehendes Gitter entschieden. Es lässt sich auch leicht zusammenklappen und wegräumen, wenn es gar nicht gebraucht wird.\n\nMit dem Kunststofflaufgitter haben wir dann die Spielwiese der Krabbelmaus eingezäunt, um sie in Sicherheit zu wissen, wenn wir sie dann doch mal aus den Augen lassen. Der große Vorteil ist, dass die 14 Paneele schon vormontiert sind, sich aber ganz einfach nach eigenen Wünschen zusammenstellen lassen. Die Paneele besitzen Noppen, mit denen sie am Boden haften, daher nicht so einfach verrutschen können, aber dennoch variabel genug, so dass wir diese auch immer wieder verschieben können um den Spielbereich zu vergrößern. Das Laufgitter eignet sich auch toll um ein Bällebad zu errichten.  \n\nBei allen Gittern ist natürlich wichtig, dass sie schadstofffrei sind und die Stäbe nicht weiter als 6,5cm voneinander entfernt sind. Natürlich sollten sie auch stabil genug sein, denn die Kleinen versuchen sich an allem hochzuziehen.";
+"tip_till_here_not_further_link_door_grid" = "Türgitter";
+"tip_till_here_not_further_link_learning_tower" = "Lernturm";
+"tip_till_here_not_further_link_standing_grid" = "Selbststehendes Gitter";
+"tip_till_here_not_further_link_plastic_grid" = "Kunststoffgitter";
+"tip_baby_prison_title" = "Hinter Gittern – der Babyknast?";
+"tip_baby_prison_text" = "Du willst (Haus-)Arbeit erledigen und kannst %1$s dabei nicht ständig im Auge behalten, willst aber für Sicherheit sorgen?\n\nEin Laufgitter hat den Vorteil, dass du das kleine Krabbelmonster auch mal aus den Augen lassen kannst. Und nein, man braucht kein schlechtes Gewissen zu haben, wenn man ein Laufgitter verwendet - du lässt deinen kleinen Liebling ja nicht Stunden lang allein. Auch noch kleine Babys können sich schon einige Minuten allein beschäftigen und so können manche Laufgitter schon ab der Geburt genutzt werden. Einige Modelle verfügen über höhenverstellbare Einlegeböden und mit einer Matratze können diese auch den Stubenwagen ersetzen.\n\nEin Laufgitter kann verwendet werden bis die Kleinen mit ca. 18 Monaten die Kletterexperimente starten und versuchen über das Gitter zu kommen. Dann ist der Zeitpunkt gekommen, das Gitter zu entfernen, denn die Gefahr durch den Kletterversuch von einer höheren Position abzustürzen ist dann viel größer als die Gefahren, die sich im Raum ergeben.\n\nDer große Vorteil von Laufgittern ist sicher, dass du %1$s mal selbst in der kindersichersten Wohnung für kurze Augenblicke allein im Zimmer lassen kannst, ohne dich zu sorgen. Der Nachteil der meisten Laufgitter ist, dass sie viel Platz brauchen. Zudem wollen unsere kleinen Weltentdecker nicht ewig in diesem Laufgitter bleiben. Wir haben dir eine Auswahl der beliebtesten Laufgitter unsere Eltern-Community eingefügt.\n\nDas 6-eckiges Laufgitter inkl. passender Matratze, ist 3-fach höhenverstellbar und kann als Stubenwagen verwendet werden. Vorteil: Kann lange verwendet werden da es sehr viel Platz bietet. Nachteil: Braucht sehr viel Platz und du brauchst für Matratze, Bettwäsche, Nestchen etc. Spezialmaße. Amazon bietet ein Paket inkl. Matratze an. Bei Baby Walz ist die Matratze z.B. von Träumeland nochmals extra zu kaufen!\n\nDie etwas kleinere Variante eines Laufgitters, welches höhenverstellbar ist, einen gepolsterten Laufgitterboden bietet UND faltbar ist bietet z.B. Pinolino.\n\nSowohl die 6-eckige als auch die rechteckige Variante sind aus Holz und haben Rollen und einzelne Gitterstäbe. Wichtig ist darauf zu achten, dass sich die Rollen gut einbremsen lassen und das Laufgitter somit auch stabil an einem Ort bleibt. Die Gitterstäbe sollten höchstens einen Abstand von 6,5 cm zueinander haben. Die verwendeten Farben und Stoffe müssen natürlich Schadstoff frei sein und dürfen nicht absplitterten. Scharfe Kanten oder Spitzen sind ebenfalls tabu. Die Laufgitter sollten der sicherheitstechnischen Anforderungen der DIN EN 12227:2010 entsprechen.\n\nWir haben uns erst später für ein Laufgitter entschieden und daher auf die Liegefunktion komplett verzichtet und uns stattdessen eine große variable Variante aus Kunststoff besorgt.  ";
+"tip_baby_prison_link_6angle_matress" = "6-Eck mit Matratze";
+"tip_baby_prison_link_6angle" = "6-Eck";
+"tip_baby_prison_link_matress" = "Matratze";
+"tip_baby_prison_link_small_variant" = "Kleine Variante";
+"tip_beta_title" = "Beta";
+"tip_beta_text" = "This is all for now in this current beta, more to come!";
+"tip_electricity_link_glue_eu" = "Kleben (EU)";
+"tip_electricity_link_non_eu" = "Non-EU";
+
