@@ -58,9 +58,9 @@ func getDefaultShopForCountry(country: ShopCountry) -> Shop {
     case .uk: return .amazonUK
     case .ie: return .amazonUK
     case .nl: return .amazonNL
-    case .dk: return .amazonDE
-    case .is: return .amazonUK
-    case .no: return .amazonUK
+    case .dk: return .amazonSE
+    case .is: return .amazonSE
+    case .no: return .amazonSE
     case .se: return .amazonSE
     case .fi: return .amazonDE
     case .ee: return .amazonDE
@@ -74,7 +74,6 @@ func getDefaultShopForCountry(country: ShopCountry) -> Shop {
     case .gr: return .aliexpress
     case .mt: return .amazonUK
     case .cy: return .amazonUK
-
         
     case .world: return .aliexpress
     }
