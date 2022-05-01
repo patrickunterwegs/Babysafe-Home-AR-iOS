@@ -80,6 +80,10 @@
 		CD27607427EF6F65003A833D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		CD27607627EF9D14003A833D /* MainTipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTipDetailView.swift; sourceTree = "<group>"; };
 		CD3D657827F21C64008CA2CF /* BabyDanger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyDanger.swift; sourceTree = "<group>"; };
+		CD409FB8281EBB1B0076FC4B /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CD409FB9281EBB1B0076FC4B /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		CD409FBA281EBB230076FC4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD409FBB281EBB230076FC4B /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD438087281DC90000D30DB8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD438088281DC90000D30DB8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD47B19C27F63B1D000D526F /* ChecklistItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItemView.swift; sourceTree = "<group>"; };
@@ -353,6 +357,8 @@
 				de,
 				Base,
 				el,
+				"pt-PT",
+				fr,
 			);
 			mainGroup = CDA4C72F27EE5E53003A0B94;
 			packageReferences = (
@@ -605,6 +611,8 @@
 				CD27606727EF0136003A833D /* en */,
 				CD27606927EF0151003A833D /* de */,
 				CD438087281DC90000D30DB8 /* el */,
+				CD409FB8281EBB1B0076FC4B /* pt-PT */,
+				CD409FBA281EBB230076FC4B /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -615,6 +623,8 @@
 				CD6C8A79280302870069720E /* en */,
 				CD6C8A7B280302890069720E /* de */,
 				CD438088281DC90000D30DB8 /* el */,
+				CD409FB9281EBB1B0076FC4B /* pt-PT */,
+				CD409FBB281EBB230076FC4B /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
