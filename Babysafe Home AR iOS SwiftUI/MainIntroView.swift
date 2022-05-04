@@ -10,11 +10,8 @@ import SwiftUI
 struct MainIntroView: View {
     
     @EnvironmentObject var model: BabysafeViewModel
-
     @Binding var isPresentingCameraView: Bool
-    
     @FocusState private var babyNameFieldIsFocused: Bool
-
 
     
     var body: some View {
@@ -43,8 +40,6 @@ struct MainIntroView: View {
                             }
                     }
 
-
-                
                     
                     Button(action: {
                         isPresentingCameraView = true
