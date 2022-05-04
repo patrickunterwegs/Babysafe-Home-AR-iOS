@@ -38,6 +38,9 @@ struct MainIntroView: View {
                         Image("astronaut_camera")
                             //.resizable()
                             //.frame(width: 250.0, height: 250.0)
+                            .onTapGesture {
+                                isPresentingCameraView = true
+                            }
                     }
 
 
