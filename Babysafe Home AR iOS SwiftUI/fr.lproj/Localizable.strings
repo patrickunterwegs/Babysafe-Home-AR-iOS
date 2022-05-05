@@ -22,14 +22,14 @@
 "main_tab_intro" = "Intro";
 "main_tab_checklist" = "Liste";
 "main_tab_score" = "Score";
-"main_tab_tips" = "Conseils";
+"main_tab_tips" = "Tuyaux";
 "about_tab_app" = "App";
 "about_tab_libraries" = "Bibliothèques";
 "about_tab_attributions" = "Sources";
 "about_tab_thanks" = "Remerciements";
 "ar_drag_handle" = "Faire glisser vers le haut/bas";
 "ar_found_dangers" = "Dangers trouvés";
-"ar_ignore_banned" = "Ignore les dangers éliminés";
+"ar_ignore_banned" = "Ignorer les dangers éliminés";
 "ar_ignore_unlocked" = "Ignorer les dangers non verrouillés";
 "ar_toast_new_dangers_unlocked" = "De nouveaux dangers débloqués !";
 "ar_ignore_banned_message" = "En activant ces paramètres, si tous les dangers pour l'objet détecté sont déjà déverrouillés ou éliminés, l'info avec les dangers possibles ne s'affichera plus.";
@@ -44,10 +44,10 @@
 "about_app_version" = "Version : %1$s (%2$d)";
 "about_app_codename" = "Nom de code : %1$s";
 "intro_info_header" = "Bienvenue sur\nBabysafe Home AR";
-"intro_info_text" = "Ton petit assistant  pour faire de ta maison un endroit plus sûr pour ton bout de chou !";
+"intro_info_text" = "Ton petit assistant  pour faire de ta maison un endroit plus sûr pour ton bambin !";
 "intro_howto_header" = "Comment ça marche?";
 "intro_howto_text" = "Active ta caméra à l'aide du bouton et dirige l'objectif de la caméra vers différents endroits de ta maison. Lorsqu'un danger est trouvé, tu reçois une info et des instructions sur la façon d'éliminer ce danger. Les dangers trouvés sont ajoutés à ta liste.";
-"intro_tell_us_baby_name" = "Comment s’appelle ton tout-petit ?";
+"intro_tell_us_baby_name" = "Comment s’appelle ton enfant ?";
 "intro_default_baby_name" = "Ton bout de chou";
 "score_badge_unlocked" = "Détection Détective";
 "score_badge_banned" = "Mitigation Master";
@@ -62,25 +62,25 @@
 "score_all_unlocked_header" = "Super !";
 "score_all_unlocked_text" = "Tu as débloqué tous les dangers possibles pour %2$s que tu peux trouver avec cette application et tu as atteint un score de %1$d ! Maintenant, passe en revue les dangers et vérifie comment tu peux les atténuer !";
 "score_half_banned_header" = "Bravo!";
-"score_half_banned_text" = "Tu as banni plus de la moitié des dangers possibles pour %2$s et atteint un score de %1$d ! Continue et bannis tous les dangers possibles!";
+"score_half_banned_text" = "Tu as identifié plus de la moitié des dangers possibles pour %2$s et atteint un score de %1$d ! Continue et trouve tous les dangers possibles!";
 "score_all_banned_header" = "Félicitations !";
 "score_all_banned_text" = "Tu as éliminé tous les dangers pour %2$s que tu peux détecter avec cette application et tu as atteint un score de %1$d ! Cependant, une appli ne peut que te guider pour trouver tous les dangers possibles pour béné. A toi de trouver les dangers restants et de rester attentif pour garder ton environnement sûr pour %2$s !";
 "checklist_header" = "Débloque les contrôles de sécurité pour les bébés en trouvant les dangers potentiels pour bébé dans ta maison !";
 "checklist_unlock_info" = "Tu as déverrouillé la plupart des dangers que tu peux trouver avec cette application. Tu as maintenant la possibilité de déverrouiller tous ceux qui restent en une seule fois !";
 "checklist_all_unlocked" = "Super ! Tu as déverrouillé tous les dangers qui peuvent être reconnus par cette application ! Vérifie-les tous et assure-toi de supprimer tous les dangers de ta maison !";
-"checklist_all_banned" = "Génial ! Tu as coché tous les dangers comme supprimés ! Tu es un vrai héros de Babysafe Home AR !";
+"checklist_all_banned" = "Génial ! Tu as coché tous les dangers à éliminer ! Tu es un vrai héros de Babysafe Home AR !";
 "checklist_item_buy" = "Acheter";
 "checklist_unlock_button" = "Déverrouiller";
 "checklist_dialog_first_banned_title" = "Premier danger supprimé !";
 "checklist_dialog_first_banned_message" = "Super ! Tu as supprimé le premier danger pour %1$s de ta maison ! Continue, débloque et élimine tous les dangers que tu peux trouver dans ta maison !\nAu fait, certains dangers peuvent être supprimés avec des outils spécifiques ! Certains des dangers ont un lien vers un magasin qui t'amène directement à un outil pour supprimer le danger !";
 "checklist_banned_icon_content_desc" = "Danger supprimé";
 "dialog_disclaimer_title" = "Clause de non-responsabilité";
-"dialog_disclaimer_message" = "Babysafe Home AR peut te donner des conseils et te sensibiliser à la sécurité de ton bébé. Même si tu as coché tous les dangers découverts comme éliminés, nous ne pouvons pas garantir que rien ne se passera. Fais attention, chaque maison présente des dangers individuels pour les petits et il est de ta responsabilité de faire de ta maison un endroit sûr pour bébé !";
+"dialog_disclaimer_message" = "Babysafe Home AR peut te donner des conseils et te sensibiliser à la sécurité de ton enfant. Même si tu as coché tous les dangers à découvrir dans l’app comme étant éliminés, nous ne pouvons pas garantir que d’autres risques ne se présenteront pas. Fais attention, chaque maison présente des dangers individuels pour les petits et il est de ta responsabilité de faire de ta maison un endroit sûr pour bébé !";
 "dialog_camera_permission_denied_title" = "Autorisation de caméra requise";
 "dialog_camera_permission_denied_message" = "Cette application utilise la réalité augmentée pour détecter les objets dans ta maison. Pour pouvoir utiliser cette fonction, tu dois autoriser l'accès à ta caméra.";
-"dialog_camera_permission_denied_permissions_button" = "Permissions";
+"dialog_camera_permission_denied_permissions_button" = "Autorisations";
 "dialog_camera_permission_denied_return_button" = "Retourner";
-"dialog_first_time_title" = "Lance-toi";
+"dialog_first_time_title" = "Lance-toi!";
 "dialog_first_time_message" = "Pointe ta caméra vers des objets de ta maison. Assure-toi que la caméra couvre des objets entiers sans en couper des parties et évite de pointer plusieurs objets à la fois !";
 "dialog_shop_select_title" = "Ta plateforme d'achat";
 "dialog_shop_select_message" = "Babysafe Home AR te donne des recommandations de produits sur des plateformes d'achat comme Amazon. Si tu préfères un autre pays ou une autre plateforme d'achat, choisis ton alternative.\nRemarque : En tant qu'affilié, nous gagnons de l'argent sur les achats admissibles.";
@@ -91,10 +91,10 @@
 "menu_main_bottombar_about" = "À propos de";
 "menu_main_bottombar_support" = "Aide";
 "menu_main_bottombar_disclaimer" = "Clause de non-responsabilité";
-"menu_main_bottombar_recommend" = "Dis-le à un ami";
+"menu_main_bottombar_recommend" = "Partager ";
 "menu_main_bottombar_shops" = "Changer de magasin\n\n\n";
 "articles_notification_channel_name" = "Canal de notification des conseils";
-"articles_notification_channel_description" = "Canal de notification des astuces pour être régulièrement informé des nouvelles astuces.";
+"articles_notification_channel_description" = "Canal de notification des conseils pour être régulièrement informé des nouvelles astuces.";
 "articles_notification_title" = "Nouvelle astuce débloquée !";
 "articles_notification_firstreminder_title" = "Une astuce déverrouillée t'attend !";
 "articles_notification_secondreminder_title" = "Ne rate pas ton astuce déverrouillée !";
@@ -117,25 +117,25 @@
 "about_technical_support" = "Soutien technique";
 "about_privacy_policy" = "Politique de confidentialité";
 "links" = "Liens";
-"store_listing" = "Babysafe Home AR est une application qui vous aide à rendre votre maison plus sûre pour votre bébé d'une manière amusante et innovante en utilisant des éléments de \"réalité augmentée (AR)\". Utilisez votre caméra pour détecter les objets dans votre maison, et si ces objets peuvent représenter un danger potentiel pour votre enfant, Babysafe Home AR vous en informera et vous montrera comment éviter les accidents ! Gardez une trace de ce dont vous devez vous occuper dans une liste de contrôle et recevez régulièrement des conseils de sécurité supplémentaires !\n\n*Caractéristiques\n- Utilisez votre caméra pour détecter les dangers : Avec la vue caméra, vous pouvez pointer votre téléphone portable sur différents objets de votre maison. Babysafe Home AR vous informera des dangers possibles pour votre enfant et de la manière dont vous pouvez éviter les accidents.\n- Utilisez la liste de contrôle pour marquer les dangers comme interdits : Une fois que vous avez détecté des dangers possibles pour votre bébé avec la caméra, le danger est automatiquement ajouté à votre liste de contrôle. Une fois que vous avez banni le danger potentiel de votre maison, vous pouvez marquer les entrées comme vérifiées !\n- Recevez chaque jour des conseils, des informations et des recommandations : Obtenez des conseils et des recommandations supplémentaires pour faire de votre maison un endroit plus sûr pour votre bébé !\n\n*Comment ça marche ?\nOuvrez la caméra dans Babysafe Home AR pour utiliser nos fonctionnalités de détection d'objets. Pointez la caméra sur différents objets de votre maison. Veillez à couvrir les objets simples et entiers sur l'écran. Si l'objet est susceptible de provoquer des accidents ou de représenter un danger pour votre enfant, Babysafe vous en informe et vous donne des conseils pour éviter les accidents éventuels.\n\n\n*Avis de non-responsabilité\nBabysafe Home AR peut vous donner des conseils et vous sensibiliser à la sécurité de votre bébé. Même si vous avez marqué tous les dangers découverts par l'application comme étant supprimés, nous ne pouvons pas garantir que rien ne se produira. Attention, chaque maison présente des dangers individuels pour les petits et il est de votre responsabilité de faire de votre maison un endroit sûr pour votre bébé !\n\n\n*FAQ*\n\nComment tout cela fonctionne-t-il ? \nBabysafe Home AR utilise la bibliothèque MLKit de Google pour détecter les objets. En arrière-plan, il y a un modèle de détection d'objets, qui définit une liste de classifications pour les objets détectés. Babysafe Home AR utilise cette technologie pour détecter et classer les objets dans votre maison et vous donne des informations pertinentes sur la façon d'éviter les accidents avec les bébés pour les objets donnés. \n\nMes données sont-elles envoyées à n'importe quel serveur ? \nNON. Vos images ou tout ce qui est détecté dans votre maison restent sur votre appareil, aucune donnée personnalisée ou générée n'est envoyée à un serveur ou à un autre emplacement. Comme indiqué précédemment, Babysafe Home AR utilise la bibliothèque MLKit de Google. Google peut envoyer des informations sur le matériel, des données d'utilisation et des statistiques à ses serveurs, mais ces données ne contiennent aucune donnée personnelle ni image de votre domicile.\nBabysafe Home AR fonctionne également hors ligne sans connexion Internet. \n\nPourquoi l'application ne reconnaît-elle pas certains objets ? \nLa détection d'objets et la classification d'images est un domaine de recherche en constante amélioration. Babysafe Home AR utilise une bibliothèque et un modèle de détection d'objets et de classification d'images à la pointe de la technologie. Cependant, les objets se présentent sous différentes formes et variations - tous les objets ne sont peut-être pas reconnus. Les conditions d'éclairage et la qualité de la caméra peuvent également avoir un impact sur le processus de reconnaissance.";
+"store_listing" = "Babysafe Home AR est une application qui vous aide à rendre votre maison plus sûre pour votre bébé d'une manière amusante et innovante en utilisant des éléments de \"réalité augmentée (AR)\". Utilisez votre caméra pour détecter les objets dans votre maison, et si ces objets peuvent représenter un danger potentiel pour votre enfant, Babysafe Home AR vous en informe et vous montre comment éviter les accidents ! Gardez une trace de ce dont vous devez vous soucier dans une liste de contrôle et recevez régulièrement des conseils de sécurité supplémentaires !\n\n*Caractéristiques\n- Utilisez votre caméra pour détecter les dangers : Avec la vue caméra, vous pouvez pointer votre téléphone portable sur différents objets de votre maison. Babysafe Home AR vous informe des dangers environnants possibles pour votre enfant et de la manière dont vous pouvez éviter les accidents.\n- Utilisez la liste de contrôle pour marquer les dangers identifiés : Une fois que vous avez détecté des dangers potentiels pour votre bébé avec la caméra, le danger est automatiquement ajouté à votre liste de contrôle. Une fois que vous avez identifié/supprimé le danger potentiel de votre maison, vous pouvez marquer les entrées comme vérifiées !\n- Recevez chaque jour des conseils, des informations et des recommandations : Obtenez des conseils et des recommandations supplémentaires pour faire de votre maison un endroit plus sûr pour votre bébé !\n\n*Comment ça marche ?\nOuvrez la caméra dans Babysafe Home AR pour utiliser nos fonctionnalités de détection d'objets. Pointez la caméra sur différents objets de votre maison. Veillez à couvrir les objets simples et entiers sur l'écran. Si l'objet est susceptible de provoquer des accidents ou de représenter un danger pour votre enfant, Babysafe vous en informe et vous donne des conseils pour éviter les accidents éventuels.\n\n\n*Avis de non-responsabilité\nBabysafe Home AR peut vous donner des conseils et vous sensibiliser à la sécurité de votre bébé. Même si vous avez marqué tous les dangers à découvrir par l'application comme étant supprimés, nous ne pouvons pas garantir l’absence totale de tout autre danger. Attention, chaque maison présente des dangers individuels pour les petits et il est de votre responsabilité de faire de votre maison un endroit sûr pour votre bébé !\n\n\n*FAQ*\n\nComment tout cela fonctionne-t-il ? \nBabysafe Home AR utilise la bibliothèque MLKit de Google pour détecter les objets. En arrière-plan, il y a un modèle de détection d'objets, qui définit une liste de classifications pour les objets détectés. Babysafe Home AR utilise cette technologie pour détecter et classer les objets dans votre maison et vous donne des informations pertinentes sur la façon d'éviter les accidents avec les bébés pour les objets donnés. \n\nMes données sont-elles envoyées à n'importe quel serveur ? \nNON. Vos images ou tout ce qui est détecté dans votre maison restent sur votre appareil, aucune donnée personnalisée ou générée n'est envoyée à un serveur ou à un autre emplacement. Comme indiqué précédemment, Babysafe Home AR utilise la bibliothèque MLKit de Google. Google peut envoyer des informations sur le matériel, des données d'utilisation et des statistiques à ses serveurs, mais ces données ne contiennent aucune donnée personnelle ni image de votre domicile.\nBabysafe Home AR fonctionne également hors ligne sans connexion Internet. \n\nPourquoi l'application ne reconnaît-elle pas certains objets ? \nLa détection d'objets et la classification d'images est un domaine de recherche en constante amélioration. Babysafe Home AR utilise une bibliothèque et un modèle de détection d'objets et de classification d'images à la pointe de la technologie. Cependant, les objets se présentent sous différentes formes et variations - tous les objets ne sont peut-être pas reconnus. Les conditions d'éclairage et la qualité de la caméra peuvent également avoir un impact sur le processus de reconnaissance.";
 
 
 
 /* DANGERS */
 "danger_power_title" = "Installer les cache-prises";
-"danger_power_text" = "Les doigts des bébés et des enfants se glissent parfaitement dans les trous d'une prise. Il y a donc un risque particulier de choc électrique mortel. L'utilisation de protections de prises peut éviter cela. Les tout-prtits à quatre pattes trouvent à coup sûr les prises de courant non sécurisées dans ta maison.";
+"danger_power_text" = "Les doigts des bébés et des enfants se glissent parfaitement dans les trous d'une prise. Il y a donc un risque particulier de choc électrique mortel. L'utilisation de protections de prises peut éviter cela. Les tout-petits qui marchent à quatre pattes trouvent à coup sûr les prises de courant non sécurisées dans ta maison.";
 "danger_toiletwater_title" = "Maintenir fermé le siège des toilettes";
 "danger_toiletwater_text" = "Les enfants peuvent se noyer dans une eau très peu profonde et les blocs désodorisants/désinfectants de toilettes colorés attirent les tout-petits. Tu peux éviter un accident avec un dispositif de sécurité pour le couvercle des toilettes, afin que %1$s ne puisse ni tomber dans la cuvette ni ingérer les produits nettoyants toxiques.";
 "danger_furniture_tipover_title" = "Fixer le dispositif anti-basculement pour les meubles";
-"danger_furniture_tipover_text" = "Lorsque les petits deviennent mobiles, ils essaient de s'accrocher à tout et de grimper. Les meubles peuvent alors basculer et tomber sur %1$s. Un dispositif anti-basculement pour les meubles peut empêcher le pire de se produire. Les gros appareils électroménagers, comme une télévision, peuvent aussi basculer et tomber sur %1$s. Essaie de les sécuriser également à l'aide du dispositif antibasculement.";
+"danger_furniture_tipover_text" = "Lorsque les petits deviennent mobiles, ils essaient de s'accrocher à tout ce qui est à leur portée et de grimper. Les meubles peuvent alors basculer et tomber sur %1$s. Un dispositif anti-basculement pour les meubles peut empêcher le pire de se produire. Les gros appareils électroménagers, comme une télévision, peuvent aussi basculer et tomber sur %1$s. Essaie de les sécuriser également à l'aide du dispositif anti-basculement..";
 "danger_furniture_fallingof_title" = "Enlever les nappes";
-"danger_furniture_fallingof_text" = "Lors de leurs premières tentatives de marche, les bébés s’agrippent  à tout ce qu’ils trouvent, y compris aux objets instables/ non fixes. Les nappes en particulier sont très dangereuses, car les petits peuvent non seulement se blesser sur les objets qui tombent, mais aussi s'ébouillanter avec une soupe chaude, par exemple. Par conséquent, n'utilise pas de nappes et vérifie quels objets pourraient blesser %1$s en tombant.";
+"danger_furniture_fallingof_text" = "Lors de leurs premières tentatives de marche, les bébés s’agrippent  à tout ce qu’ils trouvent, y compris aux objets instables/ non fixes. Les nappes en particulier sont très dangereuses, car les petits peuvent non seulement se blesser avec les objets qui tombent, mais aussi s'ébouillanter avec une soupe chaude, par exemple. Par conséquent, n'utilise pas de nappes et vérifie quels objets pourraient blesser %1$s en tombant.";
 "danger_furniture_edges_title" = "Protéger les coins et les angles";
-"danger_furniture_edges_text" = "Les petits singes peuvent se cogner la tête sur les coins et les angles lorsqu'ils apprennent à marcher ou lorsqu'ils jouent. Pour éviter les blessures, utilise un protecteur de coins et/ou d’angles.";
+"danger_furniture_edges_text" = "Les petits enfants peuvent se cogner la tête sur les coins et les angles lorsqu'ils apprennent à marcher ou lorsqu'ils jouent. Pour éviter les blessures, utilise un protecteur de coins et/ou d’angles.";
 "danger_furniture_drawer_title" = "Verrouiller les tiroirs";
 "danger_furniture_drawer_text" = "Les tiroirs peuvent apporter plusieurs dangers à la fois : d'une part, ils sont une aide à l'escalade pour %1$s, mais aussi intriguants et dangereux. Les doigts des petits enfants peuvent rapidement se retrouver coincés dans le tiroir. Ça fait mal ! Une solution intelligente est l'utilisation de serrures magnétiques.";
 "danger_plant_poison_title" = "Eloigner les plantes toxiques";
-"danger_plant_poison_text" = "Certaines plantes sont toxiques. Les fruits, les feuilles et les fleurs peuvent provoquer un empoisonnement en cas d’ingestion. D'autres plantes sécrètent des sèves/substances liquides, qui peuven être dangereuses pour %1$s. Si tu n'es pas sûr, consulte un guide des plantes, demande à ta pépinière locale ou utilise tes propres applications d'identification des plantes. La chose la plus sûre à faire est de retirer les plantes.";
+"danger_plant_poison_text" = "Certaines plantes sont toxiques. Les fruits, les feuilles et les fleurs peuvent provoquer un empoisonnement en cas d’ingestion. D'autres plantes sécrètent des sèves/substances liquides, qui peuvent être dangereuses pour %1$s. En cas de doute sur la toxicité, consulte un guide des plantes, demande à ta pépinière locale ou utilise tes propres applications d'identification des plantes. La chose la plus sûre à faire est de retirer les plantes.";
 "danger_plant_sting_title" = "Tenir les plantes épineuses hors de portée";
 "danger_plant_sting_text" = "Certaines plantes ont des épines ou des piquants. Pour éviter que les petits ne se piquent les doigts, il est préférable de les placer hors de portée de %1$s.";
 "danger_plant_soil_title" = "Tenir le terreau hors de portée des enfants";
@@ -166,7 +166,7 @@
 "danger_sofa_text" = "Pour éviter que %1$s ne se blesse en tombant du lit ou du canapé, tu ne dois pas laisser %1$s sans surveillance. Pour empêcher %1$s de tomber du lit, tu peux utiliser une barrière de lit réglable en hauteur. Cependant, n'oublie pas que les enfants plus âgés rampent souvent aussi sur la barrière, ce qui augmente la hauteur à laquelle ils tombent et le risque de blessure. Utilise donc les barrières de lit de manière adaptée et raisonnée";
 "danger_oven_title" = "Sécuriser la cuisinière";
 "danger_oven_text" = "Sur la cuisinière chaude, %1$s peut se brûler très rapidement et même s'emparer de la poignée d'une casserole. Il y a un risque d'ébouillantage grave avec le contenu chaud. Pour éviter cela, une grille de sécurité pour la cuisinière peut être utile. Si tu ne veux pas utiliser de grille, essaie de toujours tourner la poignée de tes casseroles vers l'arrière, hors de portée des enfants.";
-"danger_ovenswitch_title" = "Fixer les boutons de la cuisinière";
+"danger_ovenswitch_title" = "Sécuriser les boutons de la cuisinière";
 "danger_ovenswitch_text" = "Les petits aiment jouer avec les boutons de la cuisinière. Mais si la plaque chauffante est allumée sans qu'on le remarque, toute la cuisine peut rapidement prendre feu. Les protections appropriées peuvent empêcher %1$s de l'allumer.";
 "danger_ropes_title" = "Enlever les cordons de rideaux et autres cordelettes/ficelles";
 "danger_ropes_text" = "Les cordes, cordons, chaînes, câbles mais aussi les rideaux de plus de 22 cm de long sont un danger pour %1$s. Les petits aiment enrouler ces choses autour de leur tête ou de leur cou et peuvent s'étrangler. Par conséquent, assure-toi de bien sécuriser ces objets dans ta maison.";
@@ -185,10 +185,10 @@
 "danger_knife_title" = "Eloigner les objets pointus et tranchants";
 "danger_knife_text" = "%1$s peut naturellement se blesser avec des objets pointus et tranchants s'il/elle les manipule sans ta surveillance. Par conséquent, ne laisse pas de couteaux, fourchettes, ciseaux, outils et autres objets pointus ou tranchants dans ta maison, garde-les hors de portée.";
 "danger_bag_title" = "Sacs en plastique hors de portée";
-"danger_bag_text" = "Les sacs en plastique ne sont pas seulement nocifs pour notre environnement, mais ils peuvent aussi être dangereux pour nos jeunes enfants. Si %1$s met un sac en plastique sur la tête, il/elle pourrait facilement suffoquer. Par conséquent, garde les sacs en plastique hors de portée ou utilise plutôt des sacs en tissu.";
+"danger_bag_text" = "Les sacs en plastique ne sont pas seulement nocifs pour notre environnement, mais ils peuvent aussi être dangereux pour nos jeunes enfants. Si %1$s met un sac en plastique sur la tête, il/elle pourrait facilement suffoquer. Par conséquent, garde les sacs en plastique hors de leur portée ou utilise plutôt des sacs en tissu.";
 "danger_toy_title" = "Vérifier que les jouets ne contiennent pas de substances nocives";
-"danger_toy_text" = "Oui, même les jouets pour enfants peuvent être dangereux pour %1$s. D'une part, ils peuvent ne pas être adaptés à l'âge de ton enfant, et d'autre part, ils peuvent contenir des polluants et des substances plastiques dangereux pour %1$s à long terme. Donc, lorsque tu achètes des jouets, regarde attentivement de quels matériaux le jouet est fait et essaie de choisir des jouets avec des matériaux naturels.";
-"danger_smallitems_title" = "Ranger les petites pièces hors de portée de l'enfant";
+"danger_toy_text" = "Oui, même les jouets pour enfants peuvent être dangereux pour %1$s. D'une part, ils peuvent ne pas être adaptés à l'âge de ton enfant, et d'autre part, ils peuvent contenir des polluants et des substances plastiques dangereux pour %1$s à long terme. Donc, lorsque tu achètes des jouets, regarde attentivement de quels matériaux le jouet est fait et privilégie les jouets avec des matériaux naturels.";
+"danger_smallitems_title" = "Ranger les petites objets hors de portée de l'enfant";
 "danger_smallitems_text" = "Les petits explorateurs du monde vérifient d'abord leur environnement avec leur bouche, donc tout ce qu'ils trouvent va d'abord là. Si %1$s avale les objets, le pire des cas est que l'objet obstrue les voies respiratoires et que %1$s s'étouffe avec. Dans le meilleur des cas, l'objet réapparaît après un certain temps, mais il peut quand même causer des dommages dans le corps. Par conséquent, essaie de garder tous les petits objets ronds hors de portée de ton tout-petit.";
 "danger_weapons_title" = "Verrouiller les armes";
 "danger_weapons_text" = "Il est incontestable que les armes ne sont pas faites pour les enfants. Mets sous clé les armes à feu et les armes blanches, mais aussi les matraques et autres objets similaires à distance de ton enfant. Tu ne veux pas que %1$s joue avec eux et se blesse ou mette sa vie et celle des autres en danger.";
@@ -200,7 +200,7 @@
 "danger_cover_text" = "Pour les bébés, les couvertures et les traversins présentent également un certain danger, car ils ne peuvent pas se libérer si le traversin et la couverture atterrissent sur leur visage. Donc si %1$s est encore très petit, évite les coussins et les couvertures quand il dort et quand %1$s est sans surveillance.";
 "danger_mirror_title" = "Protéger les miroirs et les vitres contre les bris";
 "danger_mirror_text" = "Les miroirs ou les plaques de verre représentent un grand danger, surtout s'ils se cassent. Pour que %1$s ne soit pas blessé par des éclats, tu peux acheter des miroirs incassables. Ceux-ci sont particulièrement adaptés à la chambre des enfants. Pour plus de sécurité, tu peux aussi recouvrir les miroirs ou les surfaces en verre d'un film spécial.";
-"danger_fireplace_title" = "Foyers sécurisés";
+"danger_fireplace_title" = "Foyers de cheminée sécurisés";
 "danger_fireplace_text" = "Pour protéger %1$s contre les brûlures d'une cheminée ou d'un autre foyer dans ta maison, une grille peut être très utile. Malheureusement, les grilles normales ne sont pas adaptées à cet usage, car elles sont souvent en bois ou en plastique. Une grille de sécurité résistante à la chaleur protégera les petits curieux contre les brûlures dangereuses des cheminées.";
 
 
