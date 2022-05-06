@@ -31,7 +31,7 @@
 "ar_drag_handle" = "Trascina su/giù";
 "ar_found_dangers" = "Pericoli rilevati";
 "ar_ignore_banned" = "Ignora pericoli bloccati";
-"ar_ignore_unlocked" = "Ignora pericoli sbloccate";
+"ar_ignore_unlocked" = "Ignora pericoli sbloccati";
 "ar_toast_new_dangers_unlocked" = "Nuovi pericoli sbloccati!";
 "ar_ignore_banned_message" = "Attivando queste impostazioni, non riceverai più avvisi con le possibili minacce se tutti i pericoli dell'oggetto individuato sono stati già bloccati o sbloccati.";
 "ar_camera" = "Fotocamera AR";
@@ -50,9 +50,14 @@
 "intro_howto_text" = "Apri la fotocamera premendo il pulsante e puntala in vari punti della casa, visionando l'anteprima. Non appena una possibile minaccia viene individuata, riceverai un avviso contenente informazioni e istruzioni su come eliminare il pericolo. I pericoli trovati verranno aggiusti alla tua lista di controllo.";
 "intro_tell_us_baby_name" = "Come chiami il tuo bimbo o bimba?";
 "intro_default_baby_name" = "Il tuo bimbo/a";
-"score_badge_unlocked" = "Detective di rilevamento";
-"score_badge_banned" = "Maestro di mitigazione";
-"score_badge_articles" = "Lettore responsabile";
+
+/*Investigatore /Investigatore di Pericoli*/
+"score_badge_unlocked" = "Detection Detective";
+
+/*Maestro della Sicurezza / Campione in Sicurezza/ Esperto in Sicurezza
+(Master of Safety /Champion of Safety / Expert in Safety) -> just some suggestions*/
+"score_badge_banned" = "Mitigation Master";
+"score_badge_articles" = "Lettore Responsabile";
 "score_score_header" = "Punteggio";
 "score_nothing_unlocked_header" = "Pronti, partenza, via!";
 "score_nothing_unlocked_text" = "Il primo passo è fatto, hai installato Babysafe Home AR e guadagnato i tuoi primi  %1$d punti! Prosegui e avvia la telecamera per sbloccare tutti i possibili pericoli per %2$s e guadagnare più punti!";
@@ -71,14 +76,14 @@
 "checklist_header" = "Sblocca nuovi suggerimenti sulla sicurezza individuando potenziali pericoli  in casa per i tuoi bambini!";
 "checklist_unlock_info" = "Hai sbloccato la maggior parte dei pericoli che puoi trovare con questa app. Ora hai la possibilità di sbloccare tutti i pericoli rimanenti in una volta sola!";
 "checklist_all_unlocked" = "Ottimo! Hai sbloccato tutti i pericoli che possono essere rilevati da questa app! Controlla la lista e assicurati che tutti i possibili pericoli in casa tua siano stati bloccati!";
-"checklist_all_banned" = "Fantastico! Hai contrassegnato tutti i pericoli come bloccati! Ora sei un vero supereroe Babysafe Home AR!";
+"checklist_all_banned" = "Fantastico! Hai contrassegnato tutti i pericoli come bloccati! Ora sei un vero Supereroe Babysafe Home AR!";
 "checklist_item_buy" = "Acquista";
 "checklist_unlock_button" = "Sblocca";
 "checklist_dialog_first_banned_title" = "Primo pericolo bloccato!";
 "checklist_dialog_first_banned_message" = "Super! Hai contrassegnato il primo pericolo per %1$s come bloccato! Continua così, sblocca ed elimina tutti i pericoli che riesci ad individuare in casa!\nA proposito, alcuni pericoli possono essere scongiurati con strumenti specifici! Troverai su alcuni dei pericoli dei link che ti indirizzeranno direttamente al negozio per acquistarli!";
-"checklist_banned_icon_content_desc" = "Pericolo scongiurato";
+"checklist_banned_icon_content_desc" = "Pericolo bloccato";
 "dialog_disclaimer_title" = "Disclaimer";
-"dialog_disclaimer_message" = "Babysafe Home AR può fornire consigli e sensibilizzare sulla sicurezza dei bambini in casa. Anche se i pericoli sono contrassegnati come bloccati, non possiamo garantire che non accada nulla. Tieni gli occhi aperti, ogni casa può avere pericoli particolari per i più piccoli, ed è tua responsabilità rendere la casa un ambiente sicuro per il tuo bimbo o la tua bimba!";
+"dialog_disclaimer_message" = "Babysafe Home AR può fornire consigli e sensibilizzare sulla sicurezza dei bambini in casa. Anche se i pericoli sono contrassegnati come bloccati, non possiamo garantire che non accada nulla. Tieni gli occhi aperti, ogni casa può avere pericoli nascosti e specifici per i più piccoli, ed è tua responsabilità rendere la casa un ambiente sicuro per il tuo bimbo o la tua bimba!";
 "dialog_camera_permission_denied_title" = "Autorizzazione alla fotocamera richiesta";
 "dialog_camera_permission_denied_message" = "Questa app utilizza la realtà aumentata per rilevare gli oggetti presenti nella tua abitazione. Per poter usufruire di questa funzione, consenti l'accesso alla tua fotocamera.";
 "dialog_camera_permission_denied_permissions_button" = "Autorizzazioni";
@@ -87,7 +92,7 @@
 "dialog_first_time_message" = "Punta la tua telecamera sugli oggetti presenti in casa tua. Assicurati che la telecamera riprenda l'oggetto nella sua interezza, senza tagliarne parti e cerca di inquadrare a un solo oggetto alla volta.";
 "dialog_shop_select_title" = "La tua piattaforma per lo shopping";
 "dialog_shop_select_message" = "Babysafe Home AR raccomanda l'acquisto di prodotti su piattaforme come Amazont. Se preferisci fare riferimento a un altro paese o ad altre piattaforme per l'acquisto online, per favore seleziona la tua scelta.\nNota: come partner affiliato, guadagniamo soldi sugli acquisti consigliati.";
-"dialog_shop_select_message2" = "Se i prodotti non sono disponibili nel tuo negozio online preferito, possiamo consigliarti prodotti di altri negozi.";
+"dialog_shop_select_message2" = "Se i prodotti non sono disponibili nel tuo negozio online preferito, possiamo consigliarti prodotti presenti in altri negozi.";
 "dialog_shop_select_country" = "Paese";
 "dialog_shop_country_world" = "Mondo";
 "dialog_shop_select_shop" = "Negozio";
@@ -120,7 +125,8 @@
 "about_technical_support" = "Supporto tecnico";
 "about_privacy_policy" = "Politica sulla privacy";
 "links" = "Link";
-"store_listing" = "Babysafe Home AR è un'applicazione che ti aiuta a rendere la tua casa un ambiente più sicuro per il tuo bambino in modo divertente e innovativo utilizzando elementi di realtà aumentata (AR). Usa la tua fotocamera per rilevare gli oggetti nella tua casa e se dovessero rappresentare rappresentare un potenziale pericolo per il tuo bambino, Babysafe Home AR ti avviserà e ti mostrerà come evitare incidenti! Tieni traccia di cosa dovresti preoccuparti sulla tua lista e ricevi regolarmente consigli e suggerimenti sulla sicurezza!\n\n*Caratteristiche*\n- Usa la tua macchina fotografica per individuare il pericolo: Con la vista della telecamera, puoi puntare il tuo cellulare su vari oggetti nella tua casa. Babysafe Home AR ti informa sui possibili pericoli per il tuo bambino e su come evitare incidenti.\n- Usa la lista per contrassegnare i pericoli come evitati: Non appena avrai individuato possibili pericoli per il tuo bambino con la fotocamera, il pericolo verrà automaticamente aggiunto alla tua lista di elementi da controllare. Una volta eliminato il potenziale pericolo dalla casa, potrai contrassegnare le voci come controllate!\n- Ottieni consigli giornalieri, informazioni e raccomandazioni: Ottieni più suggerimenti e raccomandazioni su come rendere la tua casa un ambiente sicuro per il tuo bambino!\n\n*Come funziona*\nApra la telecamera in Babysafe Home AR per utilizzare la funzione di rilevamento degli oggetti. Punta la telecamera su diversi oggetti della tua casa. Assicurati di inquadrare oggetti singoli e interi sullo schermo. Se l'oggetto potesse essere causa incidenti o rappresentare un possibile pericolo per il tuo bambino, Babysafe ti informerà e ti darà consigli su come evitare possibili incidenti.\n\n\n*Disclaimer\nBabysafe Home AR può dare consigli e sensibilizzare sulla sicurezza del tuo bambino. Anche se hai contrassegnato tutti i pericoli rilevati dall'app come bloccati, non possiamo garantire che non possa succedere nulla. Tieni gli occhi aperti, ogni casa può avere pericoli particolari per i più piccoli ed è tua responsabilità rendere la casa un ambiente sicuro per il tuo bambino!\n\n\n*Domande frequenti*\n\nCome funziona tecnicamente?\nBabysafe Home AR utilizza la libreria MLKit di Google per riconoscere gli oggetti. Alla base vi è un modello di riconoscimento degli oggetti, che classifica e definisce in una lista gli oggetti individuati. Babysafe Home AR utilizza questa tecnologia per rilevare e classificare gli oggetti nella tua casa e fornirti informazioni importanti su come evitare incidenti con i bambini con gli oggetti rilevati.\n\nI miei dati saranno inviati a qualche server?\nNO. Le tue immagini o qualsiasi cosa rilevata nella tua casa rimane sul tuo dispositivo, nessun dato personalizzato o generato viene inviato a qualsiasi server o in altro locazione. Come accennato in precedenza, Babysafe Home AR utilizza la libreria MLKit di Google. Google può inviare informazioni sull'hardware, dati di utilizzo e statistiche ai suoi server, ma questi dati non includono dati personali o immagini della tua casa.\nBabysafe Home AR funziona anche offline senza una connessione internet.\n\nPerché l'app non riconosce certi oggetti?\nIl riconoscimento degli oggetti e la classificazione delle immagini è un'area di ricerca in costante sviluppo e miglioramento. Babysafe Home AR utilizza una raccolta e un modello all'avanguardia per il riconoscimento degli oggetti e la classificazione delle immagini. Tuttavia, gli oggetti sono disponibili in diverse forme e varianti- non tutti gli oggetti possono quindi essere riconosciuti. Anche le condizioni di luce e la qualità della fotocamera possono influenzare il processo di riconoscimento.";
+"store_listing" = "Babysafe Home AR è un'applicazione che ti aiuta a rendere la tua casa un ambiente più sicuro per il tuo bambino in modo divertente e innovativo utilizzando elementi di realtà aumentata (AR). Usa la tua fotocamera per rilevare gli oggetti nella tua casa e se dovessero rappresentare rappresentare un potenziale pericolo per il tuo bambino, Babysafe Home AR ti avviserà e ti mostrerà come evitare incidenti! Tieni traccia di cosa dovresti preoccuparti sulla tua lista e ricevi regolarmente consigli e suggerimenti sulla sicurezza!\n\n*Caratteristiche*\n- Usa la tua macchina fotografica per individuare il pericolo: con la visuale della telecamera, puoi puntare il tuo cellulare su vari oggetti nella tua casa. Babysafe Home AR ti informa sui possibili pericoli per il tuo bambino e su come evitare incidenti.\n- Usa la lista per contrassegnare i pericoli come evitati: Non appena avrai individuato possibili pericoli per il tuo bambino con la fotocamera, il pericolo verrà automaticamente aggiunto alla tua lista di elementi da controllare. Una volta eliminato il potenziale pericolo dalla casa, potrai contrassegnare le voci come controllate!\n- Ottieni consigli giornalieri, informazioni e raccomandazioni: Ottieni più suggerimenti e raccomandazioni su come rendere la tua casa un ambiente sicuro per il tuo bambino!\n\n*Come funziona*\nApra la telecamera in Babysafe Home AR per utilizzare la funzione di rilevamento degli oggetti. Punta la telecamera su diversi oggetti della tua casa. Assicurati di inquadrare oggetti singoli e interi sullo schermo. Se l'oggetto potesse essere causa incidenti o rappresentare un possibile pericolo per il tuo bambino, Babysafe ti informerà e ti darà consigli su come evitare possibili incidenti.\n\n\n*Disclaimer\nBabysafe Home AR può dare consigli e sensibilizzare sulla sicurezza del tuo bambino. Anche se hai contrassegnato tutti i pericoli rilevati dall'app come bloccati, non possiamo garantire che non possa succedere nulla. Tieni gli occhi aperti, ogni casa può avere pericoli nascosti e specifici per i più piccoli ed è tua responsabilità rendere la casa un ambiente sicuro per il tuo bambino!\n\n\n*Domande frequenti*\n\nCome funziona tecnicamente?\nBabysafe Home AR utilizza la libreria MLKit di Google per riconoscere gli oggetti. Alla base vi è un modello di riconoscimento degli oggetti, che classifica e definisce in una lista gli oggetti individuati. Babysafe Home AR utilizza questa tecnologia per rilevare e classificare gli oggetti nella tua casa e fornirti informazioni importanti su come evitare incidenti con i bambini con gli oggetti rilevati.\n\nI miei dati saranno inviati a qualche server?\nNO. Le tue immagini o qualsiasi cosa rilevata nella tua casa rimane sul tuo dispositivo, nessun dato personalizzato o generato viene inviato a qualsiasi server o in altro locazione. Come accennato in precedenza, Babysafe Home AR utilizza la libreria MLKit di Google. Google può inviare informazioni sull'hardware, dati di utilizzo e statistiche ai suoi server, ma questi dati non includono dati personali o immagini della tua casa.\nBabysafe Home AR funziona anche offline senza una connessione internet.\n\nPerché l'app non riconosce certi oggetti?\nIl riconoscimento degli oggetti e la classificazione delle immagini è un'area di ricerca in costante sviluppo e miglioramento. Babysafe Home AR utilizza una raccolta e un modello all'avanguardia per il riconoscimento degli oggetti e la classificazione delle immagini. Tuttavia, gli oggetti sono disponibili in diverse forme e varianti- non tutti gli oggetti possono quindi essere riconosciuti. Anche le condizioni di luce e la qualità della fotocamera possono influenzare il processo di riconoscimento.";
+
 
 
 
@@ -134,7 +140,7 @@
 "danger_furniture_tipover_title" = "Fissa il dispositivo antiribaltamento per i mobili";
 "danger_furniture_tipover_text" = "Quando i piccoli cominciano a muoversi, cercano di aggrapparsi a tutto e ad arrampicarsi ovunque. Il risultato potrebbe essere che i mobili si ribaltino e cadano su %1$s. Un dispositivo antiribaltamento per mobili può evitare che accada il peggio. Anche grandi elettrodomestici, come il televisore, possono ribaltarsi e cadere su %1$s. Prova a fissare anche loro con l'aiuto di un dispositivo antiribaltamento.";
 "danger_furniture_fallingof_title" = "Rimuovere le tovaglie";
-"danger_furniture_fallingof_text" = "Durante i loro primi tentativi a camminare, i bambini si aggrappano a tutto ciò che non è inchiodato. Le tovaglie in particolare sono molto pericolose, poiché i piccoli non solo possono ferirsi tramite gli oggetti che cadono, ma possono anche, per esempio, con la zuppa bollente che era appoggiata sul tavolo. Pertanto, evita di usare tovaglie e controlla quali oggetti potrebbero ferire %1$s quando cadono.";
+"danger_furniture_fallingof_text" = "Durante i loro primi tentativi a camminare, i bambini si aggrappano a tutto ciò che non è inchiodato. Le tovaglie in particolare sono molto pericolose, poiché i piccoli non solo possono ferirsi tramite gli oggetti che cadono, ma possono anche, per esempio, con la zuppa bollente che era appoggiata sul tavolo. Evita quindi di usare tovaglie e controlla quali oggetti potrebbero ferire %1$s quando cadono.";
 "danger_furniture_edges_title" = "Proteggi gli angoli e i bordi";
 "danger_furniture_edges_text" = "I bambini molto piccoli posso sbattere la testa su angoli e spigoli quando imparano a camminare o mentre giocano. Per prevenire lesioni, usa una protezione per gli angoli e/o i bordi.";
 "danger_furniture_drawer_title" = "Blocca i cassetti";
@@ -145,15 +151,15 @@
 "danger_plant_sting_text" = "Alcune piante hanno spine o aculei. Per evitare che gli gnometti si pungano le dita, è meglio mantenerle fuori dalla portata di %1$s.";
 "danger_plant_soil_title" = "Rendi inaccessibile il terriccio per piante";
 "danger_plant_soil_text" = "Il terriccio o i granuli di solito contengono fertilizzanti e sono quindi dannosi e pericolosi per %1$s. Disponi una rete di protezione per le piante sul vaso e sul terreno e proteggi i piccoli esploratori nella giungla dall'avvelenamento.";
-"danger_washingmachine_title" = "Serra della lavatrice";
+"danger_washingmachine_title" = "Serra la lavatrice";
 "danger_washingmachine_text" = "La lavatrice o l'asciugatrice sono spesso usate dai bambini come nascondigli. È particolarmente pericoloso se lo sportello chiude dentro %1$s. Con una serratura universale, lo sportello rimane chiuso e non fornisce più alcun nascondiglio.";
-"danger_radiator_title" = "Isola i radiatori caldi";
+"danger_radiator_title" = "Isola i radiatori";
 "danger_radiator_text" = "Attenzione al calore! I radiatori e i tubi possono surriscaldarsi e causare ustioni. I tubi possono essere isolati. Puoi anche rendere il radiatore completamente inaccessibile per %1$s.";
 "danger_lightbulb_title" = "Elimina lampade a caldo";
 "danger_lightbulb_text" = "Le lampadine convenzionali o le lampade alogene si scaldano facilmente. Proteggi le dita del tuo bambino e contribuisci a fare del bene all'ambiente: Le lampade a LED non si surriscaldano e sono anche a risparmio energetico.";
-"danger_door_pinch_title" = "Previeni che si blocchi la porta";
+"danger_door_pinch_title" = "Impedisci alla porta di bloccarsi";
 "danger_door_pinch_text" = "Le dita intrappolate nelle porte sono una delle ferite più comuni. Puoi usare un fermaporta in gommapiuma per evitare che le dita di %1$s rimangano incastrate nella porta. Fai attenzione a non usare fermaporta troppo pesanti sul pavimento perché i più piccoli potrebbero farsi male con essi. I fermaporta in gommapiuma sono progettati appositamente per i bambini.";
-"danger_door_pinchback_title" = "Previeni incastri nei cardini della porta";
+"danger_door_pinchback_title" = "Previeni incidenti nei cardini della porta";
 "danger_door_pinchback_text" = "C'è anche il rischio che le dita dei bambini si infilino e incastrino nei cardini della porta Una protezione blocca-cardini può ridurre questo rischio.";
 "danger_door_lockout_title" = "Assicurati di serra la porta";
 "danger_door_lockout_text" = "Soprattutto per quanto riguarda le porte d'ingresso, c'è anche il pericolo che i bambini si chiudano fuori senza che nessuno se ne accorga. Una buona serratura può impedire a %1$s di aprire la porta.";
@@ -163,7 +169,7 @@
 "danger_stairs_text" = "Quando i piccoli esploratori del mondo cominciano a muoversi, sono magicamente attratti dalle scale. Per evitare che %1$s cada dalle scale, un cancelletto per le scale può aiutarti ad evitare questo pericolo. Può anche essere d'aiuto per tenere i più piccoli lontani da ulteriori pericoli.";
 "danger_hotwater_title" = "Evita ustioni con l'acqua calda";
 "danger_hotwater_text" = "L'acqua calda può causare a %1$s gravi ustioni. Un rimedio è un rubinetto con chiusura integrata di acqua mista e blocco di sicurezza. Potete anche abbassare la temperatura di riscaldamento del vostro scaldabagno per evitare gravi ustioni.";
-"danger_boiler_title" = "Garantire acqua potabile pulita";
+"danger_boiler_title" = "Assicura l'uso di acqua potabile pulita";
 "danger_boiler_text" = "L'abbassamento di temperatura dello scaldabagno per evitare ustioni, può portare alla formazione di batteri come la legionella, che possono danneggiare te e la tua famiglia. Anche le vecchie tubature possono contaminare l'acqua potabile. Puoi controllare la qualità della tua acqua potabile con test regolari dell'acqua.";
 "danger_cleaning_supplies_title" = "Chiudi in modo sicuro i prodotti chimici";
 "danger_cleaning_supplies_text" = "I detergenti, i prodotti per la pulizia e i cosmetici contengono sostanze chimiche che possono essere pericolose e addirittura letali %1$s, specialmente se entrano in contatto con occhi o in bocca. A volte i contenitori hanno un tappo di sicurezza, ma è meglio conservarli fuori dalla portata dei più piccoli. Se questo non fosse possibile, puoi anche chiudere gli armadietti con una serratura magnetica.";
@@ -174,7 +180,7 @@
 "danger_ovenswitch_title" = "Fissare le manopole dei fornelli";
 "danger_ovenswitch_text" = "Ai piccoli aiutanti cuochi piace giocare con le manopole del fornello. Ma se la piastra venisse accesa inavvertitamente, l'intera cucina potrebbe prendere rapidamente fuoco. I fusibili appropriati possono impedire a %1$s di accenderli.";
 "danger_ropes_title" = "Rimuovi le corde delle tende e altre corde";
-"danger_ropes_text" = "Corde, catene, cavi ma anche tende più lunghe di 22 cm sono un pericolo per  %1$s. Ai piccoli piace avvolgere queste cose intorno alla testa o al collo, correndo il rischio di strangolarsi. Pertanto, assicurati di fissarle bene.";
+"danger_ropes_text" = "Corde, catene, cavi ma anche tende più lunghe di 22 cm sono un pericolo per  %1$s. Ai piccoli piace avvolgere queste cose intorno alla testa o al collo, correndo il rischio di strangolarsi. Per questa ragione, assicurati di fissarle bene.";
 "danger_candle_title" = "Evita candele e oli profumati";
 "danger_candle_text" = "Candele e fuoco sono, ovviamente, sempre un pericolo. Poiché %1$s può bruciarsi con esse, dovresti tenerle fuori dalla sua portata. Le candele e gli oli profumati con bambini nei paraggi vanno usati sempre con cautela, data la sensibilità dei loro nasini. Se non volete farne a meno, scegliete oli biologici o uno spray per ambienti biologico.";
 "danger_hair_title" = "Evitare la Sindrome del Laccio emostatico";
@@ -184,23 +190,23 @@
 "danger_dishwasher_title" = "Rendi sicura la lavastoviglie";
 "danger_dishwasher_text" = "I piccoli cuochi possono scottarsi con il vapore caldo quando si apre lo sportello della lavastoviglie. Se la tua lavastoviglie non ha uno spegnimento automatico, anche l'acqua calda potrebbe essere fonte di ustioni. Per questo pericolo, ci si può aiutare con chiusure universali, così %1$s non potrà più aprire la lavastoviglie così facilmente.";
 "danger_cable_title" = "Cavo fuori portata";
-"danger_cable_text" = "Ai piccoli esploratori del mondo piace mettere tutto in bocca e masticare - specialmente quando sono in fase di dentizione. Neanche i cavi sono al sicuro dalle loro bocche. Questi non sono solo pericolosi perché i piccoli possono strangolarsi con essi; mordendo un cavo %1$s può subire una scossa elettrica fatale. I tubi per cavi possono aiutare a mantenere i cavi avvolti e protetti in modo sicuro.";
+"danger_cable_text" = "Ai piccoli esploratori del mondo piace mettere tutto in bocca e masticare - specialmente quando sono in fase di dentizione. Neanche i cavi sono al sicuro dalle loro bocche. Questi non solo sono pericolosi perché i piccoli possono strangolarsi con essi; mordendo un cavo %1$s può subire una scossa elettrica fatale. I tubi per cavi possono aiutare a mantenere i cavi avvolti e protetti in modo sicuro.";
 "danger_pool_title" = "Rendi sicura la piscina e la piscinetta";
-"danger_pool_text" = "Le piscine e i trampolini sono particolarmente pericolosi per i piccoli non-nuotatori. I bambini piccoli possono annegare in acqua profonda anche solo pochi centimetri. Pertanto, assicurati che le piscine e le vasche per bambini siano inaccessibili per %1$s.";
-"danger_knife_title" = "Fai pulizia di oggetti affilati e appuntiti";
-"danger_knife_text" = "%1$s potrebbe facilmente farsi del male con oggetti affilati o appunti senza la supervisione di un adulto. Per questa ragione, non lasciare mai alla sua portata coltelli, forchette, forbici, utensili e altri oggetti affilati o appuntiti.";
+"danger_pool_text" = "Le piscine e i trampolini sono particolarmente pericolosi per i piccoli non-nuotatori. I bambini piccoli possono annegare in acqua profonda anche solo pochi centimetri. Assicurati quindi che le piscine e le vasche per bambini siano inaccessibili per %1$s.";
+"danger_knife_title" = "Elimina oggetti affilati e appuntiti";
+"danger_knife_text" = "%1$s potrebbe facilmente farsi del male con oggetti affilati o appuntiti senza la supervisione di un adulto. Per questa ragione, non lasciare mai alla sua portata coltelli, forchette, forbici, utensili e altri oggetti affilati o appuntiti.";
 "danger_bag_title" = "Sacchetti di plastica fuori dalla portata";
-"danger_bag_text" = "I sacchetti di plastica non sono solo dannosi per il nostro ambiente, ma possono anche essere pericolosi per i nostri bambini. Se %1$s mette un sacchetto di plastica sulla sua testa, potrebbe facilmente soffocare. Pertanto, tieni i sacchetti di plastica fuori dalla sua portata o usa invece sacchetti di stoffa.";
+"danger_bag_text" = "I sacchetti di plastica non sono solo dannosi per il nostro ambiente, ma possono anche essere pericolosi per i nostri bambini. Se %1$s mette un sacchetto di plastica sulla sua testa, potrebbe facilmente soffocare. Tieni i sacchetti di plastica fuori dalla sua portata o usa invece dei sacchetti di stoffa.";
 "danger_toy_title" = "Controlla che i giocattoli non contengano sostanze nocive";
-"danger_toy_text" = "Sì, anche i giocattoli per bambini possono essere pericolosi per %1$s. Da un lato, potrebbero non essere adatti all'età del tuo bambino, dall'altro, potrebbero contenere inquinanti pericolosi e plastificanti che posso costituire un pericolo per %1$s a lungo termine. Quindi, quando compri dei giocattoli, guarda attentamente di quali materiali è composto e cerca di preferire materiali naturali.";
-"danger_smallitems_title" = "Conserva piccoli oggetti o pezzi fuori portata";
-"danger_smallitems_text" = "I piccoli esploratori del mondo osservano l'ambiente circostante prima di tutto con la bocca, quindi qualsiasi cosa trovata a terra, va dritta lì. Nel peggiore dei casi, l'oggetto potrebbe ostruire le vie respiratorie e %1$s potrebbe soffocare. Nel migliore die casi invece, potrebbe tornare alla luce dopo qualche tempo, pur restando il rischio che abbia causato ferite o danni nel corpo del bambini. Per questa ragione, prova a tenere tutti gli oggetti piccoli e rotondi fuori dalla portata del tuo bambino.";
-"danger_weapons_title" = "Chiudi a chiavi le armi";
+"danger_toy_text" = "Sì, anche i giocattoli per bambini possono essere pericolosi per %1$s. Da un lato, potrebbero non essere adatti all'età del tuo bambino, dall'altro, potrebbero contenere inquinanti pericolosi e plastificanti che possono, a lungo termine, costituire un pericolo per %1$s. Quindi, quando compri dei giocattoli, fai attenzioni di quali materiali è composto e cerca di preferire materiali naturali.";
+"danger_smallitems_title" = "Conserva piccoli oggetti o piccole parti fuori portata";
+"danger_smallitems_text" = "I piccoli esploratori del mondo osservano l'ambiente circostante prima di tutto con la bocca, quindi qualsiasi cosa trovata a terra, va dritta lì. Nel peggiore dei casi, l'oggetto potrebbe ostruire le vie respiratorie e %1$s potrebbe soffocare. Nel migliore dei casi invece, potrebbe tornare alla luce dopo qualche tempo, pur restando il rischio che abbia causato ferite o danni nel corpo del bambino. Per questa ragione, prova a tenere tutti gli oggetti piccoli e rotondi fuori dalla portata del tuo bambino.";
+"danger_weapons_title" = "Chiudi a chiave le armi";
 "danger_weapons_text" = "È indiscutibile che le armi non siano giochi per i bambini. Serra e chiudi le armi da fuoco e da taglio, ma anche i manganelli e simili vanno tenuti lontani dal tuo bambino. Dopotutto, non vorrai certo che %1$s ci giochi e ferisca o addirittura uccida se stesso o altri.";
 "danger_battery_title" = "Tieni le batterie fuori portata";
-"danger_battery_text" = "Le batterie, specialmente quelle a bottone, devono essere tenute al sicuro dal tuo bambino. Se %1$s le ingoia, è un'emergenza e bisogna andare immediatamente all'ospedale. Le pile a bottone possono causare gravi danni all'esofago del tuo bimbo/a.";
+"danger_battery_text" = "Le batterie, specialmente quelle a bottone, devono essere tenute al sicuro dal tuo bambino. Se %1$s le ingoia, è un'emergenza ed è necessario recarsi immediatamente all'ospedale. Le pile a bottone possono causare gravi danni all'esofago del tuo bimbo/a.";
 "danger_cutlery_title" = "Usa posate per bambini";
-"danger_cutlery_text" = "Coltello, forchetta, forbici, fiamme, non hanno posto tra i giochi per bambini! - dice un vecchio proverbio. Il pericolo con le posate è rappresentato soprattutto dalla punta delle forchette, ma anche con le lame affilate dei coltelli affilati %1$s può farsi del male. Tuttavia, i bambini amano usare le posate come i grandi. Pertanto, la soluzione possono essere le posate apposite per bambini con punte arrotondate e coltelli smussati.";
+"danger_cutlery_text" = "Coltello, forchetta, forbici, fiamme, non hanno posto tra i giochi per bambini! - dice un vecchio proverbio. Il pericolo con le posate è rappresentato soprattutto dalla punta delle forchette, ma anche con le lame affilate dei coltelli affilati %1$s può farsi del male. Tuttavia, i bambini amano usare le posate, come fanno i grandi. La soluzione quindi possono essere le posate apposite per bambini con punte arrotondate e coltelli smussati.";
 "danger_cover_title" = "Crea punti per la nanna senza cuscini e coperte";
 "danger_cover_text" = "Per i neonati, anche le coperte e i cuscini rappresentano un pericolo, poiché non possono liberarsi se il cuscino e la coperta gli cadono sulla faccia. Quindi, se %1$s è ancora molto piccolo/a, evita cuscini e coperte quando dorme e quando %1$s è incustodito.";
 "danger_mirror_title" = "Proteggi gli specchi e i vetri dalla rottura";
