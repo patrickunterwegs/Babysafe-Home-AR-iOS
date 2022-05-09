@@ -36,6 +36,8 @@ enum ShopCountry: String, CaseIterable, Identifiable {
     case gr
     case mt
     case cy
+    case us
+    case ca
     case world
 
     var id: Self { self }
@@ -67,10 +69,10 @@ enum ShopCountry: String, CaseIterable, Identifiable {
         case .is: return [Shop.amazonSE, Shop.amazonUK]
         case .no: return [Shop.amazonSE, Shop.amazonUK]
         case .se: return [Shop.amazonSE]
-        case .fi: return [Shop.aliexpress, Shop.amazonDE]
-        case .ee: return [Shop.aliexpress, Shop.amazonDE]
-        case .lt: return [Shop.aliexpress, Shop.amazonDE]
-        case .lv: return [Shop.aliexpress, Shop.amazonDE]
+        case .fi: return [Shop.aliexpress, Shop.amazonDE, Shop.amazonSE]
+        case .ee: return [Shop.aliexpress, Shop.amazonDE, Shop.amazonSE]
+        case .lt: return [Shop.aliexpress, Shop.amazonDE, Shop.amazonSE]
+        case .lv: return [Shop.aliexpress, Shop.amazonDE, Shop.amazonSE]
         case .cz: return [Shop.aliexpress, Shop.amazonDE]
         case .sk: return [Shop.aliexpress, Shop.amazonDE]
         case .hu: return [Shop.aliexpress, Shop.amazonDE]
@@ -79,6 +81,8 @@ enum ShopCountry: String, CaseIterable, Identifiable {
         case .gr: return [Shop.aliexpress, Shop.amazonUK, Shop.amazonDE]
         case .mt: return [Shop.aliexpress, Shop.amazonUK, Shop.amazonDE]
         case .cy: return [Shop.aliexpress, Shop.amazonUK, Shop.amazonDE]
+        case .us: return [Shop.amazonCOM]
+        case .ca: return [Shop.amazonCA]
         case .world: return [Shop.aliexpress, Shop.amazonDE]
         }
     }
@@ -87,7 +91,7 @@ enum ShopCountry: String, CaseIterable, Identifiable {
 
 func getDefaultCountry() -> ShopCountry {
     switch Locale.current.regionCode {
-    case "US": return .world
+    case "US": return .us
     case "AT": return .at
     case "CH": return .ch
     case "DE": return .de
