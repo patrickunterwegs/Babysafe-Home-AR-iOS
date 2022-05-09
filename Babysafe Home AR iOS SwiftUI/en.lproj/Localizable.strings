@@ -35,15 +35,15 @@
 "ar_ignore_banned_message" = "By activating these settings, if all dangers for the detected object are already unlocked or banned, the info with possible dangers will not pop up anymore.";
 "ar_camera" = "AR Camera";
 "settings_camera" = "Camera";
-"share_brought_to_you_by" = "Brought to you by Babysafe Home AR:\nhttps://babysafe.techbee.at";
-"share_app_subject" = "Check out Babysafe Home AR!";
-"share_app_text" = "Look at this great app I found: *Babysafe Home AR*!\nIt helps you make your home a safer place for your baby.\nCheck it out here:\nhttps://babysafe.techbee.at";
+"share_brought_to_you_by" = "Brought to you by Baby-Safe Home AR:\nhttps://babysafe.techbee.at";
+"share_app_subject" = "Check out Baby-Safe Home AR!";
+"share_app_text" = "Look at this great app I found: *Baby-Safe Home AR*!\nIt helps you make your home a safer place for your baby.\nCheck it out here:\nhttps://babysafe.techbee.at";
 "about_app_terms" = "Terms & Conditions";
 "about_app_all_rights_reserved" = "All rights reserved";
 "about_app_in_collab_with" = "in collaboration with";
 "about_app_version" = "Version: %1$s (%2$d)";
 "about_app_codename" = "Codename: %1$s";
-"intro_info_header" = "Welcome to\nBabysafe Home AR";
+"intro_info_header" = "Welcome to\nBaby-Safe Home AR";
 "intro_info_text" = "Your little helper to make your home a safer place for your baby!";
 "intro_howto_header" = "How it works";
 "intro_howto_text" = "Open the camera view using the button and direct the camera preview to different places in your house. Once a possible danger is found, you will get an info and instructions on how to ban that danger. The found dangers are added to your list.";
@@ -54,7 +54,7 @@
 "score_badge_articles" = "Responsible Reader";
 "score_score_header" = "Score";
 "score_nothing_unlocked_header" = "Ready, set, go!";
-"score_nothing_unlocked_text" = "The first step is done, you have installed Babysafe Home AR and earned your first %1$d points! Go and start the camera view to unlock possible dangers for %2$s and earn more points!";
+"score_nothing_unlocked_text" = "The first step is done, you have installed Baby-Safe Home AR and earned your first %1$d points! Go and start the camera view to unlock possible dangers for %2$s and earn more points!";
 "score_first_unlocked_header" = "Good start!";
 "score_first_unlocked_text" = "You have unlocked some possible dangers for %2$s and reached a score of %1$d! Keep going, unlock and ban all possible dangers!";
 "score_half_unlocked_header" = "Well done!";
@@ -68,14 +68,14 @@
 "checklist_header" = "Unlock baby security checks by finding potential dangers for your baby in your home!";
 "checklist_unlock_info" = "You have unlocked most of the dangers that you can find with this app. You now have the option to unlock the all of the remaining ones at once!";
 "checklist_all_unlocked" = "Great! You have unlocked all dangers that can be recognized by this app! Check all of them and make sure to ban all dangers from your house!";
-"checklist_all_banned" = "Awesome! You have marked all dangers as banned! You are a real Babysafe Home AR hero!";
+"checklist_all_banned" = "Awesome! You have marked all dangers as banned! You are a real Baby-Safe Home AR hero!";
 "checklist_item_buy" = "Buy";
 "checklist_unlock_button" = "Unlock";
 "checklist_dialog_first_banned_title" = "First danger banned!";
 "checklist_dialog_first_banned_message" = "Super! You have banned the first baby danger for %1$s from your home! Keep going, unlock and ban all dangers you can find in your home!\nBy the way, some dangers can be banned with specific tools! Some of the dangers have a shop-link that bring you directly to a tool to ban the danger!";
 "checklist_banned_icon_content_desc" = "Danger banned";
 "dialog_disclaimer_title" = "Disclaimer";
-"dialog_disclaimer_message" = "Babysafe Home AR can give you advice and raise awareness for the safety of your baby. Even though you might have marked all dangers discovered by the app as banned, we cannot guarantee that nothing will happen. Watch out, every home has individual dangers for the little ones and it is your responsibility to make your home a safe place for your baby!";
+"dialog_disclaimer_message" = "Baby-Safe Home AR can give you advice and raise awareness for the safety of your baby. Even though you might have marked all dangers discovered by the app as banned, we cannot guarantee that nothing will happen. Watch out, every home has individual dangers for the little ones and it is your responsibility to make your home a safe place for your baby!";
 "dialog_camera_permission_denied_title" = "Camera permission required";
 "dialog_camera_permission_denied_message" = "This app uses augmented reality to detect objects in your house. In order to use this feature please grant access to your camera.";
 "dialog_camera_permission_denied_permissions_button" = "Permissions";
@@ -83,7 +83,7 @@
 "dialog_first_time_title" = "Get started";
 "dialog_first_time_message" = "Point your camera at objects in your home. Make sure that the camera covers whole objects without cutting off parts of it and avoid pointing to multiple objects at once!";
 "dialog_shop_select_title" = "Your shopping platform";
-"dialog_shop_select_message" = "Babysafe Home AR gives you recommendations for products on shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative. \nNote: As an Affiliate-Associates we earn from qualifying purchases.";
+"dialog_shop_select_message" = "Baby-Safe Home AR gives you recommendations for products on shopping platforms like Amazon. If you prefer another country or shopping platform, please choose your alternative.\nNote: As an Affiliate-Associates we earn from qualifying purchases.";
 "dialog_shop_select_message2" = "If products are not available in your preferred shopping platform, we might recommend products in other stores.";
 "dialog_shop_select_country" = "Country";
 "dialog_shop_country_world" = "World";
@@ -117,7 +117,8 @@
 "about_technical_support" = "Technical Support";
 "about_privacy_policy" = "Privacy Policy";
 "links" = "Links";
-"store_listing" = "Babysafe Home AR is an app that helps you make your home a safer place for your baby in a fun and innovative way by using elements of „Augmented Reality (AR)“. Use your camera to detect objects in your home, and if the objects could be a possible danger for your toddler, Babysafe Home AR will notify and show you how you can avoid accidents! Keep track of what you have to take care of in a checklist and get additional, regular safety tips and advice! \n\n*Features*\n- Use your camera to detect dangers: With the camera view you can point your cellphone at different objects in your home. Babysafe Home AR will inform you about possible dangers for your little one and how you can avoid accidents.\n- Use the checklist to mark dangers as banned: Once you have detected possible dangers for your baby with the camera, the danger is automatically added to your checklist. Once you have banned the possible danger from your house, you can mark the entries as checked! \n- Get daily tips, infos and recommendations: Get tips and further recommendations how to make your home a safer place for your baby!\n\n*How it works*\nOpen the camera in Babysafe Home AR to use our object detection functionalities. Point the camera at different objects in your home. Make sure to cover single, full objects on the screen. If the object could cause accidents or be a possible danger for your little one, Babysafe will notify you and give you advice how to avoid possible accidents.\n\n\n*Disclaimer*\nBabysafe Home AR can give you advice and raise awareness for the safety of your baby. Even though you might have marked all dangers discovered by the app as banned, we cannot guarantee that nothing will happen. Watch out, every home has individual dangers for the little ones and it is your responsibility to make your home a safe place for your baby!\n\n\n*FAQs*\nHow does that whole thing work?\nBabysafe Home AR uses the MLKit library by Google to detect objects. In the background there is an object detection model, that defines a list of classifications for detected objects. Babysafe Home AR uses this technology to detect and classify objects in your home and gives you relevant information about how to avoid accidents with babies for the given objects. \n\nIs my data sent to any server?\nNO. Your images or anything that is detected in your home stay on your device, no personalised or generated data is sent to any server or other location. As stated before Babysafe Home AR uses the MLKit library by Google. Google might send hardware-information, usage data and statistics to their servers, but this data does not contain any personal data or images of your home. \nBabysafe Home AR also works offline without an internet connection. \n\nWhy doesn’t the app recognise certain objects?\nObject detection and image classification is a research field that is constantly improved. Babysafe Home AR is using a state of the art object detection and image classification library and model. However, objects come in different shapes and variations – not all objects might be recognised. Also light conditions and camera quality can have an impact on the recognition process.";
+"store_listing" = "Baby-Safe Home AR is an app that helps you make your home a safer place for your baby in a fun and innovative way by using elements of „Augmented Reality (AR)“. Use your camera to detect objects in your home, and if the objects could be a possible danger for your toddler, Baby-Safe Home AR will notify and show you how you can avoid accidents! Keep track of what you have to take care of in a checklist and get additional, regular safety tips and advice!\n\n*Features*\n- Use your camera to detect dangers: With the camera view you can point your cellphone at different objects in your home. Baby-Safe Home AR will inform you about possible dangers for your little one and how you can avoid accidents.\n- Use the checklist to mark dangers as banned: Once you have detected possible dangers for your baby with the camera, the danger is automatically added to your checklist. Once you have banned the possible danger from your house, you can mark the entries as checked! \n- Get daily tips, infos and recommendations: Get tips and further recommendations how to make your home a safer place for your baby!\n\n*How it works*\nOpen the camera in Baby-Safe Home AR to use our object detection functionalities. Point the camera at different objects in your home. Make sure to cover single, full objects on the screen. If the object could cause accidents or be a possible danger for your little one, Babysafe will notify you and give you advice how to avoid possible accidents.\n\n\n*Disclaimer*\nBaby-Safe Home AR can give you advice and raise awareness for the safety of your baby. Even though you might have marked all dangers discovered by the app as banned, we cannot guarantee that nothing will happen. Watch out, every home has individual dangers for the little ones and it is your responsibility to make your home a safe place for your baby!\n\n\n*FAQs*\nHow does that whole thing work?\nBaby-Safe Home AR uses the MLKit library by Google to detect objects. In the background there is an object detection model, that defines a list of classifications for detected objects. Baby-Safe Home AR uses this technology to detect and classify objects in your home and gives you relevant information about how to avoid accidents with babies for the given objects.\n\nIs my data sent to any server?\nNO. Your images or anything that is detected in your home stay on your device, no personalised or generated data is sent to any server or other location. As stated before Baby-Safe Home AR uses the MLKit library by Google. Google might send hardware-information, usage data and statistics to their servers, but this data does not contain any personal data or images of your home.\nBaby-Safe Home AR also works offline without an internet connection.\n\nWhy doesn’t the app recognise certain objects?\nObject detection and image classification is a research field that is constantly improved. Baby-Safe Home AR is using a state of the art object detection and image classification library and model. However, objects come in different shapes and variations – not all objects might be recognised. Also light conditions and camera quality can have an impact on the recognition process.";
+"menu_main_bottombar_wishlist" = "Create a baby registry";
 
 
 
