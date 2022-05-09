@@ -69,6 +69,12 @@ struct AboutView: View {
                                 //URL(string: "https://www.orf.at")!
                             ])
                         })
+                    
+                    Button(action: {
+                        UIApplication.shared.open(model.wishlitsLink)
+                    }) {
+                        Label("menu_main_bottombar_wishlist", systemImage: "link")
+                      }
                 }
                 Section(header: Text("about_app")) {
                     NavigationLink(destination: AboutAppInfoView()) {

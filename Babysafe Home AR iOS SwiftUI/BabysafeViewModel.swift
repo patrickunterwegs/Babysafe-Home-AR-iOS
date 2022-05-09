@@ -120,6 +120,37 @@ class BabysafeViewModel: ObservableObject {
         return numUnread
     }
     
+    var wishlitsLink: URL {
+        switch selectedShop {
+        case .amazonDE:
+            return URL(string: "https://www.amazon.de/baby-reg?tag=techbee03-21")!
+        case .amazonFR:
+            return URL(string: "http://www.amazon.fr/baby-reg/homepage?tag=techbee05e-21")!
+        case .amazonIT:
+            return URL(string: "http://www.amazon.it/baby-reg/homepage?tag=techbee067-21")!
+        case .amazonES:
+            return URL(string: "http://www.amazon.es/baby-reg/homepage?tag=techbee093-21")!
+        case .amazonUK:
+            return URL(string: "http://www.amazon.co.uk/baby-reg?tag=techbee061-21")!
+        case .amazonNL:
+            return URL(string: "https://www.amazon.nl/hz/wishlist/intro?tag=techbee0f-21")!
+        case .amazonCOM:
+            return URL(string: "https://www.amazon.com/gp/baby/homepage?ref_=assoc_tag_ph_1402131859555&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=techbee07-20&linkId=68c02a0aa83214019a288afb5e7e494e")!
+        case .amazonCA:
+            return URL(string: "https://www.amazon.ca/baby-reg?ref=ca_br_aac_221&_encoding=UTF8&linkCode=ib1&tag=techbee0c-20&linkId=fecf8e4b27aae77a5aebd6bd9d8c2192&ref_=ihub_curatedcontent_f7b0911c-cc88-4f4d-a812-41f53a0e8253")!
+        case .amazonSE:
+            return URL(string: "https://www.amazon.se/hz/wishlist/intro?tag=babysafe00-21")!
+        case .babywalzAT:
+            return URL(string: "https://www.amazon.de/baby-reg?tag=techbee03-21")!
+        case .babywalzDE:
+            return URL(string: "https://www.amazon.de/baby-reg?tag=techbee03-21")!
+        case .babywalzCH:
+            return URL(string: "https://www.amazon.de/baby-reg?tag=techbee03-21")!
+        case .aliexpress:
+            return URL(string: "https://www.amazon.com/gp/baby/homepage?ref_=assoc_tag_ph_1402131859555&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=techbee07-20&linkId=68c02a0aa83214019a288afb5e7e494e")!
+        }
+    }
+    
     
     
     
