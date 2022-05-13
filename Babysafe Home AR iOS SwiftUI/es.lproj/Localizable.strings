@@ -1,0 +1,236 @@
+/* 
+  Localizable.strings
+  Babysafe Home AR iOS SwiftUI
+
+  Created by Patrick Lang on 26.03.22.
+  
+*/
+
+
+/*Strings used for fragments for navigation*/
+"close" = "Cerrar";
+"save" = "Guardar";
+"cancel" = "Cancelar";
+"back" = "Volver";
+"share" = "Compartir";
+"info" = "Información";
+"settings" = "Ajustes";
+"more" = "Más";
+"cont1nue" = "Continuar";
+"open_link" = "Abrir enlace";
+"start_ar_view" = "Iniciar cámara";
+"main_tab_intro" = "Introducción";
+"main_tab_checklist" = "Lista";
+"main_tab_score" = "Puntuación";
+"main_tab_tips" = "Consejos";
+"about_tab_app" = "App";
+"about_tab_libraries" = "Librerías";
+"about_tab_attributions" = "Atribuciones";
+"about_tab_thanks" = "Gracias";
+"ar_drag_handle" = "Subir/bajar";
+"ar_found_dangers" = "Peligros encontrados";
+"ar_ignore_banned" = "Ignorar los peligros eliminados";
+"ar_ignore_unlocked" = "Ignorar los peligros descubiertos";
+"ar_toast_new_dangers_unlocked" = "¡Nuevos peligros descubiertos!";
+"ar_ignore_banned_message" = "Si activas estas opciones, ya no se te notificará sobre posibles peligros cuando se encuentre un objeto cuyo peligros ya hayan sido descubiertos o eliminados.";
+"ar_camera" = "Cámara AR";
+"settings_camera" = "Cámara";
+"share_brought_to_you_by" = "Proporcionado por Baby-Safe Home AR:\nhttps://babysafe.techbee.at";
+"share_app_subject" = "¡Prueba Baby-Safe Home AR!";
+"share_app_text" = "Échale un vistazo a esta grandiosa app: ¡*Baby-Safe Home AR*!\nPuede ayudarte a que tu casa sea más segura para tu bebé.\nRevísala en este enlace:\nhttps://babysafe.techbee.at";
+"about_app_terms" = "Términos y Condiciones";
+"about_app_all_rights_reserved" = "Todos los derechos reservados";
+"about_app_in_collab_with" = "en colaboración con";
+"about_app_version" = "Versión: %1$s (%2$d)";
+"about_app_codename" = "Nombre clave: %1$s";
+"intro_info_header" = "Bienvenido a\nBaby-Safe Home AR";
+"intro_info_text" = "¡Tu pequeño ayudante para hacer de tu hogar una casa más segura para tu bebé!";
+"intro_howto_header" = "¿Cómo funciona?";
+"intro_howto_text" = "Abre la cámara pulsando el botón y apunta en diferentes lugares de tu casa. En cuanto se encuentre un peligro potencial, recibirás información con instrucciones para eliminar el peligro. Los peligros encontrados se añaden a tu lista.";
+"intro_tell_us_baby_name" = "¿Cómo llamas a tu bebé?";
+"intro_default_baby_name" = "Tu bebé";
+"score_badge_unlocked" = "Detective de la Detección";
+"score_badge_banned" = "Maestro de la Mitigación";
+"score_badge_articles" = "Lector Responsable";
+"score_score_header" = "Puntuación";
+"score_nothing_unlocked_header" = "¡Listo! ¡Vamos!";
+"score_nothing_unlocked_text" = "¡El primer paso está hecho, has instalado Baby-Safe Home AR y has ganado tus primeros %1$d puntos! ¡Inicia la cámara, descubre todos los peligros posibles para %2$s y consigue más puntos!";
+"score_first_unlocked_header" = "¡Grandioso comienzo!";
+"score_first_unlocked_text" = "¡Has descubierto algunos peligros posibles para %2$s y has conseguido %1$d puntos! ¡Sigue así, descubre y elimina todos los peligros posibles!";
+"score_half_unlocked_header" = "¡Bien hecho!";
+"score_half_unlocked_text" = "¡Has descubierto más de la mitad de los peligros posibles para %2$s y has conseguido %1$d puntos! ¡Sigue así y encuentra todos los peligros posibles en tu casa!";
+"score_all_unlocked_header" = "¡Súper!";
+"score_all_unlocked_text" = "¡Has descubierto todos los peligros posibles para %2$s que se pueden detectar con esta aplicación y has conseguido %1$d puntos! ¡Ahora consulta la lista de peligros y verifica cómo evitarlos!";
+"score_half_banned_header" = "¡Genial!";
+"score_half_banned_text" = "¡Has descubierto más de la mitad de los peligros para %2$s que se pueden detectar con esta aplicación y has conseguido %1$d puntos! ¡Sigue así y elimina todos los posibles peligros!";
+"score_all_banned_header" = "¡Enhorabuena!";
+"score_all_banned_text" = "¡Has eliminado todos los posibles peligros para %2$s que se pueden detectar con esta app y has conseguido %1$d puntos! Sin embargo, una aplicación solo puede ayudarte a encontrar posibles peligros para los bebés. ¡Dependerá de ti encontrar los peligros restantes y prestar atención para mantener los alrededores de %2$s seguros!";
+"checklist_header" = "¡Desbloquea los consejos de seguridad encontrando los peligros potenciales en tu casa!";
+"checklist_unlock_info" = "Has descubierto la mayoría de los peligros que puedes encontrar con esta aplicación. ¡Ahora tienes la oportunidad de descubrir el resto de los peligros de una vez!";
+"checklist_all_unlocked" = "¡Súper! ¡Has desbloqueado todos los peligros que puede detectar esta aplicación! ¡Revísalos y asegúrate de eliminar todos los peligros de tu casa!";
+"checklist_all_banned" = "¡Genial! ¡Has marcado todos los peligros como eliminados! ¡Ahora eres un auténtico superhéroe de Baby-Safe Home AR!";
+"checklist_item_buy" = "Comprar";
+"checklist_unlock_button" = "Descubrir";
+"checklist_dialog_first_banned_title" = "¡Primer peligro eliminado!";
+"checklist_dialog_first_banned_message" = "¡Súper! ¡Has marcado el primer peligro para %1$s como eliminado! ¡Sigue trabajando, descubre y elimina todos los peligros que puedas encontrar en tu casa!\nPor cierto, ¡algunos peligros se pueden eliminar con herramientas especiales! ¡Algunos de los peligros tienen un enlace a una tienda que te llevará directamente a la herramienta para eliminar el peligro!";
+"checklist_banned_icon_content_desc" = "Peligro eliminado";
+"dialog_disclaimer_title" = "Descargo de responsabilidad";
+"dialog_disclaimer_message" = "Baby-Safe Home AR puede aconsejarte y ayudarte a crear conciencia sobre la seguridad de tu bebé. Aunque los peligros estén marcados como eliminados en esta aplicación, no podemos garantizar que no vaya a ocurrir algo. Mantén los ojos abiertos, cada hogar tiene sus propios peligros para los más pequeños y depende de ti que tu casa sea un lugar seguro para tu bebé.";
+"dialog_camera_permission_denied_title" = "Se requieren permisos de la cámara";
+"dialog_camera_permission_denied_message" = "Esta aplicación utiliza la realidad aumentada para detectar objetos en tu casa. Para utilizar esta función, por favor concede permiso de acceso a tu cámara.";
+"dialog_camera_permission_denied_permissions_button" = "Permisos";
+"dialog_camera_permission_denied_return_button" = "Volver";
+"dialog_first_time_title" = "¡Comencemos!";
+"dialog_first_time_message" = "Apunta la cámara a los objetos de tu casa. Asegúrate de que la imagen incluya objetos enteros sin cortar partes de ellos y evita que haya varios objetos en la imagen a la vez.";
+"dialog_shop_select_title" = "Tu plataforma de compras";
+"dialog_shop_select_message" = "Baby-Safe Home AR te ofrece recomendaciones de productos en tiendas web como Amazon. Si prefieres utilizar otro país o plataforma de compras, por favor selecciona tu alternativa.\nNota: Como socios afiliados, obtenemos ganancias por las compras cualificadas.";
+"dialog_shop_select_message2" = "Si los productos no están disponibles en tu tienda preferida, podríamos recomendarte productos de otras tiendas.";
+"dialog_shop_select_country" = "País";
+"dialog_shop_country_world" = "Mundo";
+"dialog_shop_select_shop" = "Tienda";
+"menu_main_bottombar_about" = "Acerca de";
+"menu_main_bottombar_support" = "Ayuda";
+"menu_main_bottombar_disclaimer" = "Descargo de responsabilidad";
+"menu_main_bottombar_recommend" = "Cuéntale a un amigo";
+"menu_main_bottombar_shops" = "Cambiar de tienda";
+"articles_notification_channel_name" = "Canal de Notificaciones de Consejos";
+"articles_notification_channel_description" = "Canal de Notificaciones de Consejos para recibir actualizaciones periódicas sobre nuevos consejos.";
+"articles_notification_title" = "¡Nuevo consejo disponible!";
+"articles_notification_firstreminder_title" = "¡Un nuevo consejo te está esperando!";
+"articles_notification_secondreminder_title" = "¡No te pierdas tu nuevo consejo!";
+"articles_header_info" = "¡Vuelve diariamente para desbloquear más consejos!";
+"thanks_header" = "Agradecimientos especiales";
+"thanks_text" = "Gracias a Sophie-Katharina por tus dulces sonrisas, tus peticiones espontáneas para hablar y tu inspiración para esta aplicación.";
+"attributions_header" = "Atribuciones";
+"attributions_text" = "Esta aplicación utiliza gráficos/animaciones libres y con licencia. En esta página queremos darle crédito a los artistas que han proporcionado los materiales para esta aplicación.";
+"attributions_lottie_animations_text" = "Esta aplicación utiliza animaciones disponibles públicamente de la Librería Lottie.";
+"attributions_graphics" = "Gráficos";
+"attributions_graphics_text" = "Esta aplicación utiliza imágenes con licencia de freepik y los grandiosos gráficos por @catalyststuff\nhttps://www.freepik.com/catalyststuff";
+"attributions_animations" = "Animaciones";
+"product_recommendations" = "Productos recomendados";
+"checklist_tap_to_ban" = "¡Toca las cartas para marcar los peligros como eliminados!";
+"libraries_header" = "Librerías";
+"libraries_text" = "Esta aplicación utiliza librerías de código libre y abierto. En esta página queremos destacar a los desarrolladores que proporcionaron materiales utilizados en esta aplicación.";
+"about_app" = "App";
+"about_app_info" = "Información de la Aplicación";
+"about_legal_support" = "Legal y Soporte";
+"about_technical_support" = "Soporte Técnico";
+"about_privacy_policy" = "Política de Privacidad";
+"links" = "Enlaces";
+"store_listing" = "Baby-Safe Home AR es una aplicación que te ayuda a hacer de tu casa un lugar más seguro para tu bebé de una forma divertida e innovadora utilizando elementos de realidad aumentada (AR). Usa tu cámara para detectar objetos en tu casa, y si los objetos pueden suponer un peligro potencial para tu bebé, ¡Baby-Safe Home AR te alertará y te mostrará cómo evitar accidentes! ¡Lleva un registro de lo que debes atender en una lista de control y obtén periódicamente consejos de seguridad!\n\n*Características*\n- Utiliza tu cámara para detectar peligros: Con la cámara puedes apuntar tu móvil a varios objetos de tu casa. Baby-Safe Home AR te informará de los posibles peligros para tu hijo y cómo puedes evitar accidentes.\n- Utilice la lista de control para marcar los peligros como eliminados: En cuanto se detectan posibles peligros para el bebé con la cámara, el peligro se añade automáticamente a la lista de control. En cuanto hayas eliminado el peligro potencial de tu casa, puedes marcarlo como solucionado.\n- Obtén consejos, información y recomendaciones: ¡Obtén más consejos y recomendaciones para hacer de tu casa un lugar seguro para tu bebé!\n\n*Cómo funciona*\nAbre la cámara en Baby-Safe Home AR para utilizar la función de detección de objetos. Apunta la cámara a diferentes objetos de tu casa. Asegúrate de enfocar objetos individuales y completos en la pantalla. Si el objeto puede causar accidentes o suponer un posible peligro para tu pequeño, Babysafe te lo notificará y te dará consejos sobre cómo evitar posibles accidentes.\n\n\n*Descargo de responsabilidad*\nBaby-Safe Home AR puede aconsejarte y ayudarte a crear conciencia sobre la seguridad de tu bebé. Aunque los peligros estén marcados como eliminados en esta aplicación, no podemos garantizar que no vaya a ocurrir algo. ¡Mantente alerta, cada hogar tiene sus propios peligros para los más pequeños y depende de ti que tu casa sea un lugar seguro para tu bebé!\n\n\n*Preguntas frecuentes*\n\n¿Cómo funciona la aplicación?\nBaby-Safe Home AR utiliza la biblioteca MLKit de Google para reconocer objetos. En el fondo, hay un modelo de reconocimiento de objetos que define una lista de clasificaciones para los objetos reconocidos. Baby-Safe Home AR utiliza esta tecnología para detectar y clasificar los objetos de tu casa y te ofrece información relevante sobre cómo evitar accidentes con los bebés para los objetos especificados.\n\n¿Se enviarán mis datos a algún servidor?\nNO. Tus imágenes o cualquier cosa que se detecte en tu casa se queda en tu dispositivo, no se envían datos personalizados o generados a ningún servidor ni a ningún otro lugar. Como se ha mencionado anteriormente, Baby-Safe Home AR utiliza la biblioteca MLKit de Google. Google puede enviar información sobre el hardware, datos de uso y estadísticas a sus servidores, pero estos datos no incluyen ningún dato personal ni imágenes de tu casa. Baby-Safe Home AR también funciona sin conexión a Internet.\n\n¿Por qué la aplicación no reconoce ciertos objetos?\nEl reconocimiento de objetos y la clasificación de imágenes es un área de investigación que se perfecciona constantemente. Baby-Safe Home AR utiliza una biblioteca y un modelo de última generación para el reconocimiento de objetos y la clasificación de imágenes. Sin embargo, los objetos tienen diferentes formas y variaciones, por lo que es posible que no se reconozcan todos los objetos. Las condiciones de iluminación y la calidad de la cámara también pueden afectar durante el proceso de reconocimiento.";
+"menu_main_bottombar_wishlist" = "Crea una mesa de regalos para el bebé";
+
+
+
+
+
+
+/* DANGERS */
+"danger_power_title" = "Instalación de cubiertas para enchufes";
+"danger_power_text" = "Los dedos de los bebés y los niños encajan exactamente en los agujeros de un enchufe. Por lo tanto, existe un riesgo potencial de una descarga eléctrica mortal. Utilizar protectores de enchufes puede evitarlo. Los pequeños gateadores seguro encontrarán de inmediato los enchufes desprotegidos de tu casa.";
+"danger_toiletwater_title" = "Cerrar la tapa del inodoro";
+"danger_toiletwater_text" = "Los niños pueden ahogarse incluso en aguas muy bajas y las pastillas desodorizantes de colores animan a los pequeños a probarlos. Puedes evitar ambas cosas con un dispositivo de seguridad para la tapa del inodoro, de esta manera, %1$s no podrá caer dentro ni comer esa piedra venenosa del inodoro.";
+"danger_furniture_tipover_title" = "Colocación de dispositivos antivuelco en los muebles";
+"danger_furniture_tipover_text" = "Cuando los pequeños empiezan a moverse, intentan agarrarse de todas partes y trepar. Esto puede hacer que los muebles se vuelquen y caigan sobre %1$s. Un dispositivo antivuelco para los muebles puede evitar lo peor. Los electrodomésticos grandes, como un televisor, también se podrían volcar y caer sobre %1$s. Intenta asegurarlos con la ayuda del dispositivo antivuelco.";
+"danger_furniture_fallingof_title" = "Retirar los manteles";
+"danger_furniture_fallingof_text" = "Durante sus primeros intentos de caminar, %1$s se agarrará de cualquier cosa. Los manteles, en particular, son muy peligrosos, ya que los pequeños no solo pueden hacerse daño con los objetos que caen, sino que también pueden quemarse con la sopa caliente, por ejemplo. Por lo tanto, no utilices manteles y comprueba qué objetos podrían dañar a %1$s si se caen.";
+"danger_furniture_edges_title" = "Protege las esquinas y los bordes";
+"danger_furniture_edges_text" = "Esos pequeños traviesos pueden golpear su cabeza contra las esquinas y los bordes cuando aprenden a caminar o cuando juegan. Para evitar lesiones, utiliza un protector de esquinas y/o bordes.";
+"danger_furniture_drawer_title" = "Asegurar los cajones";
+"danger_furniture_drawer_text" = "Los cajones pueden suponer varios peligros a la vez: por un lado, son, por supuesto, una ayuda para %1$s para escalar, pero también son intrigantes y peligrosos. Los dedos de los niños pequeños pueden quedar rápidamente atrapados en el cajón. ¡Eso duele! Una solución inteligente son las cerraduras magnéticas.";
+"danger_plant_poison_title" = "Remueve las plantas venenosas";
+"danger_plant_poison_text" = "Algunas plantas son venenosas. Las frutas, las hojas y las flores pueden provocar una intoxicación si se comen. Otras plantas segregan un líquido que puede ser peligroso para %1$s. Si no estás seguro, consulta una guía de plantas, pregunta en tu vivero local o utiliza tus propias aplicaciones de identificación de plantas. Lo más seguro por hacer es remover las plantas.";
+"danger_plant_sting_title" = "Mantén las plantas espinosas fuera de alcance";
+"danger_plant_sting_text" = "Algunas plantas tienen espinas o espinillas. Para evitar que los pequeños gnomos se pinchen los dedos, lo mejor es colocarlas fuera del alcance de %1$s.";
+"danger_plant_soil_title" = "Hacer inaccesible la tierra de las plantas";
+"danger_plant_soil_text" = "La tierra para macetas o los gránulos suelen contener fertilizantes y, por tanto, son perjudiciales para los %1$s. Extiende una red de protección de plantas sobre la maceta y la tierra, y protege a los pequeños exploradores de plantas de la intoxicación.";
+"danger_washingmachine_title" = "Seguro para lavadora";
+"danger_washingmachine_text" = "A los niños les gusta utilizar la lavadora o la secadora como escondite. Es especialmente peligroso si la puerta se cierra con %1$s dentro. Con una cerradura universal, la puerta permanece cerrada y no proporciona un escondite.";
+"danger_radiator_title" = "Proteger los radiadores calientes";
+"danger_radiator_text" = "¡Atención, calor! Los radiadores y las tuberías se calientan mucho y pueden causar quemaduras. Las tuberías podrían estar aisladas. Tal vez también puedas hacer que el radiador sea inaccesible para %1$s.";
+"danger_lightbulb_title" = "Eliminar las luminarias calientes";
+"danger_lightbulb_text" = "Las bombillas convencionales o las lámparas halógenas se calientan. Protege los dedos de tu hijo y haz algo bueno por el medio ambiente: las luces LED no se calientan y además ahorran energía.";
+"danger_door_pinch_title" = "Evitar los atascos en la puerta";
+"danger_door_pinch_text" = "Los dedos atrapados en las puertas son una lesión común. Puedes evitar que los dedos de %1$s queden atascados con la puerta utilizando un tope de espuma. Ten cuidado de no utilizar topes pesados para el suelo, ya que los pequeños podrían hacerse daño con ellos. Los topes de espuma para puertas están especialmente diseñados para los niños.";
+"danger_door_pinchback_title" = "Prevención de pellizcos en las bisagras de las puertas";
+"danger_door_pinchback_text" = "En el lado de las bisagras de una puerta, también existe el riesgo de pellizcar los dedos pequeños de los niños. Un protector contra pellizcos puede reducir este riesgo.";
+"danger_door_lockout_title" = "Cerrar bien la puerta de entrada";
+"danger_door_lockout_text" = "Especialmente con las puertas delanteras, también existe el peligro de que los pequeños se queden fuera sin darse cuenta. Una cerradura de puerta puede impedir que %1$s abra la puerta.";
+"danger_window_title" = "Evitar caídas de las ventanas";
+"danger_window_text" = "Las caídas desde las ventanas ponen en peligro la vida. Puedes evitarlo utilizando dispositivos de seguridad para ventanas y puertas de balcones. Asegúrate también de que los más pequeños no puedan trepar por la orilla de la ventana.";
+"danger_stairs_title" = "Evitar una caída por las escaleras";
+"danger_stairs_text" = "Cuando los pequeños exploradores del mundo se mueven, se sienten atraídos mágicamente por las escaleras. Para evitar que %1$s se caiga por las escaleras, una barrera para escaleras puede ayudar a prevenir este peligro. También puede ayudar a mantener a los pequeños alejados de otros peligros.";
+"danger_hotwater_title" = "Evitar las quemaduras con agua caliente";
+"danger_hotwater_text" = "El agua caliente puede causarle a %1$s graves quemaduras. Un remedio es un grifo con interruptor para la válvula mezcladora de agua y bloqueo de seguridad. También puedes bajar la temperatura de calentamiento de tu calentador de agua para evitar quemaduras graves.";
+"danger_boiler_title" = "Garantizar el agua potable";
+"danger_boiler_text" = "Si bajas la temperatura de la calefacción para evitar quemaduras, esto puede provocar la formación de bacterias como la legionella, que pueden perjudicarte a ti y a su familia. Las tuberías viejas también pueden contaminar el agua potable. Puedes comprobar la calidad de tu agua potable al hacer análisis periódicos del agua.";
+"danger_cleaning_supplies_title" = "Guarda con seguridad los productos químicos";
+"danger_cleaning_supplies_text" = "Los detergentes, los productos de limpieza y los cosméticos contienen sustancias químicas inadecuadas o incluso peligrosas para %1$s, especialmente si entran en los ojos o la boca. A veces los contenedores tienen un tapón de seguridad, pero es mejor guardarlos fuera del alcance de los pequeños. Si no es posible, también puedes cerrar los armarios con una cerradura magnética.";
+"danger_sofa_title" = "Evitar caídas del sofá/cama";
+"danger_sofa_text" = "Para evitar que %1$s se lesione al caerse de la cama o del sofá, no debes dejar a %1$s sin vigilancia. Para evitar que %1$s se caiga de la cama, puedes utilizar una rejilla de altura regulable. Sin embargo, ten en cuenta que los niños mayores suelen trepar por la rejilla, lo que aumenta la altura de la caída y el riesgo de lesiones. Por lo tanto, utiliza las barandillas de la cama con cuidado y a tu criterio.";
+"danger_oven_title" = "Estufa segura";
+"danger_oven_text" = "En la parte superior de la estufa, %1$s puede quemarse muy rápidamente e incluso atrapar el mango de una olla. Existe el peligro de sufrir una quemadura grave por el contenido caliente. Para prevenirlo, puede ser útil una rejilla de seguridad para la estufa. Si no quieres utilizar una rejilla de seguridad, intenta siempre girar los mangos de tus ollas y sartenes hacia atrás, fuera del alcance.";
+"danger_ovenswitch_title" = "Asegurar las perillas de la estufa";
+"danger_ovenswitch_text" = "A los pequeños ayudantes de cocina les encanta jugar con las perillas de la estufa. Pero si la parrilla se enciende de forma inadvertida, toda la cocina puede incendiarse rápidamente. Los seguros apropiados pueden evitar que %1$s la encienda.";
+"danger_ropes_title" = "Retirar los cordones de las cortinas y otras cuerdas";
+"danger_ropes_text" = "Las cuerdas, los cordones, las cadenas, los cables y también las cortinas de más de 22 cm son un peligro para %1$s. A los pequeños les gusta enrollarse estas cosas en la cabeza o en el cuello y pueden estrangularse. Por lo tanto, cerciórate de que estas cosas estén bien aseguradas en tu casa.";
+"danger_candle_title" = "Evita las velas y los aceites perfumados";
+"danger_candle_text" = "Las velas y el fuego son, por supuesto, siempre un peligro. Ya que %1$ puede quemarse con esto, debes mantenerlo fuera de su alcance. Siempre hay que utilizar las velas y los aceites perfumados con los bebés con precaución, ya que sus pequeñas narices son muy sensibles. Si no quieres prescindir de ellos, elige aceites orgánicos o utiliza un aerosol ambiental orgánico en su lugar.";
+"danger_hair_title" = "Evitar el Síndrome del Torniquete";
+"danger_hair_text" = "Los pelos largos pueden envolver los dedos de las manos o de los pies del bebé y cortar el suministro de sangre, provocando la muerte de los dedos de las manos o de los pies. Esto se llama el síndrome del torniquete. Revisa constantemente los dedos de los pies y de las manos de tu bebé.";
+"danger_railing_title" = "Asegurar con plexiglás las barandillas con varillas";
+"danger_railing_text" = "Si tienes una rejilla o barandilla, asegúrate de que las barras no estén separadas más de 65 mm. De este modo, puedes estar seguro de que la cabeza de su hijo no se atascará y %1$s no se asfixiará. Si la distancia es mayor, se puede instalar plexiglás.";
+"danger_dishwasher_title" = "Lavavajillas seguro";
+"danger_dishwasher_text" = "Los pequeños ayudantes de cocina pueden quemarse por el vapor caliente al abrir la puerta del lavavajillas. Si tu lavavajillas no tiene cierre automático, el agua caliente también puede provocar quemaduras. Aquí puedes ayudarte con cerraduras universales para que %1$s no pueda abrir el lavavajillas fácilmente.";
+"danger_cable_title" = "Cable fuera del alcace";
+"danger_cable_text" = "A los pequeños exploradores del mundo les gusta meterse todo en la boca y masticarlo, sobre todo cuando les están saliendo los dientes. Ni siquiera los cables están a salvo de sus bocas. Sin embargo, no sólo son peligrosos porque los pequeños pueden estrangularse con ellos, sino que también pueden sufrir una descarga eléctrica mortal si muerden un cable. Las mangueras para cables pueden ayudar a empaquetar los cables de forma segura.";
+"danger_pool_title" = "Piscina segura y piscina infantil";
+"danger_pool_text" = "Las piscinas y los chapoteaderos son especialmente peligrosos para los pequeños no nadadores. Los niños pequeños pueden ahogarse en agua de pocos centímetros de profundidad. Por lo tanto, asegúrate de que las piscinas y las piscinas infantiles sean inaccesibles para %1$s.";
+"danger_knife_title" = "Aleja los objetos afilados y puntiagudos";
+"danger_knife_text" = "Por supuesto, los objetos afilados y puntiagudos pueden herir a los bebés si los manipulan sin supervisión. Por lo tanto, no dejes en tu casa cuchillos, tenedores, tijeras, herramientas y otros objetos afilados o puntiagudos, mejor mantenlos guardados.";
+"danger_bag_title" = "Bolsas de plástico fuera del alcance";
+"danger_bag_text" = "Las bolsas de plástico no solo son perjudiciales para el medio ambiente, sino que también pueden ser peligrosas para nuestros hijos pequeños. Si %1$s se pone una bolsa de plástico en la cabeza, podría asfixiarse fácilmente. Por lo tanto, mantén las bolsas de plástico fuera de su alcance o utiliza bolsas de tela en su lugar.";
+"danger_toy_title" = "Comprobar si los juguetes contienen sustancias nocivas";
+"danger_toy_text" = "Sí, incluso los juguetes de los niños pueden ser peligrosos para %1$s. Por un lado, si no son adecuados para la edad de tu hijo y, por otro lado, pueden contener contaminantes y plastificantes peligrosos para %1$s a largo plazo. Cuando compres juguetes, fíjate bien en los materiales con los que están hechos y procura elegir juguetes con materiales naturales.";
+"danger_smallitems_title" = "Guarda los objetos pequeños fuera del alcance";
+"danger_smallitems_text" = "Los pequeños exploradores del mundo comprueban primero su entorno con la boca, por lo que todo hallazgo va primero por ahí. En el peor de los casos, el objeto obstruye las vías respiratorias y %1$s pueden asfixiarse con él. En el mejor de los casos, el objeto vuelven a salir a la luz después de algún tiempo, pero puede causar algún daño en el cuerpo. Por lo tanto, trata de mantener todos los objetos pequeños y redondos fuera del alcance de tu pequeño.";
+"danger_weapons_title" = "Seguridad para armas";
+"danger_weapons_text" = "Es indiscutible que las armas no son para los niños. Mantén las armas de fuego y las armas blancas, pero también las porras y similares, alejadas de tu pequeño. Después de todo, no quieres que %1$s juegue con ellas y se haga daño o incluso poder matarse a sí mismo o a otros.";
+"danger_battery_title" = "Baterías fuera del alcance";
+"danger_battery_text" = "Las pilas, especialmente las de botón, deben mantenerse alejadas de tu hijo. Si %1$s se las tragara, sería una emergencia y hay que ir al hospital inmediatamente. Las baterías de botón pueden causar graves daños en el esófago de tu hijo.";
+"danger_cutlery_title" = "Utilizar cubiertos de niños";
+"danger_cutlery_text" = "¡El cuchillo, el tenedor, las tijeras y las llamas no son juegos de niños!; eso dice un viejo proverbio. El peligro con los cubiertos proviene principalmente de las puntas del tenedor, además los cuchillos afilados también pueden herir a %1$s. Sin embargo, la mayoría de los pequeños quieren usar los cubiertos como los mayores. Por ello, son adecuados los cubiertos especiales para niños con puntas redondeadas y cuchillos sin filo.";
+"danger_cover_title" = "Crear un entorno para dormir libre de almohadas y mantas";
+"danger_cover_text" = "Las mantas y los cojines también suponen un cierto peligro para los bebés, ya que no pueden liberarse por sí solos si el cojín y la manta caen sobre su cara. Por lo tanto, si %1$s todavía es muy pequeño, evita los cojines y las mantas cuando duerme y cuando %1$s no está en supervisión.";
+"danger_mirror_title" = "Protege los espejos y los cristales de quebraduras";
+"danger_mirror_text" = "Los espejos o los platos de vidrio suponen un gran peligro, sobretodo si se rompen. Para evitar que %1$s se lesione con las astillas, puedes comprar espejos inastillables. Son especialmente adecuados para las habitaciones de los niños. Si quieres total seguridad, también puedes cubrir los espejos o superficies de cristal existentes con una película especial.";
+"danger_fireplace_title" = "Chimeneas seguras";
+"danger_fireplace_text" = "Para proteger a %1$s de las quemaduras causadas por una chimenea u otro tipo de fuego en tu casa, una rejilla es sin duda muy útil. Por desgracia, las rejillas normales no son adecuadas para este fin, ya que suelen ser de madera o plástico. Una rejilla de seguridad resistente al calor protege a los pequeños curiosos de las peligrosas quemaduras de las chimeneas.";
+
+
+
+
+/* TIPS */
+"tip_electricity_title" = "Warum sind Steckdosen gefährlich?";
+"tip_electricity_text" = "Man würde doch nie auf die Idee kommen einem Baby Stricknadeln oder einen Schraubenzieher zum Spielen zu überlassen. Warum sind dann Steckdosen so gefährlich?\n\nDie kleinen Weltentdecker werden von Steckdosen magisch angezogen. Viele Steckdosen befinden sich genau in Augenhöhe der kleinen Krabbler und ihre kleinen Fingerchen passen perfekt in die Öffnung europäischer Steckdosen. Du denkst vielleicht, dass der Fehlerstrom-Schutzschalter (FI-Schalter) dazu da ist, uns vor tödlichen Stromschlägen zu schützen. Der Schutzschalter greift aber erst, wenn ein Mensch in den Stromkreis eingreift. Für die kleinen Krabbelmäuse ist das allerdings zu spät. Daher sichere deine Steckdosen im gesamten Wohnbereich mit Steckdosensicherungen. Diese bekommst du in jeder Drogerie, Heimwerker- oder Elektromarkt und natürlich auch online. (Unten findest du unsere Empfehlungen, für die wir eine kleine Provision bekommen und das Sparschwein unsere Krabbelmaus füttern.)\n\nSteckdosensicherungen gibt es zum Kleben oder auch zum Schrauben. Für häufig verwendete Steckdosen empfiehlt es sich die Variante mit den Schrauben zu verwenden, für alle anderen reicht die Klebeversion aber völlig aus.\n\nDu kannst nicht immer und überall die Steckdosen absichern. Und beim Besuch bei Freunden erstmal alle Steckdosen verkleben macht dich nicht gerade zum Lieblingsbesucher. Lerne deinem Kind daher schon frühzeitig, dass Steckdosen nicht zum Spielen geeignet sind.\n\nHat dein Kind trotz aller Vorsicht einen Stromschlag bekommen oder besteht der Verdacht, so solltest du umgehend ins Krankenhaus fahren. Die Symptome, welche durch elektrischen Strom ausgelöst werden können, reichen von Verbrennungen an den Ein- und Austrittstellen, über Schädigungen von Organen bis hin zu Herzrhythmusstörungen und im schlimmsten Fall zu Atemstillstand.\n\n\n\nUnsere Empfehlung:\n\nDa du neben Steckdosensicherungen auch Schubladenschlösser, Kantenschutz, Kippsicherungen und Türstopper brauchen kannst, empfehlen wir folgendes Starterkit mit 12x Steckdosenschutz, 12x Eckenschutz, 6x Schranksicherung, 4x Schrankschloss, 5x Klemmschutz, 4x Universal Sicherung.\n\nNatürlich kannst du auch nur Steckdosensicherungen bestellen. Bitte achte auch darauf, ob es sich um  EU-Stecker und oder nicht EU-Steckerdosen handelt. ";
+"tip_electricity_link_plug_eu" = "Stecken (EU)";
+"tip_electricity_link_screw_eu" = "Schrauben (EU)";
+"tip_electricity_link_plug_noneu" = "Stecken (non-EU)";
+"tip_electricity_link_screw_noneu" = "Schrauben (non-EU)";
+"tip_till_here_not_further_title" = "Bis hierhin und nicht weiter!";
+"tip_till_here_not_further_text" = "Wir haben versucht unseren Wohnraum kindersicher zu gestalten und alle Gefahren zu bannen, aber vor den kleinen Weltentdeckern ist einfach nichts sicher und um auch mal ALLEINE das WC aufzusuchen haben wir uns dann doch für ein Laufgitter entschieden. Die anderen gefährlichen Punkte unserer Wohnung haben wir durch verschieden Gitter abgesichert.  \n\nTürgitter: Wir haben uns für ein Türgitter entschieden, um bei Bedarf den Bereich der Küche abzutrennen. Beim Kochen darf die Kleine auf einem Lernturm dabei sein, oder muss draußen bleiben. Am Boden herum zu krabbeln während dem Kochen ist uns zu gefährlich. Das Gitter eignet sich auch perfekt um Treppenauf- und abgängen zu sichern. Das tolle an dem Gitter ist, dass es automatisch schließt und recht einfach zu öffnen ist. Man muss nur aufpassen auch die richtige Größe zu montieren. Es ist zwar angegeben, dass es auch ohne Schrauben hält. Unsere Wände sind aber leicht schief, daher mussten wir es anschrauben und jetzt hält es bombenfest.\n\nDen Kamin haben wir mit einen speziellen Kamingitter gesichert, laut Hersteller ist es „flexibel einsetzbar“, was wir insofern bestätigen können, dass man es nach den eigenen Bedürfnissen aufstellen und aufbauen kann. Einmal zusammengebaut, ist es aber sehr stabil und lässt sich nicht verschieben oder einfach zusammenklappen. Will man die Position einzelner Teile verändern, so ist eine Verbindungstange zu entfernen, die beiden Gitterteile neu auszurichten und die Verbindungsstangen wieder einzusetzen. Bei Kamingittern muss man speziell darauf achten, dass diese hitzebeständig sind, Holz oder Kunststoff ist daher nicht geeignet.  \n\nUm bei Bedarf den Weg in den Vorraum oder Türbereich abzusperren haben wir uns für ein verstellbares, selbststehendes Gitter entschieden. Es lässt sich auch leicht zusammenklappen und wegräumen, wenn es gar nicht gebraucht wird.\n\nMit dem Kunststofflaufgitter haben wir dann die Spielwiese der Krabbelmaus eingezäunt, um sie in Sicherheit zu wissen, wenn wir sie dann doch mal aus den Augen lassen. Der große Vorteil ist, dass die 14 Paneele schon vormontiert sind, sich aber ganz einfach nach eigenen Wünschen zusammenstellen lassen. Die Paneele besitzen Noppen, mit denen sie am Boden haften, daher nicht so einfach verrutschen können, aber dennoch variabel genug, so dass wir diese auch immer wieder verschieben können um den Spielbereich zu vergrößern. Das Laufgitter eignet sich auch toll um ein Bällebad zu errichten.  \n\nBei allen Gittern ist natürlich wichtig, dass sie schadstofffrei sind und die Stäbe nicht weiter als 6,5cm voneinander entfernt sind. Natürlich sollten sie auch stabil genug sein, denn die Kleinen versuchen sich an allem hochzuziehen.";
+"tip_till_here_not_further_link_door_grid" = "Türgitter";
+"tip_till_here_not_further_link_learning_tower" = "Lernturm";
+"tip_till_here_not_further_link_standing_grid" = "Selbststehendes Gitter";
+"tip_till_here_not_further_link_plastic_grid" = "Kunststoffgitter";
+"tip_baby_prison_title" = "Hinter Gittern – der Babyknast?";
+"tip_baby_prison_text" = "Du willst (Haus-)Arbeit erledigen und kannst %1$s dabei nicht ständig im Auge behalten, willst aber für Sicherheit sorgen?\n\nEin Laufgitter hat den Vorteil, dass du das kleine Krabbelmonster auch mal aus den Augen lassen kannst. Und nein, man braucht kein schlechtes Gewissen zu haben, wenn man ein Laufgitter verwendet - du lässt deinen kleinen Liebling ja nicht Stunden lang allein. Auch noch kleine Babys können sich schon einige Minuten allein beschäftigen und so können manche Laufgitter schon ab der Geburt genutzt werden. Einige Modelle verfügen über höhenverstellbare Einlegeböden und mit einer Matratze können diese auch den Stubenwagen ersetzen.\n\nEin Laufgitter kann verwendet werden bis die Kleinen mit ca. 18 Monaten die Kletterexperimente starten und versuchen über das Gitter zu kommen. Dann ist der Zeitpunkt gekommen, das Gitter zu entfernen, denn die Gefahr durch den Kletterversuch von einer höheren Position abzustürzen ist dann viel größer als die Gefahren, die sich im Raum ergeben.\n\nDer große Vorteil von Laufgittern ist sicher, dass du %1$s mal selbst in der kindersichersten Wohnung für kurze Augenblicke allein im Zimmer lassen kannst, ohne dich zu sorgen. Der Nachteil der meisten Laufgitter ist, dass sie viel Platz brauchen. Zudem wollen unsere kleinen Weltentdecker nicht ewig in diesem Laufgitter bleiben. Wir haben dir eine Auswahl der beliebtesten Laufgitter unsere Eltern-Community eingefügt.\n\nDas 6-eckiges Laufgitter inkl. passender Matratze, ist 3-fach höhenverstellbar und kann als Stubenwagen verwendet werden. Vorteil: Kann lange verwendet werden da es sehr viel Platz bietet. Nachteil: Braucht sehr viel Platz und du brauchst für Matratze, Bettwäsche, Nestchen etc. Spezialmaße. Amazon bietet ein Paket inkl. Matratze an. Bei Baby Walz ist die Matratze z.B. von Träumeland nochmals extra zu kaufen!\n\nDie etwas kleinere Variante eines Laufgitters, welches höhenverstellbar ist, einen gepolsterten Laufgitterboden bietet UND faltbar ist bietet z.B. Pinolino.\n\nSowohl die 6-eckige als auch die rechteckige Variante sind aus Holz und haben Rollen und einzelne Gitterstäbe. Wichtig ist darauf zu achten, dass sich die Rollen gut einbremsen lassen und das Laufgitter somit auch stabil an einem Ort bleibt. Die Gitterstäbe sollten höchstens einen Abstand von 6,5 cm zueinander haben. Die verwendeten Farben und Stoffe müssen natürlich Schadstoff frei sein und dürfen nicht absplitterten. Scharfe Kanten oder Spitzen sind ebenfalls tabu. Die Laufgitter sollten der sicherheitstechnischen Anforderungen der DIN EN 12227:2010 entsprechen.\n\nWir haben uns erst später für ein Laufgitter entschieden und daher auf die Liegefunktion komplett verzichtet und uns stattdessen eine große variable Variante aus Kunststoff besorgt.  ";
+"tip_baby_prison_link_6angle_matress" = "6-Eck mit Matratze";
+"tip_baby_prison_link_6angle" = "6-Eck";
+"tip_baby_prison_link_matress" = "Matratze";
+"tip_baby_prison_link_small_variant" = "Kleine Variante";
+"tip_beta_title" = "Beta";
+"tip_beta_text" = "This is all for now in this current beta, more to come!";
+"tip_electricity_link_glue_eu" = "Kleben (EU)";
+"tip_electricity_link_non_eu" = "Non-EU";
+

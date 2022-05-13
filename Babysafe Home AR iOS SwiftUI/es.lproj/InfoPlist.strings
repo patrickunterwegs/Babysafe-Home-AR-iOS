@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Babysafe Home AR iOS SwiftUI
+
+  Created by Patrick Lang on 10.04.22.
+  
+*/
+
+"NSCameraUsageDescription" = "Esta aplicación utiliza la realidad aumentada para detectar objetos en tu casa. Para utilizar esta función, por favor concede permiso de acceso a tu cámara.";

@@ -71,6 +71,8 @@
 		C43DD95C65D369B3BCF56479 /* Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-Babysafe Home AR iOS SwiftUI/Pods-Babysafe Home AR iOS SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		CD1162312802D8980053E923 /* AboutLibrariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibrariesView.swift; sourceTree = "<group>"; };
 		CD1C94CA27FCDA8F0078C1D4 /* SafetyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTip.swift; sourceTree = "<group>"; };
+		CD1D343E282E63410015A876 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD1D343F282E63410015A876 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD27606727EF0136003A833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606927EF0151003A833D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD27606A27EF09FC003A833D /* MainIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainIntroView.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 				"pt-PT",
 				fr,
 				it,
+				es,
 			);
 			mainGroup = CDA4C72F27EE5E53003A0B94;
 			packageReferences = (
@@ -617,6 +620,7 @@
 				CD409FB8281EBB1B0076FC4B /* pt-PT */,
 				CD409FBA281EBB230076FC4B /* fr */,
 				CD7E3E9C2823B1C7003DA98D /* it */,
+				CD1D343E282E63410015A876 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -630,6 +634,7 @@
 				CD409FB9281EBB1B0076FC4B /* pt-PT */,
 				CD409FBB281EBB230076FC4B /* fr */,
 				CD7E3E9D2823B1C7003DA98D /* it */,
+				CD1D343F282E63410015A876 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -761,7 +766,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1000501;
+				CURRENT_PROJECT_VERSION = 1000601;
 				DEVELOPMENT_ASSET_PATHS = "\"Babysafe Home AR iOS SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
@@ -779,7 +784,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -797,7 +802,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1000501;
+				CURRENT_PROJECT_VERSION = 1000601;
 				DEVELOPMENT_ASSET_PATHS = "\"Babysafe Home AR iOS SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
@@ -815,7 +820,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				PROVISIONING_PROFILE_SPECIFIER = "";
