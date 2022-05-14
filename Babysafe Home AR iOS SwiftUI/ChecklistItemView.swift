@@ -84,6 +84,7 @@ struct ChecklistItemView: View {
         .onTapGesture {
             babyDanger.isBanned.toggle()
             model.saveBanned()
+            model.showRatingDialogIfApplicable()
         }
     }
 }

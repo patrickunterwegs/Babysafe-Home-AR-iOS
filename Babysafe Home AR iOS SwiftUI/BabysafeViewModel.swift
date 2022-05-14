@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import UserNotifications
+import StoreKit
 
 class BabysafeViewModel: ObservableObject {
     
@@ -359,6 +360,16 @@ class BabysafeViewModel: ObservableObject {
     
     func sortBabyDangers() {
         babyDangers.sort { $0.isBanned == false && $1.isBanned == true }
+    }
+    
+    
+    func showRatingDialogIfApplicable() {
+        
+        if numBanned == 5 || numBanned == 20 || numBanned == 40 {
+            if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+                SKStoreReviewController.requestReview(in: scene)
+            }
+        }
     }
     
     
