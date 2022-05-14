@@ -686,11 +686,11 @@ extension BabyDanger {
         case .amazonUK:
             return linkAmazonUK
         case .amazonNL:
-            return linkAmazonUK
+            return linkAmazonNL
         case .amazonCOM:
             return linkAmazonCOM
         case .amazonCA:
-            return linkAmazonSE
+            return linkAmazonCA
         case .amazonSE:
             return linkAmazonSE
         case .babywalzAT:

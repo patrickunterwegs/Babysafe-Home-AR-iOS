@@ -91,7 +91,6 @@ enum ShopCountry: String, CaseIterable, Identifiable {
 
 func getDefaultCountry() -> ShopCountry {
     switch Locale.current.regionCode {
-    case "US": return .us
     case "AT": return .at
     case "CH": return .ch
     case "DE": return .de
@@ -120,6 +119,8 @@ func getDefaultCountry() -> ShopCountry {
     case "GR": return .gr
     case "MT": return .mt
     case "CY": return .cy
+    case "US": return .us
+    case "CA": return .ca
     case .none: return .world
     case .some(_): return .world
     }
