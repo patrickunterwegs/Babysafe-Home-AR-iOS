@@ -21,39 +21,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Babysafe Home AR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cy-td-Oap">
-                                <rect key="frame" x="50" y="497" width="315" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="QIY-O6-rQN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astronaut_camera" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-f2-wKQ">
-                                <rect key="frame" x="87" y="552" width="240" height="206"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Babysafe" translatesAutoresizingMaskIntoConstraints="NO" id="WmU-kD-JBv">
-                                <rect key="frame" x="107" y="259" width="200" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="9Cy-td-Oap" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="50" id="6qB-Hs-t5b"/>
-                            <constraint firstItem="9Cy-td-Oap" firstAttribute="top" secondItem="WmU-kD-JBv" secondAttribute="bottom" constant="38" id="CVp-xt-gqy"/>
-                            <constraint firstItem="WmU-kD-JBv" firstAttribute="centerX" secondItem="9Cy-td-Oap" secondAttribute="centerX" id="Cac-r9-rvI"/>
-                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="top" secondItem="9Cy-td-Oap" secondAttribute="bottom" constant="8" symbolic="YES" id="LUo-8R-TFK"/>
-                            <constraint firstItem="WmU-kD-JBv" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="215" id="NgJ-R7-kMG"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="leading" secondItem="obG-Y5-kRd" secondAttribute="leading" id="JOi-n7-QAL"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="WmU-kD-JBv" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="YKx-gd-J0J"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="4fS-f2-wKQ" secondAttribute="bottom" constant="104" id="ZDx-WB-4Vq"/>
-                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="centerX" secondItem="9Cy-td-Oap" secondAttribute="centerX" id="ck2-JB-Sfr"/>
-                            <constraint firstItem="WmU-kD-JBv" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="107" id="lUX-za-FrB"/>
-                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="87" id="mVJ-Gs-nzQ"/>
-                            <constraint firstAttribute="bottom" secondItem="9Cy-td-Oap" secondAttribute="bottom" constant="352" id="nTW-Lz-tZ6"/>
+                            <constraint firstAttribute="bottom" secondItem="4fS-f2-wKQ" secondAttribute="bottom" id="han-iB-mYD"/>
+                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oJF-Lc-Ea1"/>
+                            <constraint firstItem="4fS-f2-wKQ" firstAttribute="trailing" secondItem="obG-Y5-kRd" secondAttribute="trailing" id="xfq-fW-vGy"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -63,7 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Babysafe" width="512" height="512"/>
-        <image name="astronaut_camera" width="200" height="200"/>
+        <image name="astronaut_camera" width="250" height="250"/>
     </resources>
 </document>
