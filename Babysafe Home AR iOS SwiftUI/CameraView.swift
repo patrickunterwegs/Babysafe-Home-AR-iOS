@@ -10,7 +10,10 @@ import AVFoundation
 import Vision
 import CoreVideo
 import MLImage
-import MLKit
+import MLKitVision
+import MLKitCommon
+import MLKitObjectDetectionCommon
+import MLKitObjectDetectionCustom
 
 struct CameraView: View {
     
