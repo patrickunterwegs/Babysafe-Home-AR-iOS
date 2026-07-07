@@ -41,6 +41,7 @@
 		CDA4C77027EE6EA3003A0B94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA4C76F27EE6EA3003A0B94 /* MainView.swift */; };
 		CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC1E91828003D840052F161 /* LaunchScreen.storyboard */; };
 		DD0000010000000000000003 /* MLKitObjectDetectionCustom in Frameworks */ = {isa = PBXBuildFile; productRef = DD0000010000000000000002 /* MLKitObjectDetectionCustom */; };
+		DD0000010000000000000005 /* MLKitImageLabeling in Frameworks */ = {isa = PBXBuildFile; productRef = DD0000010000000000000004 /* MLKitImageLabeling */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 			files = (
 				CD1162302802C0050053E923 /* ConfettiSwiftUI in Frameworks */,
 				DD0000010000000000000003 /* MLKitObjectDetectionCustom in Frameworks */,
+				DD0000010000000000000005 /* MLKitImageLabeling in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,7 @@
 			packageProductDependencies = (
 				CD11622F2802C0050053E923 /* ConfettiSwiftUI */,
 				DD0000010000000000000002 /* MLKitObjectDetectionCustom */,
+				DD0000010000000000000004 /* MLKitImageLabeling */,
 			);
 			productName = "Babysafe Home AR iOS SwiftUI";
 			productReference = CDA4C73827EE5E54003A0B94 /* Babysafe Home AR.app */;
@@ -810,6 +813,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DD0000010000000000000001 /* XCRemoteSwiftPackageReference "google-mlkit-swiftpm" */;
 			productName = MLKitObjectDetectionCustom;
+		};
+		DD0000010000000000000004 /* MLKitImageLabeling */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD0000010000000000000001 /* XCRemoteSwiftPackageReference "google-mlkit-swiftpm" */;
+			productName = MLKitImageLabeling;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
