@@ -6,4 +6,4 @@
   
 */
 
-"NSCameraUsageDescription" = "This app is using augmented reality to detect objects in your house. In order to use this feature please grant access to your camera.";
+"NSCameraUsageDescription" = "The camera is used for object detection, a core feature of the app. It detects potential hazards in your home that new parents should take care of when they have a baby.";
