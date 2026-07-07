@@ -6,4 +6,4 @@
   
 */
 
-"NSCameraUsageDescription" = "Diese App nutzt Augmented Reality um Objekte in deinem Haus zu erkennen. Um dieses Feature zu nutzen, vergib bitte die Zugriffsberechtigung auf deine Kamera.";
+"NSCameraUsageDescription" = "Die Kamera wird für die Objekterkennung verwendet, eine zentrale Funktion der App. Sie erkennt mögliche Gefahren in deinem Zuhause, um die sich frischgebackene Eltern kümmern sollten, wenn sie ein Baby haben.";

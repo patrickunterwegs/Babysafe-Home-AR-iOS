@@ -6,4 +6,4 @@
   
 */
 
-"NSCameraUsageDescription" = "Questa app utilizza la realtà aumentata per rilevare gli oggetti presenti nella tua abitazione. Per poter usufruire di questa funzione, consenti l'accesso alla tua fotocamera.";
+"NSCameraUsageDescription" = "La fotocamera è utilizzata per il rilevamento degli oggetti, una funzione fondamentale dell'app. Rileva i potenziali pericoli nella tua casa di cui i neogenitori devono occuparsi quando hanno un bambino.";
