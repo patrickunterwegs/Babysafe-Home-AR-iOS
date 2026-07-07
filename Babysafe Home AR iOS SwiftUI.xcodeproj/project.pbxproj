@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CB47F272FFD3D9E005F9821 /* mobile_object_localizer_labelmap.binarypb in Resources */ = {isa = PBXBuildFile; fileRef = 2CB47F252FFD3D9E005F9821 /* mobile_object_localizer_labelmap.binarypb */; };
-		2CB47F282FFD3D9E005F9821 /* tflite_mobile_object_localizer_3_1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 2CB47F262FFD3D9E005F9821 /* tflite_mobile_object_localizer_3_1.tflite */; };
-		2CB47F292FFD3D9E005F9821 /* mobile_object_localizer_3_1_anchors.pb in Resources */ = {isa = PBXBuildFile; fileRef = 2CB47F242FFD3D9E005F9821 /* mobile_object_localizer_3_1_anchors.pb */; };
+		2CB47F312FFD3D9E005F9821 /* MLKitObjectDetectionCommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CB47F302FFD3D9E005F9821 /* MLKitObjectDetectionCommonResources.bundle */; };
 		CD1162302802C0050053E923 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CD11622F2802C0050053E923 /* ConfettiSwiftUI */; };
 		CD1162322802D8980053E923 /* AboutLibrariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1162312802D8980053E923 /* AboutLibrariesView.swift */; };
 		CD1C94CB27FCDA8F0078C1D4 /* SafetyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1C94CA27FCDA8F0078C1D4 /* SafetyTip.swift */; };
@@ -63,9 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2CB47F242FFD3D9E005F9821 /* mobile_object_localizer_3_1_anchors.pb */ = {isa = PBXFileReference; lastKnownFileType = text; path = mobile_object_localizer_3_1_anchors.pb; sourceTree = "<group>"; };
-		2CB47F252FFD3D9E005F9821 /* mobile_object_localizer_labelmap.binarypb */ = {isa = PBXFileReference; lastKnownFileType = file; path = mobile_object_localizer_labelmap.binarypb; sourceTree = "<group>"; };
-		2CB47F262FFD3D9E005F9821 /* tflite_mobile_object_localizer_3_1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tflite_mobile_object_localizer_3_1.tflite; sourceTree = "<group>"; };
+		2CB47F302FFD3D9E005F9821 /* MLKitObjectDetectionCommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = MLKitObjectDetectionCommonResources.bundle; sourceTree = "<group>"; };
 		CD1162312802D8980053E923 /* AboutLibrariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLibrariesView.swift; sourceTree = "<group>"; };
 		CD1C94CA27FCDA8F0078C1D4 /* SafetyTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyTip.swift; sourceTree = "<group>"; };
 		CD1D343E282E63410015A876 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -208,9 +204,7 @@
 				CD27607427EF6F65003A833D /* ActivityViewController.swift */,
 				CDA4C74127EE5E56003A0B94 /* Preview Content */,
 				CDC1E91828003D840052F161 /* LaunchScreen.storyboard */,
-				2CB47F242FFD3D9E005F9821 /* mobile_object_localizer_3_1_anchors.pb */,
-				2CB47F252FFD3D9E005F9821 /* mobile_object_localizer_labelmap.binarypb */,
-				2CB47F262FFD3D9E005F9821 /* tflite_mobile_object_localizer_3_1.tflite */,
+				2CB47F302FFD3D9E005F9821 /* MLKitObjectDetectionCommonResources.bundle */,
 			);
 			path = "Babysafe Home AR iOS SwiftUI";
 			sourceTree = "<group>";
@@ -360,9 +354,7 @@
 			files = (
 				CD490E5827F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite in Resources */,
 				CD6C8A78280302870069720E /* InfoPlist.strings in Resources */,
-				2CB47F272FFD3D9E005F9821 /* mobile_object_localizer_labelmap.binarypb in Resources */,
-				2CB47F282FFD3D9E005F9821 /* tflite_mobile_object_localizer_3_1.tflite in Resources */,
-				2CB47F292FFD3D9E005F9821 /* mobile_object_localizer_3_1_anchors.pb in Resources */,
+				2CB47F312FFD3D9E005F9821 /* MLKitObjectDetectionCommonResources.bundle in Resources */,
 				CDA4C74327EE5E56003A0B94 /* Preview Assets.xcassets in Resources */,
 				CDC1E91928003D840052F161 /* LaunchScreen.storyboard in Resources */,
 				CD27606627EF0136003A833D /* Localizable.strings in Resources */,
