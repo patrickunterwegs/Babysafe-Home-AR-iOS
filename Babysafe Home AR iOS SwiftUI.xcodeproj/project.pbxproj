@@ -778,8 +778,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 3.0.0;
 			};
 		};
 		DD0000010000000000000001 /* XCRemoteSwiftPackageReference "google-mlkit-swiftpm" */ = {

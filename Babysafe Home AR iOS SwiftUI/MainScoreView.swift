@@ -102,7 +102,7 @@ struct MainScoreView: View {
                 }
             }
             
-            ConfettiCannon(counter: $confetti,
+            ConfettiCannon(trigger: $confetti,
                            num: Int(model.progressPercent),
                            confettis: [.shape(.circle)],
                            colors: [.accentColor, .accentColor.opacity(0.3)],
