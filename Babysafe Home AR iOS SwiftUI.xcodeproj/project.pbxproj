@@ -611,10 +611,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.7;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -649,10 +645,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.7;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = at.techbee.babysafe;
 				PRODUCT_NAME = "Babysafe Home AR";
 				PROVISIONING_PROFILE_SPECIFIER = "";
