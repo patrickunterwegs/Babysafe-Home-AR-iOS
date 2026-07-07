@@ -105,7 +105,6 @@
 		CDA4C76B27EE5FDB003A0B94 /* AboutThanksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThanksView.swift; sourceTree = "<group>"; };
 		CDA4C76D27EE5FF1003A0B94 /* AboutAttributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAttributionsView.swift; sourceTree = "<group>"; };
 		CDA4C76F27EE6EA3003A0B94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CDC1E91828003D840052F161 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +177,6 @@
 		CDA4C73A27EE5E54003A0B94 /* Babysafe Home AR iOS SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				CDC1E91728003CD50052F161 /* Babysafe-Home-AR-iOS-SwiftUI-Info.plist */,
 				CD490E5727F4B7B100BFB504 /* lite-model_object_detection_mobile_object_labeler_v1_1.tflite */,
 				CD490E5B27F4E51200BFB504 /* BabysafeViewModel.swift */,
 				CD3D657727F21C50008CA2CF /* Models */,
@@ -600,11 +598,10 @@
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby-Safe Home AR";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -635,11 +632,10 @@
 				DEVELOPMENT_TEAM = BZY8AT5K2W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Babysafe-Home-AR-iOS-SwiftUI-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Baby-Safe Home AR";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
