@@ -6,4 +6,4 @@
   
 */
 
-"NSCameraUsageDescription" = "Esta aplicación utiliza la realidad aumentada para detectar objetos en tu casa. Para utilizar esta función, por favor concede permiso de acceso a tu cámara.";
+"NSCameraUsageDescription" = "La cámara se utiliza para la detección de objetos, una función esencial de la aplicación. Detecta posibles peligros en tu casa de los que los nuevos padres deben ocuparse cuando tienen un bebé.";
